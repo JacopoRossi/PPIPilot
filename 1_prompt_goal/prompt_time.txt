@@ -1,0 +1,77 @@
+"""
+I give you in input: an event log, a list of activities, a list of variants of the event log, a description of the event log,  the definition of 'activity time', a list of parametrized Process Performance Indicators that analyzes the 'activity time', the goal you have to delve into to discover new Process Performance Indicators, and the name of the activity that I want to be the subject of Process Performance Indicators.
+
+event log: ```{}```
+
+list of activities: ```{}``` 
+
+list of variants: ```{}``` 
+
+description of the event log: ```{}``` 
+
+'activity time' : is the amount of time it takes to complete a specific activity <ACT> from start to finish or the time between two different activities <ACT1> and <ACT2> occurs.
+
+List of parametrized Process Performance Indicators:
+1) Average time from <ACT1> to <ACT2>
+2) Average time between <ACT1> and <ACT2>
+3) Average time until <ACT> is performed
+4) Average time to <ACT> grouped by <COLUMN>
+5) Average time for <ACT>
+6) Average time since the <ACT1> and <ACT2> are performed
+7) Average waiting time to the <ACT>
+8) Average time it takes <ACT1> after the execution of <ACT2>
+9) Average time it takes the <ACT> to be done
+10) Total time from <ACT1> to <ACT2>
+11) Total time between <ACT1> and <ACT2>
+12) Total time until <ACT> is performed
+13) Total time to <ACT> grouped by <COLUMN>
+14) Total time for <ACT>
+15) Total time since the <ACT1> and <ACT2> are performed
+16) Total waiting time to the <ACT>
+17) Total time it takes <ACT1> after the execution of <ACT2>
+18) Total time it takes the <ACT> to be done
+19) Total time for <ACT>
+20) Total resolution time of <ACT>
+21) Minimun time between <ACT1> and <ACT2>
+22) Minimun time until <ACT> is performed
+23) Minimun time to <ACT> grouped by <COLUMN>
+24) Minimun time for <ACT>
+25) Minimun time since the <ACT1> and <ACT2> are performed
+26) Minimun waiting time to the <ACT>
+27) Minimun time it takes <ACT1> after the execution of <ACT2>
+28) Minimun time it takes the <ACT> to be done
+29) Minimun time for <ACT>
+30) Minimun resolution time of <ACT>
+31) Minimun time from <ACT1> to <ACT2>
+32) Percentage of time spent in <ACT>
+33) The time between the <ACT1> and the <ACT2>
+34) Elapsed time between <ACT1> and <ACT2>
+35) Time until <ACT>
+36) Time from <ACT1> to <ACT2>
+37) Time to <ACT1> since the <ACT2>
+38) Time of <ACT>
+39) <ACT> Cycle Time
+
+the goal: ```{}``` 
+
+subject activity of the event log: ```{}```
+
+Now You can follow these steps:
+1) Analyzes the event log
+2) Based on the list of parametrized Process Performance Indicators discover a new list of Process Performance Indicators for the subject activity of the event log in input. To do this action you have to satisfy these requirements:
+    a) Don't simply replace the placeholders with the name of the activity
+    b) Discover other Process Performance Indicators focusing on duration and also on comparing the duration of the input subject activity with the duration of the others activity of the event log.
+    c) Discover Process Performance Indicators that consider the list of variants. 
+    d) Discover Process Performance Indicators that consider description of the event log. 
+    e) Discover Process Performance Indicators that consider the goal.
+    f) I don't want Process Performance Indicators about frequency, cost or percentage. 
+    g) Don't say 'Other Activities' but specify the name of an activity.
+    h) I don't want only Process Performance Indicators with comparison but I want also Process Performance Indicators referring to the subject activity of the event log.
+    i) In the list you must use the the entire name of the activity of the event log I give in input. As example if I give tou in input the activity 'Refuted + Test data' you must use 'Refuted + Test data' in the PPI
+3) In the response give me the list of PPIs, without adding more information, following this format: 
+    'subject activity name:
+    1) PPI 1
+    2) PPI 2
+    ... '
+
+"""

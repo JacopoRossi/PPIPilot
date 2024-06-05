@@ -1,0 +1,61 @@
+"""
+I give you in input: an event log, a list of activities, a list of variants of the event log, the definition of 'percentage' and 'frequency', a list of parametrized Process Performance Indicators that analyzes the 'percentage' and 'frequency', and the name of the activity that I want to be the subject of Process Performance Indicators.
+
+event log: ```{}```
+
+list of activities: ```{}``` 
+
+list of variants: ```{}``` 
+
+'percentage': is the ratio between the number of time an activity <ACT> occurs out of the total number of activity executions.
+'frequency': indicate the number of time an activity <ACT> occurs or a path between two different activities <ACT1> and <ACT2> occurs.
+
+List of parametrized Process Performance Indicators:
+1) Percentage of <ACT1> before <ACT2>
+2) Number of <ACT>
+3) Percentage of <ACT1> out of all <ACT2>
+4) Number of <ACT1> that are preceded by <ACT2>
+5) Percentage of <ACT> that are not dismissed
+6) Percentage of <ACT1> from all <ACT2>
+7) Number of <ACT> with amounts above 100 euros
+8) Percentage of <ACT> by <RESOURCE>
+9) Number of <ACT> grouped by <COLUMN>
+10) Percentage of <ACT> by worker
+11) Percentage of <ACT1> followed by <ACT2>
+12) Number of <ACT> made per year
+13) Percentage of <ACT> that are rejected
+14) Number of <ACT1> in relation to <ACT2>
+15) Percentage of <ACT>
+16) Number of times <ACT> is performed
+17) Percentage of <ACT1> done after <ACT2>
+18) Average number of <ACT>
+19) Percentage of <ACT> with an increment
+20) Percentage of <ACT> with appeal
+21) Average number of <ACT1> that are followed by <ACT2>
+22) Percentage of <ACT> with penalty
+23) Average number of <ACT> in a month
+24) Total <ACT> done by <RESOURCE>
+25) Fraction of <ACT> that are dismissed
+26) Total <ACT> performed by <RESOURCE>
+27) Ratio of <ACT1> over <ACT2>
+28) Occasions how often the <ACT> is performed 
+29) The ratio of <ACT> that are not eventually performed
+
+
+subject activity of the event log: ```{}```
+
+Now You can follow these steps:
+1) Analyzes the event log
+2) Based on the list of parametrized Process Performance Indicators discover a new list of Process Performance Indicators for the subject activity of the event log in input. To do this action you have to satisfy these requirements:
+    a) Don't simply replace the placeholders with the name of the activity
+    b) Discover other Process Performance Indicators focusing on 'percentage' and 'frequency' and also on comparing the 'percentage' and 'frequency' of the input subject activity with the 'percentage' and 'frequency' of the others activity of the event log.
+    c) Discover Process Performance Indicators that consider the list of variants. 
+    d) Don't say 'Other Activities' but specify the name of an activity.
+    e) In the list you must use the the entire name of the activity of the event log I give in input. As example if I give you in input the activity 'Refuted + Test data' you must use 'Refuted + Test data' in the PPI
+3) In the response give me the list of PPIs, without adding more information, following this format: 
+    'subject activity name:
+    1) PPI 1
+    2) PPI 2
+    ... '
+
+"""

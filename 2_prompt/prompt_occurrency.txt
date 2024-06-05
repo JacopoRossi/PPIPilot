@@ -1,0 +1,137 @@
+"""
+I give you in input a list of Process Performance Indicators, the list of activities of the event log and the list of attributes of the event log.
+
+List of Process Performance Indicators: ```{}``` 
+
+list of activities of the event log: ```{}``` 
+
+list of attributes of the event log: ```{}``` 
+
+Now you have to rewrite the Process Performance Indicators to be compatible with one of these 2 examples. In particular, I want the Process Performance Indicator to be written in JSON format following this structure:
+      [
+        "count": "activity == NAME OF ACTIVITY OF THE LOG",
+        "metric_condition": "> alfanumeric_metric_value" or "< alfanumeric_metric_value" or "== alfanumeric_metric_value" or "!= alfanumeric_metric_value"
+        "aggregation": "average" or "total" or "percentage" or "minimum" or "maximum"
+        "group_by": "a value from list of attributes of the event log  or a value related to year, month, day or week, if you don't find a value you can omit it"
+        "filter": "take a value from list of attributes of the event log, then compare it with an alfanumeric_metric_value"
+      ]
+
+
+You must follow this considerations:
+a) "count" field has to be a name from the list of activities of the event log
+b) "metric_condition" field is referred to a comparison that we have respect to the "begin" field and the "end" field
+c) "aggregation" field has to be a value between "average","total","percentage","minimum","maximum"
+d) "group_by" field has to be a value from the list of attributes of the event log
+e) "filter" field specify a filter condition where the first term of comparison must be always a value from the list of attributes
+f) "filter" field can not include expressions like: 'preceding_activity', 'following_activity', 'related_activity'
+g) Don't add comment to the translation
+h) Don't use 'AND', 'OR', 'and','or' condition
+
+Now I give you some example of how translate a Process Performance Indicator:
+
+    "PPI name": "Percentage of Engine Installation that lead to Electrical Systems Checking",
+    "PPI json": [
+        "count": "activity == Engine Installation",
+        "metric_condition": "> 0",
+        "aggregation": "percentage",
+        "filter": "activity == Electrical Systems Checking"
+    ]
+
+    "PPI name": "Number of Vehicle Testing in variants where Electrical Systems Checking occurs",
+    "PPI json": [
+          "count": "activity == 'Vehicle Testing'",
+          "aggregation": "total",
+          "filter": "activity == 'Electrical Systems Checking'"
+    ]
+  
+    "PPI name": "Percentage of Engine Installation in cases with an expense bigger than 150",
+    "PPI json": [
+        "count": "activity == Engine Installation",
+        "metric_condition": "> 0",
+        "aggregation": "percentage",
+        "filter": "case:expense > 150"
+    ]
+
+    "PPI name": "Total Vehicle Testing done by MECHANICAL ENGINEER",
+    "PPI json": [
+      "count": "activity == 'Vehicle Testing'",
+      "aggregation": "total",
+      "filter": "org:role == 'MECHANICAL ENGINEER'"
+    ] 
+
+    "PPI name": "Percentage of Electrical Systems Checking in cases without Custom Interior Fittings Installation",
+    "PPI json": [
+      "count": "activity == 'Electrical Systems Checking'",
+      "metric_condition": "> 0",
+      "aggregation": "percentage",
+      "filter": "activity != 'Custom Interior Fittings Installation'"
+    ]
+
+    "PPI name": "Average Vehicle Testing performed by BOARD CPU",
+    "PPI json": [
+      "count": "activity == 'Vehicle Testing'",
+      "aggregation": "average",
+      "filter": "org:resource == 'BOARD CPU'"
+    ]
+  
+    "PPI name": "Percentage of Electrical Systems Checking in cases leading to Tire Mounting",
+    "PPI json": [
+      "count": "activity == 'Electrical Systems Checking'",
+      "metric_condition": "> 0"
+      "aggregation": "percentage",
+      "filter": "activity == 'Tire Mounting'"
+    ]
+
+    "PPI name": "frequency of Vehicle Testing grouped by year",
+    "PPI json": [
+      "count": "activity == 'Vehicle Testing'",
+      "metric_condition": "> 0"
+      "aggregation": "percentage",
+      "group_by": "year",
+    ]
+
+    "PPI name": "Percentage of 'Tire Mounting' by 'AUTOMATIC SYSTEM'",
+    "PPI json": [
+        "count": "activity == Tire Mounting",
+        "metric_condition": "> 0",
+        "aggregation": "percentage",
+        "filter": "org:resource == AUTOMATIC SYSTEM"
+    ]
+
+    "PPI name": "Number of Vehicle Testing with expense above 100 euros",
+    "PPI json": [
+      "count": "activity == 'Vehicle Testing'", 
+      "aggregation": "total",
+      "filter": "case:expense > 100"
+    ]
+
+    "PPI name": "Number of Vehicle Testing grouped by org:role",
+    "PPI json": [
+      "count": "activity == 'Vehicle Testing'",
+      "aggregation": "total",
+      "group_by": "org:role",
+    ]
+
+    "PPI name": "Frequency of 'Software Reconfiguration' in cases where 'Electrical Systems Checking' occurs",   
+    "PPI json": [
+      "count": "activity == 'Software Reconfiguration'",
+      "metric_condition": "> 0"
+      "aggregation": "percentage",
+      "filter": "activity == 'Electrical Systems Checking'"
+    ]
+
+
+You have to translate all the PPIs in the list you have in input.
+In the result I want the name of the original PPI and its translation. Follow this structure:
+'
+{{
+    "PPIname": "[write the PPI name]",
+    "PPIjson": {{
+        "count": "[write the count field]",
+        "metric_condition": "[write the metric_condition field]",
+        "aggregation": "[write the aggregation field]",
+        "filter": "[write the filter field]",
+        "group_by": "[write the group_by field]",
+    }}
+}}'
+"""

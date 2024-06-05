@@ -1,0 +1,93 @@
+"""
+I give you in input a list of Process Performance Indicators, the list of activities of the event log and the list of attributes of the event log.
+
+List of Process Performance Indicators: ```{}``` 
+
+list of activities of the event log: ```{}``` 
+
+list of attributes of the event log: ```{}``` 
+
+Now you have to rewrite the Process Performance Indicators to be compatible with these examples. In particular, I want the Process Performance Indicator to be written in JSON format following this structure:
+      [
+        "begin": "activity == NAME OF ACTIVITY OF THE LOG",
+        "end": "activity == NAME OF ACTIVITY OF THE LOG",
+        "metric_condition": "> alfanumeric_metric_value" or "< alfanumeric_metric_value" or "== alfanumeric_metric_value" or "!= alfanumeric_metric_value"
+        "aggregation": "average" or "total" or "percentage" or "minimum" or "maximum"
+        "group_by": "a value from list of attributes of the event log  or a value related to year, month, day or week"
+        "filter": "take a value from list of attributes of the event log, then compare it with an alfanumeric_metric_value"
+      ]
+
+You must follow this considerations:
+a) "begin" field has to be a name from the list of activities of the event log
+b) "end" field has to be a name from the list of activities of the event log
+c) "metric_condition" field is referred to a comparison that we have respect to the "begin" field and the "end" field
+d) "aggregation" field has to be a value between "average","total","percentage","minimum","maximum"
+e) "group_by" field has to be a value from the list of attributes of the event log
+f) "filter" field specify a filter condition where the first term of comparison must be always a value from the list of attributes
+g) "filter" field can not include expressions like: 'preceding_activity', 'following_activity', 'related_activity'
+h) Don't add comment to the translation
+i) Don't use 'AND', 'OR', 'and','or' condition
+
+Now I give you some example of how translate a Process Performance Indicator:
+
+    "PPI name": "Average time from 'Engine Installation' to 'Electrical Systems Checking' with a consumption bigger than 100",
+    "PPI json": [
+      "begin": "activity == 'Engine Installation'",
+      "end": "activity == 'Electrical Systems Checking'",
+      "aggregation": "average",
+      "filter": "case:Consumption > 100"
+    ]
+
+    "PPI name": "Total time from 'Chassis Assembly Initiated' to 'Electrical Systems Checking' in cases where 'Custom Interior Fittings' occurs",
+    "PPI json": [
+      "begin": "activity == 'Chassis Assembly Initiated'",
+      "end": "activity == 'Electrical Systems Checking'",
+      "aggregation": "total",
+      "filter": "activity == 'Custom Interior Fittings'"
+    ]
+    
+    "PPI name": "Total time for 'Custom Interior Fittings' activity",
+    "PPI json": [
+      "begin": "activity == 'Custom Interior Fittings'",
+      "end": "",
+      "aggregation": "total"
+    ]
+
+    "PPI name": "Average time from 'Engine Installation' to 'Tire Mounting' grouped by case:resourceNumber",
+    "PPI json": [
+      "begin": "activity == 'Engine Installation'",
+      "end": "activity == 'Tire Mounting'",
+      "aggregation": "average",
+      "group_by": "case:resourceNumber",
+    ]
+
+    "PPI name": "Minimum time from 'Engine Installation' to 'Tire Mounting'",
+    "PPI json": [
+      "begin": "activity == 'Engine Installation'",
+      "end": "activity == 'Tire Mounting'",
+      "aggregation": "minimum",
+    ]
+
+    "PPI name": "Total time for Vehicle Testing in cases without Tire Mounting",
+    "PPI json": [
+      "begin": "activity == 'Vehicle Testing'",
+      "end": "",
+      "aggregation": "total",
+      "filter": "activity != 'Tire Mounting'"
+    ]
+
+
+You have to translate all the PPIs in the list you have in input.
+In the result I want the name of the original PPI and its translation. Follow this structure:
+'
+{{
+    "PPIname": "[write the PPI name]",
+    "PPIjson": {{
+        "begin": "[write the begin field]",
+        "end": "[write the end field]",
+        "aggregation": "[write the aggregation field]",
+        "filter": "[write the filter field]",
+        "group_by": "[write the group_by field]",
+    }}
+}}'
+"""

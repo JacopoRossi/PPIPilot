@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+fastDamerauLevenshtein/fastDamerauLevenshtein.c
+fastDamerauLevenshtein.egg-info/PKG-INFO
+fastDamerauLevenshtein.egg-info/SOURCES.txt
+fastDamerauLevenshtein.egg-info/dependency_links.txt
+fastDamerauLevenshtein.egg-info/top_level.txt
