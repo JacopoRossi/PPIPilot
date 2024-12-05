@@ -1,0 +1,9 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Number of 'Completed + Closed',Number of 'Completed + Closed' activities,5704,
+Percentage of 'Completed + Closed' out of all 'Completed + Resolved',Percentage of 'Completed + Closed' out of all 'Completed + Resolved',0.98,
+Number of 'Completed + Closed' that are preceded by 'Completed + Resolved',Number of 'Completed + Closed' activities for cases where activity 'Completed + Resolved' occurs,5704,
+Number of 'Completed + Closed' with amounts above 100 euros,Number of 'Completed + Closed' activities,5704,
+Number of 'Completed + Closed' made per year,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Number of 'Completed + In Call' activities preceding 'Completed + Closed' in the event log,Number of 'Completed + In Call' activities for cases where activity 'Completed + Closed' occurs,134,
+Percentage of 'Completed + In Call' activities out of all activities before 'Completed + Closed',Percentage of 'Completed + In Call' out of all 'Completed + Closed',0.02,

@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of \Request Payment\ out of all activities in the event log,Percentage of 'Request Payment' out of all cases,0.96,
+Frequency of \Request Payment\ following \Declaration FINAL_APPROVED by SUPERVISOR\,Frequency of activity 'Request Payment' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,10038,
+Percentage of \Request Payment\ with amounts above 100 euros,Percentage of 'Request Payment' out of all cases,1.0,
+Number of \Request Payment\ activities per month,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'month'}",,
+Percentage of \Request Payment\ activities by \SYSTEM\ resource,Percentage of 'Request Payment' out of all cases,1.0,
+Frequency of \Request Payment\ in relation to \Payment Handled\,Frequency of activity 'Request Payment' for cases where activity 'Payment Handled' occurs,10037,
+Percentage of \Request Payment\ in the most frequent process variant,Percentage of 'Request Payment' out of all cases,0.96,
+Average time from \Declaration SUBMITTED by EMPLOYEE\ to \Request Payment\,the average of the number of times `ACTIVITY` == 'Request Payment' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE',0.97,
+Percentage of \Request Payment\ followed by \Payment Handled\ within 24 hours,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+Frequency of \Request Payment\ in cases with \case:Amount\ above average,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': 'case:Amount > average'}",,
+Percentage of \Request Payment\ in cases approved by \Declaration APPROVED by ADMINISTRATION\ versus those without this approval,Percentage of 'Request Payment' out of all 'Declaration APPROVED by ADMINISTRATION',0.99,
+Number of \Request Payment\ activities grouped by \case:BudgetNumber\,Number of 'Request Payment' activities grouped by the last value of case:BudgetNumber,budget 86566:10040,"{""budget 86566"":10040}"
+Percentage of \Request Payment\ in cases that involve \Declaration APPROVED by BUDGET OWNER\,Percentage of 'Request Payment' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,
+Frequency of \Request Payment\ in relation to total number of cases in the event log,Frequency of activity 'Request Payment',10040,
+Percentage of \Request Payment\ in cases that were eventually paid over the total \Request Payment\ activities,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,

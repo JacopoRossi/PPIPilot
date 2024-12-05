@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Reviewer Invitation Reminder 2\ compared to \Reviewer Invitation Reminder 1\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'Reviewer Invitation Reminder 1',0.87,
+Percentage of manuscripts that received a \Reviewer Invitation Reminder 2\ after a \Reviewer Invitation Reminder 1\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'Reviewer Invitation Reminder 1',0.87,
+Percentage of \Reviewer Invitation Reminder 2\ that lead to a \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'SW-Reviewer Agreed',0.8,
+Frequency of \Reviewer Invitation Reminder 2\ in the most common variant paths,Percentage of 'Reviewer Invitation Reminder 2' out of all cases,0.44,
+Percentage of \Reviewer Invitation Reminder 2\ followed by \Assign a Different Editor\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'Assign a Different Editor',0.64,
+Percentage of \Reviewer Invitation Reminder 2\ in relation to total activities in the review process of scientific papers,Percentage of 'Reviewer Invitation Reminder 2' out of all cases,0.44,
+Frequency of \Reviewer Invitation Reminder 2\ in manuscripts that undergo major revision cycles,Percentage of 'Reviewer Invitation Reminder 2' out of all 'SW-EIC Major Revision',0.8,
+Percentage of \Reviewer Invitation Reminder 2\ followed by \SW-Reviewer Declined\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'SW-Reviewer Declined',0.9,
+Number of \Reviewer Invitation Reminder 2\ in manuscripts that were accepted after revision compared to those rejected or requiring further revisions,Number of 'Reviewer Invitation Reminder 2' activities for cases where activity 'SW-EIC Accept' occurs,0,
+Percentage of \Reviewer Invitation Reminder 2\ in relation to all reviewer-related reminders and notifications,Percentage of 'Reviewer Invitation Reminder 2' out of all 'Reviewer Invitation Reminder 1',0.87,
+Percentage of manuscripts with \Reviewer Invitation Reminder 2\ that proceed to \Awaiting Assignment to Batch\,Percentage of 'Reviewer Invitation Reminder 2' out of all 'Awaiting Assignment to Batch',0.62,

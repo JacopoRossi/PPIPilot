@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average duration of 'Accepted + Wait - User' before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',""8 days, 3:34:57.158730"","
+"Median duration of 'Accepted + Wait - User' across all cases,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - User'"""", 'end': '', 'aggregation': 'median'}"",,"
+"Average duration difference between 'Accepted + Wait - User' and 'Accepted + In Progress',The average of the duration between activity 'Accepted + Wait - User' and activity 'Accepted + In Progress',""13 days, 15:56:10.623377"","
+"Total duration of 'Accepted + Wait - User' in cases leading to 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Resolved',""32278 days, 3:31:05"","
+"Longest duration of 'Accepted + Wait - User' before any subsequent activity,the maximum of the duration between the first time instant when `ACTIVITY` == 'Accepted + Wait - User' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,""477 days, 9:44:30"","
+Shortest duration of 'Accepted + Wait - User' before transitioning to 'Completed + In Call',The minimum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',0:01:39,
+"Total duration of 'Accepted + Wait - User' in cases with 'High' impact,The sum of the duration between activity Accepted + Wait - User and the end of the case,""1531 days, 0:44:40"","
+"Comparison of average duration between 'Accepted + Wait - User' and 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait - User' and activity 'Queued + Awaiting Assignment',""9 days, 10:45:08.848524"","
+"Total cumulative duration of 'Accepted + Wait - User' in the event log,The sum of the duration between activity Accepted + Wait - User and the end of the case,""43386 days, 0:31:20"","
+"Average duration of 'Accepted + Wait - User' in cases involving 'Org line A2',The average of the duration between activity Accepted + Wait - User and the end of the case,""21 days, 16:05:33.031835"","
+Duration of 'Accepted + Wait - User' in the fastest case to resolution,The minimum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Resolved',0:00:01,
+"Duration of 'Accepted + Wait - User' in the slowest case to resolution,The maximum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Resolved',""470 days, 2:19:44"","
+"Average elapsed time from 'Accepted + Wait - User' to 'Accepted + Wait - Implementation',The average of the duration between activity 'Accepted + Wait - User' and activity 'Accepted + Wait - Implementation',""14 days, 8:55:40.297030"","
+"Maximum duration of 'Accepted + Wait - User' before reaching 'Accepted + Assigned',The maximum of the duration between activity 'Accepted + Wait - User' and activity 'Accepted + Assigned',""349 days, 21:59:06"","

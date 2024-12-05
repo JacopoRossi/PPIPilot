@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+0;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION';0.08;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all rejection activities;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases where 'Declaration REJECTED by ADMINISTRATION' does not happen;0.08;;A
+Number of 'Declaration REJECTED by ADMINISTRATION' that are followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;952;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' from all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.06;;A
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in cases with amounts above 100 euros;Number of 'Declaration REJECTED by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount;327;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' by 'STAFF MEMBER' compared to 'SYSTEM';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases;0.46;;B
+Number of 'Declaration REJECTED by ADMINISTRATION' grouped by 'case:BudgetNumber';Number of 'Declaration REJECTED by ADMINISTRATION' activities grouped by the last value of case:BudgetNumber;budget 86566:952;"{""budget 86566"":952}";A
+Percentage of 'Declaration REJECTED by ADMINISTRATION' by month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}";;;C
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in relation to total number of activities per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by ADMINISTRATION' that lead to 'Request Payment';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Request Payment';0.06;;B
+Number of 'Declaration REJECTED by ADMINISTRATION' in variants where 'Declaration APPROVED by PRE_APPROVER' occurs;Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration APPROVED by PRE_APPROVER' occurs;0;;A
+Percentage of 'Declaration REJECTED by ADMINISTRATION' in cases that are eventually paid;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Payment Handled';0.06;;A
+Frequency of 'Declaration REJECTED by ADMINISTRATION' followed by 'Declaration REJECTED by EMPLOYEE';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration REJECTED by EMPLOYEE';0.69;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' in the first quarter of the year compared to the rest of the year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'quarter'}";;;C
+Number of 'Declaration REJECTED by ADMINISTRATION' in cases that exceed the average processing time;Number of 'Declaration REJECTED by ADMINISTRATION' activities;952;;B

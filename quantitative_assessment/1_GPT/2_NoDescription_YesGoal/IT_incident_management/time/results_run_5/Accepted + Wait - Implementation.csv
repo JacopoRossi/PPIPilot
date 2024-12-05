@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait - Implementation' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + In Call',""2 days, 3:44:12.571429"","
+"Average resolution time of 'Accepted + Wait - Implementation' for cases impacting 'High' severity products,The average of the duration between activity Accepted + Wait - Implementation and the end of the case,""13 days, 22:34:41.428571"","
+"Total time spent in 'Accepted + Wait - Implementation' across all cases,The sum of the duration between activity Accepted + Wait - Implementation and the end of the case,""7158 days, 16:21:41"","
+"Average time it takes 'Accepted + Wait - Implementation' to be done after 'Accepted + In Progress',The average of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - Implementation',""11 days, 23:31:57.208738"","
+"Total time from 'Accepted + Wait - Implementation' to 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Resolved',""5640 days, 20:38:52"","
+"Difference in average time between 'Accepted + Wait - Implementation' and 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Accepted + Wait - User',""8 days, 11:52:23.026144"","
+"Average time for 'Accepted + Wait - Implementation' in cases with 'Medium' impact versus 'High' impact,The average of the duration between activity Accepted + Wait - Implementation and the end of the case,""24 days, 8:41:33.964072"","
+"Total resolution time of 'Accepted + Wait - Implementation' in the top 5 most frequent process variants,The sum of the duration between activity Accepted + Wait - Implementation and the end of the case,""7158 days, 16:21:41"","
+Minimum time between 'Accepted + Wait - Implementation' and the next activity in the process,The minimum of the duration between activity Accepted + Wait - Implementation and the end of the case,0:00:00,
+Average time from 'Accepted + Wait - Implementation' to 'Completed + Closed' in cases originating from 'France',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Closed',,

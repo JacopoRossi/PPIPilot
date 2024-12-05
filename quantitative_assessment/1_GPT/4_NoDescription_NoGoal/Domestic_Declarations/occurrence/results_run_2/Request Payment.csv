@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of \Request Payment\ activities followed by \Payment Handled\,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+Number of \Request Payment\ activities with amounts above 100 euros,Number of 'Request Payment' activities > 100 where ma is the last value of case:Amount,2303,
+Frequency of \Declaration FINAL_APPROVED by SUPERVISOR\ before \Request Payment\,Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Number of \Request Payment\ activities made per year,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Request Payment\ out of all activities in the event log,Percentage of 'Request Payment' out of all cases,0.96,
+Frequency of \Request Payment\ in the most common variant,Percentage of 'Request Payment' out of all cases,0.96,
+Percentage of \Request Payment\ activities that are followed by \Payment Handled\ within 24 hours,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+Ratio of \Request Payment\ over \Declaration SUBMITTED by EMPLOYEE\,Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE',0.97,
+Number of \Request Payment\ activities grouped by \case:BudgetNumber\,Number of 'Request Payment' activities grouped by the last value of case:BudgetNumber,budget 86566:10040,"{""budget 86566"":10040}"
+Percentage of \Request Payment\ activities in cases with amounts above the median case amount,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > median(case:Amount)'}",,
+Frequency of \Request Payment\ in cases that exceed the average performance time,Percentage of 'Request Payment' out of all cases,0.96,
+Number of \Request Payment\ activities that occur after \Declaration APPROVED by ADMINISTRATION\,Number of 'Request Payment' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs,7914,
+Percentage of \Request Payment\ activities in the top 5 most frequent variants,Percentage of 'Request Payment' out of all cases,0.96,

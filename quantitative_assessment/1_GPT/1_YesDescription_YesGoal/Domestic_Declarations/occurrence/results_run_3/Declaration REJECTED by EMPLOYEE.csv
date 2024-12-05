@@ -1,0 +1,20 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.12;;A
+Number of 'Declaration REJECTED by EMPLOYEE' that are preceded by 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration REJECTED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;1009;;B
+Frequency of 'Declaration REJECTED by EMPLOYEE' followed by 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.12;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' from all 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;A
+Number of 'Declaration REJECTED by EMPLOYEE' with amounts above 100 euros;Number of 'Declaration REJECTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;433;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases;;;D
+Number of 'Declaration REJECTED by EMPLOYEE' grouped by 'case:BudgetNumber';Number of 'Declaration REJECTED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber;budget 86566:1365;"{""budget 86566"":1365}";A
+Percentage of 'Declaration REJECTED by EMPLOYEE' by worker;Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases;0.12;;B
+Number of 'Declaration REJECTED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by EMPLOYEE' that are rejected (self-referential; considering the nature of the activity);Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration REJECTED by EMPLOYEE';1.0;B
+Number of 'Declaration REJECTED by EMPLOYEE' in relation to 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Declaration REJECTED by EMPLOYEE' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;1047;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' with an increment (considering the case amount changes);Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases;0.12;;B
+Average number of 'Declaration REJECTED by EMPLOYEE' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Declaration REJECTED by EMPLOYEE' done by 'STAFF MEMBER';Number of 'Declaration REJECTED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Fraction of 'Declaration REJECTED by EMPLOYEE' that are dismissed (considering if there's a follow-up activity that negates the rejection);Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by EMPLOYEE' does not happen;0.12;;B
+Ratio of 'Declaration REJECTED by EMPLOYEE' over 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.12;;B
+Occasions how often the 'Declaration REJECTED by EMPLOYEE' is performed after 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration REJECTED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;86;;B
+The ratio of 'Declaration REJECTED by EMPLOYEE' that are not eventually performed (considering if the declaration process stops after this rejection);Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by EMPLOYEE' does not happen;0.12;;B

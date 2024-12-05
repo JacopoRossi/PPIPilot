@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Awaiting Assignment to Batch\ following \First Look-Your updates are overdue\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look-Your updates are overdue' occurs,10.0,
+Percentage of manuscripts that reach \Awaiting Assignment to Batch\ stage out of all manuscripts,Percentage of 'Awaiting Assignment to Batch' out of all cases where '' does not happen,0.28,
+Number of times \Awaiting Assignment to Batch\ is the final activity before \Manuscript Export Succeeded\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'Manuscript Export Succeeded' occurs,26.0,
+Frequency of \Awaiting Assignment to Batch\ preceded by \First Look Manuscript Submission Confirmation\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look Manuscript Submission Confirmation' occurs,24.0,
+Percentage of \Awaiting Assignment to Batch\ occurrences out of all activities in the review process,Percentage of 'Awaiting Assignment to Batch' out of all cases where '' does not happen,0.28,
+Ratio of \Awaiting Assignment to Batch\ over \SW-AE Assign Reviewers\ in the manuscript review process,Percentage of 'Awaiting Assignment to Batch' out of all 'SW-AE Assign Reviewers',0.41,
+Number of manuscripts that proceed to \Awaiting Assignment to Batch\ within 1 month of \First Look-Please submit updates\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look-Please submit updates' occurs,23.0,
+Percentage of manuscripts that bypass \Awaiting Assignment to Batch\ after \First Look-Your updates are due in one week\,the average of the function base > 0 where base is the number of times `ACTIVITY` != 'Awaiting Assignment to Batch' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'First Look-Your updates are due in one week',1.0,
+Frequency of \Awaiting Assignment to Batch\ in relation to total number of manuscripts submitted,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity '' does not occur,26.0,
+Percentage of \Awaiting Assignment to Batch\ followed by \Manuscript Export Succeeded\ in the review process,Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,

@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Minimum time from 'Accepted + Assigned' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',0:00:38,
+"Average time it takes 'Accepted + Assigned' after the execution of 'Queued + Awaiting Assignment',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + Assigned',""6 days, 11:01:30.011118"","
+"Total time it takes 'Accepted + Assigned' after the execution of 'Accepted + In Progress',The sum of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Assigned',""11905 days, 22:55:39"","
+Minimum time it takes 'Accepted + Assigned' after the execution of 'Accepted + Wait - User',The minimum of the duration between activity 'Accepted + Wait - User' and activity 'Accepted + Assigned',0:00:55,
+"'Accepted + Assigned' Cycle Time,The sum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Assigned',""6350 days, 15:22:26"","
+"Average waiting time to the 'Accepted + Assigned',The average of the duration between the start of the case and activity 'Accepted + Assigned',""6 days, 13:16:15.961728"","
+"Total waiting time to the 'Accepted + Assigned',The sum of the duration between the start of the case and activity 'Accepted + Assigned',""11985 days, 8:50:34"","
+Minimum waiting time to the 'Accepted + Assigned',The minimum of the duration between the start of the case and activity 'Accepted + Assigned',0:00:00,
+"Average time between 'Accepted + Assigned' and 'Accepted + Wait - Implementation',The average of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - Implementation',""16 days, 3:29:10.732877"","
+"Total time between 'Accepted + Assigned' and 'Accepted + Wait - Vendor',The sum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - Vendor',""482 days, 23:56:18"","
+Minimum time between 'Accepted + Assigned' and 'Accepted + Wait - Customer',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - Customer',0:02:36,
+"Time until 'Accepted + Assigned',The sum of the duration between the start of the case and activity 'Accepted + Assigned',""11985 days, 8:50:34"","
+"Time of 'Accepted + Assigned',The sum of the duration between activity Accepted + Assigned and the end of the case,""34941 days, 22:01:12"","
+Average time for 'Accepted + Assigned' before reaching 'Completed + In Call',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+"Total resolution time of 'Accepted + Assigned' before 'Completed + Closed',The sum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',""34764 days, 10:04:31"","
+Minimum resolution time of 'Accepted + Assigned' before 'Completed + Resolved',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',0:00:33,

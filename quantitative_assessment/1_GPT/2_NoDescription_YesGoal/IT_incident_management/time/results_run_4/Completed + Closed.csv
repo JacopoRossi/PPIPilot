@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average duration from 'Accepted + In Progress' to 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""16 days, 1:40:38.796698"","
+"Median duration from 'Completed + In Call' to 'Completed + Closed',""ERROR: computing metric {'begin': """"activity == 'Completed + In Call'"""", 'end': """"activity == 'Completed + Closed'"""", 'aggregation': 'average', 'metric_condition': '== median'}"",,"
+"Average waiting time before 'Completed + Closed' is performed after 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Closed',""17 days, 20:03:53.763224"","
+"Total duration for cases involving 'Completed + Closed' after 'Queued + Awaiting Assignment',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Closed',""76520 days, 13:04:31"","
+"Total duration from 'Accepted + Assigned' to 'Completed + Closed',The sum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',""34764 days, 10:04:31"","
+Minimum duration from 'Accepted + Wait - Implementation' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Closed',3:55:45,
+"Maximum duration from 'Accepted + Wait - Vendor' to 'Completed + Closed',The maximum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Closed',""364 days, 9:19:48"","
+Average duration for 'Completed + Closed' in cases with high impact,The average of the duration between activity Completed + Closed and the end of the case,,
+Total duration for 'Completed + Closed' in cases involving 'PROD582',The sum of the duration between activity Completed + Closed and the end of the case,0:00:00,
+"Duration variance from 'Accepted + In Progress' to 'Completed + Closed' across different organizations,""ERROR: computing metric {'begin': """"activity == 'Accepted + In Progress'"""", 'end': """"activity == 'Completed + Closed'"""", 'aggregation': 'average', 'metric_condition': '!= variance', 'group_by': 'organization involved'}"",,"
+Earliest completion time for 'Completed + Closed' following 'Completed + Resolved',The minimum of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',0:00:01,
+"Latest completion time for 'Completed + Closed' following 'Accepted + Wait',The maximum of the duration between activity 'Accepted + Wait' and activity 'Completed + Closed',""439 days, 9:36:58"","
+Average duration for 'Completed + Closed' in cases with medium impact compared to cases with high impact,The average of the duration between activity Completed + Closed and the end of the case,,
+Total duration for 'Completed + Closed' in cases initiated by 'V30' group resources,The sum of the duration between activity Completed + Closed and the end of the case,,
+"Duration comparison between 'Completed + In Call' and 'Completed + Closed' for cases with 'Medium' impact,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""11 days, 21:03:56.933333"","
+"Average duration from 'Accepted + In Progress' to 'Completed + Closed' for cases ending in 'Completed + Closed' without entering 'Accepted + Wait - Customer',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""16 days, 1:40:38.796698"","

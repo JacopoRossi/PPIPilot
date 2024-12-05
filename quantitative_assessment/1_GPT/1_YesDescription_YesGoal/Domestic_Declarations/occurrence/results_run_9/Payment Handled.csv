@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Request Payment' followed by 'Payment Handled';Percentage of 'Payment Handled' out of all 'Request Payment';1.0;;B
+Number of 'Payment Handled';Number of 'Payment Handled' activities;10044;;A
+Percentage of 'Payment Handled' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Payment Handled' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;A
+Number of 'Payment Handled' that are preceded by 'Request Payment';Number of 'Payment Handled' activities for cases where activity 'Request Payment' occurs;10037;;B
+Percentage of 'Payment Handled' with amounts above 100 euros;Percentage of 'Payment Handled' out of all cases;1.0;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Payment Handled';Percentage of 'Payment Handled' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;B
+Number of 'Payment Handled' made per year;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Payment Handled' by 'SYSTEM';Percentage of 'Payment Handled' out of all cases;1.0;;B
+Number of 'Payment Handled' grouped by 'case:BudgetNumber';Number of 'Payment Handled' activities grouped by the last value of case:BudgetNumber;budget 86566:10044;"{""budget 86566"":10044}";A
+Percentage of 'Payment Handled' by worker;Percentage of 'Payment Handled' out of all cases;;;D
+Percentage of 'Declaration APPROVED by ADMINISTRATION' followed by 'Payment Handled';Percentage of 'Payment Handled' out of all 'Declaration APPROVED by ADMINISTRATION';0.99;;B
+Average number of 'Payment Handled' in a month;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Payment Handled' done by 'SYSTEM';Number of 'Payment Handled' activities == 'SYSTEM' where ma is the last value of org:resource;10043;;B
+Ratio of 'Payment Handled' over 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Payment Handled' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;A
+Occasions how often the 'Payment Handled' is performed after 'Request Payment';Number of 'Payment Handled' activities for cases where activity 'Request Payment' occurs;10037;;A
+Percentage of 'Payment Handled' with an increment in 'case:Amount' compared to 'Request Payment';"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""case:Amount > [value at 'Request Payment']""}";;;C
+Number of 'Payment Handled' for cases with 'Declaration REJECTED by PRE_APPROVER' in their path;Number of 'Payment Handled' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;72;;B
+Percentage of 'Payment Handled' in cases where 'Declaration APPROVED by BUDGET OWNER' occurs;Percentage of 'Payment Handled' out of all 'Declaration APPROVED by BUDGET OWNER';1.0;;A
+Frequency of 'Payment Handled' in relation to total events in the event log;Percentage of 'Payment Handled' out of all cases;0.96;;B
+Percentage of 'Payment Handled' in cases exceeding two months from 'Declaration SUBMITTED by EMPLOYEE' to 'Payment Handled';Percentage of 'Payment Handled' out of all cases;0.96;;B

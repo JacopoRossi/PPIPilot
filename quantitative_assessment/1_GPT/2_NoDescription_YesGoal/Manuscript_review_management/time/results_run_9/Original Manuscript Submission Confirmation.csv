@@ -1,0 +1,14 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'Original Manuscript Submission Confirmation' to 'Manuscript Export Succeeded',The average of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Manuscript Export Succeeded',74 days 15:52:58.430233,
+Total time from 'Original Manuscript Submission Confirmation' to 'SW-Checklist Completed',The sum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'SW-Checklist Completed',364 days 14:34:23,
+Minimum time from 'Original Manuscript Submission Confirmation' to 'Plagiarism Originality Report Completed',The minimum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Plagiarism Originality Report Completed',0 days 00:21:36,
+Average time between 'Original Manuscript Submission Confirmation' and 'SW-Awaiting AE Assignment',The average of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'SW-Awaiting AE Assignment',3 days 04:28:11.859649,
+Total resolution time of 'Original Manuscript Submission Confirmation',The sum of the duration between activity Original Manuscript Submission Confirmation and the end of the case,9308 days 21:20:31,
+Average time it takes 'SW-Reviewer Agreed' after the execution of 'Original Manuscript Submission Confirmation',The average of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'SW-Reviewer Agreed',28 days 20:08:51.977273,
+Minimum time until 'SW-Reviewer Agreed' is performed after 'Original Manuscript Submission Confirmation',The minimum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'SW-Reviewer Agreed',5 days 04:45:39,
+Time of 'Original Manuscript Submission Confirmation',The sum of the duration between activity Original Manuscript Submission Confirmation and the end of the case,9308 days 21:20:31,
+'Original Manuscript Submission Confirmation' Cycle Time,The sum of the duration between activity Original Manuscript Submission Confirmation and the end of the case,9308 days 21:20:31,
+"Average time to 'SW-Reviewer Agreed' grouped by 'case:concept:name' after 'Original Manuscript Submission Confirmation',""ERROR: computing metric {'begin': """"activity == 'Original Manuscript Submission Confirmation'"""", 'end': """"activity == 'SW-Reviewer Agreed'"""", 'aggregation': 'average', 'group_by': 'case:concept:name'}"",,"
+Total time for 'Original Manuscript Submission Confirmation',The sum of the duration between activity Original Manuscript Submission Confirmation and the end of the case,9308 days 21:20:31,
+Minimum resolution time of 'Original Manuscript Submission Confirmation',The minimum of the duration between activity Original Manuscript Submission Confirmation and the end of the case,0 days 03:27:58,

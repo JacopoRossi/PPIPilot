@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Declaration REJECTED by PRE_APPROVER\ in relation to total declarations submitted,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Percentage of \Declaration REJECTED by PRE_APPROVER\ followed by \Declaration SUBMITTED by EMPLOYEE\,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Number of \Declaration REJECTED by PRE_APPROVER\ that lead to a \Declaration APPROVED by ADMINISTRATION\,Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs,2,
+Percentage of \Declaration REJECTED by PRE_APPROVER\ out of all rejections,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}",,
+Frequency of \Declaration REJECTED by PRE_APPROVER\ in the most common variant paths,Frequency of activity 'Declaration REJECTED by PRE_APPROVER',81,
+Number of \Declaration REJECTED by PRE_APPROVER\ with amounts above 100 euros,Number of 'Declaration REJECTED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount,22,
+Percentage of \Declaration REJECTED by PRE_APPROVER\ by \STAFF MEMBER\,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases,,
+Frequency of \Declaration REJECTED by PRE_APPROVER\ grouped by \case:BudgetNumber\,Number of 'Declaration REJECTED by PRE_APPROVER' activities grouped by the last value of case:BudgetNumber,budget 86566:86,"{""budget 86566"":86}"
+Percentage of \Declaration REJECTED by PRE_APPROVER\ by month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}",,
+Ratio of \Declaration REJECTED by PRE_APPROVER\ over \Declaration APPROVED by PRE_APPROVER\,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER',0.1,
+Number of times \Declaration REJECTED by PRE_APPROVER\ is performed per year,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Declaration REJECTED by PRE_APPROVER\ that are followed by \Declaration SUBMITTED by EMPLOYEE\,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Average number of \Declaration REJECTED by PRE_APPROVER\ in a month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Total \Declaration REJECTED by PRE_APPROVER\ done by \SYSTEM\,Number of 'Declaration REJECTED by PRE_APPROVER' activities == 'SYSTEM' where ma is the last value of org:resource,77,
+Fraction of \Declaration REJECTED by PRE_APPROVER\ that lead to a new submission,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,

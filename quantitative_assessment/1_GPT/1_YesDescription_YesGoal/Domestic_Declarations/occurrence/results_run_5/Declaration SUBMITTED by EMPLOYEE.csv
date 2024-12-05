@@ -1,0 +1,24 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that lead to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';1.0;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;81;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' with amounts above 100 euros;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all submissions;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;0.99;;A
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' in relation to 'Declaration FINAL_APPROVED by SUPERVISOR';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;10070;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are not dismissed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.99;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' that lead to a payment being requested ('Request Payment');Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Request Payment' occurs;11157;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Payment Handled';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:resource';Frequency of activity '{}' grouped by the last value of org:resource;STAFF MEMBER:323;"{""STAFF MEMBER"":323,""SYSTEM"":10042}";A
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:resource';Frequency of activity '{}' grouped by the last value of org:resource;SYSTEM:10042;"{""STAFF MEMBER"":323,""SYSTEM"":10042}";A
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by worker;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;STAFF MEMBER:0.71;"{""STAFF MEMBER"":0.7067833698,""SYSTEM"":0.9999004282}";B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by worker;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;SYSTEM:1.0;"{""STAFF MEMBER"":0.7067833698,""SYSTEM"":0.9999004282}";B
+Average number of 'Declaration SUBMITTED by EMPLOYEE' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Declaration SUBMITTED by EMPLOYEE' done by 'STAFF MEMBER';Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Ratio of 'Declaration SUBMITTED by EMPLOYEE' over 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that lead to 'Declaration APPROVED by ADMINISTRATION' without being rejected;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';1.0;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' leading to 'Declaration REJECTED by PRE_APPROVER' compared to those leading to 'Declaration APPROVED by ADMINISTRATION';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;81;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that result in a 'Payment Handled' without prior rejection;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' that are followed by 'Declaration APPROVED by BUDGET OWNER';Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;3192;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are eventually paid ('Payment Handled') without rejections;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;A
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' leading directly to 'Declaration FINAL_APPROVED by SUPERVISOR' without intermediate steps;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;10070;;B

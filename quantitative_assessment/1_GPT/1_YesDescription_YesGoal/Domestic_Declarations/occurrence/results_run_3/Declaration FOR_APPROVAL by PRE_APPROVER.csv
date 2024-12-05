@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' leading to 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to total declarations submitted;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that result in 'Payment Handled';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in the most common process variant;Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER' for cases where activity 'most common process variant' occurs;;;A
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Request Payment';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Request Payment';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' with amounts above 100 euros;Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;1.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' by 'STAFF MEMBER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;;;D
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that exceed the average processing time;Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER';1.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases with budget number 'budget 86566';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by any rejection activity;Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER' for cases where activity 'any rejection activity' occurs;;;D
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that were eventually paid;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;A
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that precede 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;0.0;;B

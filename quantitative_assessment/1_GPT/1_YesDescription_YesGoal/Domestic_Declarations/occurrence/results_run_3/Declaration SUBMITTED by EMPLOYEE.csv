@@ -1,0 +1,31 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' with amounts above 100 euros;Number of 'Declaration SUBMITTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;2777;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;A
+Number of 'Declaration SUBMITTED by EMPLOYEE' that are preceded by 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;163;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are not dismissed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by MISSING' does not happen;0.99;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' from all 'Request Payment';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment';1.0;;A
+Number of 'Declaration SUBMITTED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by EMPLOYEE;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;0.68;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:role;ADMINISTRATION:5;"{""ADMINISTRATION"":5,""EMPLOYEE"":328,""MISSING"":32,""SUPERVISOR"":5,""UNDEFINED"":11161}";A
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:role;EMPLOYEE:328;"{""ADMINISTRATION"":5,""EMPLOYEE"":328,""MISSING"":32,""SUPERVISOR"":5,""UNDEFINED"":11161}";A
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:role;MISSING:32;"{""ADMINISTRATION"":5,""EMPLOYEE"":328,""MISSING"":32,""SUPERVISOR"":5,""UNDEFINED"":11161}";A
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:role;SUPERVISOR:5;"{""ADMINISTRATION"":5,""EMPLOYEE"":328,""MISSING"":32,""SUPERVISOR"":5,""UNDEFINED"":11161}";A
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:role;UNDEFINED:11161;"{""ADMINISTRATION"":5,""EMPLOYEE"":328,""MISSING"":32,""SUPERVISOR"":5,""UNDEFINED"":11161}";A
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by worker;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;;;D
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Request Payment';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment';1.0;;B
+Average number of 'Declaration SUBMITTED by EMPLOYEE' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are rejected;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' in relation to 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;163;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;0.99;;A
+Number of times 'Declaration SUBMITTED by EMPLOYEE' is performed;Number of 'Declaration SUBMITTED by EMPLOYEE' activities;11531;;A
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' done after 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Total 'Declaration SUBMITTED by EMPLOYEE' done by STAFF MEMBER;Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Fraction of 'Declaration SUBMITTED by EMPLOYEE' that are dismissed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by MISSING';1.0;;B
+Total 'Declaration SUBMITTED by EMPLOYEE' performed by EMPLOYEE;Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'EMPLOYEE' where ma is the last value of org:role;328;;B
+Ratio of 'Declaration SUBMITTED by EMPLOYEE' over 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Occasions how often the 'Declaration SUBMITTED by EMPLOYEE' is performed;Number of 'Declaration SUBMITTED by EMPLOYEE' activities;11531;;A
+The ratio of 'Declaration SUBMITTED by EMPLOYEE' that are not eventually performed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration FINAL_APPROVED by SUPERVISOR' does not happen;0.99;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' leading to a 'Payment Handled' without 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' leading to 'Declaration FINAL_APPROVED by SUPERVISOR' without intermediate rejections;Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;11191;;B

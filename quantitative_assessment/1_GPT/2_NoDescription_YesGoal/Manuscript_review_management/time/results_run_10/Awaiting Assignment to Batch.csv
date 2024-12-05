@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Minimum time from 'Revised Manuscript Submission Confirmation' to 'Awaiting Assignment to Batch',The minimum of the duration between activity 'Revised Manuscript Submission Confirmation' and activity 'Awaiting Assignment to Batch',59 days 01:26:35,
+Average time for 'Awaiting Assignment to Batch' to be completed after 'First Look-Your updates are overdue',The average of the duration between activity 'First Look-Your updates are overdue' and activity 'Awaiting Assignment to Batch',91 days 13:13:23.888889,
+Total resolution time of 'Awaiting Assignment to Batch',The sum of the duration between activity Awaiting Assignment to Batch and the end of the case,131 days 11:45:06,
+Average waiting time to 'Awaiting Assignment to Batch' after 'SW-EIC Accept',The average of the duration between activity 'SW-EIC Accept' and activity 'Awaiting Assignment to Batch',60 days 11:22:39.666667,
+Minimum time it takes 'Awaiting Assignment to Batch' to be done after 'SW-EIC Major Revision',The minimum of the duration between activity 'SW-EIC Major Revision' and activity 'Awaiting Assignment to Batch',79 days 00:48:11,
+Time of 'Awaiting Assignment to Batch',The sum of the duration between activity Awaiting Assignment to Batch and the end of the case,131 days 11:45:06,
+'Awaiting Assignment to Batch' Cycle Time,The sum of the duration between activity 'Awaiting Assignment to Batch' and activity 'Awaiting Assignment to Batch',0 days 00:00:00,
+Elapsed time between 'SW-Reviewer Agreed' and 'Awaiting Assignment to Batch',The sum of the duration between activity 'SW-Reviewer Agreed' and activity 'Awaiting Assignment to Batch',5374 days 21:26:05,
+Average time it takes 'Awaiting Assignment to Batch' after the execution of 'SW-AE Assign Reviewers',The average of the duration between activity 'SW-AE Assign Reviewers' and activity 'Awaiting Assignment to Batch',312 days 14:58:51.666667,
+Total time it takes the 'Awaiting Assignment to Batch' to be done after 'Reviewer Invitation Reminder 2',The sum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'Awaiting Assignment to Batch',4329 days 04:20:10,
+Minimum resolution time of 'Awaiting Assignment to Batch' considering all manuscript processing stages,The minimum of the duration between activity Awaiting Assignment to Batch and the end of the case,0 days 09:51:40,
+"Average time for 'Awaiting Assignment to Batch' grouped by 'case:concept:name',""ERROR: computing metric {'begin': """"activity == 'Awaiting Assignment to Batch'"""", 'end': '', 'aggregation': 'average', 'group_by': 'case:concept:name'}"",,"
+Total time for 'Awaiting Assignment to Batch' considering the impact of 'SW-Reviewer Agreed' on manuscript processing speed,The sum of the duration between activity 'SW-Reviewer Agreed' and activity 'Awaiting Assignment to Batch',5374 days 21:26:05,

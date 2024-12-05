@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time between 'Manuscript Export Succeeded' and 'Plagiarism Originality Report Completed',The average of the duration between activity 'Manuscript Export Succeeded' and activity 'Plagiarism Originality Report Completed',1 days 12:03:25.602410,
+Total time for 'Manuscript Export Succeeded' in the process of manuscript submission and review,The sum of the duration between activity Manuscript Export Succeeded and the end of the case,9239 days 10:10:57,
+Minimum time to 'Manuscript Export Succeeded' after 'Original Manuscript Submission Confirmation',The minimum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Manuscript Export Succeeded',0 days 00:00:05,
+Average time it takes 'Manuscript Export Succeeded' to be done after 'SW-Awaiting Checklist Completion',The average of the duration between activity 'SW-Awaiting Checklist Completion' and activity 'Manuscript Export Succeeded',75 days 11:51:46.623529,
+Total resolution time of 'Manuscript Export Succeeded' in the manuscript processing workflow,The sum of the duration between activity Manuscript Export Succeeded and the end of the case,9239 days 10:10:57,
+Average waiting time to 'Manuscript Export Succeeded' after 'SW-Awaiting Checklist Completion',The average of the duration between activity 'SW-Awaiting Checklist Completion' and activity 'Manuscript Export Succeeded',75 days 11:51:46.623529,
+Minimum resolution time of 'Manuscript Export Succeeded' in the context of manuscript review process,The minimum of the duration between activity Manuscript Export Succeeded and the end of the case,0 days 03:14:28,
+Time from 'Manuscript Export Succeeded' to 'SW-Reviewer Agreed' to understand the impact on the review process,The sum of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Reviewer Agreed',1258 days 03:43:21,
+"Average time for 'Manuscript Export Succeeded' across different manuscript cases,""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': '', 'aggregation': 'average', 'group_by': 'case:concept:name'}"",,"
+Total time between 'Manuscript Export Succeeded' and the next activity in the manuscript review process,The sum of the duration between activity Manuscript Export Succeeded and the end of the case,9239 days 10:10:57,
+Minimum time between 'Manuscript Export Succeeded' and 'Plagiarism Originality Report Completed',The minimum of the duration between activity 'Manuscript Export Succeeded' and activity 'Plagiarism Originality Report Completed',0 days 00:09:02,
+Time of 'Manuscript Export Succeeded' cycle in the context of the entire manuscript submission and review process,The sum of the duration between activity Manuscript Export Succeeded and the end of the case,9239 days 10:10:57,
+"Average time to 'Manuscript Export Succeeded' grouped by 'case:concept:name' to analyze case-specific durations,""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': '', 'aggregation': 'average', 'group_by': 'case:concept:name'}"",,"

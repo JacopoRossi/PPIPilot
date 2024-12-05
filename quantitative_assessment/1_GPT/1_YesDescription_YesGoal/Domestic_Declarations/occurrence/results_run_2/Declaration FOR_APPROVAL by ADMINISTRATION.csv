@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of \Declaration FOR_APPROVAL by ADMINISTRATION\ leading to \Declaration APPROVED by ADMINISTRATION\;Frequency of activity 'Declaration FOR_APPROVAL by ADMINISTRATION' for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;1;;B
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ followed by \Declaration REJECTED by PRE_APPROVER\;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of \Declaration FOR_APPROVAL by ADMINISTRATION\ with amounts above 100 euros;Number of 'Declaration FOR_APPROVAL by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount;1;;B
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ out of all \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Frequency of \Declaration FOR_APPROVAL by ADMINISTRATION\ per year;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ that lead to a payment being requested and paid;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all 'Request Payment';0.0;;B
+Number of \Declaration FOR_APPROVAL by ADMINISTRATION\ that are followed by \Request Payment\;Number of 'Declaration FOR_APPROVAL by ADMINISTRATION' activities for cases where activity 'Request Payment' occurs;1;;B
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ by \STAFF MEMBER\;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all cases;;;D
+Number of \Declaration FOR_APPROVAL by ADMINISTRATION\ grouped by \case:BudgetNumber\;Number of 'Declaration FOR_APPROVAL by ADMINISTRATION' activities grouped by the last value of case:BudgetNumber;budget 86566:1;"{""budget 86566"":1}";A
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ followed by \Declaration FINAL_APPROVED by SUPERVISOR\;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Frequency of \Declaration FOR_APPROVAL by ADMINISTRATION\ in relation to \Declaration APPROVED by ADMINISTRATION\;Frequency of activity 'Declaration FOR_APPROVAL by ADMINISTRATION' for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;1;;B
+Percentage of \Declaration FOR_APPROVAL by ADMINISTRATION\ that are not dismissed;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.0;;B
+Average number of \Declaration FOR_APPROVAL by ADMINISTRATION\ in a month;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total \Declaration FOR_APPROVAL by ADMINISTRATION\ done by \SYSTEM\;Number of 'Declaration FOR_APPROVAL by ADMINISTRATION' activities == 'SYSTEM' where ma is the last value of org:resource;1;;B
+Fraction of \Declaration FOR_APPROVAL by ADMINISTRATION\ that lead to \Declaration REJECTED by PRE_APPROVER\;Percentage of 'Declaration FOR_APPROVAL by ADMINISTRATION' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B

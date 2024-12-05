@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'SW-AE Assign Reviewers' to 'SW-Awaiting EIC Decision',The average of the duration between activity 'SW-AE Assign Reviewers' and activity 'SW-Awaiting EIC Decision',74 days 07:28:14.400000,
+"Median time for 'SW-Awaiting EIC Decision' to be reached after 'SW-Reviewer Agreed',""ERROR: computing metric {'begin': """"activity == 'SW-Reviewer Agreed'"""", 'end': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'median'}"",,"
+Maximum time from 'Original Manuscript Submission Confirmation' to 'SW-Awaiting EIC Decision',The maximum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'SW-Awaiting EIC Decision',150 days 00:45:12,
+Average time between 'SW-Awaiting AE Recommendation' and 'SW-Awaiting EIC Decision',The average of the duration between activity 'SW-Awaiting AE Recommendation' and activity 'SW-Awaiting EIC Decision',3 days 17:53:47.428571,
+Total time spent in 'SW-Awaiting EIC Decision' across all cases,The sum of the duration between activity SW-Awaiting EIC Decision and the end of the case,5119 days 14:31:51,
+Average delay in 'SW-Awaiting EIC Decision' due to 'SW-Reviewer No Response',The average of the duration between activity 'SW-Reviewer No Response' and activity 'SW-Awaiting EIC Decision',55 days 13:57:03.400000,
+Minimum time from 'SW-Checklist Completed' to 'SW-Awaiting EIC Decision',The minimum of the duration between activity 'SW-Checklist Completed' and activity 'SW-Awaiting EIC Decision',0 days 00:16:26,
+"Standard deviation of time for 'SW-Awaiting EIC Decision',""ERROR: computing metric {'begin': """"activity == 'SW-Awaiting EIC Decision'"""", 'end': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'standard deviation'}"",,"
+"Time difference between earliest and latest 'SW-Awaiting EIC Decision' across variants,""ERROR: computing metric {'begin': """"activity == 'SW-Awaiting EIC Decision'"""", 'end': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'range'}"",,"
+"Average time from 'SW-Awaiting EIC Decision' to 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'begin': """"activity == 'SW-Awaiting EIC Decision'"""", 'end': """"activity == 'SW-EIC Reject & Resubmit'"""", 'aggregation': 'average'}"",,"
+Total resolution time of 'SW-Awaiting EIC Decision' in the process of scientific paper review,The sum of the duration between activity SW-Awaiting EIC Decision and the end of the case,5119 days 14:31:51,
+Average time from 'SW-Awaiting EIC Decision' to 'SW-EIC Accept',The average of the duration between activity 'SW-Awaiting EIC Decision' and activity 'SW-EIC Accept',5 days 06:38:27,
+Comparison of average time from 'SW-Awaiting AE Assignment' to 'SW-Awaiting EIC Decision' versus 'SW-Awaiting AE Assignment' to 'SW-EIC Major Revision',The average of the duration between activity 'SW-Awaiting AE Assignment' and activity 'SW-Awaiting EIC Decision',79 days 16:26:16,

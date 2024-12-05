@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'Reviewer Invitation Reminder 2' to 'SW-Reviewer Agreed',The average of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-Reviewer Agreed',15 days 19:37:58.440000,
+Total time from 'Reviewer Invitation Reminder 2' to 'SW-Awaiting EIC Decision',The sum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-Awaiting EIC Decision',2335 days 23:07:15,
+Minimum time from 'Reviewer Invitation Reminder 2' to 'SW-Reviewer Agreed',The minimum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-Reviewer Agreed',0 days 01:42:44,
+Average time between 'Reviewer Invitation Reminder 2' and 'Assign a Different Editor',The average of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'Assign a Different Editor',114 days 00:16:14.333333,
+Total time for 'Reviewer Invitation Reminder 2' until 'SW-EIC Major Revision' is performed,The sum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-EIC Major Revision',962 days 13:34:58,
+"Minimum time for 'Reviewer Invitation Reminder 2' until 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'begin': """"activity == 'Reviewer Invitation Reminder 2'"""", 'end': """"activity == 'SW-EIC Reject & Resubmit'"""", 'aggregation': 'minimum'}"",,"
+Average time it takes 'Reviewer Invitation Reminder 2' after 'SW-AE Assign Reviewers',The average of the duration between activity 'SW-AE Assign Reviewers' and activity 'Reviewer Invitation Reminder 2',47 days 19:52:00.388889,
+Total resolution time of 'Reviewer Invitation Reminder 2',The sum of the duration between activity Reviewer Invitation Reminder 2 and the end of the case,6078 days 01:36:18,
+Time from 'Reviewer Invitation Reminder 2' to 'SW-AE Assign Reviewers' in the variant with the highest frequency,The sum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-AE Assign Reviewers',408 days 08:27:54,
+Time from 'Reviewer Invitation Reminder 2' to 'SW-AE Assign Reviewers' in the variant with the highest performance,The sum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-AE Assign Reviewers',408 days 08:27:54,
+Average time for 'Reviewer Invitation Reminder 2' in cases leading to 'SW-EIC Accept',The average of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-EIC Accept',,
+Minimum resolution time of 'Reviewer Invitation Reminder 2' in cases leading to 'SW-EIC Reject',The minimum of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'SW-EIC Reject',40 days 01:21:00,
+Average time between 'Reviewer Invitation Reminder 2' and 'Reviewer Invitation Reminder 1' in the process,The average of the duration between activity 'Reviewer Invitation Reminder 2' and activity 'Reviewer Invitation Reminder 1',78 days 12:22:28.333333,

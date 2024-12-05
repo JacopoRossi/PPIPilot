@@ -1,0 +1,11 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Reviewer Selection is due in 1 week' followed by 'SW-AE Assign Reviewers',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'SW-AE Assign Reviewers' occurs,33,
+Percentage of manuscripts that have 'SW-Reviewer Selection is due in 1 week' before 'SW-Reviewer Agreed',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-Reviewer Agreed',0.72,
+Number of times 'SW-Reviewer Selection is due in 1 week' occurs in the most frequent process variant,Number of 'SW-Reviewer Selection is due in 1 week' activities,43,
+Percentage of 'SW-Reviewer Selection is due in 1 week' out of all selection-related activities,Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-Initial Reviewer Selection',0.7,
+Frequency of 'SW-Reviewer Selection is due in 1 week' in relation to 'Reviewer Invitation Reminder 1',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'Reviewer Invitation Reminder 1' occurs,31,
+"Percentage of 'SW-Reviewer Selection is due in 1 week' followed by any reviewer response (Agreed, Declined, No Response)",Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-Reviewer Agreed',0.72,
+Percentage of 'SW-Reviewer Selection is due in 1 week' that lead to a 'SW-EIC Major Revision' decision,Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-EIC Major Revision',0.53,
+Frequency of 'SW-Reviewer Selection is due in 1 week' in manuscripts that require major revision versus minor revision,Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'SW-EIC Major Revision' occurs,8,
+Percentage of 'SW-Reviewer Selection is due in 1 week' in the context of the review process completion time,"ERROR: computing metric {'count': ""activity == 'SW-Reviewer Selection is due in 1 week'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'time:timestamp'}",,

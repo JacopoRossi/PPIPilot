@@ -1,0 +1,21 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that lead to a 'Payment Handled';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Payment Handled' occurs;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to total declarations submitted;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are followed by 'Request Payment';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Request Payment';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' leading to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases with amounts above 100 euros;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases eventually leading to 'Payment Handled' without being rejected;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in the most common process variant;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by any rejection;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases exceeding the average processing time;Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities;1.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases with a budget number different from the most common one;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:DeclarationNumber != [most common DeclarationNumber]'}";;;C
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases with a declaration number leading to an appeal;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:DeclarationNumber == [declaration number leading to an appeal]'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that are not dismissed compared to those that are dismissed;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to 'Declaration APPROVED by BUDGET OWNER';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' from all activities performed by 'PRE_APPROVER' role;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;;;D

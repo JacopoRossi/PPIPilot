@@ -1,0 +1,21 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average duration of 'Accepted + In Progress' before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0 days 08:38:49.233515,
+Total duration of 'Accepted + In Progress' across all cases,The sum of the duration between activity Accepted + In Progress and the end of the case,90911 days 01:37:42,
+Average duration from 'Accepted + In Progress' to 'Completed + Resolved',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',11 days 00:27:37.584765,
+"Median duration of 'Accepted + In Progress' for cases involving 'Org line A2',""ERROR: computing metric {'begin': """"activity == 'Accepted + In Progress'"""", 'end': '', 'aggregation': 'median', 'filter': """"org:group == 'Org line A2'""""}"",,"
+Longest duration of 'Accepted + In Progress' before transitioning to any other activity,the maximum of the duration between the first time instant when `ACTIVITY` == 'Accepted + In Progress' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,771 days 08:26:33,
+Shortest duration of 'Accepted + In Progress' before transitioning to any other activity,The minimum of the duration between activity Accepted + In Progress and the end of the case,0 days 00:00:00,
+Average duration of 'Accepted + In Progress' during 'High' impact cases,The average of the duration between activity Accepted + In Progress and the end of the case,16 days 01:49:04.360153,
+Total duration of 'Accepted + In Progress' for 'Medium' impact cases,The sum of the duration between activity Accepted + In Progress and the end of the case,55333 days 04:26:30,
+"Duration variance of 'Accepted + In Progress' across different countries,""ERROR: computing metric {'begin': """"activity == 'Accepted + In Progress'"""", 'end': '', 'aggregation': 'variance', 'group_by': 'organization country'}"",,"
+Average duration from 'Accepted + In Progress' to 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + In Progress' and activity 'Queued + Awaiting Assignment',4 days 08:30:01.120050,
+Total duration from 'Accepted + In Progress' to 'Completed + In Call' across all variants,The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',726 days 17:01:04,
+Average duration of 'Accepted + In Progress' for cases ending in 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',16 days 01:40:38.796698,
+Duration of 'Accepted + In Progress' in the fastest path to 'Completed + In Call',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0 days 00:00:04,
+Duration of 'Accepted + In Progress' in the slowest path to 'Completed + In Call',The maximum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',212 days 22:21:38,
+Average duration of 'Accepted + In Progress' in paths leading to 'Completed + Resolved' without entering 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',11 days 00:27:37.584765,
+Total cumulative duration of 'Accepted + In Progress' in all variants leading to 'Completed + Closed',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',89557 days 12:23:34,
+Average duration of 'Accepted + In Progress' before 'Accepted + Wait - User',The average of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - User',5 days 16:16:14.116298,
+Longest single instance of 'Accepted + In Progress' across all cases,the maximum of the duration between the first time instant when `ACTIVITY` == 'Accepted + In Progress' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,771 days 08:26:33,
+Shortest single instance of 'Accepted + In Progress' leading directly to 'Completed + In Call',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0 days 00:00:04,

@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by SUPERVISOR' compared to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration APPROVED by ADMINISTRATION';0.03;;B
+Percentage of 'Declaration REJECTED by SUPERVISOR' out of all rejection activities;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration REJECTED by EMPLOYEE';0.23;;B
+Number of 'Declaration REJECTED by SUPERVISOR' that are followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by SUPERVISOR' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;293.0;;B
+Percentage of 'Declaration REJECTED by SUPERVISOR' from all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.02;;A
+Frequency of 'Declaration REJECTED by SUPERVISOR' in relation to total number of declarations processed;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration SUBMITTED by EMPLOYEE';0.03;;B
+Percentage of 'Declaration REJECTED by SUPERVISOR' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of 'Declaration REJECTED by SUPERVISOR' with amounts above 100 euros;Number of 'Declaration REJECTED by SUPERVISOR' activities > 100 where ma is the last value of case:Amount;80.0;;B
+Percentage of 'Declaration REJECTED by SUPERVISOR' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by SUPERVISOR' out of all cases;;;D
+Number of 'Declaration REJECTED by SUPERVISOR' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by SUPERVISOR'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by SUPERVISOR' that lead to a new submission;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration SUBMITTED by EMPLOYEE';0.03;;B
+Frequency of 'Declaration REJECTED by SUPERVISOR' in the most common process variant;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'most common process variant';;;C
+Percentage of 'Declaration REJECTED by SUPERVISOR' in cases that exceed the average processing time;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all cases;0.03;;B
+Number of 'Declaration REJECTED by SUPERVISOR' in relation to 'Declaration APPROVED by BUDGET OWNER';Number of 'Declaration REJECTED by SUPERVISOR' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;89.0;;B
+Percentage of 'Declaration REJECTED by SUPERVISOR' in cases with a budget number assigned;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all cases;0.03;;B
+Frequency of 'Declaration REJECTED by SUPERVISOR' in cases that were eventually paid;Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Payment Handled';0.02;;B

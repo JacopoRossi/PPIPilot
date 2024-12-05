@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Plagiarism Originality Report Completed' before 'SW-Checklist Completed',Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-Checklist Completed' occurs,81,
+Percentage of 'Plagiarism Originality Report Completed' out of all 'Manuscript Export Succeeded',Percentage of 'Plagiarism Originality Report Completed' out of all 'Manuscript Export Succeeded',0.97,
+Number of 'Plagiarism Originality Report Completed' that are preceded by 'Original Manuscript Submission Confirmation',Number of 'Plagiarism Originality Report Completed' activities for cases where activity 'Original Manuscript Submission Confirmation' occurs,87,
+Percentage of 'Plagiarism Originality Report Completed' that are not dismissed,Percentage of 'Plagiarism Originality Report Completed' out of all cases where 'Dismissed' does not happen,0.96,
+Percentage of 'Plagiarism Originality Report Completed' from all 'SW-Awaiting Checklist Completion',Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-Awaiting Checklist Completion',0.98,
+Number of 'Plagiarism Originality Report Completed' in relation to 'SW-Reviewer Agreed',Number of 'Plagiarism Originality Report Completed' activities for cases where activity 'SW-Reviewer Agreed' occurs,47,
+Percentage of 'Plagiarism Originality Report Completed',Percentage of 'Plagiarism Originality Report Completed' out of all cases,0.96,
+Number of times 'Plagiarism Originality Report Completed' is performed,Number of 'Plagiarism Originality Report Completed' activities,92,
+Percentage of 'Plagiarism Originality Report Completed' done after 'Manuscript Export Succeeded',Percentage of 'Plagiarism Originality Report Completed' out of all 'Manuscript Export Succeeded',0.97,
+"Average number of 'Plagiarism Originality Report Completed' in a month,""ERROR: computing metric {'count': """"activity == 'Plagiarism Originality Report Completed'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Total 'Plagiarism Originality Report Completed' done by 'SYSTEM',Number of 'Plagiarism Originality Report Completed' activities == 'SYSTEM' where ma is the last value of performer,84,
+Ratio of 'Plagiarism Originality Report Completed' over 'SW-Checklist Completed',Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-Checklist Completed',0.99,
+Occasions how often the 'Plagiarism Originality Report Completed' is performed in the context of scientific paper review process,Number of 'Plagiarism Originality Report Completed' activities,92,
+The ratio of 'Plagiarism Originality Report Completed' that are followed by 'SW-Awaiting AE Assignment',Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-Awaiting AE Assignment',0.98,
+Frequency of 'Plagiarism Originality Report Completed' before 'SW-AE Assign Reviewers',Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-AE Assign Reviewers' occurs,44,
+Percentage of 'Plagiarism Originality Report Completed' followed by 'SW-Reviewer Agreed',Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-Reviewer Agreed',0.96,

@@ -1,0 +1,11 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Co-Author Account Created During Manuscript Submission' before 'Manuscript Export Succeeded',Frequency of activity 'Co-Author Account Created During Manuscript Submission' for cases where activity 'Manuscript Export Succeeded' occurs,50,
+Percentage of manuscripts with 'Co-Author Account Created During Manuscript Submission' out of all manuscripts,Percentage of 'Co-Author Account Created During Manuscript Submission' out of all cases,0.54,
+Number of 'Co-Author Account Created During Manuscript Submission' that are followed by 'Plagiarism Originality Report Completed',Number of 'Co-Author Account Created During Manuscript Submission' activities for cases where activity 'Plagiarism Originality Report Completed' occurs,53,
+Percentage of 'Co-Author Account Created During Manuscript Submission' from all 'Original Manuscript Submission Confirmation',Percentage of 'Co-Author Account Created During Manuscript Submission' out of all 'Original Manuscript Submission Confirmation',0.58,
+Frequency of 'Co-Author Account Created During Manuscript Submission' in relation to 'SW-Reviewer Agreed',Frequency of activity 'Co-Author Account Created During Manuscript Submission' for cases where activity 'SW-Reviewer Agreed' occurs,29,
+Percentage of manuscripts with 'Co-Author Account Created During Manuscript Submission' that lead to 'SW-EIC Major Revision',Percentage of 'Co-Author Account Created During Manuscript Submission' out of all 'SW-EIC Major Revision',0.8,
+Percentage of 'Co-Author Account Created During Manuscript Submission' followed by any activity within the same case,Percentage of 'Co-Author Account Created During Manuscript Submission' out of all cases,0.54,
+Frequency of 'Co-Author Account Created During Manuscript Submission' in manuscripts that require 'SW–Major Revision due in 1 month',"ERROR: computing metric {'count': ""activity == 'Co-Author Account Created During Manuscript Submission'"", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': ""activity == 'SW–Major Revision due in 1 month'""}",,
+Percentage of 'Co-Author Account Created During Manuscript Submission' in manuscripts that eventually reach 'SW-EIC Accept',Percentage of 'Co-Author Account Created During Manuscript Submission' out of all 'SW-EIC Accept',0.33,

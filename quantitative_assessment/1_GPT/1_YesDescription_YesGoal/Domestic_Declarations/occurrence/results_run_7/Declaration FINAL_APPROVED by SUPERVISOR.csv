@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ out of all activities;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases;0.96;;A
+Number of \Declaration FINAL_APPROVED by SUPERVISOR\ preceded by \Declaration APPROVED by ADMINISTRATION\;Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;7924.0;;B
+Frequency of \Declaration FINAL_APPROVED by SUPERVISOR\ followed by \Request Payment\;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Request Payment';1.0;;B
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ from all final approval activities;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;B
+Number of \Declaration FINAL_APPROVED by SUPERVISOR\ with amounts above 100 euros;Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities > 100 where ma is the last value of case:Amount;2337.0;;B
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ by SUPERVISOR;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases;0.0;;A
+Number of \Declaration FINAL_APPROVED by SUPERVISOR\ made per year;"ERROR: computing metric {'count': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ that lead to \Payment Handled\;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Payment Handled';1.0;;B
+Frequency of \Declaration FINAL_APPROVED by SUPERVISOR\ in the most common process variant;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases;0.96;;B
+Percentage reduction of \Declaration REJECTED by PRE_APPROVER\ when followed by \Declaration FINAL_APPROVED by SUPERVISOR\;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.01;;B
+Average number of days between \Declaration SUBMITTED by EMPLOYEE\ and \Declaration FINAL_APPROVED by SUPERVISOR\;the average of the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration FINAL_APPROVED by SUPERVISOR';1.11;;B
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ in cases exceeding the budget;"ERROR: computing metric {'count': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > budget'}";;;C
+Number of \Declaration FINAL_APPROVED by SUPERVISOR\ in relation to \Declaration APPROVED by BUDGET OWNER\;Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;2799.0;;B
+Frequency of \Declaration FINAL_APPROVED by SUPERVISOR\ in cases with domestic declarations;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases;0.96;;B
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ in cases without prior permission needed;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases;0.96;;B

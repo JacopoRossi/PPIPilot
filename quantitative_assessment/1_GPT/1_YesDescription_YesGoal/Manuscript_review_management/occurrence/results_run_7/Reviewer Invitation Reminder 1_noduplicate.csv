@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Reviewer Invitation Reminder 1\ followed by \SW-Reviewer Agreed\,Frequency of activity 'Reviewer Invitation Reminder 1' for cases where activity 'SW-Reviewer Agreed' occurs,43,
+Percentage of \Reviewer Invitation Reminder 1\ out of all reminder activities,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Number of \Reviewer Invitation Reminder 1\ that are preceded by \SW-AE Assign Reviewers\,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-AE Assign Reviewers' occurs,105,
+Percentage of manuscripts that received a \Reviewer Invitation Reminder 1\ and resulted in \SW-EIC Accept\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Accept',0.0,
+Frequency of \Reviewer Invitation Reminder 1\ in relation to the total number of activities in the review process,Percentage of 'Reviewer Invitation Reminder 1' out of all cases,0.51,
+Percentage of \Reviewer Invitation Reminder 1\ followed by \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Percentage of \Reviewer Invitation Reminder 1\ that lead to a \SW-Reviewer Declined\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Declined',1.0,
+Frequency of \Reviewer Invitation Reminder 1\ in manuscripts that required major revision (\SW-EIC Major Revision\),Frequency of activity 'Reviewer Invitation Reminder 1' for cases where activity 'SW-EIC Major Revision' occurs,13,
+"Percentage of \Reviewer Invitation Reminder 1\ in the variant paths that lead to \SW-EIC Reject & Resubmit\,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+"Percentage of \Reviewer Invitation Reminder 1\ by month to identify peak periods in the manuscript review process,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}"",,"
+Frequency of \Reviewer Invitation Reminder 1\ followed by any activity of \SW-AE Assign Reviewers\ to measure the effectiveness of reminders in reviewer assignment,Frequency of activity 'Reviewer Invitation Reminder 1' for cases where activity 'SW-AE Assign Reviewers' occurs,42,
+Percentage of \Reviewer Invitation Reminder 1\ in relation to all communication activities (\Original Manuscript Submission Confirmation\, \Revised Manuscript Submission Confirmation\, etc.),Percentage of 'Reviewer Invitation Reminder 1' out of all 'Original Manuscript Submission Confirmation',0.48,
+Number of \Reviewer Invitation Reminder 1\ that precede a successful review process ending in \SW-EIC Accept\,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-EIC Accept' occurs,0,

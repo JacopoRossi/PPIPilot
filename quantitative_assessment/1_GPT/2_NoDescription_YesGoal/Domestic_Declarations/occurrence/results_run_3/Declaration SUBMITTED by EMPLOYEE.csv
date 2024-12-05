@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Declaration APPROVED by ADMINISTRATION',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION',1.0,
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' leading to 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER',1.0,
+Number of 'Declaration SUBMITTED by EMPLOYEE' with amounts above 100 euros,Number of 'Declaration SUBMITTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount,2777,
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Request Payment',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment',1.0,
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' in relation to total declarations submitted,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases,0.99,
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are not dismissed,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen,0.99,
+Number of 'Declaration SUBMITTED by EMPLOYEE' per year,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by 'STAFF MEMBER',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases,,
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' leading to 'Payment Handled',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled',1.0,
+Percentage reduction of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Declaration REJECTED by PRE_APPROVER' after interventions,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER',1.0,
+Average number of 'Declaration SUBMITTED by EMPLOYEE' that lead to a final approval per month,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month', 'filter': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'""}",,
+Ratio of 'Declaration SUBMITTED by EMPLOYEE' over 'Declaration FINAL_APPROVED by SUPERVISOR',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' followed by any rejection activity,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by EMPLOYEE',1.0,
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that result in 'Declaration APPROVED by BUDGET OWNER',Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,
+Number of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'case:BudgetNumber',Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber,budget 86566:11531,"{""budget 86566"":11531}"
+Total 'Declaration SUBMITTED by EMPLOYEE' performed by 'STAFF MEMBER',Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role,,

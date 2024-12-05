@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by PRE_APPROVER' compared to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all rejections;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}";;;C
+Number of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;86.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' leading to a 'Request Payment';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Request Payment';0.01;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' in variants leading to 'Payment Handled';Frequency of activity 'Declaration REJECTED by PRE_APPROVER' for cases where activity 'Payment Handled' occurs;72.0;;B
+Percentage of cases with 'Declaration REJECTED by PRE_APPROVER' that are resolved without further rejections;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity NOT LIKE 'Declaration REJECTED by %'""}";;;C
+Number of 'Declaration REJECTED by PRE_APPROVER' with amounts above 100 euros;Number of 'Declaration REJECTED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;22.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases;;;D
+Frequency of 'Declaration REJECTED by PRE_APPROVER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage reduction of 'Declaration REJECTED by PRE_APPROVER' as a goal for process improvement;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '< previous_period', 'aggregation': 'percentage'}";;;C
+Ratio of 'Declaration REJECTED by PRE_APPROVER' over 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.1;;B
+Number of 'Declaration REJECTED by PRE_APPROVER' in relation to total declarations submitted;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration % by %'""}";;;C
+Percentage of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' leading to a new submission within 30 days;Frequency of activity 'Declaration REJECTED by PRE_APPROVER';81.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' in the first quarter of the year compared to the rest of the year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'quarter'}";;;C

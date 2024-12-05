@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration APPROVED by PRE_APPROVER' followed by 'Declaration FINAL_APPROVED by SUPERVISOR',Frequency of activity 'Declaration APPROVED by PRE_APPROVER' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,663,
+Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all approval activities,Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER',1.0,
+Number of 'Declaration APPROVED by PRE_APPROVER' that are preceded by 'Declaration SUBMITTED by EMPLOYEE',Number of 'Declaration APPROVED by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,685,
+Percentage of 'Declaration APPROVED by PRE_APPROVER' that lead to a 'Request Payment',Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Request Payment',0.07,
+Frequency of 'Declaration APPROVED by PRE_APPROVER' in the most common variant paths,Frequency of activity 'Declaration APPROVED by PRE_APPROVER',666,
+Percentage of 'Declaration APPROVED by PRE_APPROVER' followed by 'Payment Handled' within 30 days,Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Payment Handled',0.07,
+Number of 'Declaration APPROVED by PRE_APPROVER' with amounts above 100 euros,Number of 'Declaration APPROVED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount,139,
+Number of 'Declaration APPROVED by PRE_APPROVER' grouped by 'case:BudgetNumber',Number of 'Declaration APPROVED by PRE_APPROVER' activities grouped by the last value of case:BudgetNumber,budget 86566:685,"{""budget 86566"":685}"
+Frequency of 'Declaration APPROVED by PRE_APPROVER' made per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of 'Declaration APPROVED by PRE_APPROVER' in relation to all declarations submitted,Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.06,
+Number of times 'Declaration APPROVED by PRE_APPROVER' is performed in relation to 'Declaration REJECTED by PRE_APPROVER',Number of 'Declaration APPROVED by PRE_APPROVER' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs,69,
+Percentage of 'Declaration APPROVED by PRE_APPROVER' that are not eventually followed by 'Payment Handled',Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases where 'Payment Handled' does not happen,0.06,
+Average number of 'Declaration APPROVED by PRE_APPROVER' that are followed by 'Declaration FINAL_APPROVED by SUPERVISOR' per month,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'aggregation': 'average', 'filter': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'group_by': 'month'}",,
+Ratio of 'Declaration APPROVED by PRE_APPROVER' over 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER',0.83,
+Occasions how often the 'Declaration APPROVED by PRE_APPROVER' is performed in comparison to 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.06,

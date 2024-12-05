@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Unmatched + Unmatched' leading to 'Completed + In Call',Frequency of activity 'Unmatched + Unmatched' for cases where activity 'Completed + In Call' occurs,0,
+Percentage of 'Unmatched + Unmatched' compared to all activities in the event log,Percentage of 'Unmatched + Unmatched' out of all cases,0.0,
+Number of 'Unmatched + Unmatched' followed by 'Accepted + In Progress',Frequency of activity 'Unmatched + Unmatched' for cases where activity 'Accepted + In Progress' occurs,5,
+Percentage of 'Unmatched + Unmatched' that lead to a resolution ('Completed + Resolved' or 'Completed + Closed'),Percentage of 'Unmatched + Unmatched' out of all 'Completed + Resolved',0.0,
+Frequency of 'Unmatched + Unmatched' in relation to 'Queued + Awaiting Assignment',Frequency of activity 'Unmatched + Unmatched' for cases where activity 'Queued + Awaiting Assignment' occurs,2,
+"Number of 'Unmatched + Unmatched' activities per month,""ERROR: computing metric {'count': """"activity == 'Unmatched + Unmatched'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}"",,"
+Percentage of 'Unmatched + Unmatched' followed by any 'Accepted + Wait' variant,Percentage of 'Unmatched + Unmatched' out of all 'Accepted + Wait',0.0,
+Percentage of 'Unmatched + Unmatched' that are part of the top 5 most frequent variants,Percentage of 'Unmatched + Unmatched' out of all 'Unmatched + Unmatched',1.0,
+Number of 'Unmatched + Unmatched' that result in a 'High' impact,Frequency of activity 'Unmatched + Unmatched',0,
+Percentage of 'Unmatched + Unmatched' followed by 'Completed + In Call' out of all 'Completed + In Call' activities,Percentage of 'Unmatched + Unmatched' out of all 'Completed + In Call',0.0,
+Number of 'Unmatched + Unmatched' activities that precede a 'Low' impact classification,Frequency of activity 'Unmatched + Unmatched',0,
+Percentage of 'Unmatched + Unmatched' in incidents involving 'PROD582',Percentage of 'Unmatched + Unmatched' out of all cases,0.0,
+Frequency of 'Unmatched + Unmatched' as the initial activity in a case,Frequency of activity 'Unmatched + Unmatched' for cases where activity 'Unmatched + Unmatched' occurs,5,
+Percentage of 'Unmatched + Unmatched' followed by 'Completed + Resolved' without any 'Accepted + Wait' activities in between,Percentage of 'Unmatched + Unmatched' out of all 'Completed + Resolved',0.0,
+"Number of 'Unmatched + Unmatched' activities that are followed by a change in 'org:resource',""ERROR: computing metric {'count': """"activity == 'Unmatched + Unmatched'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': 'org:resource != org:resource'}"",,"
+Percentage of 'Unmatched + Unmatched' in cases that exceed the average performance time of all variants,Percentage of 'Unmatched + Unmatched' out of all cases,0.0,

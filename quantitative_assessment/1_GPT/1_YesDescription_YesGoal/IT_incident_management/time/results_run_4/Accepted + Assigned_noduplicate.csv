@@ -1,0 +1,19 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time following 'Accepted + Assigned',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',""14 days, 15:54:44.557503"","
+Average time from 'Accepted + Assigned' to 'Completed + In Call',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+"Total time spent in 'Accepted + Assigned' before transitioning to any 'Completed' status,""ERROR: computing metric {'begin': """"activity == 'Accepted + Assigned'"""", 'end': """"activity == 'Completed + Resolved' or activity == 'Completed + Closed' or activity == 'Completed + In Call' or activity == 'Completed + Cancelled'"""", 'aggregation': 'total'}"",,"
+Minimum time from 'Accepted + Assigned' to 'Accepted + In Progress',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + In Progress',0:00:03,
+"Average time from 'Accepted + Assigned' to 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Assigned' and activity 'Queued + Awaiting Assignment',""9 days, 2:39:18.593393"","
+"Total resolution time of incidents starting with 'Accepted + Assigned',The sum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',""26774 days, 16:00:02"","
+Minimum resolution time of incidents involving 'Accepted + Assigned',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',0:00:33,
+"Average time it takes from 'Accepted + Assigned' to reach 'Completed + Resolved',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',""14 days, 15:54:44.557503"","
+"Total time from 'Accepted + Assigned' to 'Completed + Closed',The sum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',""34764 days, 10:04:31"","
+Average duration of 'Accepted + Assigned' in incidents with high impact,The average of the duration between activity Accepted + Assigned and the end of the case,,
+"Total time in 'Accepted + Assigned' for incidents related to PROD582,The sum of the duration between activity Accepted + Assigned and the end of the case,""965 days, 8:15:46"","
+Average time from 'Accepted + Assigned' to the next activity for incidents originating from France,The average of the duration between activity Accepted + Assigned and the end of the case,,
+"Average duration of 'Accepted + Assigned' before transitioning to 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - User',""5 days, 22:50:55.887240"","
+"Total time in 'Accepted + Assigned' for incidents resolved within the same day,The sum of the duration between activity Accepted + Assigned and the end of the case,""34941 days, 22:01:12"","
+Minimum time from 'Accepted + Assigned' to 'Accepted + Wait - Vendor' for incidents involving Org line A2,The minimum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - Vendor',,
+Total time in 'Accepted + Assigned' for incidents leading to 'Completed + In Call' status,The sum of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+Average time from 'Accepted + Assigned' to 'Completed + Resolved' in incidents with medium impact,The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',,

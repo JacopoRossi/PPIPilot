@@ -1,0 +1,20 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-AE Assign Reviewers' before 'SW-Reviewer Agreed',Frequency of activity 'SW-AE Assign Reviewers' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'SW-AE Assign Reviewers' out of all 'Reviewer Invitation Reminder 1',Percentage of 'SW-AE Assign Reviewers' out of all 'Reviewer Invitation Reminder 1',0.89,
+Number of 'SW-AE Assign Reviewers' that are preceded by 'SW-Reviewer Selection is due in 1 week',Number of 'SW-AE Assign Reviewers' activities for cases where activity 'SW-Reviewer Selection is due in 1 week' occurs,111,
+Percentage of 'SW-AE Assign Reviewers' that lead to 'SW-Awaiting EIC Decision',Percentage of 'SW-AE Assign Reviewers' out of all 'SW-Awaiting EIC Decision',0.76,
+Frequency of 'SW-AE Assign Reviewers' in relation to 'SW-Reviewer Declined',Frequency of activity 'SW-AE Assign Reviewers' for cases where activity 'SW-Reviewer Declined' occurs,28,
+Percentage of 'SW-AE Assign Reviewers' followed by 'Reviewer Invitation Reminder 2',Percentage of 'SW-AE Assign Reviewers' out of all 'Reviewer Invitation Reminder 2',0.88,
+"Number of 'SW-AE Assign Reviewers' grouped by 'case:concept:name',""ERROR: computing metric {'count': """"activity == 'SW-AE Assign Reviewers'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Percentage of 'SW-AE Assign Reviewers' that are not dismissed,Percentage of 'SW-AE Assign Reviewers' out of all cases where 'Dismissed' does not happen,0.49,
+Frequency of 'SW-AE Assign Reviewers' in the variant leading to 'SW-EIC Major Revision',Frequency of activity 'SW-AE Assign Reviewers' for cases where activity 'SW-EIC Major Revision' occurs,15,
+Percentage of 'SW-AE Assign Reviewers' in the variant leading to 'SW-EIC Accept',Percentage of 'SW-AE Assign Reviewers' out of all 'SW-EIC Accept',0.0,
+Number of times 'SW-AE Assign Reviewers' is performed before 'SW-Reviewer No Response',Number of 'SW-AE Assign Reviewers' activities for cases where activity 'SW-Reviewer No Response' occurs,34,
+Percentage of 'SW-AE Assign Reviewers' out of all activities in the event log,Percentage of 'SW-AE Assign Reviewers' out of all cases where '' does not happen,0.49,
+Frequency of 'SW-AE Assign Reviewers' in the most common process variant,Frequency of activity 'SW-AE Assign Reviewers' for cases where activity 'Most Common Variant' occurs,,
+Percentage of 'SW-AE Assign Reviewers' followed by 'SW-Reviewer Agreed' in all cases,Percentage of 'SW-AE Assign Reviewers' out of all 'SW-Reviewer Agreed',0.98,
+"Number of 'SW-AE Assign Reviewers' actions leading to a 'SW-EIC Reject & Resubmit' decision,""ERROR: computing metric {'count': """"activity == 'SW-AE Assign Reviewers'"""", 'aggregation': 'total', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Percentage of 'SW-AE Assign Reviewers' actions that are followed by any form of manuscript submission confirmation,Percentage of 'SW-AE Assign Reviewers' out of all 'Manuscript Submission Confirmation',,
+Frequency of 'SW-AE Assign Reviewers' in relation to 'SW-Reviewer Unavailable',Frequency of activity 'SW-AE Assign Reviewers' for cases where activity 'SW-Reviewer Unavailable' occurs,24,
+Percentage of 'SW-AE Assign Reviewers' leading to 'SW-Awaiting AE Recommendation',Percentage of 'SW-AE Assign Reviewers' out of all 'SW-Awaiting AE Recommendation',0.64,

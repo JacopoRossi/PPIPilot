@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by BUDGET OWNER' compared to 'Declaration APPROVED by BUDGET OWNER';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER';0.01;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all budget owner decisions;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER';0.01;;B
+Number of 'Declaration REJECTED by BUDGET OWNER' that are followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;59.0;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' with amounts above 100 euros;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases;0.0;;B
+Frequency of 'Declaration REJECTED by BUDGET OWNER' in cases that also involve 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' by SUPERVISOR;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases;0.0;;B
+Number of 'Declaration REJECTED by BUDGET OWNER' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by BUDGET OWNER' that lead to an appeal;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Appeal';;;D
+Average number of 'Declaration REJECTED by BUDGET OWNER' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Declaration REJECTED by BUDGET OWNER' done by STAFF MEMBER;Number of 'Declaration REJECTED by BUDGET OWNER' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Ratio of 'Declaration REJECTED by BUDGET OWNER' over 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Frequency of 'Declaration REJECTED by BUDGET OWNER' in the most common process variant;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Most Common Process Variant';;;D
+Percentage of 'Declaration REJECTED by BUDGET OWNER' in cases with a total amount above the average case amount;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > Average Case Amount'}";;;C
+Number of 'Declaration REJECTED by BUDGET OWNER' in relation to 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;59.0;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' from all rejections by any role;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration REJECTED by ANY ROLE';;;D

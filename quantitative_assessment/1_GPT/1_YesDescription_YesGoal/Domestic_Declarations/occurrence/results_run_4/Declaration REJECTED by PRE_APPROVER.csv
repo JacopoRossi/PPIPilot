@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of Declaration REJECTED by PRE_APPROVER out of all Declaration SUBMITTED by EMPLOYEE;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;A
+Frequency of Declaration REJECTED by PRE_APPROVER followed by Declaration SUBMITTED by EMPLOYEE;Frequency of activity 'Declaration REJECTED by PRE_APPROVER' for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;81.0;;B
+Percentage of Declaration REJECTED by PRE_APPROVER that lead to a Declaration APPROVED by ADMINISTRATION;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Number of Declaration REJECTED by PRE_APPROVER with amounts above 100 euros;Number of 'Declaration REJECTED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;22.0;;B
+Percentage of Declaration REJECTED by PRE_APPROVER by PRE_APPROVER;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases;;;D
+Number of Declaration REJECTED by PRE_APPROVER made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of Declaration REJECTED by PRE_APPROVER that are not followed by Declaration APPROVED by PRE_APPROVER;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases where 'Declaration APPROVED by PRE_APPROVER' does not happen;0.01;;B
+Frequency of Declaration REJECTED by PRE_APPROVER in relation to Declaration APPROVED by PRE_APPROVER;Frequency of activity 'Declaration REJECTED by PRE_APPROVER' for cases where activity 'Declaration APPROVED by PRE_APPROVER' occurs;67.0;;B
+Percentage of Declaration REJECTED by PRE_APPROVER followed by Declaration REJECTED by EMPLOYEE;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration REJECTED by EMPLOYEE';0.07;;B
+Number of times Declaration REJECTED by PRE_APPROVER is performed before Declaration APPROVED by ADMINISTRATION;Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;2.0;;B
+Percentage of Declaration REJECTED by PRE_APPROVER from all rejections;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases where 'Declaration REJECTED by ADMINISTRATION' does not happen;0.01;;B
+Average number of Declaration REJECTED by PRE_APPROVER in a month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total Declaration REJECTED by PRE_APPROVER done by PRE_APPROVER;Number of 'Declaration REJECTED by PRE_APPROVER' activities == 'PRE_APPROVER' where ma is the last value of org:role;;;D
+Ratio of Declaration REJECTED by PRE_APPROVER over Declaration SUBMITTED by EMPLOYEE;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Occasions how often the Declaration REJECTED by PRE_APPROVER is performed in comparison to Declaration APPROVED by PRE_APPROVER;Frequency of activity 'Declaration REJECTED by PRE_APPROVER' for cases where activity 'Declaration APPROVED by PRE_APPROVER' occurs;67.0;;B

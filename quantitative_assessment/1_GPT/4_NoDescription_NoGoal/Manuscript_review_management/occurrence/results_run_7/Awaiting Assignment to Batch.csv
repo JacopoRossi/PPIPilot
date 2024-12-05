@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Awaiting Assignment to Batch\ compared to \Manuscript Export Succeeded\,Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,
+Percentage of cases that proceed from \First Look-Your updates are overdue\ to \Awaiting Assignment to Batch\,Percentage of 'Awaiting Assignment to Batch' out of all 'First Look-Your updates are overdue',0.91,
+Number of times \Awaiting Assignment to Batch\ occurs after \First Look Manuscript Submission Confirmation\,Number of 'Awaiting Assignment to Batch' activities for cases where activity 'First Look Manuscript Submission Confirmation' occurs,24.0,
+Percentage of \Awaiting Assignment to Batch\ out of all activities in the event log,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Frequency of \Awaiting Assignment to Batch\ as the final activity before \Manuscript Export Succeeded\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'Manuscript Export Succeeded' occurs,26.0,
+Percentage of cases with \Awaiting Assignment to Batch\ that also include \SW-EIC Major Revision\,Percentage of 'Awaiting Assignment to Batch' out of all 'SW-EIC Major Revision',0.87,
+Number of variants that include \Awaiting Assignment to Batch\ as a step,Number of 'Awaiting Assignment to Batch' activities,26.0,
+Percentage of \Awaiting Assignment to Batch\ occurrences that follow \First Look-Please submit updates\,Percentage of 'Awaiting Assignment to Batch' out of all 'First Look-Please submit updates',1.0,
+Frequency of \Awaiting Assignment to Batch\ in relation to total number of activities in the longest variant,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Percentage of \Awaiting Assignment to Batch\ occurrences that lead to a \Manuscript Export Succeeded\,Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,

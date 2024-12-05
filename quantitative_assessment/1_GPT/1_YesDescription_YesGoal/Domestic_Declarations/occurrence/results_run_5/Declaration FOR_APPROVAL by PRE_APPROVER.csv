@@ -1,0 +1,18 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' leading to 'Request Payment';Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER' for cases where activity 'Request Payment' occurs;0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are preceded by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;1;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' with amounts above 100 euros;Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;1;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' by month to track seasonal variations;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}";;;C
+Total 'Declaration FOR_APPROVAL by PRE_APPROVER' performed by each 'STAFF MEMBER';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities grouped by the last value of org:resource;STAFF MEMBER:1;"{""STAFF MEMBER"":1,""SYSTEM"":0}";B
+Total 'Declaration FOR_APPROVAL by PRE_APPROVER' performed by each 'STAFF MEMBER';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities grouped by the last value of org:resource;SYSTEM:0;"{""STAFF MEMBER"":1,""SYSTEM"":0}";B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in each variant where it appears;Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER';1;;A
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that lead to a payment being requested and paid;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Request Payment';0.0;;B
+Ratio of 'Declaration FOR_APPROVAL by PRE_APPROVER' over 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Number of times 'Declaration FOR_APPROVAL by PRE_APPROVER' is performed per year;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are not eventually performed;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by any rejection activity;Frequency of activity 'Declaration FOR_APPROVAL by PRE_APPROVER' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to the total number of activities in the event log;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;A

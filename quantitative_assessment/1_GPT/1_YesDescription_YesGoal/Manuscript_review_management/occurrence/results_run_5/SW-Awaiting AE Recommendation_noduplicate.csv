@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Awaiting AE Recommendation' followed by 'SW-EIC Major Revision',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-EIC Major Revision' occurs,6,
+Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer Agreed',0.52,
+Number of 'SW-Awaiting AE Recommendation' that are preceded by 'SW-Reviewer Agreed',Number of 'SW-Awaiting AE Recommendation' activities for cases where activity 'SW-Reviewer Agreed' occurs,25,
+"Percentage of 'SW-Awaiting AE Recommendation' that lead to 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting AE Recommendation'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Frequency of 'SW-Awaiting AE Recommendation' in relation to 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-AE Assign Reviewers' occurs,23,
+Percentage of 'SW-Awaiting AE Recommendation' from all 'Original Manuscript Submission Confirmation',Percentage of 'SW-Awaiting AE Recommendation' out of all 'Original Manuscript Submission Confirmation',0.42,
+"Number of times 'SW-Awaiting AE Recommendation' is performed per year,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting AE Recommendation'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'SW-Awaiting AE Recommendation' followed by 'SW-EIC Accept',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-EIC Accept',1.0,
+Frequency of 'SW-Awaiting AE Recommendation' after 'Reviewer Invitation Reminder 2',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'Reviewer Invitation Reminder 2' occurs,21,
+Percentage of 'SW-Awaiting AE Recommendation' that are not dismissed,Percentage of 'SW-Awaiting AE Recommendation' out of all cases where 'Dismissed' does not happen,0.39,
+"Number of 'SW-Awaiting AE Recommendation' grouped by 'case:concept:name',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting AE Recommendation'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Frequency of 'SW-Awaiting AE Recommendation' in the most common variant path,Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'Most Common Path' occurs,,
+Number of 'SW-Awaiting AE Recommendation' in manuscripts with 'Plagiarism Originality Report Completed',Number of 'SW-Awaiting AE Recommendation' activities for cases where activity 'Plagiarism Originality Report Completed' occurs,36,
+"Percentage of manuscripts with 'SW-Awaiting AE Recommendation' that undergo 'SW–Major Revision due in 1 week',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting AE Recommendation'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW–Major Revision due in 1 week'""""}"",,"
+Frequency of 'SW-Awaiting AE Recommendation' before 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-AE Assign Reviewers' occurs,23,
+Percentage of 'SW-Awaiting AE Recommendation' leading to 'SW-Reviewer No Response',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer No Response',0.8,

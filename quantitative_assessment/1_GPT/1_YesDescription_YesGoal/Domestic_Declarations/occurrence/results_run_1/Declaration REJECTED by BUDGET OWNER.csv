@@ -1,0 +1,18 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by BUDGET OWNER' compared to 'Declaration APPROVED by BUDGET OWNER';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER';0.01;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all declarations handled by BUDGET OWNER;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases;;;D
+Number of 'Declaration REJECTED by BUDGET OWNER' that are followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;59;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' that lead to a 'Request Payment';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Request Payment';0.0;;B
+Frequency of 'Declaration REJECTED by BUDGET OWNER' in relation to total declarations per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by BUDGET OWNER' with amounts above 100 euros;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases;0.0;;B
+Number of 'Declaration REJECTED by BUDGET OWNER' grouped by 'org:resource';Number of 'Declaration REJECTED by BUDGET OWNER' activities grouped by the last value of org:resource;STAFF MEMBER:14;"{""STAFF MEMBER"":14,""SYSTEM"":45}";A
+Number of 'Declaration REJECTED by BUDGET OWNER' grouped by 'org:resource';Number of 'Declaration REJECTED by BUDGET OWNER' activities grouped by the last value of org:resource;SYSTEM:45;"{""STAFF MEMBER"":14,""SYSTEM"":45}";A
+Percentage of 'Declaration REJECTED by BUDGET OWNER' by month to identify trends over time;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}";;;C
+Frequency of 'Declaration REJECTED by BUDGET OWNER' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by ADMINISTRATION';0.01;;B
+Ratio of 'Declaration REJECTED by BUDGET OWNER' over 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Percentage of 'Declaration REJECTED by BUDGET OWNER' that are eventually approved after re-submission;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER';0.01;;B
+Number of 'Declaration REJECTED by BUDGET OWNER' that lead to an appeal;Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Appeal' occurs;;;D
+Frequency of 'Declaration REJECTED by BUDGET OWNER' in the most common process variants;Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Most Common Process Variants';;;D
+Percentage of 'Declaration REJECTED by BUDGET OWNER' in cases with prior 'Declaration SAVED by EMPLOYEE';Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration SAVED by EMPLOYEE';0.0;;B
+Number of 'Declaration REJECTED by BUDGET OWNER' that result in a 'Declaration REJECTED by PRE_APPROVER' to identify correlation towards the goal of reduction;Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B

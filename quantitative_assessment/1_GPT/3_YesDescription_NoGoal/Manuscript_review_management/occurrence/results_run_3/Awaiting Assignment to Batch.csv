@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Awaiting Assignment to Batch\ following \First Look-Your updates are overdue\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look-Your updates are overdue' occurs,10.0,
+Percentage of manuscripts that reach \Awaiting Assignment to Batch\ stage out of all manuscripts,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Number of times \Awaiting Assignment to Batch\ is the final activity before \Manuscript Export Succeeded\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'Manuscript Export Succeeded' occurs,26.0,
+Frequency of \Awaiting Assignment to Batch\ preceded by \First Look Manuscript Submission Confirmation\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look Manuscript Submission Confirmation' occurs,24.0,
+Percentage of \Awaiting Assignment to Batch\ occurrences out of total activities in the review process,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Ratio of \Awaiting Assignment to Batch\ to \SW-AE Assign Reviewers\ in terms of frequency,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'SW-AE Assign Reviewers' occurs,19.0,
+Number of manuscripts entering \Awaiting Assignment to Batch\ per month,"ERROR: computing metric {'count': ""activity == 'Awaiting Assignment to Batch'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}",,
+Percentage of manuscripts that proceed from \Awaiting Assignment to Batch\ to \Manuscript Export Succeeded\,Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,
+Frequency of \Awaiting Assignment to Batch\ as a precursor to successful manuscript submission,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'Manuscript Export Succeeded' occurs,26.0,
+Ratio of manuscripts that do not proceed past \Awaiting Assignment to Batch\ compared to those that do,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'Manuscript Export Succeeded' does not occur,26.0,

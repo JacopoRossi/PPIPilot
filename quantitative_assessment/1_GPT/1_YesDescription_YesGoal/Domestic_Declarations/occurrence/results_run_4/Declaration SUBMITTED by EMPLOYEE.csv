@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that lead to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';1.0;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;81;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' with amounts above 100 euros;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that are not dismissed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by EMPLOYEE' does not happen;0.99;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' compared to 'Declaration APPROVED by ADMINISTRATION';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;7983;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' followed by 'Request Payment';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' that lead to 'Payment Handled';Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Payment Handled' occurs;10043;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' by 'STAFF MEMBER';Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;;;D
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' grouped by 'case:BudgetNumber';Frequency of activity '{}' grouped by the last value of case:BudgetNumber;budget 86566:10365;"{""budget 86566"":10365}";A
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that result in a 'Declaration REJECTED by PRE_APPROVER' to identify improvement areas;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Ratio of 'Declaration SUBMITTED by EMPLOYEE' over 'Declaration FINAL_APPROVED by SUPERVISOR' to measure efficiency in the approval process;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' that are followed by 'Declaration APPROVED by BUDGET OWNER' to assess budget owner's involvement;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;2807;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' leading to 'Declaration REJECTED by ADMINISTRATION' to identify administrative bottlenecks;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by ADMINISTRATION';1.0;;B
+Frequency of 'Declaration SUBMITTED by EMPLOYEE' in relation to total declarations to measure its prevalence in the process;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where '' does not happen;0.99;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' with an increment in 'case:Amount' to monitor cost control;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;1.0;;B
+Number of 'Declaration SUBMITTED by EMPLOYEE' that are eventually performed to assess process completion rate;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity '' does not occur;10365;;B
+Percentage of 'Declaration SUBMITTED by EMPLOYEE' that lead to any form of 'Declaration REJECTED' to identify rejection trends;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED%'""}";;;C
+Average number of 'Declaration SUBMITTED by EMPLOYEE' in a month to understand monthly submission patterns;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Declaration SUBMITTED by EMPLOYEE' done by 'EMPLOYEE' to evaluate employee engagement in submissions;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE';284;;B

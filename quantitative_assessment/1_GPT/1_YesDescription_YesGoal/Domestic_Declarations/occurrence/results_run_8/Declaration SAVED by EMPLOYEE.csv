@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration SAVED by EMPLOYEE' compared to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' that lead to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Number of 'Declaration SAVED by EMPLOYEE' per month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration SAVED by EMPLOYEE' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in cases that end with 'Payment Handled';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Payment Handled';0.0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in relation to all activities performed by EMPLOYEE role;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.32;;B
+Number of 'Declaration SAVED by EMPLOYEE' that are followed by 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;0.0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in cases with amounts above 100 euros;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.0;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in cases that involve 'Request Payment';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Request Payment';0.0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in the first quarter of the year compared to the rest of the year;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month', 'filter': 'month < 4'}";;;C
+Number of 'Declaration SAVED by EMPLOYEE' in cases that were eventually rejected by any role;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'filter': ""activity == 'Declaration REJECTED by EMPLOYEE' or activity == 'Declaration REJECTED by ADMINISTRATION' or activity == 'Declaration REJECTED by SUPERVISOR' or activity == 'Declaration REJECTED by MISSING' or activity == 'Declaration REJECTED by PRE_APPROVER' or activity == 'Declaration REJECTED by BUDGET OWNER'""}";;;C
+Percentage of 'Declaration SAVED by EMPLOYEE' followed by 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in cases with more than one 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in cases that do not require director approval;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases where 'Declaration APPROVED by DIRECTOR' does not happen;0.01;;B
+Number of 'Declaration SAVED by EMPLOYEE' in cases that exceed the two-month post-trip reimbursement window;Number of 'Declaration SAVED by EMPLOYEE' activities;135.0;;B

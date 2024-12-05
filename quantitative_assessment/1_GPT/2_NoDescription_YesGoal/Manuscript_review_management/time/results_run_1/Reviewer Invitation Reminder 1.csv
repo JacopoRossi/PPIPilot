@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Reviewer Invitation Reminder 1' to 'SW-Reviewer Agreed',The average of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Reviewer Agreed',""13 days, 8:15:45.025641"","
+Minimum time between 'Reviewer Invitation Reminder 1' and 'SW-Reviewer Agreed',The minimum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Reviewer Agreed',0:10:02,
+"Average time from 'Reviewer Invitation Reminder 1' to 'SW-AE Assign Reviewers',The average of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-AE Assign Reviewers',""19 days, 16:52:13.120000"","
+"Total time from 'Reviewer Invitation Reminder 1' to 'SW-AE Assign Reviewers' across all cases,The sum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-AE Assign Reviewers',""492 days, 13:45:28"","
+Minimum time from 'Reviewer Invitation Reminder 1' to 'SW-AE Assign Reviewers',The minimum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-AE Assign Reviewers',0:51:12,
+"Average time from 'Reviewer Invitation Reminder 1' to the next activity in the process,The average of the duration between activity Reviewer Invitation Reminder 1 and the end of the case,""153 days, 11:04:45.148936"","
+"Total time from 'Reviewer Invitation Reminder 1' to 'SW-Reviewer Declined',The sum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Reviewer Declined',""367 days, 15:28:28"","
+"Average time between 'Reviewer Invitation Reminder 1' and 'SW-Reviewer Declined',The average of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Reviewer Declined',""18 days, 9:10:25.400000"","
+"Cycle time of 'Reviewer Invitation Reminder 1' in the manuscript review process,The sum of the duration between activity Reviewer Invitation Reminder 1 and the end of the case,""7212 days, 16:43:22"","
+"Time from 'Reviewer Invitation Reminder 1' to 'SW-Awaiting EIC Decision',The sum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Awaiting EIC Decision',""2831 days, 21:28:05"","
+"Average waiting time from 'Reviewer Invitation Reminder 1' to 'SW-Awaiting AE Recommendation',The average of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'SW-Awaiting AE Recommendation',""69 days, 4:28:09.666667"","
+"Total resolution time of 'Reviewer Invitation Reminder 1' in the context of reviewer agreement process,The sum of the duration between activity Reviewer Invitation Reminder 1 and the end of the case,""7212 days, 16:43:22"","
+"Minimum resolution time of 'Reviewer Invitation Reminder 1' until any subsequent activity,The minimum of the duration between activity Reviewer Invitation Reminder 1 and the end of the case,""34 days, 23:08:26"","
+"Average time from 'Reviewer Invitation Reminder 1' to 'Reviewer Invitation Reminder 2',The average of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'Reviewer Invitation Reminder 2',""35 days, 9:51:39.390244"","
+"Total time from 'Reviewer Invitation Reminder 1' to 'Assign a Different Editor',The sum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'Assign a Different Editor',""372 days, 18:00:07"","
+"Minimum time from 'Reviewer Invitation Reminder 1' to 'Assign a Different Editor',The minimum of the duration between activity 'Reviewer Invitation Reminder 1' and activity 'Assign a Different Editor',""18 days, 16:28:55"","

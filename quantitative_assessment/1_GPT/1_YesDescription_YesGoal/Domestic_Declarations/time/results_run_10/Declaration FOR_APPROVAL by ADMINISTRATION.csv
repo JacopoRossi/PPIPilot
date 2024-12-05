@@ -1,0 +1,15 @@
+Name;Metric;Value;Agrupation;Colonna77
+;ERROR: computing metric {};;;
+Average time from Declaration FOR_APPROVAL by ADMINISTRATION to Declaration FINAL_APPROVED by SUPERVISOR;The average of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Declaration FINAL_APPROVED by SUPERVISOR';7 days 02:28:03;;A
+Average time from Declaration SUBMITTED by EMPLOYEE to Declaration FOR_APPROVAL by ADMINISTRATION;The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';20 days 12:04:10;;A
+Total time for Declaration FOR_APPROVAL by ADMINISTRATION to reach Payment Handled;The sum of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Payment Handled';13 days 07:26:12;;A
+Minimum time from Declaration FOR_APPROVAL by ADMINISTRATION to Request Payment;The minimum of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Request Payment';8 days 23:30:32;;A
+Average waiting time to Declaration FOR_APPROVAL by ADMINISTRATION after Declaration APPROVED by ADMINISTRATION;The average of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';8 days 15:37:08;;B
+Total resolution time of Declaration FOR_APPROVAL by ADMINISTRATION;The sum of the duration between activity Declaration FOR_APPROVAL by ADMINISTRATION and the end of the case;13 days 07:26:12;;B
+Average time it takes Declaration FOR_APPROVAL by ADMINISTRATION after Declaration REJECTED by PRE_APPROVER;The average of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';;;D
+Minimum resolution time of Declaration FOR_APPROVAL by ADMINISTRATION;The minimum of the duration between activity Declaration FOR_APPROVAL by ADMINISTRATION and the end of the case;13 days 07:26:12;;B
+Time until Declaration FOR_APPROVAL by ADMINISTRATION from the start of the case;The sum of the duration between the start of the case and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';20 days 12:04:10;;A
+Elapsed time between Declaration FOR_APPROVAL by ADMINISTRATION and Declaration APPROVED by BUDGET OWNER;The average of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Declaration APPROVED by BUDGET OWNER';1 days 01:02:42;;A
+Time from Declaration FOR_APPROVAL by ADMINISTRATION to Declaration REJECTED by PRE_APPROVER;The average of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Declaration REJECTED by PRE_APPROVER';;;D
+Time to Declaration FOR_APPROVAL by ADMINISTRATION since Declaration SUBMITTED by EMPLOYEE;The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';20 days 12:04:10;;A
+Declaration FOR_APPROVAL by ADMINISTRATION Cycle Time;The average of the duration between activity 'Declaration FOR_APPROVAL by ADMINISTRATION' and activity 'Declaration FOR_APPROVAL by ADMINISTRATION';0 days 00:00:00;;B

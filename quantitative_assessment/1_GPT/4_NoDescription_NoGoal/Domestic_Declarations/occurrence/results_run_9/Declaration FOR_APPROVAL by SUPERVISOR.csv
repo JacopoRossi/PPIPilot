@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration FOR_APPROVAL by SUPERVISOR' leading to 'Declaration FINAL_APPROVED by SUPERVISOR',Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',0.0,
+Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' followed by 'Declaration REJECTED by SUPERVISOR',Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all 'Declaration REJECTED by SUPERVISOR',0.0,
+Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all approval activities,"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by SUPERVISOR'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity == 'Declaration APPROVED by ADMINISTRATION' or activity == 'Declaration APPROVED by BUDGET OWNER' or activity == 'Declaration APPROVED by PRE_APPROVER' or activity == 'Declaration FINAL_APPROVED by SUPERVISOR'""}",,
+Frequency of 'Declaration FOR_APPROVAL by SUPERVISOR' in cases with amounts above 100 euros,Number of 'Declaration FOR_APPROVAL by SUPERVISOR' activities > 100 where ma is the last value of case:Amount,0,
+Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' by 'STAFF MEMBER',Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all cases,,
+Number of 'Declaration FOR_APPROVAL by SUPERVISOR' grouped by 'case:BudgetNumber',Number of 'Declaration FOR_APPROVAL by SUPERVISOR' activities grouped by the last value of case:BudgetNumber,budget 86566:1,"{""budget 86566"":1}"
+Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' by worker,Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all cases,0.0,
+Frequency of 'Declaration FOR_APPROVAL by SUPERVISOR' made per year,"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by SUPERVISOR'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of cases involving 'Declaration FOR_APPROVAL by SUPERVISOR' that are completed within the same month,Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all cases,0.0,
+Average number of 'Declaration FOR_APPROVAL by SUPERVISOR' in a month,"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by SUPERVISOR'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Total 'Declaration FOR_APPROVAL by SUPERVISOR' done by 'STAFF MEMBER',Number of 'Declaration FOR_APPROVAL by SUPERVISOR' activities == 'STAFF MEMBER' where ma is the last value of org:role,,
+Ratio of 'Declaration FOR_APPROVAL by SUPERVISOR' over 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all 'Declaration SUBMITTED by EMPLOYEE',0.0,
+Occasions how often the 'Declaration FOR_APPROVAL by SUPERVISOR' is performed in relation to total events in the log,Percentage of 'Declaration FOR_APPROVAL by SUPERVISOR' out of all cases where '' does not happen,0.0,

@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'Accepted + In Progress' to 'Completed + Cancelled',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Total time from 'Queued + Awaiting Assignment' to 'Completed + Cancelled',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Cancelled',,
+Minimum time from 'Completed + Resolved' to 'Completed + Cancelled',The minimum of the duration between activity 'Completed + Resolved' and activity 'Completed + Cancelled',,
+Average time for 'Completed + Cancelled' to occur after 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Cancelled',8:39:04,
+Total resolution time of 'Completed + Cancelled',The sum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Minimum resolution time of 'Completed + Cancelled',The minimum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Average time it takes 'Completed + Cancelled' to be done after 'Accepted + Assigned',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + Cancelled',,
+Total time it takes 'Completed + Cancelled' to be done after 'Accepted + Wait',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Cancelled',,
+Average waiting time to the 'Completed + Cancelled',The average of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Total waiting time to the 'Completed + Cancelled',The sum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+"Time of 'Completed + Cancelled',""ERROR: computing metric {'begin': '', 'end': """"activity == 'Completed + Cancelled'"""", 'aggregation': ''}"",,"
+'Completed + Cancelled' Cycle Time,The sum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Average time from 'Completed + In Call' to 'Completed + Cancelled' to understand the impact of 'Completed + In Call',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Cancelled',7:02:52,
+Minimum time from 'Completed + In Call' to 'Completed + Cancelled' to assess the quickest transition impact,The minimum of the duration between activity 'Completed + In Call' and activity 'Completed + Cancelled',7:02:52,
+Total time for 'Completed + Cancelled' after 'Accepted + Wait - Vendor',The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Cancelled',,

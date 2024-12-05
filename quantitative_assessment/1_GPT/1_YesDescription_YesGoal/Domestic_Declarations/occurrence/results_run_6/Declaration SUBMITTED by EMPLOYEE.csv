@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to Declaration APPROVED by ADMINISTRATION;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';1.0;;B
+Frequency of Declaration SUBMITTED by EMPLOYEE followed by Declaration REJECTED by PRE_APPROVER;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;81;;B
+Percentage of Declaration SUBMITTED by EMPLOYEE out of all activities in the event log;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;0.99;;A
+Number of Declaration SUBMITTED by EMPLOYEE that are followed by Request Payment;Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Request Payment' occurs;11157;;B
+Percentage of Declaration SUBMITTED by EMPLOYEE with amounts above 100 euros;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;1.0;;B
+Frequency of Declaration SUBMITTED by EMPLOYEE per year;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of Declaration SUBMITTED by EMPLOYEE followed by Declaration FINAL_APPROVED by SUPERVISOR;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;B
+Number of Declaration SUBMITTED by EMPLOYEE grouped by org:resource;Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:resource;STAFF MEMBER:370;"{""STAFF MEMBER"":370,""SYSTEM"":11161}";A
+Number of Declaration SUBMITTED by EMPLOYEE grouped by org:resource;Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of org:resource;SYSTEM:11161;"{""STAFF MEMBER"":370,""SYSTEM"":11161}";A
+Percentage of Declaration SUBMITTED by EMPLOYEE by STAFF MEMBER;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases;;;D
+Ratio of Declaration SUBMITTED by EMPLOYEE over Declaration REJECTED by PRE_APPROVER;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER';1.0;;B
+Frequency of Declaration SUBMITTED by EMPLOYEE in the most common variant;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE';10365;;B
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to a payment being requested and paid;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;B
+Number of Declaration SUBMITTED by EMPLOYEE in relation to Declaration APPROVED by ADMINISTRATION;Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;8950;;B
+Percentage of Declaration SUBMITTED by EMPLOYEE that are not dismissed;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.99;;B
+Average number of Declaration SUBMITTED by EMPLOYEE in a month;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total Declaration SUBMITTED by EMPLOYEE done by SYSTEM;Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'SYSTEM' where ma is the last value of org:resource;11161;;B
+Percentage of Declaration SUBMITTED by EMPLOYEE with an increment in case:Amount;"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > previous_case:Amount'}";;;C
+Ratio of Declaration SUBMITTED by EMPLOYEE over Declaration APPROVED by BUDGET OWNER;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by BUDGET OWNER';1.0;;B
+Frequency of Declaration SUBMITTED by EMPLOYEE leading to Declaration REJECTED by PRE_APPROVER to identify improvement areas;Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;81;;B

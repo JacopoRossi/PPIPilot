@@ -1,0 +1,21 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;A
+Number of 'Request Payment' that are followed by 'Payment Handled';Number of 'Request Payment' activities for cases where activity 'Payment Handled' occurs;10037.0;;B
+Percentage of 'Request Payment' from all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;A
+Number of 'Request Payment' with amounts above 100 euros;Number of 'Request Payment' activities > 100 where ma is the last value of case:Amount;2303.0;;B
+Percentage of 'Request Payment' by 'STAFF MEMBER';Percentage of 'Request Payment' out of all cases;;;D
+Number of 'Request Payment' made per year;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by PRE_APPROVER' followed by a new 'Declaration SUBMITTED by EMPLOYEE' before 'Request Payment';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Average number of 'Request Payment' in a month;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Request Payment' done by 'SYSTEM';Number of 'Request Payment' activities == 'SYSTEM' where ma is the last value of org:resource;10036.0;;B
+Ratio of 'Request Payment' over 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';1.0;;B
+Percentage of 'Request Payment' that lead to 'Payment Handled' within the same case;Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Number of 'Request Payment' preceded by 'Declaration APPROVED by ADMINISTRATION';Number of 'Request Payment' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;7914.0;;B
+Percentage of 'Request Payment' in cases where 'Declaration REJECTED by PRE_APPROVER' occurs;Percentage of 'Request Payment' out of all 'Declaration REJECTED by PRE_APPROVER';0.89;;B
+Frequency of 'Request Payment' in relation to total events in the event log;Percentage of 'Request Payment' out of all cases;0.96;;B
+Percentage of 'Request Payment' in cases with a 'case:Amount' above the average of all cases;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > average'}";;;C
+Number of times 'Request Payment' is performed after 'Declaration APPROVED by BUDGET OWNER';Number of 'Request Payment' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;2796.0;;B
+Percentage of 'Request Payment' followed by 'Payment Handled' within 30 days;Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Frequency of 'Request Payment' in cases that involve domestic declarations compared to international travel claims;Percentage of 'Request Payment' out of all cases;0.96;;B
+Percentage of 'Request Payment' in cases that were eventually paid within two months after the trip;Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B

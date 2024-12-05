@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of 'Completed + Resolved' activities out of all 'Accepted + In Progress' activities,Percentage of 'Completed + Resolved' out of all 'Accepted + In Progress',0.75,
+Frequency of 'Completed + Resolved' directly following 'Accepted + In Progress',Frequency of activity 'Completed + Resolved' for cases where activity 'Accepted + In Progress' occurs,5645,
+Percentage of 'Completed + Resolved' activities that lead to 'Completed + Closed',Percentage of 'Completed + Resolved' out of all 'Completed + Closed',1.0,
+Number of 'Completed + Resolved' activities that are preceded by 'Queued + Awaiting Assignment',Number of 'Completed + Resolved' activities for cases where activity 'Queued + Awaiting Assignment' occurs,4908,
+Percentage of 'Completed + Resolved' activities within each variant path,Percentage of 'Completed + Resolved' out of all cases,0.75,
+Frequency of 'Completed + Resolved' in relation to 'Completed + In Call',Frequency of activity 'Completed + Resolved' for cases where activity 'Completed + In Call' occurs,135,
+"Percentage of cases involving 'Completed + Resolved' that exceed a performance threshold (e.g., resolution time above average),""ERROR: computing metric {'count': """"activity == 'Completed + Resolved'"""", 'metric_condition': '> average', 'aggregation': 'percentage'}"",,"
+Percentage of 'Completed + Resolved' activities that occur after 'Accepted + Wait - User',Percentage of 'Completed + Resolved' out of all 'Accepted + Wait - User',0.98,
+Ratio of 'Completed + Resolved' over 'Accepted + Wait - Implementation',Percentage of 'Completed + Resolved' out of all 'Accepted + Wait - Implementation',0.98,
+Number of times 'Completed + Resolved' is the final activity in a case,Number of 'Completed + Resolved' activities,6108,
+Percentage of 'Completed + Resolved' activities that are part of cases with 'High' impact,Percentage of 'Completed + Resolved' out of all cases,0.96,
+Frequency of 'Completed + Resolved' activities in cases involving 'PROD582',Frequency of activity 'Completed + Resolved',6,
+Percentage of 'Completed + Resolved' activities followed by 'Completed + Closed' within the same day,the average of the function base == 0 where base is the number of times `ACTIVITY` == 'Completed + Resolved' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Completed + Closed',0.0,
+Number of 'Completed + Resolved' activities that precede 'Accepted + Assigned',Number of 'Completed + Resolved' activities for cases where activity 'Accepted + Assigned' occurs,2101,
+Ratio of 'Completed + Resolved' activities in cases from 'France' versus cases from 'Brazil',Percentage of 'Completed + Resolved' out of all cases,0.24,

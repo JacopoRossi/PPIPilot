@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Accepted + Wait - Customer\ in relation to \Accepted + In Progress\,Percentage of 'Accepted + Wait - Customer' out of all 'Accepted + In Progress',0.01,
+Percentage of cases involving \Accepted + Wait - Customer\ that lead to \Completed + Resolved\,Percentage of 'Accepted + Wait - Customer' out of all 'Completed + Resolved',0.02,
+Number of times \Accepted + Wait - Customer\ occurs before \Accepted + Wait - Vendor\,Number of 'Accepted + Wait - Customer' activities for cases where activity 'Accepted + Wait - Vendor' occurs,5,
+Percentage of \Accepted + Wait - Customer\ out of all \Queued + Awaiting Assignment\,Percentage of 'Accepted + Wait - Customer' out of all 'Queued + Awaiting Assignment',0.02,
+Frequency of \Accepted + Wait - Customer\ followed by \Completed + Closed\,Frequency of activity 'Accepted + Wait - Customer' for cases where activity 'Completed + Closed' occurs,84,
+Number of \Accepted + Wait - Customer\ made per year,"ERROR: computing metric {'count': ""activity == 'Accepted + Wait - Customer'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Accepted + Wait - Customer\ that are not dismissed,Percentage of 'Accepted + Wait - Customer' out of all cases where 'Unmatched + Unmatched' does not happen,0.01,
+Average number of \Accepted + Wait - Customer\ in a month,"ERROR: computing metric {'count': ""activity == 'Accepted + Wait - Customer'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Total \Accepted + Wait - Customer\ done by resource \Frederic\,Number of 'Accepted + Wait - Customer' activities == 'Frederic' where ma is the last value of org:resource,,
+Ratio of \Accepted + Wait - Customer\ over \Accepted + Assigned\,Percentage of 'Accepted + Wait - Customer' out of all 'Accepted + Assigned',0.02,
+Occasions how often the \Accepted + Wait - Customer\ is performed in Brazil,Number of 'Accepted + Wait - Customer' activities == 'Brazil' where ma is the last value of resource country,0,
+Frequency of \Accepted + Wait - Customer\ in relation to all activities in the event log,Percentage of 'Accepted + Wait - Customer' out of all cases where '' does not happen,0.01,
+Percentage of \Accepted + Wait - Customer\ followed by any \Completed\ activity,"ERROR: computing metric {'count': ""activity == 'Accepted + Wait - Customer'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Completed + %'""}",,
+Number of variants including \Accepted + Wait - Customer\ with performance above average,Number of 'Accepted + Wait - Customer' activities,99,
+Percentage of \Accepted + Wait - Customer\ in cases with \High\ impact compared to \Medium\ impact cases,Percentage of 'Accepted + Wait - Customer' out of all cases,High:0.03,"{""High"":0.0344827586}"

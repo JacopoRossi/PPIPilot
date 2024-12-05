@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Completed + In Call' before 'Completed + Closed',Frequency of activity 'Completed + In Call' for cases where activity 'Completed + Closed' occurs,134,
+Percentage of 'Completed + Closed' out of all 'Completed + Resolved',Percentage of 'Completed + Closed' out of all 'Completed + Resolved',0.98,
+Number of 'Completed + Closed' that are preceded by 'Accepted + In Progress',Number of 'Completed + Closed' activities for cases where activity 'Accepted + In Progress' occurs,5703,
+Frequency of 'Completed + Closed' in relation to 'Accepted + Wait - User',Frequency of activity 'Completed + Closed' for cases where activity 'Accepted + Wait - User' occurs,2382,
+"Number of 'Completed + Closed' made per year,""ERROR: computing metric {'count': """"activity == 'Completed + Closed'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'Completed + Closed' that follow 'Accepted + Wait - Implementation',Percentage of 'Completed + Closed' out of all 'Accepted + Wait - Implementation',0.96,
+"Average number of 'Completed + Closed' in a month,""ERROR: computing metric {'count': """"activity == 'Completed + Closed'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Ratio of 'Completed + In Call' over 'Completed + Closed',Percentage of 'Completed + In Call' out of all 'Completed + Closed',0.02,
+Frequency of 'Completed + Closed' in variants where 'Accepted + In Progress' occurs more than twice before 'Completed + Closed',the sum of the function base > 2 where base is the number of times `ACTIVITY` == 'Completed + Closed' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Accepted + In Progress',11,
+Percentage of 'Completed + Closed' in cases with 'Medium' impact versus 'High' impact,Percentage of 'Completed + Closed' out of all cases,0.8,
+Percentage of 'Completed + Closed' that are not followed by any other activity,the average of the function base == 0 where base is the number of times `ACTIVITY` == 'Completed + Closed' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` != 'Completed + Closed',0.26,
+Frequency of 'Completed + Closed' in relation to all activities in the event log,Frequency of activity 'Completed + Closed',5574,
+Number of 'Completed + Closed' preceded by 'Queued + Awaiting Assignment',Number of 'Completed + Closed' activities for cases where activity 'Queued + Awaiting Assignment' occurs,4583,
+Ratio of 'Completed + Closed' over 'Accepted + In Progress' in terms of frequency,Percentage of 'Completed + Closed' out of all 'Accepted + In Progress',0.74,

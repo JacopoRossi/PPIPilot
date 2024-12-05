@@ -1,0 +1,26 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of Declaration APPROVED by PRE_APPROVER that lead to Declaration FINAL_APPROVED by SUPERVISOR;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.07;;B
+Frequency of Declaration APPROVED by PRE_APPROVER followed by Request Payment;Frequency of activity 'Declaration APPROVED by PRE_APPROVER' for cases where activity 'Request Payment' occurs;660;;B
+Percentage of Declaration APPROVED by PRE_APPROVER out of all Declaration SUBMITTED by EMPLOYEE;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.06;;A
+Number of Declaration APPROVED by PRE_APPROVER that are preceded by Declaration SUBMITTED by EMPLOYEE;Number of 'Declaration APPROVED by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;685;;B
+Percentage of Declaration APPROVED by PRE_APPROVER that are not followed by Declaration REJECTED by PRE_APPROVER;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.06;;B
+Percentage of Declaration APPROVED by PRE_APPROVER from all Declaration APPROVED by ADMINISTRATION;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;A
+Number of Declaration APPROVED by PRE_APPROVER with amounts above 100 euros;Number of 'Declaration APPROVED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;139;;B
+Percentage of Declaration APPROVED by PRE_APPROVER by STAFF MEMBER;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases;;;D
+Number of Declaration APPROVED by PRE_APPROVER grouped by case:BudgetNumber;Number of 'Declaration APPROVED by PRE_APPROVER' activities grouped by the last value of case:BudgetNumber;budget 86566:685;"{""budget 86566"":685}";A
+Percentage of Declaration APPROVED by PRE_APPROVER by worker;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases;;;D
+Number of Declaration APPROVED by PRE_APPROVER made per year;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of Declaration APPROVED by PRE_APPROVER that are rejected (considering paths that lead to any Declaration REJECTED by activity);Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration REJECTED by activity';;;D
+Number of Declaration APPROVED by PRE_APPROVER in relation to Declaration SUBMITTED by EMPLOYEE;Number of 'Declaration APPROVED by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;685;;B
+Percentage of Declaration APPROVED by PRE_APPROVER;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases;0.06;;A
+Number of times Declaration APPROVED by PRE_APPROVER is performed;Number of 'Declaration APPROVED by PRE_APPROVER' activities;685;;A
+Average number of Declaration APPROVED by PRE_APPROVER per month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Percentage of Declaration APPROVED by PRE_APPROVER with an increment (considering cases with increased case:Amount after approval);"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > initial_case:Amount'}";;;C
+Percentage of Declaration APPROVED by PRE_APPROVER with appeal (considering follow-up activities that may indicate an appeal or reconsideration);Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'appeal or reconsideration activity';;;D
+Average number of Declaration APPROVED by PRE_APPROVER in a month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total Declaration APPROVED by PRE_APPROVER done by STAFF MEMBER;Number of 'Declaration APPROVED by PRE_APPROVER' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Fraction of Declaration APPROVED by PRE_APPROVER that are dismissed (considering paths that do not lead to Request Payment or Payment Handled);Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases where 'Request Payment' does not happen;0.06;;B
+Total Declaration APPROVED by PRE_APPROVER performed by SYSTEM;Number of 'Declaration APPROVED by PRE_APPROVER' activities == 'SYSTEM' where ma is the last value of org:resource;679;;B
+Ratio of Declaration APPROVED by PRE_APPROVER over Declaration REJECTED by PRE_APPROVER;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.83;;B
+The ratio of Declaration APPROVED by PRE_APPROVER that are not eventually followed by Payment Handled;Percentage of 'Declaration APPROVED by PRE_APPROVER' out of all cases where 'Payment Handled' does not happen;0.06;;B

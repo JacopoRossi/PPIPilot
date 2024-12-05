@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Reviewer Invitation Reminder 1\ compared to \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Percentage of manuscripts that received a \Reviewer Invitation Reminder 1\ before a \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Percentage of \Reviewer Invitation Reminder 1\ that lead to a \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+"Frequency of \Reviewer Invitation Reminder 1\ in relation to all reminder activities,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity LIKE 'Reviewer Invitation Reminder%'""""}"",,"
+Percentage of \Reviewer Invitation Reminder 1\ followed by \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Number of \Reviewer Invitation Reminder 1\ in manuscripts that eventually get accepted (\SW-EIC Accept\),Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-EIC Accept' occurs,0,
+Percentage of \Reviewer Invitation Reminder 1\ in manuscripts that undergo major revision (\SW-EIC Major Revision\),Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Major Revision',0.87,
+"Frequency of \Reviewer Invitation Reminder 1\ in manuscripts that are rejected (\SW-EIC Reject & Resubmit\, \SW-EIC Reject\),""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity IN ('SW-EIC Reject & Resubmit', 'SW-EIC Reject')""""}"",,"
+Percentage of \Reviewer Invitation Reminder 1\ in relation to the total number of activities in the review process,Percentage of 'Reviewer Invitation Reminder 1' out of all cases where '' does not happen,0.51,
+Frequency of \Reviewer Invitation Reminder 1\ before \SW-AE Assign Reviewers\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-AE Assign Reviewers',0.91,
+"Percentage of \Reviewer Invitation Reminder 1\ in the process variants leading to \SW-EIC Major Revision\ compared to those leading to \SW-EIC Accept\,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity IN ('SW-EIC Major Revision', 'SW-EIC Accept')""""}"",,"
+Number of \Reviewer Invitation Reminder 1\ in relation to \SW-Reviewer Declined\,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-Reviewer Declined' occurs,82,
+Percentage of \Reviewer Invitation Reminder 1\ followed by \Assign a Different Editor\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Assign a Different Editor',0.73,
+"Frequency of \Reviewer Invitation Reminder 1\ in manuscripts that require more than one round of review,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity LIKE '%Round of Review%'""""}"",,"
+Percentage of \Reviewer Invitation Reminder 1\ in the context of the entire event log,Percentage of 'Reviewer Invitation Reminder 1' out of all cases where '' does not happen,0.51,
+Percentage of \Reviewer Invitation Reminder 1\ in manuscripts that exceed the average review time,Percentage of 'Reviewer Invitation Reminder 1' out of all cases,0.51,

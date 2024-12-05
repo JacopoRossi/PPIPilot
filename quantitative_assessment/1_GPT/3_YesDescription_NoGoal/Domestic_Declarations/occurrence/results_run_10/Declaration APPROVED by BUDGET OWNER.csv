@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Declaration APPROVED by BUDGET OWNER\ compared to \Declaration FINAL_APPROVED by SUPERVISOR\,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',0.28,
+Percentage of \Declaration APPROVED by BUDGET OWNER\ out of all approval activities,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,
+Number of \Declaration APPROVED by BUDGET OWNER\ that are followed by \Request Payment\,Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Request Payment' occurs,2809,
+Percentage of \Declaration APPROVED by BUDGET OWNER\ with amounts above 100 euros,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases,0.31,
+Frequency of \Declaration APPROVED by BUDGET OWNER\ in the most common process variant,Frequency of activity 'Declaration APPROVED by BUDGET OWNER',2807,
+Number of \Declaration APPROVED by BUDGET OWNER\ made per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Declaration APPROVED by BUDGET OWNER\ in processes that involve director approval,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration APPROVED by DIRECTOR',,
+Frequency of \Declaration APPROVED by BUDGET OWNER\ in processes that were eventually paid,Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Payment Handled' occurs,2798,
+Percentage of \Declaration APPROVED by BUDGET OWNER\ in declarations submitted by employees within two months after the trip,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases,0.27,
+Number of \Declaration APPROVED by BUDGET OWNER\ grouped by case:BudgetNumber,Number of 'Declaration APPROVED by BUDGET OWNER' activities grouped by the last value of case:BudgetNumber,budget 86566:2820,"{""budget 86566"":2820}"
+Percentage of \Declaration APPROVED by BUDGET OWNER\ followed by \Payment Handled\,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Payment Handled',0.28,
+Frequency of \Declaration APPROVED by BUDGET OWNER\ in processes that required no prior permission for domestic trips,Frequency of activity 'Declaration APPROVED by BUDGET OWNER',2807,
+Percentage of \Declaration APPROVED by BUDGET OWNER\ in relation to \Declaration APPROVED by ADMINISTRATION\,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration APPROVED by ADMINISTRATION',0.35,
+Number of \Declaration APPROVED by BUDGET OWNER\ in relation to total declarations submitted for reimbursement,Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,2820,

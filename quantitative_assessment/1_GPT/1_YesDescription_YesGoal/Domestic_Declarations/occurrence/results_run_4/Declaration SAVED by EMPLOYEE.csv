@@ -1,0 +1,20 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of \Declaration SAVED by EMPLOYEE\ compared to \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ that lead to \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Frequency of \Declaration SAVED by EMPLOYEE\ followed by \Declaration REJECTED by PRE_APPROVER\;Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ in relation to all activities in the event log;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.01;;B
+Number of \Declaration SAVED by EMPLOYEE\ per month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of \Declaration SAVED by EMPLOYEE\ that are followed by any form of \Declaration APPROVED\ activity;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration APPROVED by%'""}";;;C
+Frequency of \Declaration SAVED by EMPLOYEE\ in cases with amounts above 100 euros;Number of 'Declaration SAVED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ by \EMPLOYEE\ role;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.32;;B
+Number of \Declaration SAVED by EMPLOYEE\ grouped by \case:BudgetNumber\;Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber;budget 86566:135;"{""budget 86566"":135}";A
+Percentage of \Declaration SAVED by EMPLOYEE\ by worker;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;STAFF MEMBER:0.29;"{""STAFF MEMBER"":0.2932166302,""SYSTEM"":0.0000995718}";B
+Percentage of \Declaration SAVED by EMPLOYEE\ by worker;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;SYSTEM:0.0;"{""STAFF MEMBER"":0.2932166302,""SYSTEM"":0.0000995718}";B
+Frequency of \Declaration SAVED by EMPLOYEE\ made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of \Declaration SAVED by EMPLOYEE\ that are eventually submitted for approval;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Average number of \Declaration SAVED by EMPLOYEE\ in a month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total \Declaration SAVED by EMPLOYEE\ done by \STAFF MEMBER\;Number of 'Declaration SAVED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Ratio of \Declaration SAVED by EMPLOYEE\ over \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Occasions how often the \Declaration SAVED by EMPLOYEE\ is performed before \Declaration REJECTED by PRE_APPROVER\;Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+The ratio of \Declaration SAVED by EMPLOYEE\ that are not eventually submitted for approval;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases where 'Declaration SUBMITTED by EMPLOYEE' does not happen;0.01;;B

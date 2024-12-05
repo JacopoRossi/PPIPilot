@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of 'Completed + Resolved' activities followed by 'Completed + Closed',Percentage of 'Completed + Resolved' out of all 'Completed + Closed',1.0,
+Number of 'Completed + Resolved' activities that precede 'Completed + In Call',Number of 'Completed + Resolved' activities for cases where activity 'Completed + In Call' occurs,154,
+Frequency of 'Completed + Resolved' in relation to 'Accepted + In Progress',Percentage of 'Completed + Resolved' out of all 'Accepted + In Progress',0.75,
+Percentage of 'Completed + Resolved' activities out of all 'Completed + Closed' activities,Percentage of 'Completed + Resolved' out of all 'Completed + Closed',1.0,
+Number of 'Completed + Resolved' activities that are followed by 'Accepted + Wait - User',Number of 'Completed + Resolved' activities for cases where activity 'Accepted + Wait - User' occurs,2728,
+"Number of 'Completed + Resolved' activities made per year,""ERROR: computing metric {'count': """"activity == 'Completed + Resolved'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'Completed + Resolved' activities that are not dismissed,Percentage of 'Completed + Resolved' out of all cases where 'Unmatched + Unmatched' does not happen,0.75,
+Percentage of 'Completed + Resolved' activities with amounts above 100 euros,Percentage of 'Completed + Resolved' out of all cases,0.75,
+Ratio of 'Completed + Resolved' over 'Queued + Awaiting Assignment',Percentage of 'Completed + Resolved' out of all 'Queued + Awaiting Assignment',1.0,
+Number of times 'Completed + Resolved' is performed before 'Accepted + Wait - Vendor',Number of 'Completed + Resolved' activities for cases where activity 'Accepted + Wait - Vendor' occurs,288,
+"Average number of 'Completed + Resolved' activities in a month,""ERROR: computing metric {'count': """"activity == 'Completed + Resolved'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Fraction of 'Completed + Resolved' activities that are dismissed,Percentage of 'Completed + Resolved' out of all 'Unmatched + Unmatched',1.0,
+Occasions how often the 'Completed + Resolved' is performed in relation to 'Completed + In Call',Percentage of 'Completed + Resolved' out of all 'Completed + In Call',0.07,
+The ratio of 'Completed + Resolved' activities that lead to 'Completed + Closed',Percentage of 'Completed + Resolved' out of all 'Completed + Closed',1.0,

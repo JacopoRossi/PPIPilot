@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from Manuscript Export Succeeded to SW-Reviewer Agreed,The average of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Reviewer Agreed',29 days 06:13:33.976744,
+Average time between Manuscript Export Succeeded and SW-Checklist Completed,The average of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Checklist Completed',4 days 11:28:45.975309,
+Total time from Manuscript Export Succeeded to SW-Awaiting AE Recommendation,The sum of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Awaiting AE Recommendation',1943 days 20:27:35,
+Minimum time from Manuscript Export Succeeded to Original Manuscript Submission Confirmation,The minimum of the duration between activity 'Manuscript Export Succeeded' and activity 'Original Manuscript Submission Confirmation',3 days 21:18:32,
+Average time it takes from Manuscript Export Succeeded to Plagiarism Originality Report Completed,The average of the duration between activity 'Manuscript Export Succeeded' and activity 'Plagiarism Originality Report Completed',1 days 12:03:25.602410,
+"Total resolution time of Manuscript Export Succeeded grouped by case:concept:name,""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': '', 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Minimum time until Manuscript Export Succeeded after SW-Awaiting Checklist Completion,The minimum of the duration between activity 'SW-Awaiting Checklist Completion' and activity 'Manuscript Export Succeeded',0 days 00:00:08,
+Average time to Manuscript Export Succeeded from SW-Awaiting AE Assignment,The average of the duration between activity 'SW-Awaiting AE Assignment' and activity 'Manuscript Export Succeeded',169 days 12:52:12.800000,
+Total time for Manuscript Export Succeeded in the process,The sum of the duration between activity Manuscript Export Succeeded and the end of the case,9239 days 10:10:57,
+Average waiting time to Manuscript Export Succeeded after Original Manuscript Submission Confirmation,The average of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Manuscript Export Succeeded',74 days 15:52:58.430233,
+Time from Manuscript Export Succeeded to SW-EIC Decision,The average of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-EIC Decision',,
+"Manuscript Export Succeeded Cycle Time within each case variant,""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': '', 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Total time it takes for a manuscript to go from Manuscript Export Succeeded to SW-EIC Reject & Resubmit,""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': """"activity == 'SW-EIC Reject & Resubmit'"""", 'aggregation': 'total'}"",,"

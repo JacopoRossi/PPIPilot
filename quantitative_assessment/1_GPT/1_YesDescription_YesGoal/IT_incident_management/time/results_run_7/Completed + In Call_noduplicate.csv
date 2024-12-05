@@ -1,0 +1,23 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time from 'Accepted + In Progress' to 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+"Total duration of 'Completed + In Call' activities across all cases,The sum of the duration between activity Completed + In Call and the end of the case,""1673 days, 23:23:44"","
+Minimum time to reach 'Completed + In Call' from 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+"Average duration difference between 'Completed + In Call' and 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+"Total time spent in 'Completed + In Call' before reaching 'Completed + Closed',The sum of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""1668 days, 19:43:51"","
+Average time from 'Completed + In Call' to the next activity,The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,
+Minimum duration of 'Completed + In Call' across all cases,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+"Maximum duration of 'Completed + In Call' across all cases,the maximum of the duration between the first time instant when `ACTIVITY` == 'Completed + In Call' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,""120 days, 16:20:28"","
+"Average time between 'Completed + In Call' and 'Accepted + Wait - User',The average of the duration between activity 'Completed + In Call' and activity 'Accepted + Wait - User',""8 days, 12:30:59.735849"","
+Total duration of 'Completed + In Call' for cases with 'High' impact,The sum of the duration between activity Completed + In Call and the end of the case,7:02:52,
+Average duration of 'Completed + In Call' for cases involving 'Org line C',The average of the duration between activity Completed + In Call and the end of the case,17:51:18.319437,
+"Duration of the longest 'Completed + In Call' activity,the maximum of the duration between the first time instant when `ACTIVITY` == 'Completed + In Call' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,""120 days, 16:20:28"","
+Duration of the shortest 'Completed + In Call' activity,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Total duration of 'Completed + In Call' activities for 'PROD582',The sum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Average time from 'Accepted + Assigned' to 'Completed + In Call',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+Total duration of 'Completed + In Call' activities in 'France',The sum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Average duration of 'Completed + In Call' activities in 'Brazil',The average of the duration between activity Completed + In Call and the end of the case,1:29:16.936937,
+Total duration of 'Completed + In Call' activities in 'USA',The sum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Duration of 'Completed + In Call' activities in relation to the total case duration,The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,
+Time until 'Completed + In Call' from case start,The average of the duration between the start of the case and activity 'Completed + In Call',8:38:33.807730,
+"Time from 'Completed + In Call' to case closure,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","

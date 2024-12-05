@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Reject',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-EIC Reject' occurs,16,
+Frequency of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Accept',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-EIC Accept' occurs,3,
+Percentage of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+Percentage of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Minor Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Minor Revision',0.86,
+Number of 'SW-Awaiting EIC Decision' preceded by 'SW-Reviewer Agreed',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',0.98,
+Frequency of 'SW-Awaiting EIC Decision' in relation to 'SW-Reviewer Declined',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Reviewer Declined' occurs,29,
+Percentage of 'SW-Awaiting EIC Decision' that lead to a decision within 30 days,Percentage of 'SW-Awaiting EIC Decision' out of all cases,0.63,
+Frequency of 'SW-Awaiting EIC Decision' in manuscripts with 'Plagiarism Originality Report Completed',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'Plagiarism Originality Report Completed' occurs,56,
+"Percentage of 'SW-Awaiting EIC Decision' following 'SW–Major Revision due in 1 week',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW–Major Revision due in 1 week'""""}"",,"
+Number of 'SW-Awaiting EIC Decision' for manuscripts that required 'Reviewer Invitation Reminder 1',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'Reviewer Invitation Reminder 1' occurs,42,
+Percentage of 'SW-Awaiting EIC Decision' in the total event log activities,Percentage of 'SW-Awaiting EIC Decision' out of all cases,0.63,
+Average time from 'SW-AE Assign Reviewers' to 'SW-Awaiting EIC Decision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',0.98,
+Frequency of 'SW-Awaiting EIC Decision' for manuscripts that exceeded 'Plagiarism Percent Match Threshold Exceeded',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'Plagiarism Percent Match Threshold Exceeded' occurs,17,
+Number of 'SW-Awaiting EIC Decision' preceded by 'SW-Checklist Completed',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Checklist Completed' occurs,57,
+Percentage of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Reject' without prior 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting EIC Decision' out of all cases where 'SW-Reviewer Agreed' does not happen,0.63,

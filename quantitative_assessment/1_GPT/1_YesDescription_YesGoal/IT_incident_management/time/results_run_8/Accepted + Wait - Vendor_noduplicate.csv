@@ -1,0 +1,20 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time from 'Accepted + Wait - Vendor' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + In Call',,
+"Total duration of 'Accepted + Wait - Vendor' before transitioning to 'Accepted + In Progress',The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Accepted + In Progress',""1993 days, 17:01:15"","
+Minimum time from 'Accepted + Wait - Vendor' to 'Completed + Resolved',The minimum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Resolved',0:01:12,
+"Average duration of 'Accepted + Wait - Vendor' across all cases,The average of the duration between activity Accepted + Wait - Vendor and the end of the case,""17 days, 19:33:42.313253"","
+"Total time spent in 'Accepted + Wait - Vendor' across the event log,The sum of the duration between activity Accepted + Wait - Vendor and the end of the case,""4435 days, 22:52:36"","
+"Average time it takes to resolve an incident after 'Accepted + Wait - Vendor',The average of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Resolved',""13 days, 3:15:26.987952"","
+"Total duration of incidents involving 'Accepted + Wait - Vendor' before reaching 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Closed',""4412 days, 1:19:00"","
+Minimum time it takes to move from 'Accepted + Wait - Vendor' to any 'Completed' status,The minimum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed',,
+"Duration comparison between 'Accepted + Wait - Vendor' and 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait - Vendor' and activity 'Queued + Awaiting Assignment',""11 days, 13:09:42.866667"","
+"Duration comparison between 'Accepted + Wait - Vendor' and 'Accepted + In Progress',The average of the duration between activity 'Accepted + Wait - Vendor' and activity 'Accepted + In Progress',""14 days, 10:43:55.326087"","
+"Average time from 'Accepted + Wait - Vendor' to the next activity in the most frequent variant,The average of the duration between activity Accepted + Wait - Vendor and the end of the case,""17 days, 19:33:42.313253"","
+Total time from 'Accepted + Wait - Vendor' to 'Completed + In Call' in the most time-consuming variant,The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + In Call',,
+Minimum resolution time of incidents starting with 'Accepted + Wait - Vendor' and ending with 'Completed + Closed',The minimum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Closed',0:01:14,
+"Average time to resolve incidents after 'Accepted + Wait - Vendor' in cases with high impact,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - Vendor'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'average', 'filter': 'impact > high'}"",,"
+Average duration of 'Accepted + Wait - Vendor' before transitioning to any 'Accepted' status,The average of the duration between activity 'Accepted + Wait - Vendor' and activity 'Accepted',,
+Total time spent in 'Accepted + Wait - Vendor' for incidents from France,The sum of the duration between activity Accepted + Wait - Vendor and the end of the case,,
+Minimum time from 'Accepted + Wait - Vendor' to 'Completed + Resolved' in incidents involving 'Org line A2',The minimum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Resolved',,
+Duration of 'Accepted + Wait - Vendor' in the shortest incident resolution path,The minimum of the duration between activity Accepted + Wait - Vendor and the end of the case,0:01:14,

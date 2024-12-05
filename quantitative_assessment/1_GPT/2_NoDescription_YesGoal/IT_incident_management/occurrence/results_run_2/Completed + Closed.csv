@@ -1,0 +1,6 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of 'Completed + Resolved' out of all 'Completed + Closed',Percentage of 'Completed + Resolved' out of all 'Completed + Closed',1.0,
+Number of 'Completed + Closed' made per year,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of 'Completed + Closed' out of all activities in the event log,Percentage of 'Completed + Closed' out of all cases where '' does not happen,0.74,
+Average number of 'Completed + Closed' in a month,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'average', 'group_by': 'month'}",,

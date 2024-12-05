@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Reviewer Selection is due in 1 week' followed by 'SW-AE Assign Reviewers',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'SW-AE Assign Reviewers' occurs,33.0,
+Percentage of 'SW-Reviewer Selection is due in 1 week' that lead to 'SW-Reviewer Agreed',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-Reviewer Agreed',0.72,
+Number of 'SW-Reviewer Selection is due in 1 week' occurrences per case,Number of 'SW-Reviewer Selection is due in 1 week' activities,43.0,
+Percentage of cases with 'SW-Reviewer Selection is due in 1 week' that also have 'SW-Reviewer Declined',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-Reviewer Declined',0.66,
+Frequency of 'SW-Reviewer Selection is due in 1 week' in relation to 'SW-Reviewer Selection is due in 3 days',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'SW-Reviewer Selection is due in 3 days' occurs,24.0,
+Percentage of 'SW-Reviewer Selection is due in 1 week' followed by any activity within 7 days,Percentage of 'SW-Reviewer Selection is due in 1 week' out of all cases,0.45,
+Number of times 'SW-Reviewer Selection is due in 1 week' occurs before 'Reviewer Invitation Reminder 1',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'Reviewer Invitation Reminder 1' occurs,31.0,
+Percentage of 'SW-Reviewer Selection is due in 1 week' that are not followed by 'SW-Reviewer Unavailable',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all cases where 'SW-Reviewer Unavailable' does not happen,0.45,
+Frequency of 'SW-Reviewer Selection is due in 1 week' in the most common process variant,Frequency of activity 'SW-Reviewer Selection is due in 1 week',42.0,
+Percentage of 'SW-Reviewer Selection is due in 1 week' in cases that reach 'SW-EIC Major Revision',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-EIC Major Revision',0.53,
+Number of 'SW-Reviewer Selection is due in 1 week' that precede 'SW-Awaiting EIC Decision',Number of 'SW-Reviewer Selection is due in 1 week' activities for cases where activity 'SW-Awaiting EIC Decision' occurs,41.0,
+Percentage of 'SW-Reviewer Selection is due in 1 week' in cases that end with 'SW-EIC Accept',Percentage of 'SW-Reviewer Selection is due in 1 week' out of all 'SW-EIC Accept',0.0,
+Frequency of 'SW-Reviewer Selection is due in 1 week' in cases with 'SW-Reviewer No Response',Frequency of activity 'SW-Reviewer Selection is due in 1 week' for cases where activity 'SW-Reviewer No Response' occurs,4.0,
+"Frequency of 'SW-Reviewer Selection is due in 1 week' in relation to all reviewer-related activities,""ERROR: computing metric {'count': """"activity == 'SW-Reviewer Selection is due in 1 week'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': 'activity == reviewer-related activities'}"",,"
+"Percentage of 'SW-Reviewer Selection is due in 1 week' in cases that lead to 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Reviewer Selection is due in 1 week'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"

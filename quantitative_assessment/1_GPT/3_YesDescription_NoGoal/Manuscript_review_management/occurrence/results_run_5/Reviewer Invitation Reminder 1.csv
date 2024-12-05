@@ -1,0 +1,11 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Reviewer Invitation Reminder 1\ compared to \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Percentage of manuscripts that received a \Reviewer Invitation Reminder 1\ after \SW-AE Assign Reviewers\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-AE Assign Reviewers',0.91,
+Percentage of \Reviewer Invitation Reminder 1\ that precede a \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Frequency of \Reviewer Invitation Reminder 1\ in relation to total reminders sent,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 1',1.0,
+Percentage of \Reviewer Invitation Reminder 1\ followed by \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Number of \Reviewer Invitation Reminder 1\ sent before \SW-Reviewer Selection is 3 days late\,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-Reviewer Selection is 3 days late' occurs,32,
+Percentage of \Reviewer Invitation Reminder 1\ in manuscripts that undergo a major revision cycle,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Major Revision',0.87,
+Frequency of \Reviewer Invitation Reminder 1\ in manuscripts that were accepted after revision compared to those rejected,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Accept',0.0,
+Percentage of \Reviewer Invitation Reminder 1\ in the review process of scientific papers that lead to a successful reviewer assignment,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,

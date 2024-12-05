@@ -1,0 +1,26 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Reject',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Reject',0.47,
+Number of 'SW-Awaiting EIC Decision',Number of 'SW-Awaiting EIC Decision' activities,60.0,
+Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',0.98,
+Number of 'SW-Awaiting EIC Decision' that are preceded by 'SW-Reviewer Agreed',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-Reviewer Agreed' occurs,45.0,
+Percentage of 'SW-Awaiting EIC Decision' that lead to 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+Percentage of 'SW-Awaiting EIC Decision' from all 'Original Manuscript Submission Confirmation',Percentage of 'SW-Awaiting EIC Decision' out of all 'Original Manuscript Submission Confirmation',0.66,
+Number of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Accept',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-EIC Accept' occurs,3.0,
+Percentage of 'SW-Awaiting EIC Decision' by 'SYSTEM',Percentage of 'SW-Awaiting EIC Decision' out of all cases,0.64,
+Percentage of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Minor Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Minor Revision',0.86,
+Percentage of 'SW-Awaiting EIC Decision' preceded by 'SW-AE Assign Reviewers',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',0.98,
+Number of 'SW-Awaiting EIC Decision' in relation to 'SW-Reviewer No Response',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-Reviewer No Response' occurs,5.0,
+Percentage of 'SW-Awaiting EIC Decision',Percentage of 'SW-Awaiting EIC Decision' out of all cases,0.63,
+Number of times 'SW-Awaiting EIC Decision' is performed,Number of 'SW-Awaiting EIC Decision' activities,60.0,
+Percentage of 'SW-Awaiting EIC Decision' done after 'SW-AE Recommendation overdue',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Recommendation overdue',1.0,
+"Percentage of 'SW-Awaiting EIC Decision' leading to a decision without further revisions,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity != 'SW-EIC Major Revision' AND activity != 'SW-EIC Minor Revision'""""}"",,"
+Percentage of 'SW-Awaiting EIC Decision' with subsequent 'SW-EIC Accept',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Accept',1.0,
+"Average number of 'SW-Awaiting EIC Decision' that are followed by any decision ('SW-EIC Reject', 'SW-EIC Major Revision', 'SW-EIC Minor Revision', 'SW-EIC Accept'),""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'average', 'filter': """"activity == 'SW-EIC Reject' OR activity == 'SW-EIC Major Revision' OR activity == 'SW-EIC Minor Revision' OR activity == 'SW-EIC Accept'""""}"",,"
+Percentage of 'SW-Awaiting EIC Decision' with subsequent 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+"Average number of 'SW-Awaiting EIC Decision' in a month,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Total 'SW-Awaiting EIC Decision' done by 'SYSTEM',Number of 'SW-Awaiting EIC Decision' activities == 'SYSTEM' where ma is the last value of performer,56.0,
+Fraction of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Reject',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Reject',0.47,
+Total 'SW-Awaiting EIC Decision' performed by 'SYSTEM',Number of 'SW-Awaiting EIC Decision' activities == 'SYSTEM' where ma is the last value of performer,56.0,
+Ratio of 'SW-Awaiting EIC Decision' over 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',0.98,
+Occasions how often 'SW-Awaiting EIC Decision' is performed in relation to 'SW-Reviewer Declined',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-Reviewer Declined' occurs,29.0,

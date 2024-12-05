@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that lead to a 'Request Payment';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Request Payment' occurs;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to total declarations submitted;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are followed by 'Payment Handled' without 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that result in 'Declaration APPROVED by ADMINISTRATION' without prior rejection;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' with amounts above 100 euros;Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;1.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that involve travel expenses compared to other expense types;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' leading to 'Declaration REJECTED by PRE_APPROVER' in the first submission attempt;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by BUDGET OWNER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by BUDGET OWNER';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that were eventually paid;Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Payment Handled' occurs;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases that required director approval;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;;;D
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to the total number of declarations handled by PRE_APPROVER;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;;;D
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are part of a process variant ending in 'Payment Handled';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in successful claims (ending in 'Payment Handled') compared to unsuccessful claims;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in the most common process variant;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Most Common Process Variant';;;D

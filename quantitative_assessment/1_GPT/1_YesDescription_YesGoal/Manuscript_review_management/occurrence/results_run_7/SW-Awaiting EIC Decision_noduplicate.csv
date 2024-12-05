@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Percentage of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Number of 'SW-Awaiting EIC Decision' that are preceded by 'SW-AE Assign Reviewers',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-AE Assign Reviewers' occurs,46,
+Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',0.98,
+"Number of 'SW-Awaiting EIC Decision' made per year,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'SW-Awaiting EIC Decision' that are followed by 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+"Average number of 'SW-Awaiting EIC Decision' in a month,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Total 'SW-Awaiting EIC Decision' done by 'SYSTEM',Number of 'SW-Awaiting EIC Decision' activities == 'SYSTEM' where ma is the last value of performer,56,
+Ratio of 'SW-Awaiting EIC Decision' over 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-Reviewer Agreed',0.98,
+Occasions how often 'SW-Awaiting EIC Decision' is performed before 'SW-EIC Accept',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-EIC Accept' occurs,3,
+Percentage of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Minor Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Minor Revision',0.86,
+Number of 'SW-Awaiting EIC Decision' in relation to 'Original Manuscript Submission Confirmation',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'Original Manuscript Submission Confirmation' occurs,58,
+Frequency of 'SW-Awaiting EIC Decision' in the most common variant path,Frequency of activity 'SW-Awaiting EIC Decision',59,
+Percentage of 'SW-Awaiting EIC Decision' that lead to a manuscript being accepted ('SW-EIC Accept'),Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Accept',1.0,

@@ -1,0 +1,20 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of transitions from 'Queued + Awaiting Assignment' to 'Accepted + In Progress' compared to transitions from 'Queued + Awaiting Assignment' to other activities.,Percentage of 'Queued + Awaiting Assignment' out of all 'Accepted + In Progress',0.6,
+Percentage of cases where 'Queued + Awaiting Assignment' directly precedes 'Completed + In Call'.,Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + In Call',0.03,
+Number of occurrences of 'Queued + Awaiting Assignment' in incidents with high impact.,Number of 'Queued + Awaiting Assignment' activities == 'High' where ma is the last value of impact,514.0,
+Percentage of 'Queued + Awaiting Assignment' activities followed by 'Completed + Resolved' within the same case.,Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + Resolved',0.8,
+Frequency of 'Queued + Awaiting Assignment' as the initial activity in a case.,Frequency of activity 'Queued + Awaiting Assignment',4511.0,
+Ratio of 'Queued + Awaiting Assignment' to 'Accepted + In Progress' in terms of their occurrence in the event log.,Percentage of 'Queued + Awaiting Assignment' out of all 'Accepted + In Progress',0.6,
+Number of 'Queued + Awaiting Assignment' activities that lead to a 'Completed + Closed' without a 'Completed + In Call' in between.,Number of 'Queued + Awaiting Assignment' activities for cases where activity 'Completed + Closed' occurs,10675.0,
+"Frequency of 'Queued + Awaiting Assignment' in cases that exceed the average resolution time.,""ERROR: computing metric {'count': """"activity == 'Queued + Awaiting Assignment'"""", 'metric_condition': '> average_resolution_time', 'aggregation': 'total'}"",,"
+Percentage of 'Queued + Awaiting Assignment' activities that occur after 'Accepted + Wait - User'.,Percentage of 'Queued + Awaiting Assignment' out of all 'Accepted + Wait - User',0.85,
+Number of times 'Queued + Awaiting Assignment' is the last activity before a case is closed.,Number of 'Queued + Awaiting Assignment' activities for cases where activity 'Completed + Closed' occurs,10675.0,
+"Ratio of 'Queued + Awaiting Assignment' occurrences in cases with 'Low' impact versus those with 'High' impact.,""ERROR: computing metric {'count': """"activity == 'Queued + Awaiting Assignment'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"impact == 'Low' OR impact == 'High'""""}"",,"
+Frequency of 'Queued + Awaiting Assignment' in cases involving 'PROD582' product.,Number of 'Queued + Awaiting Assignment' activities == 'PROD582' where ma is the last value of product,19.0,
+Percentage of 'Queued + Awaiting Assignment' activities that are part of the most frequent variant paths.,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,
+Number of 'Queued + Awaiting Assignment' activities that occur in cases resolved within the target resolution time.,Number of 'Queued + Awaiting Assignment' activities,10767.0,
+"Percentage of 'Queued + Awaiting Assignment' followed by a change in the 'org:group' or 'resource'.,""ERROR: computing metric {'count': """"activity == 'Queued + Awaiting Assignment'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'org:group != previous_org:group OR org:resource != previous_org:resource'}"",,"
+Frequency of 'Queued + Awaiting Assignment' in cases from France compared to cases from Brazil.,Frequency of activity 'Queued + Awaiting Assignment',4511.0,
+Ratio of 'Queued + Awaiting Assignment' activities in the first quarter of the year versus the fourth quarter.,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,
+Percentage of 'Queued + Awaiting Assignment' in cases that were escalated beyond the initial resource.,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,

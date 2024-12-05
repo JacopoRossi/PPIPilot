@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Accepted + Wait - Vendor' leading to 'Completed + Resolved',Frequency of activity 'Accepted + Wait - Vendor' for cases where activity 'Completed + Resolved' occurs,249,
+Percentage of 'Accepted + Wait - Vendor' out of all 'Accepted + In Progress',Percentage of 'Accepted + Wait - Vendor' out of all 'Accepted + In Progress',0.03,
+Number of 'Accepted + Wait - Vendor' that are preceded by 'Queued + Awaiting Assignment',Number of 'Accepted + Wait - Vendor' activities for cases where activity 'Queued + Awaiting Assignment' occurs,242,
+Percentage of 'Accepted + Wait - Vendor' that lead to 'Completed + In Call',Percentage of 'Accepted + Wait - Vendor' out of all 'Completed + In Call',0.0,
+Frequency of 'Accepted + Wait - Vendor' in relation to 'Completed + Closed',Frequency of activity 'Accepted + Wait - Vendor' for cases where activity 'Completed + Closed' occurs,244,
+Percentage of 'Accepted + Wait - Vendor' followed by 'Accepted + In Progress',Percentage of 'Accepted + Wait - Vendor' out of all 'Accepted + In Progress',0.03,
+Number of 'Accepted + Wait - Vendor' occurrences in the most common process variant,Number of 'Accepted + Wait - Vendor' activities,299,
+Percentage of incidents resolved without 'Accepted + Wait - Vendor',the average of the function base > 0 where base is the number of times `ACTIVITY` != 'Accepted + Wait - Vendor' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Completed + Resolved',1.0,
+Percentage of 'Accepted + Wait - Vendor' in incidents leading to 'Completed + Cancelled',Percentage of 'Accepted + Wait - Vendor' out of all 'Completed + Cancelled',0.0,
+"Frequency of 'Accepted + Wait - Vendor' in relation to total incidents per year,""ERROR: computing metric {'count': """"activity == 'Accepted + Wait - Vendor'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'Accepted + Wait - Vendor' followed by any activity other than 'Completed + In Call',Percentage of 'Accepted + Wait - Vendor' out of all cases where 'Completed + In Call' does not happen,0.03,
+Number of times 'Accepted + Wait - Vendor' is performed before 'Accepted + Wait - User',Number of 'Accepted + Wait - Vendor' activities for cases where activity 'Accepted + Wait - User' occurs,138,
+Percentage of 'Accepted + Wait - Vendor' in incidents with medium to high impact,Percentage of 'Accepted + Wait - Vendor' out of all cases,,
+Frequency of 'Accepted + Wait - Vendor' as a starting activity in a process variant,Frequency of activity 'Accepted + Wait - Vendor',249,
+Number of 'Accepted + Wait - Vendor' activities followed by 'Completed + Resolved' within the shortest performance time variants,Number of 'Accepted + Wait - Vendor' activities for cases where activity 'Completed + Resolved' occurs,299,
+Percentage of 'Accepted + Wait - Vendor' in incidents resolved within the target resolution time,Percentage of 'Accepted + Wait - Vendor' out of all cases,0.03,

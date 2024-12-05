@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by PRE_APPROVER' compared to 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.1;;B
+Percentage of cases leading to 'Declaration REJECTED by PRE_APPROVER' out of all cases handled by PRE_APPROVER;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases;;;D
+Number of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;86.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' that lead to a re-submission by the same employee;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' in relation to total declarations submitted;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all rejections made by any role;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}";;;C
+Number of 'Declaration REJECTED by PRE_APPROVER' with amounts above 100 euros;Number of 'Declaration REJECTED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount;22.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' by month to identify peak rejection periods;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}";;;C
+Frequency of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;2.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' that result in an appeal by the employee;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration REJECTED by EMPLOYEE';0.07;;B
+Number of 'Declaration REJECTED by PRE_APPROVER' per year to observe trends over time;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by PRE_APPROVER' that are eventually approved after re-submission;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.1;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' leading to 'Declaration REJECTED by EMPLOYEE';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration REJECTED by EMPLOYEE' occurs;86.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' in cases where the budget owner is also the supervisor;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases;;;D
+Number of 'Declaration REJECTED by PRE_APPROVER' in relation to 'Declaration APPROVED by BUDGET OWNER';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;0.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' that lead to a final approval without further rejections;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.01;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' in cases with prior 'Declaration SAVED by EMPLOYEE';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration SAVED by EMPLOYEE' occurs;0.0;;A
+Percentage of 'Declaration REJECTED by PRE_APPROVER' for domestic trips compared to international trips;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases;0.01;;B
+Number of 'Declaration REJECTED by PRE_APPROVER' followed by 'Request Payment';Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Request Payment' occurs;77.0;;B
+Percentage of 'Declaration REJECTED by PRE_APPROVER' that do not lead to a payment being requested;Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases where 'Request Payment' does not happen;0.01;;A

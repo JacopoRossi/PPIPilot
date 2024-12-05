@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+Average resolution time of 'Accepted + Wait' for incidents with high impact,The average of the duration between activity Accepted + Wait and the end of the case,,
+"Total time spent in 'Accepted + Wait' for cases resolved within the same day,The sum of the duration between activity Accepted + Wait and the end of the case,""21444 days, 22:00:34"","
+Minimum time to transition from 'Accepted + Wait' to 'Accepted + In Progress',The minimum of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',0:00:08,
+"Average time difference between 'Accepted + Wait' and 'Queued + Awaiting Assignment' across all cases,The average of the duration between activity 'Accepted + Wait' and activity 'Queued + Awaiting Assignment',""9 days, 21:33:03.553360"","
+"Total resolution time of cases involving 'Accepted + Wait' and ending with 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""16689 days, 1:09:59"","
+"Average time from 'Accepted + Wait' to 'Completed + Resolved' compared to 'Accepted + In Progress' to 'Completed + Resolved',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""15 days, 16:26:40.938910"","
+"Minimum time from 'Accepted + Wait' to any 'Completed' status across different products,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': """"activity == 'Completed + Resolved' or activity == 'Completed + Closed' or activity == 'Completed + In Call' or activity == 'Completed + Cancelled'"""", 'aggregation': 'minimum', 'group_by': 'product'}"",,"
+"Total time cases spend in 'Accepted + Wait' before moving to 'Accepted + Assigned',The sum of the duration between activity 'Accepted + Wait' and activity 'Accepted + Assigned',""3604 days, 2:20:21"","
+"Average duration of 'Accepted + Wait' in incidents leading to 'Completed + In Call' versus those leading to 'Completed + Closed',""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': """"activity == 'Completed + In Call' or activity == 'Completed + Closed'"""", 'aggregation': 'average'}"",,"
+"Elapsed time between 'Accepted + Wait' and 'Accepted + Wait - Vendor' for cases involving external vendors,The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + Wait - Vendor',""11 days, 10:49:28.695652"","
+"Total time for 'Accepted + Wait' in cases exceeding expected resolution times,The sum of the duration between activity Accepted + Wait and the end of the case,""21444 days, 22:00:34"","
+"Average time it takes to resolve incidents after 'Accepted + Wait' compared to after 'Accepted + In Progress',The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+"Total time from 'Accepted + Wait' to 'Completed + In Call' for cases with multiple 'Accepted + Wait' occurrences,The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""364 days, 23:28:36"","

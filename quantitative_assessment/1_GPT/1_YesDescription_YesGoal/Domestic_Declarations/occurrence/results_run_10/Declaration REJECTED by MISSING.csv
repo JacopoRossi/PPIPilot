@@ -1,0 +1,19 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by MISSING' compared to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.01;;A
+Frequency of 'Declaration REJECTED by MISSING' followed by 'Request Payment';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Request Payment' occurs;60;;B
+Percentage of 'Declaration REJECTED by MISSING' from all 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;A
+Number of 'Declaration REJECTED by MISSING' with amounts above 100 euros;Number of 'Declaration REJECTED by MISSING' activities > 100 where ma is the last value of case:Amount;34;;B
+Percentage of 'Declaration REJECTED by MISSING' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by MISSING' out of all cases;;;D
+Number of 'Declaration REJECTED by MISSING' grouped by 'case:BudgetNumber';Number of 'Declaration REJECTED by MISSING' activities grouped by the last value of case:BudgetNumber;budget 86566:91;"{""budget 86566"":91}";A
+Percentage of 'Declaration REJECTED by MISSING' by worker;Percentage of 'Declaration REJECTED by MISSING' out of all cases;0.01;;B
+Number of 'Declaration REJECTED by MISSING' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by MISSING' that are rejected (self-referential; considering the process may loop);Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration REJECTED by MISSING';1.0;B
+Frequency of 'Declaration REJECTED by MISSING' in relation to 'Declaration APPROVED by BUDGET OWNER';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;1;;B
+Percentage of 'Declaration REJECTED by MISSING' with an increment (considering subsequent submissions may increase the amount);Percentage of 'Declaration REJECTED by MISSING' out of all cases;0.01;;B
+Average number of 'Declaration REJECTED by MISSING' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Declaration REJECTED by MISSING' done by 'SYSTEM';Number of 'Declaration REJECTED by MISSING' activities == 'SYSTEM' where ma is the last value of org:resource;60;;B
+Ratio of 'Declaration REJECTED by MISSING' over 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Occasions how often the 'Declaration REJECTED by MISSING' is performed in comparison to 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;4;;B
+The ratio of 'Declaration REJECTED by MISSING' that are not eventually performed compared to those that lead to 'Payment Handled';Percentage of 'Declaration REJECTED by MISSING' out of all 'Payment Handled';0.01;;B

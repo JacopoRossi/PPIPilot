@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Reviewer Invitation Reminder 1\ compared to \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Percentage of manuscripts that received a \Reviewer Invitation Reminder 1\ after \SW-AE Assign Reviewers\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-AE Assign Reviewers',0.91,
+Percentage of \Reviewer Invitation Reminder 1\ that precede \SW-Reviewer Agreed\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Frequency of \Reviewer Invitation Reminder 1\ in relation to total reminders sent,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 1',1.0,
+Percentage of \Reviewer Invitation Reminder 1\ followed by \Reviewer Invitation Reminder 2\,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Number of \Reviewer Invitation Reminder 1\ sent before \SW-Reviewer Declined\,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-Reviewer Declined' occurs,82,
+Percentage of \Reviewer Invitation Reminder 1\ in the review process of scientific papers,Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 1',1.0,
+Frequency of \Reviewer Invitation Reminder 1\ in manuscripts that require major revision versus minor revision,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Major Revision',0.87,
+Percentage of \Reviewer Invitation Reminder 1\ leading to successful reviewer assignment within a week,Percentage of 'Reviewer Invitation Reminder 1' out of all cases,0.51,
+Number of \Reviewer Invitation Reminder 1\ in manuscripts that were eventually accepted for publication,Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-EIC Accept' occurs,0,
+Percentage of \Reviewer Invitation Reminder 1\ in manuscripts that were rejected or required resubmission,Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-EIC Reject',0.26,

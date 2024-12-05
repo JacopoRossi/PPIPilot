@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average duration from 'Accepted + In Progress' to 'Completed + Resolved',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',""11 days, 0:27:37.584765"","
+"Median duration from 'Queued + Awaiting Assignment' to 'Completed + Resolved',""ERROR: computing metric {'begin': """"activity == 'Queued + Awaiting Assignment'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'median'}"",,"
+"Average duration for 'Completed + Resolved' across all cases,The average of the duration between activity Completed + Resolved and the end of the case,""6 days, 2:55:55.742716"","
+"Difference in average duration between 'Completed + In Call' and 'Completed + Resolved',""ERROR: computing metric {'begin': """"activity == 'Completed + In Call'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'difference', 'metric_condition': 'average'}"",,"
+"Total duration of 'Completed + Resolved' activities in the event log,The sum of the duration between activity Completed + Resolved and the end of the case,""34669 days, 20:46:11"","
+"Average duration from 'Completed + Resolved' to 'Completed + Closed',The average of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""6 days, 5:09:22.288841"","
+"Longest duration from 'Accepted + Wait - User' to 'Completed + Resolved',The maximum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Resolved',""470 days, 2:19:44"","
+Shortest duration from 'Accepted + In Progress' to 'Completed + Resolved',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',0:00:07,
+"Average duration from 'Completed + Resolved' to the next activity,The average of the duration between activity Completed + Resolved and the end of the case,""6 days, 2:55:55.742716"","
+"Total duration from 'Accepted + In Progress' through 'Completed + Resolved' to 'Completed + Closed',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""89557 days, 12:23:34"","
+"Difference in median duration between 'Completed + Resolved' and 'Accepted + Wait - Vendor',""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - Vendor'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'difference', 'metric_condition': 'median'}"",,"
+"Duration variability of 'Completed + Resolved' across different process variants,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'variability'}"",,"
+Earliest start time of 'Completed + Resolved' after 'Accepted + In Progress' begins,The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',0:00:07,
+"Latest finish time of 'Completed + Resolved' before 'Completed + Closed' begins,The maximum of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""765 days, 8:41:24"","
+Average duration from 'Completed + Resolved' to 'Completed + In Call' considering cases where both activities occur,The average of the duration between activity 'Completed + Resolved' and activity 'Completed + In Call',,
+"Total elapsed time involving 'Completed + Resolved' in the top 5 longest process variants,The sum of the duration between activity Completed + Resolved and the end of the case,""34669 days, 20:46:11"","

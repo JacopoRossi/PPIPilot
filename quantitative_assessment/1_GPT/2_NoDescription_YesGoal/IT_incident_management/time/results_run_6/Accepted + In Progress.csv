@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'Accepted + In Progress' to 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+"Average resolution time of 'Accepted + In Progress' for cases involving 'PROD582',The average of the duration between activity Accepted + In Progress and the end of the case,""135 days, 13:40:23.750000"","
+"Total time for 'Accepted + In Progress' activities in cases with 'Medium' impact,The sum of the duration between activity Accepted + In Progress and the end of the case,""55333 days, 4:26:30"","
+Minimum time to complete 'Accepted + In Progress' before starting 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Queued + Awaiting Assignment',0:00:04,
+"Average time it takes 'Accepted + In Progress' to be done after 'Queued + Awaiting Assignment',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + In Progress',""8 days, 16:34:53.740361"","
+Total resolution time of 'Accepted + In Progress' in cases from 'France',The sum of the duration between activity Accepted + In Progress and the end of the case,,
+Minimum time between 'Accepted + In Progress' and 'Completed + Resolved',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',0:00:07,
+"Total time for 'Accepted + In Progress' activities before 'Accepted + Wait - User',The sum of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - User',""14109 days, 16:24:39"","
+"Average time from 'Accepted + In Progress' to 'Completed + Closed' in cases with 'High' impact,The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""16 days, 22:56:06.600000"","
+Minimum resolution time of 'Accepted + In Progress' in cases involving 'PROD321',The minimum of the duration between activity Accepted + In Progress and the end of the case,0:00:00,
+"Total time it takes 'Accepted + In Progress' to be done before 'Accepted + Assigned',The sum of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Assigned',""11905 days, 22:55:39"","
+Average time for 'Accepted + In Progress' to transition to 'Completed + In Call' in the most frequent variant,The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+Minimum time for 'Accepted + In Progress' before 'Accepted + Wait - Implementation' occurs,The minimum of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - Implementation',0:00:12,
+Total time from 'Accepted + In Progress' to 'Completed + Resolved' in cases from 'Brazil',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',,

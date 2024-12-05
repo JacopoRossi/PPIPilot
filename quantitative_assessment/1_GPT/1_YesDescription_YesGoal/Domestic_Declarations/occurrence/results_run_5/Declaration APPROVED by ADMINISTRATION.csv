@@ -1,0 +1,16 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Number of 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration APPROVED by ADMINISTRATION' activities;8202;;A
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'org:role';Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of org:role;ADMINISTRATION:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":60,""MISSING"":0,""SUPERVISOR"":4,""UNDEFINED"":8138}";A
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'org:role';Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of org:role;EMPLOYEE:60;"{""ADMINISTRATION"":0,""EMPLOYEE"":60,""MISSING"":0,""SUPERVISOR"":4,""UNDEFINED"":8138}";A
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'org:role';Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of org:role;MISSING:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":60,""MISSING"":0,""SUPERVISOR"":4,""UNDEFINED"":8138}";A
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'org:role';Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of org:role;SUPERVISOR:4;"{""ADMINISTRATION"":0,""EMPLOYEE"":60,""MISSING"":0,""SUPERVISOR"":4,""UNDEFINED"":8138}";A
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'org:role';Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of org:role;UNDEFINED:8138;"{""ADMINISTRATION"":0,""EMPLOYEE"":60,""MISSING"":0,""SUPERVISOR"":4,""UNDEFINED"":8138}";A
+Number of 'Declaration APPROVED by ADMINISTRATION' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Number of 'Declaration APPROVED by ADMINISTRATION' with amounts above 100 euros;Number of 'Declaration APPROVED by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount;1907;;B
+Total 'Declaration APPROVED by ADMINISTRATION' done by 'STAFF MEMBER';Number of 'Declaration APPROVED by ADMINISTRATION' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Total 'Declaration APPROVED by ADMINISTRATION' performed by 'ADMINISTRATION';Number of 'Declaration APPROVED by ADMINISTRATION' activities == 'ADMINISTRATION' where ma is the last value of org:role;0;;B
+Average number of 'Declaration APPROVED by ADMINISTRATION' per month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Average number of 'Declaration APPROVED by ADMINISTRATION' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Percentage of 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases;0.76;;A
+Number of times 'Declaration APPROVED by ADMINISTRATION' is performed;Number of 'Declaration APPROVED by ADMINISTRATION' activities;8202;;A

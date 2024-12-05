@@ -1,0 +1,19 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + In Progress' to 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""16 days, 1:40:38.796698"","
+"Average time from 'Completed + In Call' to 'Completed + Closed',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","
+"Total time from 'Queued + Awaiting Assignment' to 'Completed + Closed',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Closed',""76520 days, 13:04:31"","
+"Average resolution time for 'Completed + Closed',The average of the duration between the start of the case and activity 'Completed + Closed',""16 days, 2:12:02.350018"","
+"Total resolution time for 'Completed + Closed',The sum of the duration between the start of the case and activity 'Completed + Closed',""89695 days, 2:26:19"","
+Minimum time from 'Accepted + Wait - User' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Closed',0:00:15,
+"Average time between 'Accepted + Assigned' and 'Completed + Closed',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',""19 days, 5:43:47.930825"","
+"Total time between 'Accepted + Wait - Vendor' and 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Closed',""4412 days, 1:19:00"","
+Minimum resolution time of 'Completed + Closed',The minimum of the duration between the start of the case and activity 'Completed + Closed',0:01:35,
+"Average waiting time to 'Completed + Closed',The average of the duration between the start of the case and activity 'Completed + Closed',""16 days, 2:12:02.350018"","
+"Total waiting time to 'Completed + Closed',The sum of the duration between the start of the case and activity 'Completed + Closed',""89695 days, 2:26:19"","
+Minimum waiting time to 'Completed + Closed',The minimum of the duration between the start of the case and activity 'Completed + Closed',0:01:35,
+Average time it takes 'Completed + In Call' after the execution of 'Accepted + In Progress',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+"Total time it takes 'Completed + In Call' after the execution of 'Accepted + In Progress',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',""726 days, 17:01:04"","
+Minimum time it takes 'Completed + In Call' after the execution of 'Accepted + In Progress',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0:00:04,
+"'Completed + Closed' Cycle Time,The sum of the duration between the start of the case and activity 'Completed + Closed',""89695 days, 2:26:19"","
+"Average time from 'Accepted + In Progress' through 'Completed + In Call' to 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""12 days, 13:53:21.410448"","

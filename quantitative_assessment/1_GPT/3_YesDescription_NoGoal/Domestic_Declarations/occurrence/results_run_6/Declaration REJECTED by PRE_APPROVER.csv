@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of Declaration REJECTED by PRE_APPROVER out of all Declaration SUBMITTED by EMPLOYEE,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Number of Declaration REJECTED by PRE_APPROVER that are followed by Declaration REJECTED by EMPLOYEE,Number of 'Declaration REJECTED by PRE_APPROVER' activities for cases where activity 'Declaration REJECTED by EMPLOYEE' occurs,86,
+Frequency of Declaration REJECTED by PRE_APPROVER in relation to total rejections,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}",,
+Percentage of Declaration REJECTED by PRE_APPROVER followed by Declaration SUBMITTED by EMPLOYEE,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Percentage of Declaration REJECTED by PRE_APPROVER that lead to a new submission by the same employee within 30 days,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases,0.01,
+Frequency of Declaration REJECTED by PRE_APPROVER by month to identify peak rejection periods,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}",,
+Percentage of Declaration REJECTED by PRE_APPROVER from all activities performed by PRE_APPROVER,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases,,
+Number of Declaration REJECTED by PRE_APPROVER with amounts above 100 euros,Number of 'Declaration REJECTED by PRE_APPROVER' activities > 100 where ma is the last value of case:Amount,22,
+Average number of days between Declaration REJECTED by PRE_APPROVER and Declaration SUBMITTED by EMPLOYEE for re-submission cases,the average of the number of times `ACTIVITY` == 'Declaration REJECTED by PRE_APPROVER' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Percentage of Declaration REJECTED by PRE_APPROVER that are eventually approved after re-submission,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration APPROVED by %'""}",,
+Frequency of Declaration REJECTED by PRE_APPROVER in relation to total activities in the event log,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all cases where '' does not happen,0.01,
+Number of Declaration REJECTED by PRE_APPROVER grouped by case:BudgetNumber to identify if specific budgets have higher rejection rates,Number of 'Declaration REJECTED by PRE_APPROVER' activities grouped by the last value of case:BudgetNumber,budget 86566:86,"{""budget 86566"":86}"
+Percentage of Declaration REJECTED by PRE_APPROVER that result in an appeal by the employee,Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration APPEAL by EMPLOYEE',,

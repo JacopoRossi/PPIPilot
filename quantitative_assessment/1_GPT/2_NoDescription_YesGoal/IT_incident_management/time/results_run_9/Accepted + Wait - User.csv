@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average duration of 'Accepted + Wait - User' before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',""8 days, 3:34:57.158730"","
+"Median duration of 'Accepted + Wait - User' across all cases,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - User'"""", 'end': '', 'aggregation': 'average', 'group_by': 'case:id'}"",,"
+"Longest duration of 'Accepted + Wait - User' before any subsequent activity,the maximum of the duration between the first time instant when `ACTIVITY` == 'Accepted + Wait - User' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x00000158FAB73550> - AppliesTo.PROCESS,""477 days, 9:44:30"","
+Shortest duration of 'Accepted + Wait - User' before transitioning to any subsequent activity,The minimum of the duration between activity Accepted + Wait - User and the end of the case,0:00:00,
+"Average duration from 'Accepted + Wait - User' to 'Completed + Resolved',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Resolved',""13 days, 6:24:12.307850"","
+"Total duration of 'Accepted + Wait - User' in cases leading to 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Closed',""42485 days, 10:40:24"","
+"Difference in average duration between 'Accepted + Wait - User' and 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait - User' and activity 'Queued + Awaiting Assignment',""9 days, 10:45:08.848524"","
+"Average duration from 'Accepted + In Progress' to 'Accepted + Wait - User',The average of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - User',""5 days, 16:16:14.116298"","
+"Total duration of 'Accepted + Wait - User' in cases with 'High' impact,The sum of the duration between activity Accepted + Wait - User and the end of the case,""1531 days, 0:44:40"","
+"Average duration of 'Accepted + Wait - User' in cases with 'Medium' impact before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',""57 days, 22:36:02"","
+"Earliest start time of 'Accepted + Wait - User' across the event log,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - User'"""", 'end': '', 'aggregation': 'minimum', 'group_by': 'time:timestamp'}"",,"
+"Latest start time of 'Accepted + Wait - User' across the event log,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - User'"""", 'end': '', 'aggregation': 'maximum', 'group_by': 'time:timestamp'}"",,"
+Average duration of 'Accepted + Wait - User' in cases ending with 'Completed + Cancelled',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Cancelled',8:39:04,
+"Comparison of average duration between 'Accepted + Wait - User' and 'Accepted + Wait - Implementation',The average of the duration between activity 'Accepted + Wait - User' and activity 'Accepted + Wait - Implementation',""14 days, 8:55:40.297030"","
+"Total elapsed time involving 'Accepted + Wait - User' in the most frequent process variant,The sum of the duration between activity Accepted + Wait - User and the end of the case,""43386 days, 0:31:20"","

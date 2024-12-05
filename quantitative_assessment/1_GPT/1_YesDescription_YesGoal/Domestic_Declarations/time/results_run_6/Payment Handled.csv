@@ -1,0 +1,18 @@
+Name;Metric;Value;Agrupation;Colonna77
+;ERROR: computing metric {};;;
+Average time from 'Request Payment' to 'Payment Handled';The average of the duration between activity 'Request Payment' and activity 'Payment Handled';3 days, 13:47:24.830228;;A
+Total time from 'Declaration SUBMITTED by EMPLOYEE' to 'Payment Handled';The sum of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Payment Handled';116674 days, 17:20:16;;A
+Minimum time from 'Declaration FINAL_APPROVED by SUPERVISOR' to 'Payment Handled';The minimum of the duration between activity 'Declaration FINAL_APPROVED by SUPERVISOR' and activity 'Payment Handled';23:36:15;;A
+Average time for 'Payment Handled' grouped by 'org:resource';The average of the duration between activity 'Payment Handled' and the end of case grouped by the last value of org:resource;STAFF MEMBER:1 days 15:00:24;"{""STAFF MEMBER"":140424000,""SYSTEM"":0}";A
+Average time for 'Payment Handled' grouped by 'org:resource';The average of the duration between activity 'Payment Handled' and the end of case grouped by the last value of org:resource;SYSTEM:0 days 00:00:00;"{""STAFF MEMBER"":140424000,""SYSTEM"":0}";A
+Total resolution time of 'Payment Handled';The sum of the duration between activity Payment Handled and the end of the case;1 day, 15:00:24;;B
+Minimum resolution time of 'Payment Handled';The minimum of the duration between activity Payment Handled and the end of the case;00:00:00;;B
+Average time it takes 'Payment Handled' after 'Request Payment';The average of the duration between activity 'Request Payment' and activity 'Payment Handled';3 days, 13:47:24.830228;;A
+Total time it takes 'Payment Handled' to be done after 'Request Payment';The sum of the duration between activity 'Request Payment' and activity 'Payment Handled';35878 days, 4:32:41;;A
+Minimum time it takes 'Payment Handled' after 'Request Payment';The minimum of the duration between activity 'Request Payment' and activity 'Payment Handled';02:19:06;;A
+Average time from 'Declaration APPROVED by ADMINISTRATION' to 'Payment Handled';The average of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Payment Handled';9 days, 12:54:29.599924;;A
+Total time from 'Declaration APPROVED by ADMINISTRATION' to 'Payment Handled';The sum of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Payment Handled';75549 days, 6:01:41;;A
+Minimum time from 'Declaration APPROVED by ADMINISTRATION' to 'Payment Handled';The minimum of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Payment Handled';1 day, 1:29:59;;A
+Average time from 'Declaration APPROVED by BUDGET OWNER' to 'Payment Handled' for cases where this step occurs;The average of the duration between activity 'Declaration APPROVED by BUDGET OWNER' and activity 'Payment Handled';9 days, 15:37:28.491065;;A
+Total time from 'Declaration REJECTED by PRE_APPROVER' to 'Payment Handled' for cases that were eventually approved;"ERROR: computing metric {'begin': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'end': ""activity == 'Payment Handled'"", 'aggregation': 'total', 'filter': ""activity == 'Declaration APPROVED by ADMINISTRATION' or activity == 'Declaration APPROVED by BUDGET OWNER'""}";;;C
+Average time from 'Declaration REJECTED by PRE_APPROVER' to 'Payment Handled' for cases that were eventually approved;"ERROR: computing metric {'begin': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'end': ""activity == 'Payment Handled'"", 'aggregation': 'average', 'filter': ""activity == 'Declaration APPROVED by ADMINISTRATION' or activity == 'Declaration APPROVED by BUDGET OWNER'""}";;;C

@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of Declarations REJECTED by SUPERVISOR out of all Declaration SUBMITTED by EMPLOYEE,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration SUBMITTED by EMPLOYEE',0.03,
+Frequency of Declaration REJECTED by SUPERVISOR followed by Declaration REJECTED by EMPLOYEE,Frequency of activity 'Declaration REJECTED by SUPERVISOR' for cases where activity 'Declaration REJECTED by EMPLOYEE' occurs,277,
+Percentage of Declaration REJECTED by SUPERVISOR that lead to a new Declaration SUBMITTED by EMPLOYEE,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration SUBMITTED by EMPLOYEE',0.03,
+Number of Declaration REJECTED by SUPERVISOR with amounts above 100 euros,Number of 'Declaration REJECTED by SUPERVISOR' activities > 100 where ma is the last value of case:Amount,80,
+Frequency of Declaration REJECTED by SUPERVISOR in relation to Declaration FINAL_APPROVED by SUPERVISOR,Frequency of activity 'Declaration REJECTED by SUPERVISOR' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,204,
+Percentage of Declaration REJECTED by SUPERVISOR out of all rejections,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by SUPERVISOR'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity == 'Declaration REJECTED by ADMINISTRATION' or activity == 'Declaration REJECTED by EMPLOYEE' or activity == 'Declaration REJECTED by PRE_APPROVER' or activity == 'Declaration REJECTED by BUDGET OWNER'""}",,
+Number of Declaration REJECTED by SUPERVISOR per year,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by SUPERVISOR'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of Declaration REJECTED by SUPERVISOR followed by Request Payment,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Request Payment',0.02,
+Ratio of Declaration REJECTED by SUPERVISOR over Declaration APPROVED by ADMINISTRATION,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration APPROVED by ADMINISTRATION',0.03,
+Frequency of Declaration REJECTED by SUPERVISOR in the most common process variant,Frequency of activity 'Declaration REJECTED by SUPERVISOR',281,
+Percentage of Declaration REJECTED by SUPERVISOR that are followed by Declaration APPROVED by ADMINISTRATION in a new submission cycle,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration APPROVED by ADMINISTRATION',0.03,
+Number of Declaration REJECTED by SUPERVISOR grouped by case:BudgetNumber,Number of 'Declaration REJECTED by SUPERVISOR' activities grouped by the last value of case:BudgetNumber,budget 86566:293,"{""budget 86566"":293}"
+Percentage of Declaration REJECTED by SUPERVISOR in cases with Declaration APPROVED by BUDGET OWNER,Percentage of 'Declaration REJECTED by SUPERVISOR' out of all 'Declaration APPROVED by BUDGET OWNER',0.03,
+Frequency of Declaration REJECTED by SUPERVISOR in cases that involve director approval,Frequency of activity 'Declaration REJECTED by SUPERVISOR',,

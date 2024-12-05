@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;A
+Number of 'Request Payment' that are preceded by 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Request Payment' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;10038.0;;B
+Percentage of 'Request Payment' followed by 'Payment Handled';Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Number of 'Request Payment' with amounts above 100 euros;Number of 'Request Payment' activities > 100 where ma is the last value of case:Amount;2303.0;;B
+Percentage of 'Request Payment' by 'SYSTEM';Percentage of 'Request Payment' out of all cases;1.0;;B
+Number of 'Request Payment' made per year;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' leading to a re-submission and eventual 'Request Payment';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Request Payment';0.01;;B
+Percentage of 'Request Payment' in relation to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Request Payment' out of all 'Declaration APPROVED by ADMINISTRATION';0.99;;B
+Number of times 'Request Payment' is performed after 'Declaration APPROVED by BUDGET OWNER';Number of 'Request Payment' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;2796.0;;B
+Average number of 'Request Payment' in a month;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Request Payment' done by 'SYSTEM';Number of 'Request Payment' activities == 'SYSTEM' where ma is the last value of org:resource;10036.0;;B
+Ratio of 'Request Payment' over 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;B
+Occasions how often the 'Request Payment' is performed in comparison to 'Payment Handled';Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;A
+Percentage of 'Request Payment' that lead to 'Payment Handled' without prior 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Request Payment' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.96;;B

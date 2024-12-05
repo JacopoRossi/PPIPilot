@@ -1,0 +1,23 @@
+Name;Metric;Value;Agrupation;Colonna77
+;ERROR: computing metric {};;;
+Average time from 'Declaration FINAL_APPROVED by SUPERVISOR' to 'Request Payment';The average of the duration between activity 'Declaration FINAL_APPROVED by SUPERVISOR' and activity 'Request Payment';3 days 07:02:46.683005;;A
+Total time from 'Declaration SUBMITTED by EMPLOYEE' to 'Request Payment';The sum of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Request Payment';80286 days 20:10:44;;A
+Minimum time from 'Declaration APPROVED by ADMINISTRATION' to 'Request Payment';The minimum of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Request Payment';0 days 00:01:24;;A
+Average time between 'Request Payment' and 'Payment Handled';The average of the duration between activity 'Request Payment' and activity 'Payment Handled';3 days 13:47:24.830228;;A
+Total resolution time of 'Request Payment';The sum of the duration between activity Request Payment and the end of the case;35936 days 18:33:16;;B
+Minimum resolution time of 'Request Payment';The minimum of the duration between activity Request Payment and the end of the case;0 days 02:19:06;;B
+Average time it takes 'Request Payment' to be done after 'Declaration FINAL_APPROVED by SUPERVISOR';The average of the duration between activity 'Declaration FINAL_APPROVED by SUPERVISOR' and activity 'Request Payment';3 days 07:02:46.683005;;B
+Total time it takes 'Request Payment' to be done after 'Declaration FINAL_APPROVED by SUPERVISOR';The sum of the duration between activity 'Declaration FINAL_APPROVED by SUPERVISOR' and activity 'Request Payment';33061 days 02:46:04;;A
+Minimum time it takes 'Request Payment' to be done after 'Declaration FINAL_APPROVED by SUPERVISOR';The minimum of the duration between activity 'Declaration FINAL_APPROVED by SUPERVISOR' and activity 'Request Payment';0 days 00:00:00;;A
+Average waiting time to the 'Request Payment' after 'Declaration APPROVED by PRE_APPROVER';The average of the duration between activity 'Declaration APPROVED by PRE_APPROVER' and activity 'Request Payment';6 days 06:45:13.804545;;B
+Total waiting time to the 'Request Payment' after 'Declaration REJECTED by PRE_APPROVER';The sum of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Request Payment';1248 days 01:11:33;;B
+Minimum waiting time to the 'Request Payment' after 'Declaration REJECTED by PRE_APPROVER';The minimum of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Request Payment';0 days 02:21:20;;B
+Average time for 'Request Payment' in cases where 'Declaration REJECTED by PRE_APPROVER' occurred;The average of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Request Payment';17 days 08:00:59.625000;;A
+Total time for 'Request Payment' in cases where 'Declaration REJECTED by PRE_APPROVER' occurred;The sum of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Request Payment';1248 days 01:11:33;;A
+Minimum time for 'Request Payment' in cases where 'Declaration REJECTED by PRE_APPROVER' occurred;The minimum of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Request Payment';0 days 02:21:20;;A
+Average time from 'Declaration SUBMITTED by EMPLOYEE' to 'Request Payment' in cases leading to 'Payment Handled';The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Request Payment';7 days 23:47:30.795038;;A
+Total time from 'Declaration SUBMITTED by EMPLOYEE' to 'Request Payment' in cases leading to 'Payment Handled';The sum of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Request Payment';80200 days 23:22:59;;A
+Minimum time from 'Declaration SUBMITTED by EMPLOYEE' to 'Request Payment' in cases leading to 'Payment Handled';The minimum of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Request Payment';0 days 00:01:26;;B
+Average time from 'Request Payment' to 'Payment Handled' across all variants;The average of the duration between activity 'Request Payment' and activity 'Payment Handled';3 days 13:47:24.830228;;A
+Total time from 'Request Payment' to 'Payment Handled' across all variants;The sum of the duration between activity 'Request Payment' and activity 'Payment Handled';35878 days 04:32:41;;A
+Minimum time from 'Request Payment' to 'Payment Handled' across all variants;The minimum of the duration between activity 'Request Payment' and activity 'Payment Handled';0 days 02:19:06;;A

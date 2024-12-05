@@ -1,0 +1,19 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of Declaration APPROVED by BUDGET OWNER out of all Declaration SUBMITTED by EMPLOYEE;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.27;;A
+Number of Declaration APPROVED by BUDGET OWNER with amounts above 100 euros;Number of 'Declaration APPROVED by BUDGET OWNER' activities > 100 where ma is the last value of case:Amount;722.0;;B
+Percentage of Declaration APPROVED by BUDGET OWNER followed by Declaration FINAL_APPROVED by SUPERVISOR;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.28;;B
+Number of Declaration APPROVED by BUDGET OWNER that are preceded by Declaration APPROVED by ADMINISTRATION;Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;2820.0;;B
+Percentage of Declaration APPROVED by BUDGET OWNER by SUPERVISOR;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.25;;A
+Number of Declaration APPROVED by BUDGET OWNER made per year;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of Declaration APPROVED by BUDGET OWNER that lead to Request Payment;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Request Payment';0.28;;B
+Average number of Declaration APPROVED by BUDGET OWNER in a month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total Declaration APPROVED by BUDGET OWNER done by STAFF MEMBER;Number of 'Declaration APPROVED by BUDGET OWNER' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Ratio of Declaration APPROVED by BUDGET OWNER over Declaration REJECTED by PRE_APPROVER;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Percentage of Declaration APPROVED by BUDGET OWNER from all Declaration FINAL_APPROVED by SUPERVISOR;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.28;;A
+Number of times Declaration APPROVED by BUDGET OWNER is performed before Request Payment;Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Request Payment' occurs;2809.0;;B
+Percentage of Declaration APPROVED by BUDGET OWNER with an increment in case:Amount compared to previous activity;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > [previous_activity_amount]'}";;;C
+Fraction of Declaration APPROVED by BUDGET OWNER that are dismissed in the process variants;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity == 'Declaration REJECTED by [any_role]'""}";;;C
+Percentage of Declaration APPROVED by BUDGET OWNER by worker EMPLOYEE;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.02;;B
+Occasions how often the Declaration APPROVED by BUDGET OWNER is performed in relation to total events;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.27;;A
+Percentage of Declaration APPROVED by BUDGET OWNER that are not eventually performed due to being followed by Declaration REJECTED by PRE_APPROVER;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B

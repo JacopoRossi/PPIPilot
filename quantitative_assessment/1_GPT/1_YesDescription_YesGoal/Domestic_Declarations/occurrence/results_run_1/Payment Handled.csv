@@ -1,0 +1,20 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of \Declaration SUBMITTED by EMPLOYEE\ leading to \Payment Handled\;Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled';1.0;;B
+Frequency of \Payment Handled\ per year;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of \Payment Handled\ with amounts above 100 euros;Percentage of 'Payment Handled' out of all cases;1.0;;B
+Number of \Payment Handled\ that are preceded by \Request Payment\;Number of 'Payment Handled' activities for cases where activity 'Request Payment' occurs;10037;;B
+Percentage of \Payment Handled\ by \STAFF MEMBER\;Percentage of 'Payment Handled' out of all cases;;;D
+Frequency of \Declaration REJECTED by PRE_APPROVER\ followed by a successful \Payment Handled\;Frequency of activity 'Declaration REJECTED by PRE_APPROVER' for cases where activity 'Payment Handled' occurs;72;;B
+Percentage of \Payment Handled\ out of all \Declaration FINAL_APPROVED by SUPERVISOR\;Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Payment Handled';1.0;;B
+Number of \Payment Handled\ grouped by \case:BudgetNumber\;Number of 'Payment Handled' activities grouped by the last value of case:BudgetNumber;budget 86566:10044;"{""budget 86566"":10044}";A
+Percentage of \Payment Handled\ by month;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}";;;C
+Ratio of \Payment Handled\ over \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Payment Handled' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;B
+Average number of \Payment Handled\ in a month;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total \Payment Handled\ performed by \SYSTEM\;Number of 'Payment Handled' activities == 'SYSTEM' where ma is the last value of org:resource;10043;;B
+Percentage of \Payment Handled\ that follow \Declaration APPROVED by ADMINISTRATION\;Percentage of 'Payment Handled' out of all 'Declaration APPROVED by ADMINISTRATION';0.99;;B
+Frequency of \Payment Handled\ in relation to the total number of activities in the event log;Percentage of 'Payment Handled' out of all cases;0.96;;B
+Percentage of \Payment Handled\ in cases where \Declaration REJECTED by PRE_APPROVER\ occurs;Percentage of 'Payment Handled' out of all 'Declaration REJECTED by PRE_APPROVER';0.89;;B
+Number of \Payment Handled\ made per year;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of \Payment Handled\ with an increment in \case:Amount\ compared to the initial submission;"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > initial_submission_amount'}";;;C
+Ratio of \Payment Handled\ over \Declaration REJECTED by PRE_APPROVER\;Percentage of 'Payment Handled' out of all 'Declaration REJECTED by PRE_APPROVER';0.89;;B

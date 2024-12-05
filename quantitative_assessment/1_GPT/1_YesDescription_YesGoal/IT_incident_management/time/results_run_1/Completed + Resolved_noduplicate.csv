@@ -1,0 +1,19 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time for 'Completed + Resolved',The average of the duration between activity Completed + Resolved and the end of the case,""6 days, 2:55:55.742716"","
+"Average time from 'Accepted + In Progress' to 'Completed + Resolved',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',""11 days, 0:27:37.584765"","
+"Average time from 'Queued + Awaiting Assignment' to 'Completed + Resolved',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Resolved',""12 days, 5:20:13.389973"","
+"Difference in average resolution time between 'Completed + Resolved' and 'Completed + In Call',""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': """"activity == 'Completed + In Call'"""", 'aggregation': 'difference_average'}"",,"
+"Total time spent in 'Completed + Resolved' across all cases,The sum of the duration between activity Completed + Resolved and the end of the case,""34669 days, 20:46:11"","
+"Average time from 'Completed + Resolved' to 'Completed + Closed',The average of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""6 days, 5:09:22.288841"","
+Minimum resolution time for 'Completed + Resolved',The minimum of the duration between activity Completed + Resolved and the end of the case,0:00:00,
+"Maximum resolution time for 'Completed + Resolved',the maximum of the duration between the first time instant when `ACTIVITY` == 'Completed + Resolved' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,""765 days, 8:41:24"","
+"Standard deviation of resolution time for 'Completed + Resolved',""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'standard_deviation'}"",,"
+Average time from 'Completed + Resolved' to 'Completed + In Call' considering cases where both activities occur,The average of the duration between activity 'Completed + Resolved' and activity 'Completed + In Call',,
+"Total count of transitions from 'Completed + Resolved' to any other activity,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'count_transitions'}"",,"
+"Average time from 'Completed + Resolved' to 'Accepted + Wait - User',The average of the duration between activity 'Completed + Resolved' and activity 'Accepted + Wait - User',""11 days, 12:57:36.223958"","
+"Time from the first occurrence of 'Completed + Resolved' to the last occurrence in the log,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'time_first_to_last'}"",,"
+"Average time from 'Completed + Resolved' to 'Accepted + In Progress' in cases where rework is needed,The average of the duration between activity 'Completed + Resolved' and activity 'Accepted + In Progress',""14 days, 0:23:21.503876"","
+"Distribution of resolution times for 'Completed + Resolved' across different organization countries,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'distribution', 'group_by': 'organization country'}"",,"
+"Time from 'Completed + Resolved' to case closure across all cases,The sum of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""34641 days, 12:36:38"","
+Average time from 'Completed + Resolved' to 'Completed + Cancelled' in cases where cancellation occurs after resolution,The average of the duration between activity 'Completed + Resolved' and activity 'Completed + Cancelled',,

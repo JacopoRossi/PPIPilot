@@ -1,0 +1,8 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of \Completed + Cancelled\ out of all activities in the event log.,Percentage of 'Completed + Cancelled' out of all cases,0.0,
+Frequency of \Completed + Cancelled\ occurrences in the event log.,Frequency of activity 'Completed + Cancelled',1,
+Number of \Completed + Cancelled\ made per year.,"ERROR: computing metric {'count': ""activity == 'Completed + Cancelled'"", 'aggregation': 'total', 'group_by': 'year', 'filter': ''}",,
+Percentage of \Completed + Cancelled\ out of all \Completed + Resolved\.,Percentage of 'Completed + Cancelled' out of all 'Completed + Resolved',0.0,
+Number of \Completed + Cancelled\ activities that occur after \Queued + Awaiting Assignment\.,Number of 'Completed + Cancelled' activities for cases where activity 'Queued + Awaiting Assignment' occurs,0,
+Percentage of \Completed + Cancelled\ activities that have a preceding activity of \Accepted + Assigned\.,Percentage of 'Completed + Cancelled' out of all 'Accepted + Assigned',0.0,

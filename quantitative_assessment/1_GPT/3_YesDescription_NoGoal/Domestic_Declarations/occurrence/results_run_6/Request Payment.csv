@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of \Request Payment\ activities followed by \Payment Handled\,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+Number of \Request Payment\ activities with amounts above 100 euros,Number of 'Request Payment' activities > 100 where ma is the last value of case:Amount,2303,
+Frequency of \Declaration FINAL_APPROVED by SUPERVISOR\ preceding \Request Payment\,Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Percentage of \Request Payment\ activities out of all activities in the event log,Percentage of 'Request Payment' out of all cases,0.96,
+Percentage of \Request Payment\ by \SYSTEM\ resource,Percentage of 'Request Payment' out of all cases,1.0,
+Number of \Request Payment\ activities made per year,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Request Payment\ activities that lead to \Payment Handled\ within the same case,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+Frequency of \Request Payment\ in the most common variant compared to its frequency in the least common variant,Percentage of 'Request Payment' out of all cases,0.96,
+Percentage of \Request Payment\ activities in cases where \Declaration SUBMITTED by EMPLOYEE\ occurred,Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE',0.97,
+Number of \Request Payment\ activities grouped by \case:BudgetNumber\,Number of 'Request Payment' activities grouped by the last value of case:BudgetNumber,budget 86566:10040,"{""budget 86566"":10040}"
+Average number of \Request Payment\ activities in a month,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Total \Request Payment\ activities performed by \SYSTEM\,Number of 'Request Payment' activities == 'SYSTEM' where ma is the last value of org:resource,10036,
+Ratio of \Request Payment\ activities over \Declaration FINAL_APPROVED by SUPERVISOR\ activities,Percentage of 'Request Payment' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Occasions how often the \Request Payment\ is performed in relation to \Payment Handled\,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,
+The ratio of \Request Payment\ activities that are followed by \Payment Handled\ within 7 days,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,

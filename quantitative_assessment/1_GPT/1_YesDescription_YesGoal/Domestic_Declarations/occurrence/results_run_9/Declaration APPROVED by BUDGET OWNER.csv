@@ -1,0 +1,23 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.27;;A
+Number of 'Declaration APPROVED by BUDGET OWNER' that are followed by 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;2811;;B
+Percentage of 'Declaration APPROVED by BUDGET OWNER' with amounts above 100 euros;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.31;;B
+Frequency of 'Declaration APPROVED by BUDGET OWNER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all approval activities;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases where 'Declaration APPROVED by BUDGET OWNER' does not happen;0.27;;B
+Number of 'Declaration APPROVED by BUDGET OWNER' preceded by 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;2820;;B
+Percentage of 'Declaration APPROVED by BUDGET OWNER' followed by 'Request Payment';Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Request Payment';0.28;;B
+Ratio of 'Declaration APPROVED by BUDGET OWNER' over 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Total 'Declaration APPROVED by BUDGET OWNER' performed by each 'org:resource';Number of 'Declaration APPROVED by BUDGET OWNER' activities grouped by the last value of org:resource;STAFF MEMBER:9;"{""STAFF MEMBER"":9,""SYSTEM"":2811}";A
+Total 'Declaration APPROVED by BUDGET OWNER' performed by each 'org:resource';Number of 'Declaration APPROVED by BUDGET OWNER' activities grouped by the last value of org:resource;SYSTEM:2811;"{""STAFF MEMBER"":9,""SYSTEM"":2811}";A
+Percentage of 'Declaration APPROVED by BUDGET OWNER' in relation to all declarations processed in 2018;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.27;;B
+Frequency of 'Declaration APPROVED by BUDGET OWNER' in variants leading to 'Payment Handled';Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Payment Handled' occurs;2798;;B
+Percentage of 'Declaration APPROVED by BUDGET OWNER' in cases with 'case:Amount' above the average case amount;"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > average'}";;;C
+Number of 'Declaration APPROVED by BUDGET OWNER' in relation to 'Declaration REJECTED by ADMINISTRATION';Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration REJECTED by ADMINISTRATION' occurs;241;;B
+Percentage of 'Declaration APPROVED by BUDGET OWNER' that lead to a successful payment without any rejections;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Payment Handled';0.28;;B
+Average number of days from 'Declaration SUBMITTED by EMPLOYEE' to 'Declaration APPROVED by BUDGET OWNER';the average of the number of times `ACTIVITY` == 'Declaration APPROVED by BUDGET OWNER' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE';0.27;;B
+Percentage of 'Declaration APPROVED by BUDGET OWNER' in cases that required director approval;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;;;D
+Frequency of 'Declaration APPROVED by BUDGET OWNER' in cases with domestic declarations compared to pre-paid travel costs;Frequency of activity 'Declaration APPROVED by BUDGET OWNER';2807;;B
+Ratio of 'Declaration APPROVED by BUDGET OWNER' over 'Declaration REJECTED by BUDGET OWNER';Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration REJECTED by BUDGET OWNER';0.5;;B
+Number of 'Declaration APPROVED by BUDGET OWNER' grouped by 'case:BudgetNumber';Number of 'Declaration APPROVED by BUDGET OWNER' activities grouped by the last value of case:BudgetNumber;budget 86566:2820;"{""budget 86566"":2820}";A
+Percentage of 'Declaration APPROVED by BUDGET OWNER' that are part of the most frequent process variant;Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases;0.27;;B

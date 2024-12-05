@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Completed + In Call' compared to 'Accepted + In Progress',Percentage of 'Completed + In Call' out of all 'Accepted + In Progress',0.27,
+Percentage of cases including 'Completed + In Call' out of all cases,Percentage of 'Completed + In Call' out of all cases,0.27,
+Frequency of 'Completed + In Call' followed by 'Completed + Resolved',Frequency of activity 'Completed + In Call' for cases where activity 'Completed + Resolved' occurs,135,
+Percentage of 'Completed + In Call' preceding 'Completed + Closed',Percentage of 'Completed + In Call' out of all 'Completed + Closed',0.02,
+"Number of 'Completed + In Call' activities per month,""ERROR: computing metric {'count': """"activity == 'Completed + In Call'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}"",,"
+Frequency of 'Completed + In Call' in relation to 'Accepted + Wait - User',Frequency of activity 'Completed + In Call' for cases where activity 'Accepted + Wait - User' occurs,112,
+Percentage of 'Completed + In Call' followed by any activity other than 'Completed + Resolved',Percentage of 'Completed + In Call' out of all cases where 'Completed + Resolved' does not happen,0.27,
+Number of 'Completed + In Call' activities that lead to a case being closed,Frequency of activity 'Completed + In Call' for cases where activity 'Completed + Closed' occurs,134,
+"Percentage of 'Completed + In Call' activities out of all completed activities,""ERROR: computing metric {'count': """"activity == 'Completed + In Call'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity LIKE 'Completed + %'""""}"",,"
+Frequency of 'Completed + In Call' in the most common process variant,Frequency of activity 'Completed + In Call',2018,
+Number of 'Completed + In Call' activities that occur after 'Accepted + Assigned',Frequency of activity 'Completed + In Call' for cases where activity 'Accepted + Assigned' occurs,35,
+Percentage of 'Completed + In Call' activities that are followed by 'Completed + Closed' within 24 hours,Percentage of 'Completed + In Call' out of all 'Completed + Closed',0.02,
+Number of 'Completed + In Call' activities that are part of a case with multiple incidents,Frequency of activity 'Completed + In Call',2018,
+Percentage of 'Completed + In Call' activities in cases with a duration longer than the average case duration,Percentage of 'Completed + In Call' out of all cases,0.27,
+Frequency of 'Completed + In Call' in cases involving 'PROD582' product,Frequency of activity 'Completed + In Call',2,
+"Percentage of 'Completed + In Call' activities in cases from France compared to cases from Brazil,""ERROR: computing metric {'count': """"activity == 'Completed + In Call'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"organization country == 'France'"""", 'group_by': 'organization country'}"",,"

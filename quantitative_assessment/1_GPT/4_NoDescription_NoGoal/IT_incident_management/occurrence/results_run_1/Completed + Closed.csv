@@ -1,0 +1,8 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Completed + Closed\ occurrences in the event log,Frequency of activity 'Completed + Closed',5574,
+Percentage of \Completed + Closed\ out of all \Completed\ activities,Percentage of 'Completed + Closed' out of all 'Completed',,
+Number of \Completed + Closed\ activities with amounts above 100 euros,Number of 'Completed + Closed' activities,5704,
+Number of \Completed + Closed\ activities made per year,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Number of times \Completed + Closed\ is performed in the event log,Frequency of activity 'Completed + Closed',5574,
+Average number of \Completed + Closed\ activities per case,the average of the number of times `ACTIVITY` == 'Completed + Closed',0.76,

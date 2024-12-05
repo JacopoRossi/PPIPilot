@@ -1,0 +1,26 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;A
+Number of 'Request Payment';Number of 'Request Payment' activities;10040;;A
+Percentage of 'Request Payment' followed by 'Payment Handled';Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Number of 'Request Payment' that are preceded by 'Declaration FINAL_APPROVED by SUPERVISOR';Number of 'Request Payment' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;10038;;B
+Percentage of 'Request Payment' with amounts above 100 euros;Percentage of 'Request Payment' out of all cases;1.0;;B
+Number of 'Request Payment' made per year;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by PRE_APPROVER' followed by 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Frequency of 'Declaration REJECTED by PRE_APPROVER' leading to a re-submission and eventual 'Request Payment';Percentage of 'Declaration REJECTED by PRE_APPROVER' out of all 'Request Payment';0.01;;B
+Percentage of 'Request Payment' in relation to 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Request Payment' out of all 'Declaration APPROVED by ADMINISTRATION';0.99;;B
+Number of 'Request Payment' grouped by 'org:role';Number of 'Request Payment' activities grouped by the last value of org:role;ADMINISTRATION:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":1,""MISSING"":3,""SUPERVISOR"":0,""UNDEFINED"":10036}";A
+Number of 'Request Payment' grouped by 'org:role';Number of 'Request Payment' activities grouped by the last value of org:role;EMPLOYEE:1;"{""ADMINISTRATION"":0,""EMPLOYEE"":1,""MISSING"":3,""SUPERVISOR"":0,""UNDEFINED"":10036}";A
+Number of 'Request Payment' grouped by 'org:role';Number of 'Request Payment' activities grouped by the last value of org:role;MISSING:3;"{""ADMINISTRATION"":0,""EMPLOYEE"":1,""MISSING"":3,""SUPERVISOR"":0,""UNDEFINED"":10036}";A
+Number of 'Request Payment' grouped by 'org:role';Number of 'Request Payment' activities grouped by the last value of org:role;SUPERVISOR:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":1,""MISSING"":3,""SUPERVISOR"":0,""UNDEFINED"":10036}";A
+Number of 'Request Payment' grouped by 'org:role';Number of 'Request Payment' activities grouped by the last value of org:role;UNDEFINED:10036;"{""ADMINISTRATION"":0,""EMPLOYEE"":1,""MISSING"":3,""SUPERVISOR"":0,""UNDEFINED"":10036}";A
+Percentage of 'Request Payment' by 'STAFF MEMBER';Percentage of 'Request Payment' out of all cases;;;D
+Average number of 'Request Payment' in a month;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Total 'Request Payment' done by 'SYSTEM';Number of 'Request Payment' activities == 'SYSTEM' where ma is the last value of org:resource;10036;;A
+Ratio of 'Request Payment' over 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Request Payment' out of all 'Declaration SUBMITTED by EMPLOYEE';0.97;;B
+Occasions how often 'Request Payment' is performed after 'Declaration APPROVED by BUDGET OWNER';Percentage of 'Request Payment' out of all 'Declaration APPROVED by BUDGET OWNER';1.0;;B
+Percentage of 'Request Payment' with an increment from 'case:Amount' above a certain threshold;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > certain_threshold'}";;;C
+Frequency of 'Request Payment' paths leading to 'Payment Handled' without 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Percentage of 'Request Payment' that lead to 'Payment Handled' within the same month;Percentage of 'Request Payment' out of all 'Payment Handled';1.0;;B
+Number of 'Request Payment' preceded by 'Declaration APPROVED by PRE_APPROVER' and not followed by 'Declaration REJECTED by PRE_APPROVER';Number of 'Request Payment' activities for cases where activity 'Declaration APPROVED by PRE_APPROVER' occurs;660;;B
+Percentage of 'Request Payment' from cases with 'case:BudgetNumber' indicating specific budget categories;"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:BudgetNumber == specific_budget_categories'}";;;C

@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+"Average resolution time following 'Accepted + Wait',The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+"Total time spent in 'Accepted + Wait' before transitioning to any 'Accepted + In Progress' activity,The sum of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',""12584 days, 3:46:23"","
+Minimum time from 'Accepted + Wait' to 'Completed + Resolved',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',0:00:04,
+"Average time it takes to move from 'Accepted + Wait' to 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + Wait - User',""7 days, 21:02:52.762295"","
+"Total time in 'Accepted + Wait' across all cases,The sum of the duration between activity Accepted + Wait and the end of the case,""21444 days, 22:00:34"","
+"Average time between 'Accepted + Wait' and 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait' and activity 'Queued + Awaiting Assignment',""9 days, 21:33:03.553360"","
+"Total resolution time of cases involving 'Accepted + Wait',The sum of the duration between activity Accepted + Wait and the end of the case,""21444 days, 22:00:34"","
+Minimum time to transition from 'Accepted + Wait' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Closed',0:05:28,
+"Average time from 'Accepted + Wait' to the next activity in the most frequent variant,The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+"Total time from 'Accepted + Wait' to 'Completed + In Call' in the variant with the highest performance,The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""364 days, 23:28:36"","
+Minimum time from 'Accepted + Wait' to 'Accepted + Assigned',The minimum of the duration between activity 'Accepted + Wait' and activity 'Accepted + Assigned',0:00:24,
+"Total time for 'Accepted + Wait' before reaching 'Completed + In Call' in cases with 'High' impact,The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""15 days, 7:31:17"","

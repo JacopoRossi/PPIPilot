@@ -1,0 +1,14 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Manuscript Export Succeeded' to 'Plagiarism Originality Report Completed',The average of the duration between activity 'Manuscript Export Succeeded' and activity 'Plagiarism Originality Report Completed',""1 day, 12:03:25.602410"","
+"Total time from 'Original Manuscript Submission Confirmation' to 'Manuscript Export Succeeded',The sum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Manuscript Export Succeeded',""6420 days, 21:55:45"","
+Minimum time from 'Manuscript Export Succeeded' to 'SW-Checklist Completed',The minimum of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Checklist Completed',1:01:20,
+"Average time between 'Manuscript Export Succeeded' and 'SW-Awaiting AE Assignment',The average of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Awaiting AE Assignment',""3 days, 4:16:49.754386"","
+"Total resolution time of 'Manuscript Export Succeeded',The sum of the duration between activity Manuscript Export Succeeded and the end of the case,""9239 days, 10:10:57"","
+"Average time it takes 'Manuscript Export Succeeded' after 'Original Manuscript Submission Confirmation',The average of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Manuscript Export Succeeded',""74 days, 15:52:58.430233"","
+"Minimum time it takes 'SW-Reviewer Agreed' after 'Manuscript Export Succeeded',The minimum of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Reviewer Agreed',""5 days, 4:37:19"","
+"Total time for 'Manuscript Export Succeeded' in the process variant including 'SW-EIC Major Revision',The sum of the duration between activity 'Manuscript Export Succeeded' and the end of case where activity 'SW-EIC Major Revision occurs,""4541 days, 0:26:50"","
+"Minimum resolution time of 'Manuscript Export Succeeded' in cases leading to 'SW-EIC Accept',The minimum of the duration between activity Manuscript Export Succeeded and the end of the case,""21 days, 20:14:51"","
+"Average time from 'Manuscript Export Succeeded' to 'SW-AE Assign Reviewers' in the longest process variant,The average of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-AE Assign Reviewers',""28 days, 17:27:04.046512"","
+"Total time from 'Manuscript Export Succeeded' to 'SW-Awaiting EIC Decision' across all variants,The sum of the duration between activity 'Manuscript Export Succeeded' and activity 'SW-Awaiting EIC Decision',""3857 days, 17:59:36"","
+"Manuscript Export Succeeded Cycle Time in cases ending with 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'begin': """"activity == 'Manuscript Export Succeeded'"""", 'end': '', 'aggregation': 'total', 'filter': """"activity == 'SW-EIC Reject & Resubmit'"""", 'group_by': ''}"",,"

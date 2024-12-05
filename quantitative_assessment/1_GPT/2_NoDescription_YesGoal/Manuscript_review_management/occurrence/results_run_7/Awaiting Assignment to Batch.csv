@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Awaiting Assignment to Batch' after 'First Look-Your updates are overdue',Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look-Your updates are overdue' occurs,10,
+Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,
+Number of 'Awaiting Assignment to Batch' that are preceded by 'First Look Manuscript Submission Confirmation',Number of 'Awaiting Assignment to Batch' activities for cases where activity 'First Look Manuscript Submission Confirmation' occurs,24,
+Percentage of 'Awaiting Assignment to Batch' from all 'Revised Manuscript Submission Confirmation',Percentage of 'Awaiting Assignment to Batch' out of all 'Revised Manuscript Submission Confirmation',0.88,
+Frequency of 'Awaiting Assignment to Batch' in relation to 'SW-Reviewer Agreed',Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'SW-Reviewer Agreed' occurs,18,
+Percentage of 'Awaiting Assignment to Batch' followed by 'Manuscript Export Succeeded',Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,
+"Number of times 'Awaiting Assignment to Batch' is performed per year,""ERROR: computing metric {'count': """"activity == 'Awaiting Assignment to Batch'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+"Number of 'Awaiting Assignment to Batch' grouped by case:concept:name,""ERROR: computing metric {'count': """"activity == 'Awaiting Assignment to Batch'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Average number of 'Awaiting Assignment to Batch' in a month,""ERROR: computing metric {'count': """"activity == 'Awaiting Assignment to Batch'"""", 'aggregation': 'average', 'group_by': 'month'}"",,"
+Total 'Awaiting Assignment to Batch' done by SYSTEM,Number of 'Awaiting Assignment to Batch' activities == 'SYSTEM' where ma is the last value of performer,25,

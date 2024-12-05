@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait - Implementation' to 'Completed + Resolved',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Resolved',""13 days, 23:55:55.662531"","
+"Average time between 'Accepted + In Progress' and 'Accepted + Wait - Implementation',The average of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - Implementation',""11 days, 23:31:57.208738"","
+"Total time for 'Accepted + Wait - Implementation' cases to reach 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Closed',""7091 days, 16:40:00"","
+Minimum time from 'Accepted + Wait - Implementation' to 'Completed + In Call',The minimum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + In Call',1:17:29,
+"Maximum time for 'Accepted + Wait - Implementation' before reaching 'Accepted + Assigned',The maximum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Accepted + Assigned',""216 days, 21:44:13"","
+"Average resolution time of 'Accepted + Wait - Implementation',The average of the duration between activity Accepted + Wait - Implementation and the end of the case,""17 days, 8:00:03.150121"","
+"Time variance for 'Accepted + Wait - Implementation' across different countries,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait - Implementation'"""", 'end': '', 'aggregation': 'variance', 'group_by': 'organization country'}"",,"
+"Total time from 'Accepted + Wait - Implementation' to 'Completed + Resolved' across all variants,The sum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Resolved',""5640 days, 20:38:52"","
+"Difference in average time between 'Accepted + Wait - Implementation' and 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Accepted + Wait - User',""8 days, 11:52:23.026144"","
+"Difference in total time from 'Accepted + Wait - Implementation' to 'Completed + Closed' compared to 'Queued + Awaiting Assignment' to 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Closed',""7091 days, 16:40:00"","
+"Average time from 'Accepted + Wait - Implementation' to the next activity in the most frequent variant,The average of the duration between activity Accepted + Wait - Implementation and the end of the case,""17 days, 8:00:03.150121"","
+Minimum resolution time of 'Accepted + Wait - Implementation' in the variant with the highest performance,The minimum of the duration between activity Accepted + Wait - Implementation and the end of the case,0:00:00,
+"Maximum time it takes from 'Accepted + Wait - Implementation' to 'Completed + In Call' across all variants,The maximum of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + In Call',""12 days, 18:15:26"","
+"Average time it takes from 'Accepted + Wait - Implementation' to 'Completed + Resolved' in cases with 'High' impact,The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Resolved',""8 days, 19:25:38.444444"","
+Total time for 'Accepted + Wait - Implementation' in cases involving 'PROD582',The sum of the duration between activity Accepted + Wait - Implementation and the end of the case,,

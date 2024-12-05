@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average duration of 'Accepted + In Progress' before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+Total duration of 'Accepted + In Progress' across all cases,The sum of the duration between activity Accepted + In Progress and the end of the case,"90911 days, 1:37:42",
+Average duration of 'Accepted + In Progress' before transitioning to 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + In Progress' and activity 'Queued + Awaiting Assignment',"4 days, 8:30:01.120050",
+Total duration of 'Accepted + In Progress' before reaching 'Completed + Resolved',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',"62203 days, 7:11:06",
+Minimum duration of 'Accepted + In Progress' across all cases,The minimum of the duration between activity Accepted + In Progress and the end of the case,0:00:00,
+Average duration from 'Accepted + In Progress' to 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',"16 days, 1:40:38.796698",
+Total duration from 'Accepted + In Progress' to 'Completed + In Call' across variants where this transition occurs,The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',"726 days, 17:01:04",
+Minimum duration from 'Accepted + In Progress' to 'Completed + In Call' across variants,The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0:00:04,
+Duration of 'Accepted + In Progress' in cases leading to 'Completed + In Call' compared to cases leading to other outcomes,The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+Average duration of 'Accepted + In Progress' in incidents with 'Medium' impact compared to 'High' impact,The average of the duration between activity 'Accepted + In Progress' and the end of case grouped by the last value of impact filtered by the function ma == 'Medium' where ma is the last value of impact,Medium:13 days 17:16:57.106372,"{""Medium"":1185417106}"
+Total duration of 'Accepted + In Progress' in problems compared to incidents within the VINST system,"ERROR: computing metric {'begin': ""activity == 'Accepted + In Progress'"", 'end': '', 'aggregation': 'total', 'filter': ""concept:name == 'problem'"", 'group_by': 'concept:name'}",,
+Total duration of 'Accepted + In Progress' for products with 'Low' impact,The sum of the duration between activity Accepted + In Progress and the end of the case,"31357 days, 5:59:26",
+Minimum duration of 'Accepted + In Progress' before any transition in the event log,The minimum of the duration between activity Accepted + In Progress and the end of the case,0:00:00,
+Duration of 'Accepted + In Progress' in the most frequent variant compared to the least frequent variant,The average of the duration between activity Accepted + In Progress and the end of the case,"12 days, 1:31:32.497611",

@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Number of Declaration REJECTED by ADMINISTRATION,Number of 'Declaration REJECTED by ADMINISTRATION' activities,952,
+Percentage of Declaration REJECTED by ADMINISTRATION out of all Declaration APPROVED by ADMINISTRATION,Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION',0.08,
+Number of Declaration REJECTED by ADMINISTRATION that are preceded by Declaration SUBMITTED by EMPLOYEE,Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,952,
+Number of Declaration REJECTED by ADMINISTRATION with amounts above 100 euros,Number of 'Declaration REJECTED by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount,327,
+Number of Declaration REJECTED by ADMINISTRATION made per year,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Number of Declaration REJECTED by ADMINISTRATION in relation to Declaration APPROVED by ADMINISTRATION,Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs,736,
+Number of times Declaration REJECTED by ADMINISTRATION is performed,Number of 'Declaration REJECTED by ADMINISTRATION' activities,952,
+Average number of Declaration REJECTED by ADMINISTRATION,the average of the number of times `ACTIVITY` == 'Declaration REJECTED by ADMINISTRATION',0.09,
+Average number of Declaration REJECTED by ADMINISTRATION that are followed by Declaration SUBMITTED by EMPLOYEE,the average of the number of times `ACTIVITY` == 'Declaration REJECTED by ADMINISTRATION' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE',0.09,
+Average number of Declaration REJECTED by ADMINISTRATION in a month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Total Declaration REJECTED by ADMINISTRATION performed by STAFF MEMBER,Number of 'Declaration REJECTED by ADMINISTRATION' activities == 'STAFF MEMBER' where ma is the last value of org:role,,

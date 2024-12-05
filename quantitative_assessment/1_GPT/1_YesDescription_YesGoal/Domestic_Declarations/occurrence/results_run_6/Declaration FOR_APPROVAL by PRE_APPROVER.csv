@@ -1,0 +1,23 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration APPROVED by PRE_APPROVER';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration REJECTED by PRE_APPROVER';0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that lead to 'Payment Handled';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Payment Handled' occurs;0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in relation to total declarations submitted;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' per month;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are followed by 'Request Payment';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Request Payment';0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' followed by any rejection;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by%'""}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases with amounts above 100 euros;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' grouped by 'org:resource';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities grouped by the last value of org:resource;STAFF MEMBER:1;"{""STAFF MEMBER"":1,""SYSTEM"":0}";A
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' grouped by 'org:resource';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities grouped by the last value of org:resource;SYSTEM:0;"{""STAFF MEMBER"":1,""SYSTEM"":0}";A
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' by 'org:resource';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' that lead to a trip or payment without prior rejection;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;A
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in the most common process variant;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases where '' does not happen;0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' in declarations with a budget number different from budget 86566;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Number of times 'Declaration FOR_APPROVAL by PRE_APPROVER' is performed before 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration FOR_APPROVAL by PRE_APPROVER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' done after 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Average number of 'Declaration FOR_APPROVAL by PRE_APPROVER' that are followed by 'Declaration FINAL_APPROVED by SUPERVISOR';the average of the number of times `ACTIVITY` == 'Declaration FOR_APPROVAL by PRE_APPROVER' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' with an increment in case amount;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all cases;0.0;;B
+Frequency of 'Declaration FOR_APPROVAL by PRE_APPROVER' in cases eventually leading to 'Payment Handled' without prior rejection;Percentage of 'Declaration FOR_APPROVAL by PRE_APPROVER' out of all 'Payment Handled';0.0;;B

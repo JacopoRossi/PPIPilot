@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Reviewer Declined' before 'SW-AE Assign Reviewers',Frequency of activity 'SW-Reviewer Declined' for cases where activity 'SW-AE Assign Reviewers' does not occur,29,
+Percentage of 'SW-Reviewer Declined' out of all 'SW-Reviewer Agreed',Percentage of 'SW-Reviewer Declined' out of all 'SW-Reviewer Agreed',0.63,
+Number of 'SW-Reviewer Declined' that are preceded by 'SW-AE Assign Reviewers',Number of 'SW-Reviewer Declined' activities for cases where activity 'SW-AE Assign Reviewers' occurs,59,
+Percentage of 'SW-Reviewer Declined' from all 'Reviewer Invitation Reminder 1',Percentage of 'SW-Reviewer Declined' out of all 'Reviewer Invitation Reminder 1',0.62,
+Frequency of 'SW-Reviewer Declined' in relation to 'SW-Reviewer No Response',Frequency of activity 'SW-Reviewer Declined' for cases where activity 'SW-Reviewer No Response' occurs,4,
+Percentage of 'SW-Reviewer Declined' followed by 'Reviewer Invitation Reminder 1',Percentage of 'SW-Reviewer Declined' out of all 'Reviewer Invitation Reminder 1',0.62,
+Number of 'SW-Reviewer Declined' in the process variant leading to 'SW-EIC Major Revision',Number of 'SW-Reviewer Declined' activities for cases where activity 'SW-EIC Major Revision' occurs,29,
+"Percentage of 'SW-Reviewer Declined' in the process variant leading to 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Reviewer Declined'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Frequency of 'SW-Reviewer Declined' in cases where 'SW-Awaiting EIC Decision' follows,Frequency of activity 'SW-Reviewer Declined' for cases where activity 'SW-Awaiting EIC Decision' occurs,29,
+"Number of 'SW-Reviewer Declined' grouped by 'case:concept:name',""ERROR: computing metric {'count': """"activity == 'SW-Reviewer Declined'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Percentage of 'SW-Reviewer Declined' that lead to a 'SW-EIC Major Revision' decision,Percentage of 'SW-Reviewer Declined' out of all 'SW-EIC Major Revision',0.8,
+Frequency of 'SW-Reviewer Declined' in relation to 'SW-AE Assign Reviewers' in the same case,Frequency of activity 'SW-Reviewer Declined' for cases where activity 'SW-AE Assign Reviewers' occurs,28,
+Percentage of 'SW-Reviewer Declined' out of total activities in the event log,Percentage of 'SW-Reviewer Declined' out of all cases,0.31,
+"Number of times 'SW-Reviewer Declined' is performed per year,""ERROR: computing metric {'count': """"activity == 'SW-Reviewer Declined'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"

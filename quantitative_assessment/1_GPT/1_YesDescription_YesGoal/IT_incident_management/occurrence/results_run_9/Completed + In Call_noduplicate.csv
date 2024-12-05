@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Completed + In Call' compared to 'Completed + Resolved',Percentage of 'Completed + In Call' out of all 'Completed + Resolved',0.02,
+Percentage of cases involving 'Completed + In Call' that also involve 'Accepted + In Progress',Percentage of 'Completed + In Call' out of all 'Accepted + In Progress',0.27,
+Number of 'Completed + In Call' activities preceded by 'Accepted + In Progress',Number of 'Completed + In Call' activities for cases where activity 'Accepted + In Progress' occurs,2018,
+Percentage of 'Completed + In Call' out of all activities in the event log,Percentage of 'Completed + In Call' out of all cases,0.27,
+Frequency of 'Completed + In Call' followed by 'Completed + Resolved',Percentage of 'Completed + In Call' out of all 'Completed + Resolved',0.02,
+Percentage of 'Completed + In Call' activities that occur after 'Queued + Awaiting Assignment',Percentage of 'Completed + In Call' out of all 'Queued + Awaiting Assignment',0.01,
+"Frequency of 'Completed + In Call' per month across the event log timeline,""ERROR: computing metric {'count': """"activity == 'Completed + In Call'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}"",,"
+Percentage of 'Completed + In Call' in relation to 'Completed + Closed',Percentage of 'Completed + In Call' out of all 'Completed + Closed',0.02,
+Number of variants involving 'Completed + In Call' and their frequency,Number of 'Completed + In Call' activities,2018,
+Percentage of 'Completed + In Call' activities that lead to a 'Completed + Resolved' status within the same case,Percentage of 'Completed + In Call' out of all 'Completed + Resolved',0.02,
+Frequency of 'Completed + In Call' as the final activity before case closure,Frequency of activity 'Completed + In Call' for cases where activity 'Completed + Closed' occurs,134,
+Percentage of 'Completed + In Call' activities that are followed by any 'Accepted + Wait' activity,Percentage of 'Completed + In Call' out of all 'Accepted + Wait',0.07,
+Number of 'Completed + In Call' activities that occur without a preceding 'Accepted + In Progress' activity,Number of 'Completed + In Call' activities for cases where activity 'Accepted + In Progress' does not occur,2018,
+Frequency of 'Completed + In Call' in cases with a 'High' impact label,Frequency of activity 'Completed + In Call',8,
+Number of 'Completed + In Call' activities that precede 'Completed + Closed' without any other activity in between,Number of 'Completed + In Call' activities for cases where activity 'Completed + Closed' occurs,134,
+Percentage of 'Completed + In Call' activities that are directly followed by a 'Completed + Resolved' status,Percentage of 'Completed + In Call' out of all 'Completed + Resolved',0.02,

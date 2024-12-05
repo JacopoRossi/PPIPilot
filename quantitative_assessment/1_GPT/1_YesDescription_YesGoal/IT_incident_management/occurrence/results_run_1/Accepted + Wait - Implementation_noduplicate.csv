@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Accepted + Wait - Implementation' leading to 'Completed + In Call',Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Completed + In Call' occurs,16,
+Percentage of 'Accepted + Wait - Implementation' out of all 'Accepted + In Progress' activities,Percentage of 'Accepted + Wait - Implementation' out of all 'Accepted + In Progress',0.05,
+Number of 'Accepted + Wait - Implementation' that are followed by 'Completed + Resolved',Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Completed + Resolved' occurs,403,
+Percentage of 'Accepted + Wait - Implementation' in relation to 'Completed + Closed',Percentage of 'Accepted + Wait - Implementation' out of all 'Completed + Closed',0.07,
+Frequency of 'Accepted + Wait - Implementation' preceded by 'Queued + Awaiting Assignment',Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Queued + Awaiting Assignment' occurs,359,
+Percentage of 'Accepted + Wait - Implementation' activities that lead to a 'Completed + Resolved' without going through 'Accepted + Wait - User',Percentage of 'Accepted + Wait - Implementation' out of all cases where 'Accepted + Wait - User' does not happen,0.05,
+Frequency of 'Accepted + Wait - Implementation' in variants leading to 'Completed + In Call',Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Completed + In Call' occurs,16,
+Percentage of 'Accepted + Wait - Implementation' followed by 'Completed + Resolved' out of all 'Completed + Resolved' activities,Percentage of 'Accepted + Wait - Implementation' out of all 'Completed + Resolved',0.07,
+"Number of 'Accepted + Wait - Implementation' activities per year,""ERROR: computing metric {'count': """"activity == 'Accepted + Wait - Implementation'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'Accepted + Wait - Implementation' that are not dismissed,Percentage of 'Accepted + Wait - Implementation' out of all cases where 'Unmatched + Unmatched' does not happen,0.05,
+Frequency of 'Accepted + Wait - Implementation' leading to any 'Completed' status compared to 'Accepted + In Progress' leading to the same status,Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Completed + Closed' occurs,395,
+Number of times 'Accepted + Wait - Implementation' is performed before 'Accepted + Wait - Vendor',Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Accepted + Wait - Vendor' occurs,23,
+Percentage of 'Accepted + Wait - Implementation' activities with an impact level of 'Medium' or 'High',Percentage of 'Accepted + Wait - Implementation' out of all cases,0.04,
+Frequency of 'Accepted + Wait - Implementation' followed by 'Completed + Closed' without intermediate activities,Frequency of activity 'Accepted + Wait - Implementation' for cases where activity 'Completed + Closed' occurs,395,
+Percentage of 'Accepted + Wait - Implementation' in cases with a 'High' impact compared to those with 'Medium' or 'Low' impact,Percentage of 'Accepted + Wait - Implementation' out of all cases,0.11,

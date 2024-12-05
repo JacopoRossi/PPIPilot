@@ -1,0 +1,20 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average duration of 'Accepted + Wait' before transitioning to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+"Median duration of 'Accepted + Wait' across all cases,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': '', 'aggregation': 'median'}"",,"
+"Average duration from 'Accepted + Wait' to 'Accepted + In Progress' compared to 'Accepted + Wait' to 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',""15 days, 16:34:59.729426"","
+"Total duration of 'Accepted + Wait' in cases leading to 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""16689 days, 1:09:59"","
+"Longest duration of 'Accepted + Wait' in any case,the maximum of the duration between the first time instant when `ACTIVITY` == 'Accepted + Wait' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F910> - AppliesTo.PROCESS,""439 days, 9:36:58"","
+Shortest duration of 'Accepted + Wait' leading to a resolution ('Completed + Resolved' or 'Completed + Closed'),The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',0:00:04,
+"Average duration of 'Accepted + Wait' in cases with high impact,The average of the duration between activity Accepted + Wait and the end of the case,""22 days, 9:21:25.171429"","
+"Total duration of 'Accepted + Wait' across all cases with 'Medium' product impact,The sum of the duration between activity Accepted + Wait and the end of the case,""12481 days, 5:53:51"","
+Duration of 'Accepted + Wait' in the fastest case to reach 'Completed + In Call',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',0:00:12,
+"Duration of 'Accepted + Wait' in the slowest case to reach 'Completed + In Call',The maximum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""208 days, 0:20:01"","
+"Average duration of 'Accepted + Wait' in cases that follow the variant ending in 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+"Difference in average duration of 'Accepted + Wait' between cases resolved within a day and those taking longer,The average of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""15 days, 16:26:40.938910"","
+"Average duration of 'Accepted + Wait' before any 'Completed + ' status event,The average of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""15 days, 16:26:40.938910"","
+"Distribution of 'Accepted + Wait' durations across different 'product' categories,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': '', 'aggregation': 'distribution', 'group_by': 'product'}"",,"
+"Average duration of 'Accepted + Wait' in cases that required vendor involvement ('Accepted + Wait - Vendor') before resolution,The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + Wait - Vendor',""11 days, 10:49:28.695652"","
+"Variation in duration of 'Accepted + Wait' before and after specific organizational changes,""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': '', 'aggregation': 'variation', 'filter': 'organization involved == specific change'}"",,"
+"Correlation between duration of 'Accepted + Wait' and time to final resolution ('Completed + Closed'),""ERROR: computing metric {'begin': """"activity == 'Accepted + Wait'"""", 'end': """"activity == 'Completed + Closed'"""", 'aggregation': 'correlation'}"",,"
+"Average duration of 'Accepted + Wait' in cases with subsequent 'Accepted + Wait - User' activity,The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + Wait - User',""7 days, 21:02:52.762295"","

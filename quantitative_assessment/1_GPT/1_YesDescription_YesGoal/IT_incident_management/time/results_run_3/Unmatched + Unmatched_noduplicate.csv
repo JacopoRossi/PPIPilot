@@ -1,0 +1,14 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time of incidents before reaching 'Unmatched + Unmatched',The average of the duration between the start of the case and activity 'Unmatched + Unmatched',""3 days, 10:08:46.600000"","
+"Total time incidents spend in 'Unmatched + Unmatched' before transitioning to any other activity,The sum of the duration between activity Unmatched + Unmatched and the end of the case,""50 days, 11:38:09"","
+Average time incidents spend in 'Unmatched + Unmatched' compared to 'Completed + In Call',The average of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + In Call',,
+Total time difference between incidents resolved after 'Unmatched + Unmatched' and those resolved after 'Accepted + In Progress',The sum of the duration between activity 'Unmatched + Unmatched' and activity 'Accepted + In Progress',23:45:20,
+Time from 'Unmatched + Unmatched' to 'Completed + In Call' for incidents that follow this path,The sum of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + In Call',,
+Total resolution time of incidents involving 'Unmatched + Unmatched' in the context of VINST system,The sum of the duration between activity Unmatched + Unmatched and the end of the case,,
+"Time until 'Unmatched + Unmatched' for incidents initially reported as 'Queued + Awaiting Assignment',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Unmatched + Unmatched',""11 days, 2:03:44"","
+Difference in resolution time for incidents with 'Unmatched + Unmatched' versus incidents with 'Accepted + Wait - User',The sum of the duration between activity 'Unmatched + Unmatched' and activity 'Accepted + Wait - User',23:47:13,
+"Cycle time for incidents involving 'Unmatched + Unmatched' compared to those that do not involve 'Unmatched + Unmatched',The sum of the duration between activity Unmatched + Unmatched and the end of the case,""50 days, 11:38:09"","
+"Average time from 'Unmatched + Unmatched' to the next activity for incidents that are eventually resolved,The average of the duration between activity 'Unmatched + Unmatched' and the end of case where activity 'Completed + Resolved occurs,""10 days, 2:19:37.800000"","
+Total time for resolving incidents that pass through 'Unmatched + Unmatched' compared to those directly resolved from 'Accepted + In Progress',The sum of the duration between activity 'Unmatched + Unmatched' and activity 'Accepted + In Progress',23:45:20,
+Minimum time from 'Unmatched + Unmatched' to 'Completed + Resolved' for incidents following this transition,The minimum of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + Resolved',0:04:19,

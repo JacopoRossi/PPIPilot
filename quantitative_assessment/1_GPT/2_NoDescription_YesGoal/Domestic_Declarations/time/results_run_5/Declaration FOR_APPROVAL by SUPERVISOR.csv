@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from Declaration SUBMITTED by EMPLOYEE to Declaration FOR_APPROVAL by SUPERVISOR,The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Declaration FOR_APPROVAL by SUPERVISOR',0:00:03,
+Average time from Declaration FOR_APPROVAL by SUPERVISOR to Declaration FINAL_APPROVED by SUPERVISOR,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration FINAL_APPROVED by SUPERVISOR',,
+Average time from Declaration FOR_APPROVAL by SUPERVISOR to Declaration REJECTED by PRE_APPROVER,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration REJECTED by PRE_APPROVER',,
+Total time spent in Declaration FOR_APPROVAL by SUPERVISOR across all cases,The sum of the duration between activity Declaration FOR_APPROVAL by SUPERVISOR and the end of the case,19:02:47,
+Minimum time from Declaration FOR_APPROVAL by SUPERVISOR to Request Payment,The minimum of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Request Payment',,
+Average waiting time before Declaration FOR_APPROVAL by SUPERVISOR after Declaration APPROVED by ADMINISTRATION,The average of the duration between activity 'Declaration APPROVED by ADMINISTRATION' and activity 'Declaration FOR_APPROVAL by SUPERVISOR',,
+Total resolution time of Declaration FOR_APPROVAL by SUPERVISOR,The sum of the duration between activity Declaration FOR_APPROVAL by SUPERVISOR and the end of the case,19:02:47,
+Average time between Declaration FOR_APPROVAL by SUPERVISOR and Declaration APPROVED by BUDGET OWNER,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration APPROVED by BUDGET OWNER',,
+Minimum time to reach Declaration FOR_APPROVAL by SUPERVISOR from the start of the case,The minimum of the duration between the start of the case and activity 'Declaration FOR_APPROVAL by SUPERVISOR',0:00:03,
+Average time from Declaration FOR_APPROVAL by SUPERVISOR to Payment Handled,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Payment Handled',,
+Total time from Declaration FOR_APPROVAL by SUPERVISOR to Declaration REJECTED by PRE_APPROVER across all cases,The sum of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration REJECTED by PRE_APPROVER',,
+Declaration FOR_APPROVAL by SUPERVISOR Cycle Time,The sum of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration FOR_APPROVAL by SUPERVISOR',0:00:00,
+Average time from Declaration FOR_APPROVAL by SUPERVISOR to Declaration REJECTED by ADMINISTRATION,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration REJECTED by ADMINISTRATION',,
+Minimum resolution time of Declaration FOR_APPROVAL by SUPERVISOR before reaching Declaration FINAL_APPROVED by SUPERVISOR,The minimum of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and activity 'Declaration FINAL_APPROVED by SUPERVISOR',,
+Total time for Declaration FOR_APPROVAL by SUPERVISOR grouped by case:BudgetNumber,The average of the duration between activity 'Declaration FOR_APPROVAL by SUPERVISOR' and the end of case grouped by the last value of case:BudgetNumber,budget 86566:0 days 19:02:47,"{""budget 86566"":68567000}"

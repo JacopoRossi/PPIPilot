@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Plagiarism Originality Report Completed' followed by 'SW-Checklist Completed',Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-Checklist Completed' occurs,81.0,
+Percentage of manuscripts with 'Plagiarism Originality Report Completed' out of all manuscripts,Percentage of 'Plagiarism Originality Report Completed' out of all cases where '' does not happen,0.96,
+Number of 'Plagiarism Originality Report Completed' that precede 'SW-AE Assign Reviewers',Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-AE Assign Reviewers' occurs,44.0,
+Percentage of 'Plagiarism Originality Report Completed' in relation to 'Manuscript Export Succeeded',Percentage of 'Plagiarism Originality Report Completed' out of all 'Manuscript Export Succeeded',0.97,
+Frequency of 'Plagiarism Originality Report Completed' before 'SW-Awaiting AE Assignment',Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-Awaiting AE Assignment' occurs,56.0,
+Percentage of 'Plagiarism Originality Report Completed' followed by 'SW-EIC Reject' or 'SW-EIC Major Revision',Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-EIC Reject',0.97,
+Number of times 'Plagiarism Originality Report Completed' occurs in the most frequent process variant,Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity '' does not occur,89.0,
+Percentage of 'Plagiarism Originality Report Completed' that lead to a 'SW-Reviewer Agreed' decision,Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-Reviewer Agreed',0.96,
+Frequency of 'Plagiarism Originality Report Completed' in manuscripts that require major revision versus those that do not,Frequency of activity 'Plagiarism Originality Report Completed' for cases where activity 'SW-EIC Major Revision' occurs,14.0,
+Percentage of 'Plagiarism Originality Report Completed' in manuscripts that are eventually accepted for publication,Percentage of 'Plagiarism Originality Report Completed' out of all 'SW-EIC Accept',0.67,

@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Reviewer Invitation Reminder 1' compared to 'SW-Reviewer Agreed',Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Percentage of cases where 'Reviewer Invitation Reminder 1' leads to 'SW-Reviewer Agreed',Percentage of 'Reviewer Invitation Reminder 1' out of all 'SW-Reviewer Agreed',0.93,
+Number of 'Reviewer Invitation Reminder 1' followed by 'SW-AE Assign Reviewers',Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-AE Assign Reviewers' occurs,105,
+"Percentage of 'Reviewer Invitation Reminder 1' in relation to all reminder activities,""ERROR: computing metric {'count': """"activity == 'Reviewer Invitation Reminder 1'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity LIKE '%Reminder%'""""}"",,"
+Frequency of 'Reviewer Invitation Reminder 1' in the most common variant paths,Frequency of activity 'Reviewer Invitation Reminder 1',47,
+Percentage of 'Reviewer Invitation Reminder 1' followed by any activity within 7 days,Percentage of 'Reviewer Invitation Reminder 1' out of all cases,0.51,
+Percentage of 'Reviewer Invitation Reminder 1' that precede 'Reviewer Invitation Reminder 2',Percentage of 'Reviewer Invitation Reminder 1' out of all 'Reviewer Invitation Reminder 2',1.0,
+Frequency of 'Reviewer Invitation Reminder 1' in cases that lead to 'SW-EIC Major Revision',Frequency of activity 'Reviewer Invitation Reminder 1' for cases where activity 'SW-EIC Major Revision' occurs,13,
+Percentage of 'Reviewer Invitation Reminder 1' in cases that result in manuscript acceptance ('RW-EIC Accept'),Percentage of 'Reviewer Invitation Reminder 1' out of all 'RW-EIC Accept',0.82,
+Number of 'Reviewer Invitation Reminder 1' in relation to 'Reviewer Invitation Reminder 2',Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'Reviewer Invitation Reminder 2' occurs,109,
+Number of 'Reviewer Invitation Reminder 1' in cases that eventually lead to 'SW-Reviewer No Response',Number of 'Reviewer Invitation Reminder 1' activities for cases where activity 'SW-Reviewer No Response' occurs,26,

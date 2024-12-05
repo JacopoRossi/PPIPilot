@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Declaration REJECTED by BUDGET OWNER\ in relation to all rejection activities,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration REJECTED by BUDGET OWNER',1.0,
+Percentage of \Declaration REJECTED by BUDGET OWNER\ out of all \Declaration APPROVED by ADMINISTRATION\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by ADMINISTRATION',0.01,
+Number of \Declaration REJECTED by BUDGET OWNER\ followed by \Declaration SUBMITTED by EMPLOYEE\,Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,59,
+Percentage of \Declaration REJECTED by BUDGET OWNER\ that lead to a \Request Payment\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Request Payment',0.0,
+Frequency of \Declaration REJECTED by BUDGET OWNER\ in processes with amounts above 100 euros,Number of 'Declaration REJECTED by BUDGET OWNER' activities > 100 where ma is the last value of case:Amount,9,
+Percentage of \Declaration REJECTED by BUDGET OWNER\ by \STAFF MEMBER\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases,,
+Number of \Declaration REJECTED by BUDGET OWNER\ grouped by \case:BudgetNumber\,Number of 'Declaration REJECTED by BUDGET OWNER' activities grouped by the last value of case:BudgetNumber,budget 86566:59,"{""budget 86566"":59}"
+Percentage of \Declaration REJECTED by BUDGET OWNER\ by year,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'year'}",,
+Frequency of \Declaration REJECTED by BUDGET OWNER\ in the most common process variant,Frequency of activity 'Declaration REJECTED by BUDGET OWNER',58,
+Percentage of \Declaration REJECTED by BUDGET OWNER\ in relation to all activities performed by \SYSTEM\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all cases,0.0,
+Number of times \Declaration REJECTED by BUDGET OWNER\ occurs in processes that also involve \Declaration APPROVED by BUDGET OWNER\,Number of 'Declaration REJECTED by BUDGET OWNER' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs,29,
+Percentage of processes that include \Declaration REJECTED by BUDGET OWNER\ and end with \Payment Handled\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Payment Handled',0.0,
+Frequency of \Declaration REJECTED by BUDGET OWNER\ in relation to total number of declarations submitted,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.01,
+Percentage of \Declaration REJECTED by BUDGET OWNER\ that are followed by \Declaration APPROVED by ADMINISTRATION\,Percentage of 'Declaration REJECTED by BUDGET OWNER' out of all 'Declaration APPROVED by ADMINISTRATION',0.01,
+Number of \Declaration REJECTED by BUDGET OWNER\ in processes that required director approval,Number of 'Declaration REJECTED by BUDGET OWNER' activities == 'DIRECTOR' where ma is the last value of org:role,,

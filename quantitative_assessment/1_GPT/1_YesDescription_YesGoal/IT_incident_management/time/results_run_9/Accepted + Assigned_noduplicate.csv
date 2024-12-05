@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time following 'Accepted + Assigned',The average of the duration between activity Accepted + Assigned and the end of the case,""19 days, 2:30:18.738108"","
+Average time from 'Accepted + Assigned' to 'Completed + In Call',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+"Total time spent in 'Accepted + Assigned' before transitioning to any 'Completed' status,""ERROR: computing metric {'begin': """"activity == 'Accepted + Assigned'"""", 'end': """"activity == 'Completed + Resolved' or activity == 'Completed + Closed' or activity == 'Completed + In Call' or activity == 'Completed + Cancelled'"""", 'aggregation': 'total'}"",,"
+"Average time from 'Accepted + Assigned' to 'Accepted + In Progress',The average of the duration between activity 'Accepted + Assigned' and activity 'Accepted + In Progress',""10 days, 13:59:50.737102"","
+"Total resolution time of incidents involving 'Accepted + Assigned',The sum of the duration between activity Accepted + Assigned and the end of the case,""34941 days, 22:01:12"","
+Minimum time from 'Accepted + Assigned' to 'Completed + Resolved',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Resolved',0:00:33,
+"Average time from 'Accepted + Assigned' to 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Assigned' and activity 'Queued + Awaiting Assignment',""9 days, 2:39:18.593393"","
+"Total time from 'Accepted + Assigned' to 'Accepted + Wait - User',The sum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - User',""6017 days, 12:11:42"","
+Minimum time from 'Accepted + Assigned' to 'Accepted + Wait - Implementation',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Accepted + Wait - Implementation',0:03:49,
+Average time for 'Accepted + Assigned' in cases ending with 'Completed + In Call',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+"Total time for 'Accepted + Assigned' in the variant ending with 'Completed + Closed',The sum of the duration between activity Accepted + Assigned and the end of the case,""34941 days, 22:01:12"","
+Average time from 'Accepted + Assigned' to the next activity for incidents from France,The average of the duration between activity Accepted + Assigned and the end of the case,,
+"Total time for 'Accepted + Assigned' in incidents related to 'PROD582',The sum of the duration between activity Accepted + Assigned and the end of the case,""965 days, 8:15:46"","
+Average time from 'Accepted + Assigned' to 'Completed + In Call' in incidents with medium impact,The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',,

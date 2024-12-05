@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of First Look Manuscript Submission Confirmation followed by Manuscript Export Succeeded,Percentage of 'First Look Manuscript Submission Confirmation' out of all 'Manuscript Export Succeeded',0.28,
+Number of First Look Manuscript Submission Confirmation,Number of 'First Look Manuscript Submission Confirmation' activities,27,
+Percentage of First Look Manuscript Submission Confirmation out of all Original Manuscript Submission Confirmation,Percentage of 'First Look Manuscript Submission Confirmation' out of all 'Original Manuscript Submission Confirmation',0.26,
+Number of First Look Manuscript Submission Confirmation that are preceded by SW-Reviewer Agreed,Number of 'First Look Manuscript Submission Confirmation' activities for cases where activity 'SW-Reviewer Agreed' occurs,18,
+Percentage of First Look Manuscript Submission Confirmation that lead to Awaiting Assignment to Batch,Percentage of 'First Look Manuscript Submission Confirmation' out of all 'Awaiting Assignment to Batch',0.92,
+Percentage of First Look Manuscript Submission Confirmation from all SW-Awaiting AE Assignment,Percentage of 'First Look Manuscript Submission Confirmation' out of all 'SW-Awaiting AE Assignment',0.16,
+"Number of First Look Manuscript Submission Confirmation grouped by case:concept:name,""ERROR: computing metric {'count': """"activity == 'First Look Manuscript Submission Confirmation'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Number of First Look Manuscript Submission Confirmation made per year,""ERROR: computing metric {'count': """"activity == 'First Look Manuscript Submission Confirmation'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of First Look Manuscript Submission Confirmation that are followed by First Look-Please submit updates,Percentage of 'First Look Manuscript Submission Confirmation' out of all 'First Look-Please submit updates',1.0,
+Average number of First Look Manuscript Submission Confirmation that are followed by First Look-Your updates are due in one week,the average of the number of times `ACTIVITY` == 'First Look Manuscript Submission Confirmation' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'First Look-Your updates are due in one week',1.1,
+"Total First Look Manuscript Submission Confirmation done by SYSTEM,""ERROR: computing metric {'count': """"activity == 'First Look Manuscript Submission Confirmation'"""", 'aggregation': 'total', 'filter': 'performer == SYSTEM'}"",,"

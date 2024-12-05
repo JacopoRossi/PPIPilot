@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Manuscript Export Succeeded' before 'SW-Reviewer Agreed',Frequency of activity 'Manuscript Export Succeeded' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'Manuscript Export Succeeded' out of all 'Original Manuscript Submission Confirmation',Percentage of 'Manuscript Export Succeeded' out of all 'Original Manuscript Submission Confirmation',1.0,
+Number of 'Manuscript Export Succeeded' that are followed by 'Plagiarism Originality Report Completed',Number of 'Manuscript Export Succeeded' activities for cases where activity 'Plagiarism Originality Report Completed' occurs,134,
+Percentage of 'Manuscript Export Succeeded' from all 'SW-Checklist Completed',Percentage of 'Manuscript Export Succeeded' out of all 'SW-Checklist Completed',1.0,
+Frequency of 'Manuscript Export Succeeded' in relation to 'SW-Awaiting Checklist Completion',Frequency of activity 'Manuscript Export Succeeded' for cases where activity 'SW-Awaiting Checklist Completion' occurs,85,
+Percentage of 'Manuscript Export Succeeded' followed by 'SW-Awaiting AE Assignment',Percentage of 'Manuscript Export Succeeded' out of all 'SW-Awaiting AE Assignment',1.0,
+"Number of times 'Manuscript Export Succeeded' is performed per year,""ERROR: computing metric {'count': """"activity == 'Manuscript Export Succeeded'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+"Number of 'Manuscript Export Succeeded' grouped by 'case:concept:name',""ERROR: computing metric {'count': """"activity == 'Manuscript Export Succeeded'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Percentage of 'Manuscript Export Succeeded' that lead to 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'Manuscript Export Succeeded'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Frequency of 'Manuscript Export Succeeded' in the most common process variant,Frequency of activity 'Manuscript Export Succeeded',89,
+Percentage of 'Manuscript Export Succeeded' in processes that lead to 'SW-EIC Major Revision',Percentage of 'Manuscript Export Succeeded' out of all 'SW-EIC Major Revision',1.0,
+Number of 'Manuscript Export Succeeded' that are not followed by 'SW-Reviewer No Response',Number of 'Manuscript Export Succeeded' activities for cases where activity 'SW-Reviewer No Response' does not occur,141,
+Percentage of 'Manuscript Export Succeeded' in relation to all activities performed by 'SYSTEM',Percentage of 'Manuscript Export Succeeded' out of all cases,0.97,
+Frequency of 'Manuscript Export Succeeded' before 'SW-AE Assign Reviewers',Frequency of activity 'Manuscript Export Succeeded' for cases where activity 'SW-AE Assign Reviewers' occurs,45,
+Percentage of processes including 'Manuscript Export Succeeded' that successfully reach 'SW-EIC Accept',Percentage of 'Manuscript Export Succeeded' out of all 'SW-EIC Accept',1.0,

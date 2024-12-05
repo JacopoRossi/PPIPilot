@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time for 'Completed + Cancelled',The average of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Average time difference between 'Completed + Cancelled' and 'Accepted + In Progress',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Total duration of 'Completed + Cancelled' incidents,The sum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+"Median time to reach 'Completed + Cancelled' from 'Queued + Awaiting Assignment',""ERROR: computing metric {'begin': """"activity == 'Queued + Awaiting Assignment'"""", 'end': """"activity == 'Completed + Cancelled'"""", 'aggregation': 'median', 'filter': '', 'group_by': ''}"",,"
+Average time from 'Completed + Cancelled' to the next activity in the process,The average of the duration between activity Completed + Cancelled and the end of the case,0:00:00,
+"Distribution of time taken for 'Completed + Cancelled' across different organization countries,""ERROR: computing metric {'begin': '', 'end': """"activity == 'Completed + Cancelled'"""", 'aggregation': 'distribution', 'filter': '', 'group_by': 'organization country'}"",,"
+Average time from 'Accepted + In Progress' to 'Completed + Cancelled' compared to 'Accepted + In Progress' to 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Total time spent in 'Completed + Cancelled' for incidents involving Org line A2,The sum of the duration between the beginning of the case and activity 'Completed + Cancelled' for cases where activity 'Completed + Cancelled' occurs,,
+Longest duration of a single 'Completed + Cancelled' incident,the maximum of the duration between the first time instant when <ppinot4py.model.states.RuntimeState object at 0x0000029E3FC4F8D0> - AppliesTo.PROCESS and the last time instant when `ACTIVITY` == 'Completed + Cancelled',8:39:48,
+Shortest time to 'Completed + Cancelled' from incident start,The minimum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Time difference between first 'Accepted + In Progress' and 'Completed + Cancelled' in the most common process variants,The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Average time from 'Completed + Cancelled' back to 'Accepted + In Progress' in cases of reactivation,The average of the duration between activity 'Completed + Cancelled' and activity 'Accepted + In Progress',,
+"Total count of 'Completed + Cancelled' incidents that were followed by 'Completed + Resolved',""ERROR: computing metric {'begin': """"activity == 'Completed + Cancelled'"""", 'end': """"activity == 'Completed + Resolved'"""", 'aggregation': 'count', 'filter': '', 'group_by': ''}"",,"
+Average time between 'Completed + Cancelled' and any subsequent activity for the same case,The average of the duration between activity Completed + Cancelled and the end of the case,0:00:00,
+"Distribution of 'Completed + Cancelled' durations across different impact levels,""ERROR: computing metric {'begin': '', 'end': """"activity == 'Completed + Cancelled'"""", 'aggregation': 'distribution', 'filter': '', 'group_by': 'impact'}"",,"

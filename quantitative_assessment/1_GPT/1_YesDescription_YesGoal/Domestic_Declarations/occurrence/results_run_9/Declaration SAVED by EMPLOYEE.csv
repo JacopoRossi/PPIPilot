@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of \Declaration SAVED by EMPLOYEE\ compared to \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ that lead to \Declaration SUBMITTED by EMPLOYEE\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;B
+Frequency of \Declaration SAVED by EMPLOYEE\ followed by \Declaration REJECTED by PRE_APPROVER\;Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ in relation to all activities performed by EMPLOYEE;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.32;;B
+Number of \Declaration SAVED by EMPLOYEE\ per month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of \Declaration SAVED by EMPLOYEE\ that result in a \Request Payment\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Request Payment';0.0;;B
+Frequency of \Declaration SAVED by EMPLOYEE\ in cases with amounts above 100 euros;Number of 'Declaration SAVED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;0.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ followed by \Declaration APPROVED by ADMINISTRATION\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;B
+Number of \Declaration SAVED by EMPLOYEE\ that are eventually \Payment Handled\;Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Payment Handled' occurs;1.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ by SUPERVISOR;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.0;;B
+Frequency of \Declaration SAVED by EMPLOYEE\ in cases that are eventually rejected at any stage;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}";;;C
+Percentage of \Declaration SAVED by EMPLOYEE\ in the total event log;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.01;;A
+Number of \Declaration SAVED by EMPLOYEE\ followed by \Declaration FINAL_APPROVED by SUPERVISOR\;Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs;0.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ that do not lead to \Declaration REJECTED by PRE_APPROVER\;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.01;;A
+Frequency of \Declaration SAVED by EMPLOYEE\ in cases with a declaration number but no subsequent \Request Payment\;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': ""case:DeclarationNumber != NULL && activity != 'Request Payment'""}";;;C
+Percentage of \Declaration SAVED by EMPLOYEE\ in cases that exceed the two-month reimbursement period for travel expenses;Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.01;;B
+Number of \Declaration SAVED by EMPLOYEE\ in relation to \Declaration APPROVED by BUDGET OWNER\;Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;0.0;;B
+Frequency of \Declaration SAVED by EMPLOYEE\ in cases without \Declaration REJECTED by ADMINISTRATION\;Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration REJECTED by ADMINISTRATION' does not occur;135.0;;B
+Percentage of \Declaration SAVED by EMPLOYEE\ in cases that involve director approval;Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration APPROVED by DIRECTOR';;;A
+Number of \Declaration SAVED by EMPLOYEE\ in cases that are completed within the same year as started;Number of 'Declaration SAVED by EMPLOYEE' activities;135.0;;B

@@ -1,0 +1,10 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Number of 'Declaration SAVED by EMPLOYEE';Number of 'Declaration SAVED by EMPLOYEE' activities;135;;A
+Number of 'Declaration SAVED by EMPLOYEE' with amounts above 100 euros;Number of 'Declaration SAVED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;0;;B
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'case:BudgetNumber';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber;budget 86566:135;"{""budget 86566"":135}";A
+Number of 'Declaration SAVED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Total 'Declaration SAVED by EMPLOYEE' done by 'STAFF MEMBER';Number of 'Declaration SAVED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role;;;D
+Total 'Declaration SAVED by EMPLOYEE' performed by 'STAFF MEMBER';Number of 'Declaration SAVED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:resource;134;;B
+Average number of 'Declaration SAVED by EMPLOYEE' per month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Average number of 'Declaration SAVED by EMPLOYEE' in a month;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}";;;C

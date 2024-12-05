@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' followed by 'Declaration FINAL_APPROVED by SUPERVISOR',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,2798,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all approval activities,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,
+Number of 'Declaration APPROVED by BUDGET OWNER' with amounts above 100 euros,Number of 'Declaration APPROVED by BUDGET OWNER' activities > 100 where ma is the last value of case:Amount,722,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' in relation to 'Declaration REJECTED by PRE_APPROVER',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs,0,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' followed by 'Request Payment',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Request Payment',0.28,
+Average number of 'Declaration APPROVED by BUDGET OWNER' in a month,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'average', 'group_by': 'month'}",,
+Total 'Declaration APPROVED by BUDGET OWNER' performed by 'STAFF MEMBER',Number of 'Declaration APPROVED by BUDGET OWNER' activities == 'STAFF MEMBER' where ma is the last value of org:resource,9,
+Ratio of 'Declaration APPROVED by BUDGET OWNER' over 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.27,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' in variants leading to 'Payment Handled',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Payment Handled' occurs,2798,
+Percentage of cases with 'Declaration APPROVED by BUDGET OWNER' that do not lead to 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen,0.27,
+Number of times 'Declaration APPROVED by BUDGET OWNER' is performed per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' in successful payment processes,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Payment Handled',0.28,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' grouped by 'case:BudgetNumber',Frequency of activity '{}' grouped by the last value of case:BudgetNumber,budget 86566:2807,"{""budget 86566"":2807}"
+Percentage of 'Declaration APPROVED by BUDGET OWNER' in processes with an amount greater than the average case amount,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > average(case:Amount)'}",,

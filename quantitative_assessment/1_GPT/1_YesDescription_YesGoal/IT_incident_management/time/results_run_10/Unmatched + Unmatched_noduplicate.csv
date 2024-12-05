@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time difference between 'Unmatched + Unmatched' and 'Completed + In Call',The average of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + In Call',,
+Total duration of 'Unmatched + Unmatched' activities in the event log,The sum of the duration between activity Unmatched + Unmatched and the end of the case,50 days 11:38:09,
+Average duration of 'Unmatched + Unmatched' before transitioning to any 'Accepted + In Progress' activity,The average of the duration between activity 'Unmatched + Unmatched' and activity 'Accepted + In Progress',0 days 04:45:04,
+Total duration of 'Unmatched + Unmatched' activities before a 'Queued + Awaiting Assignment' occurs,The sum of the duration between activity 'Unmatched + Unmatched' and activity 'Queued + Awaiting Assignment',,
+Minimum duration of 'Unmatched + Unmatched' activities across all cases,The minimum of the duration between activity Unmatched + Unmatched and the end of the case,7 days 08:40:08,
+Maximum duration of 'Unmatched + Unmatched' activities before reaching 'Completed + In Call' status,The maximum of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + In Call',,
+Average duration of 'Unmatched + Unmatched' activities in cases leading to 'Completed + Resolved',The average of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + Resolved',2 days 15:01:17,
+"Duration variance of 'Unmatched + Unmatched' activities across different organization countries,""ERROR: computing metric {'begin': """"activity == 'Unmatched + Unmatched'"""", 'end': '', 'aggregation': 'variance', 'filter': '', 'group_by': 'organization country'}"",,"
+Average time gap between 'Unmatched + Unmatched' and the next activity in the process flow,The average of the duration between activity Unmatched + Unmatched and the end of the case,10 days 02:19:37.800000,
+Longest duration of 'Unmatched + Unmatched' before any 'Accepted + Wait - User' activity,The maximum of the duration between activity 'Unmatched + Unmatched' and activity 'Accepted + Wait - User',0 days 22:15:10,
+Shortest duration of 'Unmatched + Unmatched' leading directly to a 'Completed + Closed' status,The minimum of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + Closed',7 days 08:40:08,
+"Median duration of 'Unmatched + Unmatched' activities before transitioning to 'Accepted + Assigned',""ERROR: computing metric {'begin': """"activity == 'Unmatched + Unmatched'"""", 'end': """"activity == 'Accepted + Assigned'"""", 'aggregation': 'median', 'filter': '', 'group_by': ''}"",,"
+"Duration comparison of 'Unmatched + Unmatched' to 'Accepted + Wait - Vendor' across all cases,""ERROR: computing metric {'begin': """"activity == 'Unmatched + Unmatched'"""", 'end': """"activity == 'Accepted + Wait - Vendor'"""", 'aggregation': 'compare', 'filter': '', 'group_by': ''}"",,"
+"Impact analysis of 'Unmatched + Unmatched' duration on the overall case resolution time,""ERROR: computing metric {'begin': """"activity == 'Unmatched + Unmatched'"""", 'end': '', 'aggregation': 'impact', 'filter': '', 'group_by': ''}"",,"

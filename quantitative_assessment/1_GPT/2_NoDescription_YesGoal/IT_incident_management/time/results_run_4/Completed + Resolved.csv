@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + In Progress' to 'Completed + Resolved',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',""11 days, 0:27:37.584765"","
+"Median duration of 'Completed + Resolved',""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'median'}"",,"
+"Variance in duration for 'Completed + Resolved' across different organization countries,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'variance', 'group_by': 'organization country'}"",,"
+"Average time from 'Completed + Resolved' to 'Completed + Closed',The average of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""6 days, 5:09:22.288841"","
+"Time difference between 'Completed + In Call' and 'Completed + Resolved' for cases where both occur,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+"Average duration of 'Completed + Resolved' in cases leading to 'Completed + Closed' versus those leading to other outcomes,The average of the duration between activity 'Completed + Resolved' and the end of case where activity 'Completed + Closed occurs,""6 days, 5:11:19.127736"","
+"Longest and shortest duration of 'Completed + Resolved' across all cases,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'minimum', 'group_by': """"activity == 'Completed + Resolved'""""}"",,"
+"Average time from 'Queued + Awaiting Assignment' to 'Completed + Resolved',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Resolved',""12 days, 5:20:13.389973"","
+"Distribution of 'Completed + Resolved' durations by product,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'distribution', 'group_by': 'product'}"",,"
+"Average time from 'Completed + Resolved' to the next activity in the process,The average of the duration between activity Completed + Resolved and the end of the case,""6 days, 2:55:55.742716"","
+"Total duration of 'Completed + Resolved' activities across the event log,The sum of the duration between activity Completed + Resolved and the end of the case,""34669 days, 20:46:11"","
+"Average time between 'Completed + Resolved' and any subsequent 'Accepted + Wait' activities,The average of the duration between activity 'Completed + Resolved' and activity 'Accepted + Wait',""13 days, 1:11:12.879518"","
+Time from 'Completed + Resolved' to 'Completed + In Call' in cases where 'Completed + In Call' follows 'Completed + Resolved',The average of the duration between activity 'Completed + Resolved' and activity 'Completed + In Call',,
+"Standard deviation of 'Completed + Resolved' duration for each org:group,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'standard deviation', 'group_by': 'org:group'}"",,"
+"Earliest and latest occurrence of 'Completed + Resolved' in the event log timeline,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'minimum', 'group_by': 'time:timestamp'}"",,"
+"Duration of 'Completed + Resolved' in the top 10 longest process variants,""ERROR: computing metric {'begin': """"activity == 'Completed + Resolved'"""", 'end': '', 'aggregation': 'total', 'filter': 'top 10 longest process variants'}"",,"

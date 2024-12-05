@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Declaration APPROVED by ADMINISTRATION\ followed by \Declaration FINAL_APPROVED by SUPERVISOR\,Frequency of activity 'Declaration APPROVED by ADMINISTRATION' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,7921,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ out of all approval activities,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION',1.0,
+Number of \Declaration APPROVED by ADMINISTRATION\ that are preceded by \Declaration SUBMITTED by EMPLOYEE\,Number of 'Declaration APPROVED by ADMINISTRATION' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,8202,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ with amounts above 100 euros,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases,0.79,
+Frequency of \Declaration APPROVED by ADMINISTRATION\ in the most common process variant,Frequency of activity 'Declaration APPROVED by ADMINISTRATION',7983,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ followed by \Request Payment\,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Request Payment',0.79,
+Number of \Declaration APPROVED by ADMINISTRATION\ per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ by \STAFF MEMBER\,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases,,
+Frequency of \Declaration APPROVED by ADMINISTRATION\ in cases that involve travel expense claims,Frequency of activity 'Declaration APPROVED by ADMINISTRATION',7983,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ in relation to all activities in the event log,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases,0.76,
+Number of \Declaration APPROVED by ADMINISTRATION\ that lead to a payment being requested and paid,Number of 'Declaration APPROVED by ADMINISTRATION' activities for cases where activity 'Request Payment' occurs,8130,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ in the process variants that involve \Declaration REJECTED by EMPLOYEE\,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration REJECTED by EMPLOYEE',0.73,
+Frequency of \Declaration APPROVED by ADMINISTRATION\ in relation to \Declaration APPROVED by BUDGET OWNER\,Frequency of activity 'Declaration APPROVED by ADMINISTRATION' for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs,2807,
+Percentage of \Declaration APPROVED by ADMINISTRATION\ in processes that finish with a payment,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Payment Handled',0.79,
+Number of \Declaration APPROVED by ADMINISTRATION\ grouped by \case:BudgetNumber\,Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of case:BudgetNumber,budget 86566:8202,"{""budget 86566"":8202}"
+Percentage of \Declaration APPROVED by ADMINISTRATION\ in processes that do not require director approval,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases,0.76,

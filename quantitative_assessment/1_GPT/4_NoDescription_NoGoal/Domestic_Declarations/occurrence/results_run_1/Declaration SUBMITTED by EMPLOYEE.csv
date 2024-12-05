@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to Declaration APPROVED by ADMINISTRATION,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION',1.0,
+Number of Declaration SUBMITTED by EMPLOYEE with amounts above 100 euros,Number of 'Declaration SUBMITTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount,2777,
+Percentage of Declaration SUBMITTED by EMPLOYEE followed by Declaration FINAL_APPROVED by SUPERVISOR,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Number of Declaration SUBMITTED by EMPLOYEE that are not followed by Declaration REJECTED by ADMINISTRATION,Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by ADMINISTRATION' does not occur,11531,
+Number of Declaration SUBMITTED by EMPLOYEE grouped by case:BudgetNumber,Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber,budget 86566:11531,"{""budget 86566"":11531}"
+Percentage of Declaration SUBMITTED by EMPLOYEE from all Declaration APPROVED by ADMINISTRATION,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION',1.0,
+Number of Declaration SUBMITTED by EMPLOYEE made per year,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to Request Payment,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment',1.0,
+Number of times Declaration SUBMITTED by EMPLOYEE is performed before Declaration REJECTED by EMPLOYEE,Number of 'Declaration SUBMITTED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by EMPLOYEE' occurs,2322,
+Percentage of Declaration SUBMITTED by EMPLOYEE out of all activities in the event log,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases,0.99,
+Average number of Declaration SUBMITTED by EMPLOYEE in a month,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Fraction of Declaration SUBMITTED by EMPLOYEE that are followed by Payment Handled,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled',1.0,
+Ratio of Declaration SUBMITTED by EMPLOYEE over Declaration APPROVED by PRE_APPROVER,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by PRE_APPROVER',1.0,
+Occasions how often the Declaration SUBMITTED by EMPLOYEE is performed in variants leading to Payment Handled,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled',1.0,

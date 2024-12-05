@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Awaiting EIC Decision' following 'SW-Reviewer Agreed',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of manuscripts entering 'SW-Awaiting EIC Decision' after 'SW-AE Assign Reviewers',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',0.98,
+Percentage of 'SW-Awaiting EIC Decision' leading to 'SW-EIC Major Revision' versus those leading to 'SW-EIC Accept',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+Frequency of 'SW-Awaiting EIC Decision' as a concluding activity in the manuscript review process,Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'Manuscript is Withdrawn' occurs,1,
+Average time from 'SW-Reviewer Agreed' to 'SW-Awaiting EIC Decision',the average of the number of times `ACTIVITY` == 'SW-Awaiting EIC Decision' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'SW-Reviewer Agreed',0.98,
+Percentage of 'SW-Awaiting EIC Decision' preceded by 'Reviewer Invitation Reminder 2',Percentage of 'SW-Awaiting EIC Decision' out of all 'Reviewer Invitation Reminder 2',0.88,
+Ratio of 'SW-Awaiting EIC Decision' over 'Original Manuscript Submission Confirmation',Percentage of 'SW-Awaiting EIC Decision' out of all 'Original Manuscript Submission Confirmation',0.66,
+Frequency of 'SW-Awaiting EIC Decision' in manuscripts with more than one 'SW-Reviewer Agreed',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'SW-Awaiting EIC Decision' in the top 3 most frequent process variants,Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-AE Assign Reviewers',0.98,
+"Number of 'SW-Awaiting EIC Decision' that lead to a decision within 30 days,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '< 30 days', 'aggregation': 'total'}"",,"
+Percentage of 'SW-Awaiting EIC Decision' that are followed by any form of revision ('SW-EIC Major Revision', 'SW-EIC Minor Revision'),Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,

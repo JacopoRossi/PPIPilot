@@ -1,0 +1,24 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration SAVED by EMPLOYEE' before 'Declaration SUBMITTED by EMPLOYEE';Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.0;;A
+Number of 'Declaration SAVED by EMPLOYEE' that are followed by 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' from all 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0.0;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in relation to 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of org:role;ADMINISTRATION:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":134,""MISSING"":0,""SUPERVISOR"":0,""UNDEFINED"":1}";A
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of org:role;EMPLOYEE:134;"{""ADMINISTRATION"":0,""EMPLOYEE"":134,""MISSING"":0,""SUPERVISOR"":0,""UNDEFINED"":1}";A
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of org:role;MISSING:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":134,""MISSING"":0,""SUPERVISOR"":0,""UNDEFINED"":1}";A
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of org:role;SUPERVISOR:0;"{""ADMINISTRATION"":0,""EMPLOYEE"":134,""MISSING"":0,""SUPERVISOR"":0,""UNDEFINED"":1}";A
+Number of 'Declaration SAVED by EMPLOYEE' grouped by 'org:role';Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of org:role;UNDEFINED:1;"{""ADMINISTRATION"":0,""EMPLOYEE"":134,""MISSING"":0,""SUPERVISOR"":0,""UNDEFINED"":1}";A
+Percentage of 'Declaration SAVED by EMPLOYEE' by 'org:resource';Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases;0.01;;B
+Number of 'Declaration SAVED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration SAVED by EMPLOYEE' that lead to a 'Request Payment';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Request Payment';0.0;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in cases with amounts above 100 euros;Frequency of activity 'Declaration SAVED by EMPLOYEE';0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' followed by 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.0;;B
+Number of 'Declaration SAVED by EMPLOYEE' in cases that end with 'Payment Handled';Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Payment Handled' occurs;1;;B
+Frequency of 'Declaration SAVED by EMPLOYEE' in the most common variant;Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity '' does not occur;135;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in cases without 'Declaration REJECTED by PRE_APPROVER';Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen;0.01;;A
+Number of 'Declaration SAVED by EMPLOYEE' in relation to 'Declaration APPROVED by BUDGET OWNER';Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs;0;;B
+Percentage of 'Declaration SAVED by EMPLOYEE' in cases that involve 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration SAVED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';0.0;;A
+Frequency of 'Declaration SAVED by EMPLOYEE' in cases that are eventually paid (ending with 'Payment Handled');Frequency of activity 'Declaration SAVED by EMPLOYEE' for cases where activity 'Payment Handled' occurs;1;;A
+Percentage of 'Declaration SAVED by EMPLOYEE' in cases that do not require 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases where 'Declaration APPROVED by PRE_APPROVER' does not happen;0.01;;A

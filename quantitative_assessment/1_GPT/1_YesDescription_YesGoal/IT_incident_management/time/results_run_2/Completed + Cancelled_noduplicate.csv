@@ -1,0 +1,12 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time for 'Completed + Cancelled',The average of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Average time difference between 'Completed + Cancelled' and 'Accepted + In Progress',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Total duration of incidents before reaching 'Completed + Cancelled',The sum of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Minimum time to reach 'Completed + Cancelled' from 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Cancelled',,
+Average time from 'Completed + In Call' to 'Completed + Cancelled',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Cancelled',7:02:52,
+Total time from 'Accepted + In Progress' to 'Completed + Cancelled',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Cancelled',8:39:48,
+Minimum time from 'Completed + Resolved' to 'Completed + Cancelled',The minimum of the duration between activity 'Completed + Resolved' and activity 'Completed + Cancelled',,
+Average duration of 'Completed + Cancelled' incidents in the VINST system,The average of the duration between the start of the case and activity 'Completed + Cancelled',8:39:48,
+Average time from 'Completed + Cancelled' to the next activity in the process,The average of the duration between activity Completed + Cancelled and the end of the case,0:00:00,
+Total number of transitions from 'Accepted + Wait - User' to 'Completed + Cancelled',The sum of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Cancelled',8:39:04,

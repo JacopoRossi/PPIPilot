@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time from 'Accepted + In Progress' to 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""16 days, 1:40:38.796698"","
+"Average time difference between 'Completed + In Call' and 'Completed + Closed',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","
+"Total duration of 'Completed + Closed' activities in the event log,The sum of the duration between activity Completed + Closed and the end of the case,""2425 days, 0:12:56"","
+Minimum time taken to reach 'Completed + Closed' from 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Closed',0:00:16,
+"Average time from 'Completed + In Call' to 'Completed + Closed' across all cases,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","
+"Total time from first 'Accepted + In Progress' to 'Completed + Closed' in a case,The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""89557 days, 12:23:34"","
+"Average duration of 'Completed + Closed' activities following 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + Closed',""17 days, 20:03:53.763224"","
+"Total duration of 'Completed + Closed' activities following 'Accepted + Wait - Vendor',The sum of the duration between activity 'Accepted + Wait - Vendor' and activity 'Completed + Closed',""4412 days, 1:19:00"","
+Minimum time from 'Accepted + Assigned' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Assigned' and activity 'Completed + Closed',0:00:38,
+"Average time from 'Completed + Resolved' to 'Completed + Closed',The average of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""6 days, 5:09:22.288841"","
+"Total time from 'Completed + Resolved' to 'Completed + Closed' across all cases,The sum of the duration between activity 'Completed + Resolved' and activity 'Completed + Closed',""34641 days, 12:36:38"","
+Duration of 'Completed + Closed' in relation to total case duration,The average of the duration between activity Completed + Closed and the end of the case,10:26:28.944385,
+"Average duration of 'Completed + Closed' activities following 'Accepted + Wait - Implementation',The average of the duration between activity 'Accepted + Wait - Implementation' and activity 'Completed + Closed',""17 days, 22:53:15.949367"","
+"Total duration of 'Completed + Closed' activities following 'Accepted + Wait - Customer',The sum of the duration between activity 'Accepted + Wait - Customer' and activity 'Completed + Closed',""1392 days, 12:31:13"","
+"Minimum duration of 'Completed + Closed' activities following 'Unmatched + Unmatched',The minimum of the duration between activity 'Unmatched + Unmatched' and activity 'Completed + Closed',""7 days, 8:40:08"","

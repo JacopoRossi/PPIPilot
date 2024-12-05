@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Total duration of 'Accepted + In Progress' in cases where it directly precedes 'Completed + Closed',The sum of the duration between activity 'Accepted + In Progress' and activity 'Completed + Closed',""89557 days, 12:23:34"","
+"Longest duration of 'Accepted + In Progress' before transitioning to 'Queued + Awaiting Assignment',The maximum of the duration between activity 'Accepted + In Progress' and activity 'Queued + Awaiting Assignment',""395 days, 18:39:18"","
+Shortest duration of 'Accepted + In Progress' in cases leading to 'Completed + In Call',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0:00:04,
+"Average duration of 'Accepted + In Progress' during specific organizational periods (e.g., Q1, Q2, Q3, Q4),""ERROR: computing metric {'begin': """"activity == 'Accepted + In Progress'"""", 'end': '', 'aggregation': 'average', 'group_by': 'time:timestamp'}"",,"
+"Average elapsed time from 'Accepted + In Progress' to 'Accepted + Wait - User',The average of the duration between activity 'Accepted + In Progress' and activity 'Accepted + Wait - User',""5 days, 16:16:14.116298"","
+"Total elapsed time of 'Accepted + In Progress' in the most frequent process variant,The sum of the duration between activity Accepted + In Progress and the end of the case,""90911 days, 1:37:42"","
+"Average duration of 'Accepted + In Progress' in cases with 'Medium' impact versus 'High' impact,The average of the duration between activity Accepted + In Progress and the end of the case,""13 days, 17:16:57.106372"","
+Comparison of average duration of 'Accepted + In Progress' in cases ending with 'Completed + In Call' versus those ending with 'Completed + Closed',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+"Duration of 'Accepted + In Progress' in the shortest and longest process variants,The average of the duration between activity Accepted + In Progress and the end of the case,""12 days, 1:31:32.497611"","
+"Time difference between starting 'Accepted + In Progress' and the next activity for cases with 'Low' product impact,The average of the duration between activity Accepted + In Progress and the end of the case,""9 days, 16:20:51.486879"","
+"Average time from 'Accepted + In Progress' to 'Completed + Resolved' in cases that pass through 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + Resolved',""12 days, 10:07:56.131497"","
+"Average time from 'Accepted + In Progress' to 'Completed + In Call' in cases with 'High' impact products,The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',""1 day, 22:12:30.125000"","
+"Total time spent in 'Accepted + In Progress' for all cases within a specific year,""ERROR: computing metric {'begin': """"activity == 'Accepted + In Progress'"""", 'end': '', 'aggregation': 'total', 'group_by': 'time:timestamp'}"",,"

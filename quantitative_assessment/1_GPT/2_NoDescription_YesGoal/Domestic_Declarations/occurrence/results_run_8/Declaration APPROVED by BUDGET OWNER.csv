@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' followed by 'Declaration FINAL_APPROVED by SUPERVISOR',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Declaration FINAL_APPROVED by SUPERVISOR' occurs,2798,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all approval activities,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,
+Number of 'Declaration APPROVED by BUDGET OWNER' that are preceded by 'Declaration APPROVED by ADMINISTRATION',Number of 'Declaration APPROVED by BUDGET OWNER' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs,2820,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' from all 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration SUBMITTED by EMPLOYEE',0.27,
+Number of 'Declaration APPROVED by BUDGET OWNER' with amounts above 100 euros,Number of 'Declaration APPROVED by BUDGET OWNER' activities > 100 where ma is the last value of case:Amount,722,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' by 'STAFF MEMBER',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases,,
+Number of 'Declaration APPROVED by BUDGET OWNER' grouped by 'case:BudgetNumber',Number of 'Declaration APPROVED by BUDGET OWNER' activities grouped by the last value of case:BudgetNumber,budget 86566:2820,"{""budget 86566"":2820}"
+Percentage of 'Declaration APPROVED by BUDGET OWNER' by worker,Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases,0.27,
+Frequency of 'Declaration APPROVED by BUDGET OWNER' in relation to 'Declaration REJECTED by PRE_APPROVER',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs,0,
+Percentage of 'Declaration APPROVED by BUDGET OWNER' that lead to 'Request Payment',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Request Payment',0.28,
+Ratio of 'Declaration APPROVED by BUDGET OWNER' over 'Declaration REJECTED by ADMINISTRATION',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all 'Declaration REJECTED by ADMINISTRATION',0.28,
+Occasions how often 'Declaration APPROVED by BUDGET OWNER' is performed in variants leading to 'Payment Handled',Frequency of activity 'Declaration APPROVED by BUDGET OWNER' for cases where activity 'Payment Handled' occurs,2798,
+The ratio of 'Declaration APPROVED by BUDGET OWNER' that are not eventually followed by 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration APPROVED by BUDGET OWNER' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen,0.27,

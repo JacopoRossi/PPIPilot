@@ -1,0 +1,20 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Unmatched + Unmatched' compared to 'Completed + In Call',Percentage of 'Unmatched + Unmatched' out of all 'Completed + In Call',0.0,
+Percentage of 'Unmatched + Unmatched' transitions to 'Accepted + In Progress',Percentage of 'Unmatched + Unmatched' out of all 'Accepted + In Progress',0.0,
+Number of 'Unmatched + Unmatched' occurrences in incidents with high impact,Number of 'Unmatched + Unmatched' activities == 'high' where ma is the last value of impact,,
+"Percentage of 'Unmatched + Unmatched' in incidents from France versus incidents from Brazil,Percentage of 'Unmatched + Unmatched' out of all cases,France:0.0,""{""""France"""":0.0}"""
+Frequency of 'Unmatched + Unmatched' leading to a resolution without 'Completed + Closed',Frequency of activity 'Unmatched + Unmatched' for cases where activity 'Completed + Closed' does not occur,5,
+Ratio of 'Unmatched + Unmatched' over 'Queued + Awaiting Assignment' in the event log,Percentage of 'Unmatched + Unmatched' out of all 'Queued + Awaiting Assignment',0.0,
+Number of 'Unmatched + Unmatched' activities followed by 'Accepted + Wait - User',Number of 'Unmatched + Unmatched' activities for cases where activity 'Accepted + Wait - User' occurs,2,
+Percentage of 'Unmatched + Unmatched' activities that occur after 'Accepted + Assigned',Percentage of 'Unmatched + Unmatched' out of all 'Accepted + Assigned',0.0,
+Frequency of 'Unmatched + Unmatched' in incidents involving product PROD582,Frequency of activity 'Unmatched + Unmatched',0,
+"Percentage of 'Unmatched + Unmatched' in incidents reported by organization 'fr' compared to 'us',Percentage of 'Unmatched + Unmatched' out of all cases,fr:0.0,""{""""fr"""":0.0}"""
+Number of 'Unmatched + Unmatched' activities in incidents with medium impact versus low impact,Number of 'Unmatched + Unmatched' activities == 'medium' where ma is the last value of impact,,
+Percentage of 'Unmatched + Unmatched' followed by any activity other than 'Completed + In Call',Percentage of 'Unmatched + Unmatched' out of all cases where 'Completed + In Call' does not happen,0.0,
+Frequency of 'Unmatched + Unmatched' in incidents resolved within the same day,Frequency of activity 'Unmatched + Unmatched',5,
+Ratio of 'Unmatched + Unmatched' occurrences before and after 'Accepted + Wait - Vendor',Percentage of 'Unmatched + Unmatched' out of all 'Accepted + Wait - Vendor',0.0,
+Percentage of 'Unmatched + Unmatched' in incidents that have more than 5 activities before reaching 'Completed + Resolved',the average of the function base > 5 where base is the number of times `ACTIVITY` == 'Unmatched + Unmatched' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Completed + Resolved',0.0,
+"Frequency of 'Unmatched + Unmatched' in incidents that involve more than one country,""ERROR: computing metric {'count': """"activity == 'Unmatched + Unmatched'"""", 'metric_condition': '> 1', 'aggregation': 'total', 'filter': 'organization involved > 1'}"",,"
+Percentage of 'Unmatched + Unmatched' in incidents that lead to 'Completed + Cancelled',Percentage of 'Unmatched + Unmatched' out of all 'Completed + Cancelled',0.0,
+Number of 'Unmatched + Unmatched' activities that precede 'Accepted + Wait - Implementation',Number of 'Unmatched + Unmatched' activities for cases where activity 'Accepted + Wait - Implementation' occurs,0,

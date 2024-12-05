@@ -1,0 +1,19 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+"Total time from 'Accepted + Wait' to 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""16689 days, 1:09:59"","
+Minimum time from 'Accepted + Wait' to 'Completed + Closed',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Closed',0:05:28,
+"Average time for 'Accepted + Wait' to transition to any subsequent activity,The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+"Total resolution time of incidents involving 'Accepted + Wait',The sum of the duration between activity Accepted + Wait and the end of the case,""21444 days, 22:00:34"","
+Minimum resolution time of incidents starting with 'Accepted + Wait' and ending with 'Completed + In Call',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',0:00:12,
+"Average time it takes 'Accepted + Wait' to be followed by 'Accepted + In Progress',The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',""15 days, 16:34:59.729426"","
+"Total time it takes for 'Accepted + Wait' to transition through 'Queued + Awaiting Assignment' before reaching 'Completed + Resolved',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""15090 days, 10:51:28"","
+Minimum time it takes for 'Accepted + Wait' to be followed by 'Completed + In Call' across all variants,The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',0:00:12,
+Total time for 'Accepted + Wait' in incidents involving 'PROD582' product,The sum of the duration between activity Accepted + Wait and the end of the case,,
+"Average time from 'Accepted + Wait' to 'Accepted + In Progress' in the most frequent process variant,The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',""15 days, 16:34:59.729426"","
+"Minimum time from 'Accepted + Wait' to 'Completed + Resolved' in incidents from France,The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""17 days, 22:41:48"","
+"Average time for 'Accepted + Wait' in incidents resolved within the same day,The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+Total time for 'Accepted + Wait' across all incidents from the organization 'Org line A2',The sum of the duration between activity Accepted + Wait and the end of the case,,
+Minimum time for 'Accepted + Wait' in incidents that transitioned to 'Completed + In Call' without going through 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',0:00:12,
+"Total time for 'Accepted + Wait' in the variant ending with 'Completed + Closed' with the highest performance measure,The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Closed',""20975 days, 4:29:07"","
+Minimum time for 'Accepted + Wait' in incidents that were resolved without any 'Accepted + Wait - User' activity,The minimum of the duration between activity Accepted + Wait and the end of the case,0:00:12,

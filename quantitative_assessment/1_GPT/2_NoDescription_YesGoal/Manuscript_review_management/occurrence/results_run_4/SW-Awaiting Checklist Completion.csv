@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Awaiting Checklist Completion' followed by 'Original Manuscript Submission Confirmation',Frequency of activity 'SW-Awaiting Checklist Completion' for cases where activity 'Original Manuscript Submission Confirmation' occurs,85.0,
+Percentage of cases starting with 'SW-Awaiting Checklist Completion' out of all cases,Percentage of 'SW-Awaiting Checklist Completion' out of all cases,0.91,
+Frequency of 'SW-Awaiting Checklist Completion' leading to 'SW-Checklist Completed',Frequency of activity 'SW-Awaiting Checklist Completion' for cases where activity 'SW-Checklist Completed' occurs,82.0,
+Percentage of 'SW-Awaiting Checklist Completion' followed by 'SW-Reviewer Agreed' within the same case,Percentage of 'SW-Awaiting Checklist Completion' out of all 'SW-Reviewer Agreed',0.96,
+Number of times 'SW-Awaiting Checklist Completion' occurs before 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting Checklist Completion' for cases where activity 'SW-AE Assign Reviewers' occurs,44.0,
+"Percentage of 'SW-Awaiting Checklist Completion' in cases that end with 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting Checklist Completion'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Frequency of 'SW-Awaiting Checklist Completion' in relation to 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting Checklist Completion' for cases where activity 'SW-AE Assign Reviewers' occurs,44.0,
+"Percentage of 'SW-Awaiting Checklist Completion' followed by any activity related to reviewer agreement or decision,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting Checklist Completion'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'SW-Reviewer Agreed' or activity == 'SW-EIC Accept'""""}"",,"
+"Number of variants including 'SW-Awaiting Checklist Completion' and their average performance time,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting Checklist Completion'"""", 'metric_condition': '> 0', 'aggregation': 'average', 'group_by': 'time:timestamp'}"",,"
+Percentage of 'SW-Awaiting Checklist Completion' occurrences that lead to a major revision decision,Percentage of 'SW-Awaiting Checklist Completion' out of all 'SW-EIC Major Revision',0.93,
+Frequency of 'SW-Awaiting Checklist Completion' in cases with more than one 'Reviewer Invitation Reminder 1',Frequency of activity 'SW-Awaiting Checklist Completion' for cases where activity 'Reviewer Invitation Reminder 1' occurs,41.0,
+Percentage of 'SW-Awaiting Checklist Completion' in cases that eventually lead to 'SW-EIC Accept',Percentage of 'SW-Awaiting Checklist Completion' out of all 'SW-EIC Accept',1.0,
+"Number of 'SW-Awaiting Checklist Completion' occurrences per month,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting Checklist Completion'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}"",,"

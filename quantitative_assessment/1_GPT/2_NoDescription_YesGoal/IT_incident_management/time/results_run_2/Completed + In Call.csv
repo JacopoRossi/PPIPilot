@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Total duration of 'Completed + In Call' activities in the event log,The sum of the duration between activity Completed + In Call and the end of the case,""1673 days, 23:23:44"","
+"Average duration from 'Completed + In Call' to 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+Median duration of 'Completed + In Call' across all cases,The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,
+"Longest duration from 'Accepted + In Progress' to 'Completed + In Call',The maximum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',""212 days, 22:21:38"","
+Shortest duration from 'Completed + In Call' to any subsequent activity,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Average time difference between 'Completed + In Call' and the next occurrence of 'Completed + In Call',The average of the duration between activity 'Completed + In Call' and activity 'Completed + In Call',0:00:00,
+"Total time spent in 'Completed + In Call' across all variants where it appears,The sum of the duration between activity Completed + In Call and the end of the case,""1673 days, 23:23:44"","
+"Average duration from 'Completed + In Call' to 'Completed + Closed' compared to 'Accepted + In Progress' to 'Completed + Closed',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","
+Earliest occurrence of 'Completed + In Call' after case start,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+"Latest occurrence of 'Completed + In Call' before case completion,the maximum of the duration between the first time instant when `ACTIVITY` == 'Completed + In Call' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x000002583FC292D0> - AppliesTo.PROCESS,""120 days, 16:20:28"","
+"Average waiting time before 'Completed + In Call' after 'Accepted + Wait - User',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',""8 days, 3:34:57.158730"","
+"Average duration from 'Completed + In Call' to 'Completed + Resolved' in the most frequent variant,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+Difference in average duration of 'Completed + In Call' between the top 5 most frequent variants,The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,

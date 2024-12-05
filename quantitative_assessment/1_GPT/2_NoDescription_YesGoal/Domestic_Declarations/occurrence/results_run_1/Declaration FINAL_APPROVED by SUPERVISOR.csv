@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all activities in the event log,Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases,0.96,
+Frequency of 'Declaration FINAL_APPROVED by SUPERVISOR' following 'Declaration APPROVED by ADMINISTRATION',Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs,7924,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' followed by 'Request Payment',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Request Payment',1.0,
+Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities with amounts above 100 euros,Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities > 100 where ma is the last value of case:Amount,2337,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' by 'STAFF MEMBER',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases,,
+Frequency of 'Declaration FINAL_APPROVED by SUPERVISOR' in relation to 'Declaration SUBMITTED by EMPLOYEE',Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs,10131,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' from all 'Declaration APPROVED by ADMINISTRATION',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Declaration APPROVED by ADMINISTRATION',0.99,
+Number of times 'Declaration FINAL_APPROVED by SUPERVISOR' is performed per year,"ERROR: computing metric {'count': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of paths leading to 'Declaration FINAL_APPROVED by SUPERVISOR' that include 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Declaration REJECTED by PRE_APPROVER',0.9,
+Frequency of 'Declaration FINAL_APPROVED by SUPERVISOR' in variants with performance above the median,Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities,10131,
+Percentage of cases leading to 'Declaration FINAL_APPROVED by SUPERVISOR' without 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen,0.96,
+Number of 'Declaration FINAL_APPROVED by SUPERVISOR' preceded by 'Declaration APPROVED by BUDGET OWNER',Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration APPROVED by BUDGET OWNER' occurs,2799,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' in the most frequent variant,Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases,0.96,
+Frequency of 'Declaration FINAL_APPROVED by SUPERVISOR' in relation to 'Declaration REJECTED by PRE_APPROVER',Number of 'Declaration FINAL_APPROVED by SUPERVISOR' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs,76,
+Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' activities grouped by 'case:BudgetNumber',Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all cases,budget 86566:0.96,"{""budget 86566"":0.959047619}"
+Average number of 'Declaration FINAL_APPROVED by SUPERVISOR' in a month,"ERROR: computing metric {'count': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'aggregation': 'average', 'group_by': 'month'}",,

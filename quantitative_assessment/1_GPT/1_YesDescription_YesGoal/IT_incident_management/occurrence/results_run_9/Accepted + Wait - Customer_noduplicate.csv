@@ -1,0 +1,13 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Accepted + Wait - Customer' leading to 'Completed + In Call',Frequency of activity 'Accepted + Wait - Customer' for cases where activity 'Completed + In Call' occurs,1,
+Percentage of 'Accepted + Wait - Customer' out of all 'Accepted + In Progress' activities,Percentage of 'Accepted + Wait - Customer' out of all 'Accepted + In Progress',0.01,
+Number of 'Accepted + Wait - Customer' that are followed by 'Completed + Resolved',Frequency of activity 'Accepted + Wait - Customer' for cases where activity 'Completed + Resolved' occurs,86,
+Percentage of 'Accepted + Wait - Customer' in relation to 'Completed + Closed',Percentage of 'Accepted + Wait - Customer' out of all 'Completed + Closed',0.02,
+Frequency of 'Accepted + Wait - Customer' preceded by 'Queued + Awaiting Assignment',Frequency of activity 'Accepted + Wait - Customer' for cases where activity 'Queued + Awaiting Assignment' occurs,72,
+Percentage of 'Accepted + Wait - Customer' followed by any activity excluding 'Completed + In Call',Percentage of 'Accepted + Wait - Customer' out of all cases where 'Completed + In Call' does not happen,0.01,
+"Frequency of 'Accepted + Wait - Customer' in the top 5 most common process variants,""ERROR: computing metric {'count': """"activity == 'Accepted + Wait - Customer'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': 'activity in top 5 most common process variants'}"",,"
+"Percentage of 'Accepted + Wait - Customer' that lead to a 'Completed + In Call' within the same case,""ERROR: computing metric {'count': """"activity == 'Accepted + Wait - Customer'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': """"activity == 'Completed + In Call' within the same case""""}"",,"
+Number of 'Accepted + Wait - Customer' activities that occur before 'Accepted + Wait - Vendor',Frequency of activity 'Accepted + Wait - Customer' for cases where activity 'Accepted + Wait - Vendor' occurs,4,
+Percentage of 'Accepted + Wait - Customer' followed by 'Completed + Resolved' out of all 'Completed + Resolved' activities,Percentage of 'Accepted + Wait - Customer' out of all 'Completed + Resolved',0.02,
+"Frequency of 'Accepted + Wait - Customer' in cases with a high impact product,""ERROR: computing metric {'count': """"activity == 'Accepted + Wait - Customer'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': 'product == high impact'}"",,"

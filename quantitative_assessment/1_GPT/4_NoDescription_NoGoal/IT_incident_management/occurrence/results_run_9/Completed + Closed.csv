@@ -1,0 +1,9 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Number of \Completed + Closed\,Number of 'Completed + Closed' activities,5704,
+Percentage of \Completed + Closed\ out of all \Completed + Resolved\,Percentage of 'Completed + Closed' out of all 'Completed + Resolved',0.98,
+Number of \Completed + Closed\ that are preceded by \Completed + Resolved\,Number of 'Completed + Closed' activities for cases where activity 'Completed + Resolved' occurs,5704,
+Percentage of \Completed + Closed\ that are not dismissed,Percentage of 'Completed + Closed' out of all cases where 'Dismissed' does not happen,0.74,
+Number of \Completed + Closed\ with amounts above 100 euros,Number of 'Completed + Closed' activities,5704,
+Average number of \Completed + Closed\ per month,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'average', 'group_by': 'month'}",,
+Number of \Completed + Closed\ made per year,"ERROR: computing metric {'count': ""activity == 'Completed + Closed'"", 'aggregation': 'total', 'group_by': 'year'}",,

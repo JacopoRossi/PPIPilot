@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Completed + Cancelled' compared to 'Completed + Resolved',Percentage of 'Completed + Cancelled' out of all 'Completed + Resolved',0.0,
+Percentage of cases involving 'Completed + Cancelled' out of all cases,Percentage of 'Completed + Cancelled' out of all cases,0.0,
+Number of 'Completed + Cancelled' activities preceded by 'Accepted + In Progress',Number of 'Completed + Cancelled' activities for cases where activity 'Accepted + In Progress' occurs,1,
+Frequency of 'Completed + Cancelled' in relation to 'Completed + In Call',Percentage of 'Completed + Cancelled' out of all 'Completed + In Call',0.0,
+Percentage of 'Completed + Cancelled' followed by 'Completed + Closed',Percentage of 'Completed + Cancelled' out of all 'Completed + Closed',0.0,
+Frequency of 'Completed + Cancelled' per month,"ERROR: computing metric {'count': ""activity == 'Completed + Cancelled'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}",,
+Number of 'Completed + Cancelled' activities that occur after 'Queued + Awaiting Assignment',Number of 'Completed + Cancelled' activities for cases where activity 'Queued + Awaiting Assignment' occurs,0,
+Percentage of 'Completed + Cancelled' out of all 'Completed' activities,Percentage of 'Completed + Cancelled' out of all 'Completed',,
+Frequency of 'Completed + Cancelled' in cases with high impact,Percentage of 'Completed + Cancelled' out of all cases,,
+Number of 'Completed + Cancelled' in variants where 'Accepted + In Progress' occurs more than twice,Number of 'Completed + Cancelled' activities for cases where activity 'Accepted + In Progress' occurs,1,
+Percentage of 'Completed + Cancelled' in cases involving 'Accepted + Wait - Customer',Percentage of 'Completed + Cancelled' out of all 'Accepted + Wait - Customer',0.0,
+Frequency of 'Completed + Cancelled' in relation to all activities in the event log,Percentage of 'Completed + Cancelled' out of all cases,0.0,
+Percentage of 'Completed + Cancelled' activities that lead to a new case within 30 days,Percentage of 'Completed + Cancelled' out of all cases,0.0,
+Number of 'Completed + Cancelled' activities in cases with medium product impact,Number of 'Completed + Cancelled' activities == 'medium' where ma is the last value of impact,,
+Frequency of 'Completed + Cancelled' before 'Accepted + Wait - Implementation',Percentage of 'Completed + Cancelled' out of all 'Accepted + Wait - Implementation',0.0,
+Percentage of 'Completed + Cancelled' in cases originating from France compared to Brazil,Percentage of 'Completed + Cancelled' out of all cases,France:0.0,"{""France"":0.0}"

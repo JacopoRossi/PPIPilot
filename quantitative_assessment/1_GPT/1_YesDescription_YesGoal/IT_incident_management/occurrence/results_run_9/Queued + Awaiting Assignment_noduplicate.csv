@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Queued + Awaiting Assignment' leading directly to 'Accepted + In Progress',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Accepted + In Progress' occurs,4505,
+Percentage of cases where 'Queued + Awaiting Assignment' is followed by 'Completed + Resolved',Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + Resolved',0.8,
+Number of 'Queued + Awaiting Assignment' activities that precede 'Completed + In Call',Number of 'Queued + Awaiting Assignment' activities for cases where activity 'Completed + In Call' occurs,182,
+Percentage of 'Queued + Awaiting Assignment' out of all activities in the event log,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,
+Frequency of 'Queued + Awaiting Assignment' in relation to 'Completed + Closed',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Completed + Closed' occurs,4455,
+Percentage of 'Queued + Awaiting Assignment' followed by 'Accepted + Wait - User',Percentage of 'Queued + Awaiting Assignment' out of all 'Accepted + Wait - User',0.85,
+Number of times 'Queued + Awaiting Assignment' occurs before 'Accepted + Assigned',Number of 'Queued + Awaiting Assignment' activities for cases where activity 'Accepted + Assigned' occurs,5657,
+Percentage of 'Queued + Awaiting Assignment' activities that are not dismissed,Percentage of 'Queued + Awaiting Assignment' out of all cases where 'Unmatched + Unmatched' does not happen,0.6,
+Percentage of 'Queued + Awaiting Assignment' followed by 'Completed + In Call' to understand its impact,Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + In Call',0.03,
+Percentage of 'Queued + Awaiting Assignment' activities that result in a 'Medium' impact,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.65,
+"Number of 'Queued + Awaiting Assignment' activities made per year,""ERROR: computing metric {'count': """"activity == 'Queued + Awaiting Assignment'"""", 'aggregation': 'total', 'group_by': 'year'}"",,"
+Percentage of 'Queued + Awaiting Assignment' that lead to a resolution without further escalation,Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + Resolved',0.8,
+Frequency of 'Queued + Awaiting Assignment' as the initial activity in a case,Frequency of activity 'Queued + Awaiting Assignment',4511,
+Percentage of 'Queued + Awaiting Assignment' followed by any activity other than 'Accepted + In Progress',Percentage of 'Queued + Awaiting Assignment' out of all cases where 'Accepted + In Progress' does not happen,0.6,
+Number of 'Queued + Awaiting Assignment' activities that precede 'Accepted + Wait - Vendor',Number of 'Queued + Awaiting Assignment' activities for cases where activity 'Accepted + Wait - Vendor' occurs,564,
+Percentage of 'Queued + Awaiting Assignment' in cases with performance above average,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,

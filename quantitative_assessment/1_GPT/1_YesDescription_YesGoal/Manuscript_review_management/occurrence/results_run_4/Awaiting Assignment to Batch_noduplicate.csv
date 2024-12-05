@@ -1,0 +1,16 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of \Awaiting Assignment to Batch\ in relation to \SW-Reviewer Agreed\,Percentage of 'Awaiting Assignment to Batch' out of all 'SW-Reviewer Agreed',0.39,
+Percentage of manuscripts that reach \Awaiting Assignment to Batch\ after \SW-Reviewer Agreed\,Percentage of 'Awaiting Assignment to Batch' out of all 'SW-Reviewer Agreed',0.39,
+Number of times \Awaiting Assignment to Batch\ occurs after \Manuscript Export Succeeded\,Number of 'Awaiting Assignment to Batch' activities for cases where activity 'Manuscript Export Succeeded' occurs,26.0,
+Percentage of \Awaiting Assignment to Batch\ out of all \SW-AE Assign Reviewers\,Percentage of 'Awaiting Assignment to Batch' out of all 'SW-AE Assign Reviewers',0.41,
+Frequency of \Awaiting Assignment to Batch\ as the final step before \First Look Manuscript Submission Confirmation\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'First Look Manuscript Submission Confirmation' occurs,24.0,
+Percentage of \Awaiting Assignment to Batch\ followed by \Manuscript Export Succeeded\,Percentage of 'Awaiting Assignment to Batch' out of all 'Manuscript Export Succeeded',0.29,
+"Number of \Awaiting Assignment to Batch\ occurrences per variant,""ERROR: computing metric {'count': """"activity == 'Awaiting Assignment to Batch'"""", 'aggregation': 'total', 'group_by': 'variant'}"",,"
+Percentage of manuscripts that include \Awaiting Assignment to Batch\ in their review process,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Frequency of \Awaiting Assignment to Batch\ in manuscripts that undergo \SW-EIC Major Revision\,Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'SW-EIC Major Revision' occurs,13.0,
+Percentage of \Awaiting Assignment to Batch\ in relation to total activities in the event log,Percentage of 'Awaiting Assignment to Batch' out of all cases,0.28,
+Number of \Awaiting Assignment to Batch\ occurrences that lead to \First Look-Please submit updates\,Number of 'Awaiting Assignment to Batch' activities for cases where activity 'First Look-Please submit updates' occurs,23.0,
+Percentage of \Awaiting Assignment to Batch\ followed by any activity related to manuscript revision,Percentage of 'Awaiting Assignment to Batch' out of all 'manuscript revision activity',,
+Frequency of \Awaiting Assignment to Batch\ in manuscripts that are eventually accepted (\RW-EIC Accept\),Frequency of activity 'Awaiting Assignment to Batch' for cases where activity 'RW-EIC Accept' occurs,21.0,
+Percentage of \Awaiting Assignment to Batch\ in manuscripts that require major revisions compared to those that require minor revisions,Percentage of 'Awaiting Assignment to Batch' out of all 'major or minor revision activity',,

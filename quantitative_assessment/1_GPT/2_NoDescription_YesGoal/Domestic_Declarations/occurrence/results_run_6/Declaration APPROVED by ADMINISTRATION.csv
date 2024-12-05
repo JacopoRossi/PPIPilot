@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Declaration APPROVED by ADMINISTRATION' followed by 'Declaration FINAL_APPROVED by SUPERVISOR',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',0.79,
+Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration SUBMITTED by EMPLOYEE',0.77,
+Number of 'Declaration APPROVED by ADMINISTRATION' that lead to 'Request Payment',Number of 'Declaration APPROVED by ADMINISTRATION' activities for cases where activity 'Request Payment' occurs,8130,
+Percentage of 'Declaration APPROVED by ADMINISTRATION' followed by 'Payment Handled',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Payment Handled',0.79,
+Frequency of 'Declaration APPROVED by ADMINISTRATION' in cases with amounts above 100 euros,Number of 'Declaration APPROVED by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount,1907,
+Percentage of 'Declaration APPROVED by ADMINISTRATION' by 'STAFF MEMBER',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases,,
+Number of 'Declaration APPROVED by ADMINISTRATION' grouped by 'case:BudgetNumber',Number of 'Declaration APPROVED by ADMINISTRATION' activities grouped by the last value of case:BudgetNumber,budget 86566:8202,"{""budget 86566"":8202}"
+Percentage of 'Declaration APPROVED by ADMINISTRATION' followed by 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration REJECTED by PRE_APPROVER',0.02,
+Frequency of 'Declaration APPROVED by ADMINISTRATION' in relation to 'Declaration REJECTED by ADMINISTRATION',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration REJECTED by ADMINISTRATION',0.77,
+Percentage of 'Declaration APPROVED by ADMINISTRATION' in cases that are not eventually dismissed,Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all cases where 'Case Dismissed' does not happen,0.76,
+Number of times 'Declaration APPROVED by ADMINISTRATION' is performed per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of 'Declaration APPROVED by ADMINISTRATION' that lead to an increment in 'case:Amount',"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount increment'}",,
+Average number of 'Declaration APPROVED by ADMINISTRATION' that are followed by 'Declaration FINAL_APPROVED by SUPERVISOR' per month,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'average', 'filter': ""activity == 'Declaration FINAL_APPROVED by SUPERVISOR'"", 'group_by': 'month'}",,
+Total 'Declaration APPROVED by ADMINISTRATION' done by 'STAFF MEMBER',Number of 'Declaration APPROVED by ADMINISTRATION' activities == 'STAFF MEMBER' where ma is the last value of org:role,,
+Ratio of 'Declaration APPROVED by ADMINISTRATION' over 'Declaration SUBMITTED by EMPLOYEE',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration SUBMITTED by EMPLOYEE',0.77,
+Occasions how often 'Declaration APPROVED by ADMINISTRATION' is performed before 'Declaration REJECTED by PRE_APPROVER',Percentage of 'Declaration APPROVED by ADMINISTRATION' out of all 'Declaration REJECTED by PRE_APPROVER',0.02,

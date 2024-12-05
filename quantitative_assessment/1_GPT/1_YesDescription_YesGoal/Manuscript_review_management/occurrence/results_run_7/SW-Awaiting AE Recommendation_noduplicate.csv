@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'SW-Awaiting AE Recommendation' followed by 'SW-EIC Major Revision',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-EIC Major Revision' occurs,6.0,
+Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer Agreed',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer Agreed',0.52,
+Number of 'SW-Awaiting AE Recommendation' that are preceded by 'SW-Reviewer Agreed',Number of 'SW-Awaiting AE Recommendation' activities for cases where activity 'SW-Reviewer Agreed' occurs,25.0,
+Percentage of 'SW-Awaiting AE Recommendation' from all 'Original Manuscript Submission Confirmation',Percentage of 'SW-Awaiting AE Recommendation' out of all 'Original Manuscript Submission Confirmation',0.42,
+Frequency of 'SW-Awaiting AE Recommendation' in relation to 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-AE Assign Reviewers' occurs,23.0,
+"Number of 'SW-Awaiting AE Recommendation' grouped by 'case:concept:name',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting AE Recommendation'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Percentage of 'SW-Awaiting AE Recommendation' by 'performer',Percentage of 'SW-Awaiting AE Recommendation' out of all cases,0.39,
+Percentage of 'SW-Awaiting AE Recommendation' that lead to 'SW-EIC Accept',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-EIC Accept',1.0,
+Average number of 'SW-Awaiting AE Recommendation' that are followed by 'SW-EIC Minor Revision',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-EIC Minor Revision',0.57,
+Total 'SW-Awaiting AE Recommendation' performed by 'SYSTEM',Number of 'SW-Awaiting AE Recommendation' activities == 'SYSTEM' where ma is the last value of performer,34.0,
+Ratio of 'SW-Awaiting AE Recommendation' over 'SW-Reviewer No Response',Percentage of 'SW-Awaiting AE Recommendation' out of all 'SW-Reviewer No Response',0.8,
+Occasions how often 'SW-Awaiting AE Recommendation' is performed before 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-AE Assign Reviewers' occurs,23.0,
+Frequency of 'SW-Awaiting AE Recommendation' in the variant leading to 'SW-EIC Major Revision' compared to those leading to 'SW-EIC Accept',Frequency of activity 'SW-Awaiting AE Recommendation' for cases where activity 'SW-EIC Major Revision' occurs,6.0,

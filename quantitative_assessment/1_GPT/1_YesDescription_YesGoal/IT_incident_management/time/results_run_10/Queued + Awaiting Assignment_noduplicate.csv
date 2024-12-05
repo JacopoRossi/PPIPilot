@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Queued + Awaiting Assignment' to 'Accepted + In Progress',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + In Progress',""8 days, 16:34:53.740361"","
+"Total time spent in 'Queued + Awaiting Assignment' before moving to any next activity,The sum of the duration between activity Queued + Awaiting Assignment and the end of the case,""76982 days, 15:22:15"","
+Minimum time spent in 'Queued + Awaiting Assignment' before moving to 'Accepted + In Progress',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + In Progress',0:00:02,
+"Average resolution time after 'Queued + Awaiting Assignment',The average of the duration between activity Queued + Awaiting Assignment and the end of the case,""17 days, 1:34:22.455110"","
+Time difference between 'Queued + Awaiting Assignment' and 'Completed + In Call' across all variants,The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+Average time it takes from 'Queued + Awaiting Assignment' to reach 'Completed + In Call' compared to reaching 'Completed + Resolved',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+Total time spent in 'Queued + Awaiting Assignment' for cases that eventually reach 'Completed + In Call',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+Minimum time from 'Queued + Awaiting Assignment' to 'Completed + In Call' across variants,The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+"Average time from 'Queued + Awaiting Assignment' to 'Completed + Resolved' for cases that do not pass through 'Completed + In Call',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Resolved',""12 days, 5:20:13.389973"","
+"Total time from 'Queued + Awaiting Assignment' to 'Completed + Closed' considering cases that pass through 'Completed + In Call',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + Closed',""819 days, 15:28:55"","
+"Elapsed time between 'Queued + Awaiting Assignment' and 'Accepted + In Progress' for cases leading to 'Completed + In Call',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + In Progress',""5 days, 20:05:13.390625"","
+"'Queued + Awaiting Assignment' cycle time for incidents with 'High' impact,The average of the duration between activity Queued + Awaiting Assignment and the end of the case,""17 days, 4:09:15.559809"","
+Average waiting time in 'Queued + Awaiting Assignment' for products with medium impact leading to 'Completed + In Call',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+Minimum resolution time of incidents starting with 'Queued + Awaiting Assignment' and ending with 'Completed + In Call',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+"Time difference analysis between 'Queued + Awaiting Assignment' to 'Accepted + In Progress' and 'Accepted + In Progress' to 'Completed + In Call',The average of the duration between activity 'Queued + Awaiting Assignment' and activity 'Accepted + In Progress',""8 days, 16:34:53.740361"","

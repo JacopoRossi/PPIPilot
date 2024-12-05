@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of Declaration SAVED by EMPLOYEE out of all activities,Percentage of 'Declaration SAVED by EMPLOYEE' out of all cases,0.01,
+Number of Declaration SAVED by EMPLOYEE,Number of 'Declaration SAVED by EMPLOYEE' activities,135,
+Number of Declaration SAVED by EMPLOYEE that are preceded by Declaration REJECTED by EMPLOYEE,Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by EMPLOYEE' occurs,0,
+Number of Declaration SAVED by EMPLOYEE with amounts above 100 euros,Number of 'Declaration SAVED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount,0,
+Number of Declaration SAVED by EMPLOYEE grouped by case:BudgetNumber,Number of 'Declaration SAVED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber,budget 86566:135,"{""budget 86566"":135}"
+Number of Declaration SAVED by EMPLOYEE made per year,"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year', 'filter': ''}",,
+Number of Declaration SAVED by EMPLOYEE in relation to Declaration REJECTED by ADMINISTRATION,Number of 'Declaration SAVED by EMPLOYEE' activities for cases where activity 'Declaration REJECTED by ADMINISTRATION' occurs,0,
+Number of times Declaration SAVED by EMPLOYEE is performed,Number of 'Declaration SAVED by EMPLOYEE' activities,135,
+Average number of Declaration SAVED by EMPLOYEE,the average of the number of times `ACTIVITY` == 'Declaration SAVED by EMPLOYEE',0.01,
+Average number of Declaration SAVED by EMPLOYEE that are followed by Declaration SUBMITTED by EMPLOYEE,the average of the number of times `ACTIVITY` == 'Declaration SAVED by EMPLOYEE' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Declaration SUBMITTED by EMPLOYEE',0.0,
+Average number of Declaration SAVED by EMPLOYEE in a month,"ERROR: computing metric {'count': ""activity == 'Declaration SAVED by EMPLOYEE'"", 'aggregation': 'average', 'group_by': 'month', 'filter': ''}",,
+Total Declaration SAVED by EMPLOYEE done by STAFF MEMBER,Number of 'Declaration SAVED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role,,
+Total Declaration SAVED by EMPLOYEE performed by STAFF MEMBER,Number of 'Declaration SAVED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role,,

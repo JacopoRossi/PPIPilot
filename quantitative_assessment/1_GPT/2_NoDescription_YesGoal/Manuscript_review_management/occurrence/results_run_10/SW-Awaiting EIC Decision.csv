@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Frequency of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Reject & Resubmit',""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': """"activity == 'SW-EIC Reject & Resubmit'""""}"",,"
+Percentage of manuscripts that reach 'SW-Awaiting EIC Decision' stage out of all manuscripts,Percentage of 'SW-Awaiting EIC Decision' out of all cases where '' does not happen,0.63,
+Number of 'SW-Awaiting EIC Decision' that are preceded by 'SW-Reviewer Agreed',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'SW-Awaiting EIC Decision' that lead to 'SW-EIC Accept',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Accept',1.0,
+Frequency of 'SW-Awaiting EIC Decision' in relation to 'SW-AE Assign Reviewers',Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-AE Assign Reviewers' occurs,45,
+Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+"Number of times 'SW-Awaiting EIC Decision' occurs per variant,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Number of 'SW-Awaiting EIC Decision' grouped by case:concept:name,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+Percentage of 'SW-Awaiting EIC Decision' followed by 'SW-EIC Major Revision',Percentage of 'SW-Awaiting EIC Decision' out of all 'SW-EIC Major Revision',1.0,
+Frequency of 'SW-Awaiting EIC Decision' in manuscripts with 'SW-Reviewer Agreed' more than once,Frequency of activity 'SW-Awaiting EIC Decision' for cases where activity 'SW-Reviewer Agreed' occurs,45,
+Percentage of 'SW-Awaiting EIC Decision' out of all decision-related activities,Percentage of 'SW-Awaiting EIC Decision' out of all cases where '' does not happen,0.63,
+Number of 'SW-Awaiting EIC Decision' in relation to 'Original Manuscript Submission Confirmation',Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'Original Manuscript Submission Confirmation' occurs,58,
+Percentage of 'SW-Awaiting EIC Decision' that are not dismissed,Percentage of 'SW-Awaiting EIC Decision' out of all cases where 'Manuscript is Withdrawn' does not happen,0.63,
+"Frequency of 'SW-Awaiting EIC Decision' in the most common process variant,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Percentage of 'SW-Awaiting EIC Decision' by month,""ERROR: computing metric {'count': """"activity == 'SW-Awaiting EIC Decision'"""", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}"",,"
+Number of 'SW-Awaiting EIC Decision' that lead to a revision cycle,Number of 'SW-Awaiting EIC Decision' activities for cases where activity 'SW-EIC Major Revision' occurs,16,

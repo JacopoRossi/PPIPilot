@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Total time from \Manuscript Export Succeeded\ to \Awaiting Assignment to Batch\,The sum of the duration between activity 'Manuscript Export Succeeded' and activity 'Awaiting Assignment to Batch',""6209 days, 18:54:10"","
+"Minimum time from \Revised Manuscript Submission Confirmation\ to \Awaiting Assignment to Batch\,The minimum of the duration between activity 'Revised Manuscript Submission Confirmation' and activity 'Awaiting Assignment to Batch',""59 days, 1:26:35"","
+"Average time it takes \Awaiting Assignment to Batch\ after \First Look Manuscript Submission Confirmation\,The average of the duration between activity 'First Look Manuscript Submission Confirmation' and activity 'Awaiting Assignment to Batch',""79 days, 12:34:17.916667"","
+"Total resolution time of \Awaiting Assignment to Batch\,The sum of the duration between activity Awaiting Assignment to Batch and the end of the case,""131 days, 11:45:06"","
+Minimum resolution time of \Awaiting Assignment to Batch\,The minimum of the duration between activity Awaiting Assignment to Batch and the end of the case,9:51:40,
+"Average time between \First Look-Please submit updates\ and \Awaiting Assignment to Batch\,The average of the duration between activity 'First Look-Please submit updates' and activity 'Awaiting Assignment to Batch',""89 days, 1:55:55.260870"","
+"Total time for \Awaiting Assignment to Batch\ grouped by \case:concept:name\,""ERROR: computing metric {'begin': """"activity == 'Awaiting Assignment to Batch'"""", 'end': '', 'aggregation': 'total', 'group_by': 'case:concept:name'}"",,"
+"Average waiting time to \Awaiting Assignment to Batch\ after \Co-Author Account Created During Manuscript Submission\,The average of the duration between activity 'Co-Author Account Created During Manuscript Submission' and activity 'Awaiting Assignment to Batch',""299 days, 5:12:14.882353"","
+"Total time it takes \Awaiting Assignment to Batch\ to be done after \Original Manuscript Submission Confirmation\,The sum of the duration between activity 'Original Manuscript Submission Confirmation' and activity 'Awaiting Assignment to Batch',""6297 days, 2:35:50"","
+"Minimum time it takes \Awaiting Assignment to Batch\ after \Plagiarism Originality Report Completed\,The minimum of the duration between activity 'Plagiarism Originality Report Completed' and activity 'Awaiting Assignment to Batch',""19 days, 7:59:21"","
+"Average time for \Awaiting Assignment to Batch\ after all review activities are completed,The average of the duration between activity 'SW-Reviewer Agreed' and activity 'Awaiting Assignment to Batch',""316 days, 4:05:03.823529"","
+"Total time since \SW-AE Assign Reviewers\ and \Awaiting Assignment to Batch\ are performed,The sum of the duration between activity 'SW-AE Assign Reviewers' and activity 'Awaiting Assignment to Batch',""5627 days, 5:39:30"","
+"Minimum time since \SW-Reviewer Agreed\ and \Awaiting Assignment to Batch\ are performed,The minimum of the duration between activity 'SW-Reviewer Agreed' and activity 'Awaiting Assignment to Batch',""132 days, 17:35:00"","

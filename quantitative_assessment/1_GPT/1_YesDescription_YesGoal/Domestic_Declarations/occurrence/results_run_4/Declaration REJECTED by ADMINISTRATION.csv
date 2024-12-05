@@ -1,0 +1,22 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by ADMINISTRATION' compared to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration SUBMITTED by EMPLOYEE';0.08;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION';0.08;;A
+Number of 'Declaration REJECTED by ADMINISTRATION' that are followed by 'Declaration SUBMITTED by EMPLOYEE';Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;952;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' from all rejections;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases where 'Declaration REJECTED by ADMINISTRATION' does not happen;0.08;;B
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in relation to total declarations processed;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases where '' does not happen;0.08;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by ADMINISTRATION';0.08;;B
+Number of 'Declaration REJECTED by ADMINISTRATION' with amounts above 100 euros;Number of 'Declaration REJECTED by ADMINISTRATION' activities > 100 where ma is the last value of case:Amount;327;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases;;;D
+Number of 'Declaration REJECTED by ADMINISTRATION' grouped by 'case:BudgetNumber';Number of 'Declaration REJECTED by ADMINISTRATION' activities grouped by the last value of case:BudgetNumber;budget 86566:952;"{""budget 86566"":952}";A
+Percentage of 'Declaration REJECTED by ADMINISTRATION' by year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'year'}";;;C
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in cases that were eventually paid;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Payment Handled';0.06;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' in the first quarter of the year compared to the rest of the year;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases;0.08;;B
+Number of 'Declaration REJECTED by ADMINISTRATION' in relation to 'Declaration REJECTED by PRE_APPROVER';Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;0;;B
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in cases with 'Request Payment' activity;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Request Payment';0.06;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' in cases that involve 'SUPERVISOR' role;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases;0.25;;B
+Number of times 'Declaration REJECTED by ADMINISTRATION' is performed before 'Payment Handled';Number of 'Declaration REJECTED by ADMINISTRATION' activities for cases where activity 'Payment Handled' occurs;721;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' that lead to a 'Declaration APPROVED by BUDGET OWNER';Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Declaration APPROVED by BUDGET OWNER';0.09;;B
+Average number of 'Declaration REJECTED by ADMINISTRATION' per month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}";;;C
+Frequency of 'Declaration REJECTED by ADMINISTRATION' in cases exceeding two months from submission to payment;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all cases;0.08;;B
+Percentage of 'Declaration REJECTED by ADMINISTRATION' in cases with domestic declarations compared to pre-paid travel costs and requests for payment;Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'Request Payment';0.06;;B

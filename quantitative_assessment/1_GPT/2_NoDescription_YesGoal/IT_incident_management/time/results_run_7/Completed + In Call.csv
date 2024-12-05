@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average resolution time following 'Completed + In Call',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+Median duration from 'Accepted + In Progress' to 'Completed + In Call',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0:00:04,
+"Average duration from 'Completed + In Call' to 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+"Total duration of 'Completed + In Call' activities in the event log,The sum of the duration between activity Completed + In Call and the end of the case,""1673 days, 23:23:44"","
+"Maximum time to reach 'Completed + In Call' from 'Accepted + In Progress',The maximum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',""212 days, 22:21:38"","
+Average time difference between 'Completed + In Call' and the next activity,The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,
+"Total number of transitions from 'Completed + In Call' to any other activity,The sum of the duration between activity Completed + In Call and the end of the case,""1673 days, 23:23:44"","
+"Average duration of 'Completed + In Call' when followed by 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',""9 days, 1:33:40.911111"","
+Minimum time taken from 'Queued + Awaiting Assignment' to 'Completed + In Call',The minimum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+"Longest duration of 'Completed + In Call' before reaching 'Completed + Closed',The maximum of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""120 days, 16:20:28"","
+Shortest duration of 'Completed + In Call' across all variants,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Average duration of 'Completed + In Call' in cases with high impact,The average of the duration between activity Completed + In Call and the end of the case,,
+Total duration of 'Completed + In Call' in cases with medium impact,The sum of the duration between activity Completed + In Call and the end of the case,,
+"Average time from 'Completed + In Call' to case closure,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',""12 days, 10:53:36.649254"","
+"Time from 'Completed + In Call' to the next 'Accepted + In Progress' activity,The average of the duration between activity 'Completed + In Call' and activity 'Accepted + In Progress',""7 days, 7:08:48.073529"","
+Average waiting time before 'Completed + In Call' is initiated,The average of the duration between the start of the case and activity 'Completed + In Call',8:38:33.807730,

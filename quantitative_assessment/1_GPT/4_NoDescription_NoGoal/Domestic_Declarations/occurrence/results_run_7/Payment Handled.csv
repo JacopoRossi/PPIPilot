@@ -1,0 +1,34 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},nan,nan
+Percentage of \Declaration FOR_APPROVAL by PRE_APPROVER\ that are rejected,"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity == 'Declaration REJECTED by SUPERVISOR' or activity == 'Declaration REJECTED by ADMINISTRATION' or activity == 'Declaration REJECTED by EMPLOYEE' or activity == 'Declaration REJECTED by MISSING' or activity == 'Declaration REJECTED by PRE_APPROVER' or activity == 'Declaration REJECTED by BUDGET OWNER'""}",nan,nan
+Percentage of \Request Payment\ activities directly followed by \Payment Handled\,Percentage of 'Request Payment' out of all 'Payment Handled',1.0,nan
+Percentage of \Declaration REJECTED by PRE_APPROVER\ by month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by PRE_APPROVER'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}",nan,nan
+Number of \Payment Handled\ activities with amounts above 100 euros,Number of 'Payment Handled' activities > 100 where ma is the last value of case:Amount,2304.0,nan
+Percentage of \Declaration FINAL_APPROVED by SUPERVISOR\ activities followed by \Payment Handled\ within the same case,Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Payment Handled',1.0,nan
+Ratio of \Payment Handled\ activities over \Declaration SUBMITTED by EMPLOYEE\ activities,Percentage of 'Payment Handled' out of all 'Declaration SUBMITTED by EMPLOYEE',0.97,nan
+Frequency of \Request Payment\ activities per month,"ERROR: computing metric {'count': ""activity == 'Request Payment'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'group_by': 'month'}",nan,nan
+Average time from \Request Payment\ to \Payment Handled\ across all cases,the average of the number of times `ACTIVITY` == 'Request Payment' filtered by the function ma > 0 where ma is the number of times `ACTIVITY` == 'Payment Handled',1.0,nan
+Fraction of Declaration FINAL_APPROVED by SUPERVISOR that are dismissed (if applicable),Percentage of 'Declaration FINAL_APPROVED by SUPERVISOR' out of all 'Dismissed',nan,nan
+Average number of Declaration APPROVED by ADMINISTRATION in a month,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'average', 'group_by': 'month'}",nan,nan
+Total \Declaration FOR_APPROVAL by SUPERVISOR\ performed by \STAFF MEMBER\,Number of 'Declaration FOR_APPROVAL by SUPERVISOR' activities == 'STAFF MEMBER' where ma is the last value of org:role,nan,nan
+Ratio of 'Declaration REJECTED by MISSING' over 'Declaration APPROVED by ADMINISTRATION',"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'ratio', 'filter': ""activity == 'Declaration APPROVED by ADMINISTRATION'""}",nan,nan
+Number of \Declaration APPROVED by PRE_APPROVER\ made per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by PRE_APPROVER'"", 'aggregation': 'total', 'group_by': 'year'}",nan,nan
+Total \Declaration REJECTED by EMPLOYEE\ done by \STAFF MEMBER\,Number of 'Declaration REJECTED by EMPLOYEE' activities == 'STAFF MEMBER' where ma is the last value of org:role,nan,nan
+Percentage of cases with \Payment Handled\ that also include \Declaration APPROVED by ADMINISTRATION\,Percentage of 'Payment Handled' out of all 'Declaration APPROVED by ADMINISTRATION',0.99,nan
+Average number of Declarations REJECTED by BUDGET OWNER in a month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by BUDGET OWNER'"", 'aggregation': 'average', 'group_by': 'month'}",nan,nan
+Frequency of \Payment Handled\ activities per month,"ERROR: computing metric {'count': ""activity == 'Payment Handled'"", 'aggregation': 'total', 'group_by': 'month'}",nan,nan
+Percentage of \Payment Handled\ activities that conclude a case,Percentage of 'Payment Handled' out of all 'Payment Handled',1.0,nan
+Ratio of \Payment Handled\ activities in cases with \Declaration REJECTED by EMPLOYEE\ versus cases without,Percentage of 'Payment Handled' out of all 'Declaration REJECTED by EMPLOYEE',0.76,nan
+Total amount processed by \Payment Handled\ activities,Number of 'Payment Handled' activities > 0 where ma is the last value of case:Amount,10044.0,nan
+Number of \Declaration APPROVED by ADMINISTRATION\ made per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by ADMINISTRATION'"", 'aggregation': 'total', 'group_by': 'year'}",nan,nan
+Percentage of \Payment Handled\ activities following \Declaration APPROVED by BUDGET OWNER\,Percentage of 'Payment Handled' out of all 'Declaration APPROVED by BUDGET OWNER',1.0,nan
+Frequency of 'Declaration REJECTED by SUPERVISOR' per month,"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by SUPERVISOR'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}",nan,nan
+Number of \Payment Handled\ activities in relation to total activities in the event log,Number of 'Payment Handled' activities for cases where activity '' does not occur,10044.0,nan
+Number of Declaration APPROVED by BUDGET OWNER made per year,"ERROR: computing metric {'count': ""activity == 'Declaration APPROVED by BUDGET OWNER'"", 'aggregation': 'total', 'group_by': 'year'}",nan,nan
+Frequency of 'Declaration FOR_APPROVAL by ADMINISTRATION' in cases with 'case:Amount' higher than average,"ERROR: computing metric {'count': ""activity == 'Declaration FOR_APPROVAL by ADMINISTRATION'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > average'}",nan,nan
+Frequency of \Payment Handled\ activities in the most common process variant,Number of 'Payment Handled' activities for cases where activity 'Payment Handled' occurs,10044.0,nan
+Average amount of \Payment Handled\ activities per case,the average of the number of times `ACTIVITY` == 'Payment Handled' filtered by the function ma > 0 where ma is the last value of case:Amount,1.0,nan
+Percentage of \Payment Handled\ activities in cases exceeding the average case duration,Percentage of 'Payment Handled' out of all cases,0.96,nan
+Percentage of Declaration REJECTED by ADMINISTRATION with appeal,Percentage of 'Declaration REJECTED by ADMINISTRATION' out of all 'appeal',nan,nan
+Ratio of \Payment Handled\ activities in cases with single \Declaration SUBMITTED by EMPLOYEE\ versus multiple submissions,Percentage of 'Payment Handled' out of all 'Declaration SUBMITTED by EMPLOYEE',0.97,nan
+Frequency of \Payment Handled\ activities in cases with \Declaration APPROVED by PRE_APPROVER\,Percentage of 'Payment Handled' out of all 'Declaration APPROVED by PRE_APPROVER',0.99,nan

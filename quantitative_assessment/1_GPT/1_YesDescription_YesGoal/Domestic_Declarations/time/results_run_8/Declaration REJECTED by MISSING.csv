@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Colonna77
+;ERROR: computing metric {};;;
+Average resolution time for 'Declaration REJECTED by MISSING';The average of the duration between activity Declaration REJECTED by MISSING and the end of the case;10 days 23:41:38.793103;;B
+Average time from 'Declaration SUBMITTED by EMPLOYEE' to 'Declaration REJECTED by MISSING';The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Declaration REJECTED by MISSING';16 days 23:23:36.954023;;A
+Average time from 'Declaration REJECTED by MISSING' to 'Declaration SUBMITTED by EMPLOYEE';The average of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration SUBMITTED by EMPLOYEE';9 days 04:38:52.051724;;A
+Total resolution time of 'Declaration REJECTED by MISSING' cases;The sum of the duration between activity Declaration REJECTED by MISSING and the end of the case;955 days 21:23:15;;B
+Minimum time from 'Declaration REJECTED by MISSING' to 'Request Payment';The minimum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Request Payment';0 days 01:45:05;;A
+Average time between 'Declaration REJECTED by MISSING' and 'Payment Handled';The average of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Payment Handled';16 days 18:03:17.385965;;A
+Total time from 'Declaration REJECTED by MISSING' to 'Declaration FINAL_APPROVED by SUPERVISOR';The sum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration FINAL_APPROVED by SUPERVISOR';557 days 13:06:22;;A
+Minimum resolution time of 'Declaration REJECTED by MISSING';The minimum of the duration between activity Declaration REJECTED by MISSING and the end of the case;0 days 00:00:00;;B
+Average time from 'Declaration REJECTED by MISSING' to 'Declaration APPROVED by ADMINISTRATION';The average of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration APPROVED by ADMINISTRATION';0 days 08:03:42.666667;;A
+Total time for 'Declaration REJECTED by MISSING' before 'Declaration SUBMITTED by EMPLOYEE' is performed again;The sum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration SUBMITTED by EMPLOYEE';533 days 05:34:19;;A
+Average time it takes 'Declaration REJECTED by MISSING' after 'Declaration SUBMITTED by EMPLOYEE';The average of the duration between activity 'Declaration SUBMITTED by EMPLOYEE' and activity 'Declaration REJECTED by MISSING';16 days 23:23:36.954023;;A
+Total time it takes from 'Declaration REJECTED by MISSING' to the next 'Declaration SUBMITTED by EMPLOYEE';The sum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration SUBMITTED by EMPLOYEE';533 days 05:34:19;;A
+Minimum time it takes from 'Declaration REJECTED by MISSING' to 'Declaration APPROVED by ADMINISTRATION';The minimum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration APPROVED by ADMINISTRATION';0 days 02:42:00;;A
+Average time from 'Declaration REJECTED by MISSING' to 'Declaration REJECTED by PRE_APPROVER';The average of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration REJECTED by PRE_APPROVER';7 days 03:43:27;;A
+Total time from 'Declaration REJECTED by MISSING' to 'Declaration REJECTED by PRE_APPROVER';The sum of the duration between activity 'Declaration REJECTED by MISSING' and activity 'Declaration REJECTED by PRE_APPROVER';7 days 03:43:27;;A

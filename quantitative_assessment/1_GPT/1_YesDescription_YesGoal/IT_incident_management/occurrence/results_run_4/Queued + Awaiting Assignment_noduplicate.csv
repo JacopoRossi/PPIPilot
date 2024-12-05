@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of transitions from 'Queued + Awaiting Assignment' to 'Accepted + In Progress',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Accepted + In Progress' occurs,4505,
+Percentage of cases starting with 'Queued + Awaiting Assignment' out of all cases,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,
+Frequency of 'Queued + Awaiting Assignment' followed by 'Completed + In Call',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Completed + In Call' occurs,64,
+Percentage of 'Queued + Awaiting Assignment' in relation to 'Completed + Resolved',Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + Resolved',0.8,
+Number of 'Queued + Awaiting Assignment' activities that precede 'Accepted + Wait - User',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Accepted + Wait - User' occurs,2129,
+Percentage of 'Queued + Awaiting Assignment' followed by any activity other than 'Accepted + In Progress',Percentage of 'Queued + Awaiting Assignment' out of all cases where 'Accepted + In Progress' does not happen,0.6,
+Frequency of 'Queued + Awaiting Assignment' in cases with 'Completed + In Call' to understand its impact,Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Completed + In Call' occurs,64,
+Percentage of 'Queued + Awaiting Assignment' activities that lead to a resolution ('Completed + Resolved' or 'Completed + Closed'),Percentage of 'Queued + Awaiting Assignment' out of all 'Completed + Resolved',0.8,
+Frequency of 'Queued + Awaiting Assignment' in the most common process variants,Frequency of activity 'Queued + Awaiting Assignment',4511,
+"Percentage of cases with 'Queued + Awaiting Assignment' that exceed a certain performance threshold,""ERROR: computing metric {'count': """"activity == 'Queued + Awaiting Assignment'"""", 'metric_condition': '> alfanumeric_metric_value', 'aggregation': 'percentage'}"",,"
+Number of 'Queued + Awaiting Assignment' activities that are followed by 'Accepted + Assigned' to measure assignment efficiency,Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Accepted + Assigned' occurs,1717,
+Percentage of 'Queued + Awaiting Assignment' activities in all incidents reported in the VINST system,Percentage of 'Queued + Awaiting Assignment' out of all cases,0.6,
+Frequency of 'Queued + Awaiting Assignment' as a starting point in process variants leading to 'Completed + In Call',Frequency of activity 'Queued + Awaiting Assignment' for cases where activity 'Completed + In Call' occurs,64,

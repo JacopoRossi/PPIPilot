@@ -1,0 +1,17 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to Declaration APPROVED by ADMINISTRATION,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION',1.0,
+Frequency of Declaration SUBMITTED by EMPLOYEE followed by Declaration REJECTED by PRE_APPROVER,Frequency of activity 'Declaration SUBMITTED by EMPLOYEE' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs,81,
+Percentage of Declaration SUBMITTED by EMPLOYEE resulting in Request Payment,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Request Payment',1.0,
+Number of Declaration SUBMITTED by EMPLOYEE with case Amount above 100 euros,Number of 'Declaration SUBMITTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount,2777,
+Percentage of Declaration SUBMITTED by EMPLOYEE by STAFF MEMBER,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases,,
+Frequency of Declaration SUBMITTED by EMPLOYEE per year,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}",,
+Percentage of Declaration SUBMITTED by EMPLOYEE that are not followed by Declaration REJECTED by PRE_APPROVER,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases where 'Declaration REJECTED by PRE_APPROVER' does not happen,0.99,
+Ratio of Declaration SUBMITTED by EMPLOYEE over Declaration FINAL_APPROVED by SUPERVISOR,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration FINAL_APPROVED by SUPERVISOR',1.0,
+Percentage of Declaration SUBMITTED by EMPLOYEE followed by Payment Handled,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Payment Handled',1.0,
+Number of Declaration SUBMITTED by EMPLOYEE grouped by case:BudgetNumber,Number of 'Declaration SUBMITTED by EMPLOYEE' activities grouped by the last value of case:BudgetNumber,budget 86566:11531,"{""budget 86566"":11531}"
+Frequency of Declaration SUBMITTED by EMPLOYEE in relation to total events in the event log,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all cases,0.99,
+Percentage of Declaration SUBMITTED by EMPLOYEE that lead to a case being closed without rejection,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity != 'Declaration REJECTED by PRE_APPROVER' AND activity != 'Declaration REJECTED by ADMINISTRATION' AND activity != 'Declaration REJECTED by SUPERVISOR' AND activity != 'Declaration REJECTED by EMPLOYEE' AND activity != 'Declaration REJECTED by MISSING' AND activity != 'Declaration REJECTED by BUDGET OWNER'""}",,
+Average number of Declaration SUBMITTED by EMPLOYEE in a month,"ERROR: computing metric {'count': ""activity == 'Declaration SUBMITTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'average', 'group_by': 'month'}",,
+Total Declaration SUBMITTED by EMPLOYEE performed by SYSTEM,Number of 'Declaration SUBMITTED by EMPLOYEE' activities == 'SYSTEM' where ma is the last value of org:resource,11161,
+Fraction of Declaration SUBMITTED by EMPLOYEE that are dismissed as Declaration REJECTED by PRE_APPROVER,Percentage of 'Declaration SUBMITTED by EMPLOYEE' out of all 'Declaration REJECTED by PRE_APPROVER',1.0,

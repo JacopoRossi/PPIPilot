@@ -1,0 +1,21 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Frequency of 'Declaration REJECTED by MISSING' compared to 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Percentage of 'Declaration REJECTED by MISSING' out of all rejection activities;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}";;;C
+Frequency of 'Declaration REJECTED by MISSING' followed by 'Declaration SUBMITTED by EMPLOYEE';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Declaration SUBMITTED by EMPLOYEE' occurs;87;;B
+Percentage of cases with 'Declaration REJECTED by MISSING' that lead to a 'Request Payment';Percentage of 'Declaration REJECTED by MISSING' out of all 'Request Payment';0.01;;B
+Number of 'Declaration REJECTED by MISSING' per month;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'month'}";;;C
+Percentage of 'Declaration REJECTED by MISSING' in cases that exceed the budget;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': 'case:Amount > budget'}";;;C
+Frequency of 'Declaration REJECTED by MISSING' in relation to the total number of declarations;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration %'""}";;;C
+Percentage of 'Declaration REJECTED by MISSING' by 'org:resource';Percentage of 'Declaration REJECTED by MISSING' out of all cases;STAFF MEMBER:0.07;"{""STAFF MEMBER"":0.0656455142,""SYSTEM"":0.0056755949}";B
+Percentage of 'Declaration REJECTED by MISSING' by 'org:resource';Percentage of 'Declaration REJECTED by MISSING' out of all cases;SYSTEM:0.01;"{""STAFF MEMBER"":0.0656455142,""SYSTEM"":0.0056755949}";B
+Number of 'Declaration REJECTED by MISSING' that are followed by 'Payment Handled';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Payment Handled' occurs;57;;B
+Percentage of 'Declaration REJECTED by MISSING' in cases with amounts above 100 euros;Percentage of 'Declaration REJECTED by MISSING' out of all cases;0.01;;B
+Frequency of 'Declaration REJECTED by MISSING' before 'Declaration APPROVED by ADMINISTRATION';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;3;;B
+Percentage of 'Declaration REJECTED by MISSING' from all 'Declaration FINAL_APPROVED by SUPERVISOR';Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration FINAL_APPROVED by SUPERVISOR';0.01;;A
+Number of 'Declaration REJECTED by MISSING' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by MISSING' that are eventually approved;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration APPROVED by %'""}";;;C
+Frequency of 'Declaration REJECTED by MISSING' in the most common process variant;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by MISSING'"", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': ""activity LIKE 'Declaration %'""}";;;C
+Percentage of 'Declaration REJECTED by MISSING' in cases that were submitted after being rejected;Percentage of 'Declaration REJECTED by MISSING' out of all 'Declaration SUBMITTED by EMPLOYEE';0.01;;B
+Number of times 'Declaration REJECTED by MISSING' occurs in relation to 'Declaration REJECTED by PRE_APPROVER';Frequency of activity 'Declaration REJECTED by MISSING' for cases where activity 'Declaration REJECTED by PRE_APPROVER' occurs;4;;B
+Percentage of 'Declaration REJECTED by MISSING' in cases that require director approval;Percentage of 'Declaration REJECTED by MISSING' out of all cases;;;D

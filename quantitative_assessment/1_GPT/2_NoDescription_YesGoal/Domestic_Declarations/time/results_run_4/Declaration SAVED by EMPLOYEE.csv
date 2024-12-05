@@ -1,0 +1,15 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average time from 'Declaration SAVED by EMPLOYEE' to 'Declaration SUBMITTED by EMPLOYEE',The average of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Declaration SUBMITTED by EMPLOYEE',,
+Total time for 'Declaration SAVED by EMPLOYEE' before 'Declaration APPROVED by ADMINISTRATION',The sum of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Declaration APPROVED by ADMINISTRATION',,
+Minimum time from 'Declaration SAVED by EMPLOYEE' to 'Declaration FINAL_APPROVED by SUPERVISOR',The minimum of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Declaration FINAL_APPROVED by SUPERVISOR',,
+Average time between 'Declaration SAVED by EMPLOYEE' and 'Declaration REJECTED by PRE_APPROVER',The average of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Declaration REJECTED by PRE_APPROVER',,
+Total resolution time of 'Declaration SAVED by EMPLOYEE',The sum of the duration between activity Declaration SAVED by EMPLOYEE and the end of the case,"20 days, 2:06:53",
+Minimum resolution time of 'Declaration SAVED by EMPLOYEE',The minimum of the duration between activity Declaration SAVED by EMPLOYEE and the end of the case,0:00:00,
+Average waiting time to the 'Declaration SAVED by EMPLOYEE' after 'Declaration REJECTED by PRE_APPROVER',The average of the duration between activity 'Declaration REJECTED by PRE_APPROVER' and activity 'Declaration SAVED by EMPLOYEE',,
+Total time it takes 'Declaration SAVED by EMPLOYEE' to be followed by 'Declaration SUBMITTED by EMPLOYEE',The sum of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Declaration SUBMITTED by EMPLOYEE',,
+Minimum time it takes 'Declaration SAVED by EMPLOYEE' after 'Declaration REJECTED by ADMINISTRATION',The minimum of the duration between activity 'Declaration REJECTED by ADMINISTRATION' and activity 'Declaration SAVED by EMPLOYEE',,
+Average time for 'Declaration SAVED by EMPLOYEE' to lead to a 'Request Payment' activity,The average of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Request Payment',"17 days, 0:48:01",
+Total time from 'Declaration SAVED by EMPLOYEE' to 'Payment Handled',The sum of the duration between activity 'Declaration SAVED by EMPLOYEE' and activity 'Payment Handled',"20 days, 2:06:53",
+Minimum time to 'Declaration SAVED by EMPLOYEE' grouped by 'case:BudgetNumber',The average of the duration between activity 'Declaration SAVED by EMPLOYEE' and the end of case grouped by the last value of case:BudgetNumber,budget 86566:0 days 00:00:00,"{""budget 86566"":0}"
+'Declaration SAVED by EMPLOYEE' Cycle Time,The sum of the duration between activity Declaration SAVED by EMPLOYEE and the end of the case,"20 days, 2:06:53",

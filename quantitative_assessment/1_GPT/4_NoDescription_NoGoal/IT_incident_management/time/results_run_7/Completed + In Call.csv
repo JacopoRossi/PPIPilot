@@ -1,0 +1,14 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average duration of 'Completed + In Call' compared to 'Accepted + In Progress',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+Total duration of 'Completed + In Call' activities in cases with 'Completed + Resolved' status,The sum of the duration between activity 'Completed + In Call' and the end of case where activity 'Completed + Resolved occurs,"1673 days, 16:20:52",
+Average lead time before 'Completed + In Call' occurs after 'Accepted + Assigned',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+Median duration of 'Completed + In Call' across all cases,"ERROR: computing metric {'begin': ""activity == 'Completed + In Call'"", 'end': '', 'aggregation': 'median', 'filter': ''}",,
+Longest duration of 'Completed + In Call' before transitioning to any other activity,the maximum of the duration between the first time instant when `ACTIVITY` == 'Completed + In Call' and the last time instant when <ppinot4py.model.states.RuntimeState object at 0x00000221C2305210> - AppliesTo.PROCESS,"120 days, 16:20:28",
+Shortest duration of 'Completed + In Call' across all cases,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Average duration of 'Completed + In Call' in cases ending with 'Completed + Closed',The average of the duration between activity 'Completed + In Call' and the end of case where activity 'Completed + Closed occurs,"12 days, 10:53:36.649254",
+Total duration of 'Completed + In Call' in cases with 'Accepted + Wait - User' status before it,The sum of the duration between activity 'Completed + In Call' and the end of case where activity 'Accepted + Wait - User occurs,"1028 days, 23:52:34",
+Average duration between 'Completed + In Call' and 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',"9 days, 1:33:40.911111",
+Difference in average duration of 'Completed + In Call' between cases with 'High' impact and 'Low' impact,The average of the duration between activity 'Completed + In Call' and the end of case grouped by the last value of impact filtered by the function ma == 'High' where ma is the last value of impact,High:0 days 00:52:51.500000,"{""High"":3171500}"
+Average duration of 'Completed + In Call' during weekdays versus weekends,"ERROR: computing metric {'begin': ""activity == 'Completed + In Call'"", 'end': '', 'aggregation': 'average', 'group_by': 'day'}",,
+Variation in duration of 'Completed + In Call' over different years in the event log,"ERROR: computing metric {'begin': ""activity == 'Completed + In Call'"", 'end': '', 'aggregation': 'variation', 'group_by': 'year'}",,

@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+"Average time from 'Accepted + Wait' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""6 days, 21:16:23.320755"","
+"Average resolution time of 'Accepted + Wait' for incidents with 'High' impact,The average of the duration between activity Accepted + Wait and the end of the case,""22 days, 9:21:25.171429"","
+"Total time to transition from 'Accepted + Wait' to 'Accepted + In Progress',The sum of the duration between activity 'Accepted + Wait' and activity 'Accepted + In Progress',""12584 days, 3:46:23"","
+Minimum time it takes 'Accepted + Wait' to transition to 'Completed + Resolved',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',0:00:04,
+"Total resolution time of incidents involving 'Accepted + Wait' and ending with 'Completed + Closed',The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + Closed',""20975 days, 4:29:07"","
+"Average time it takes from 'Accepted + Wait' to the next activity in the process,The average of the duration between activity Accepted + Wait and the end of the case,""19 days, 5:35:40.658296"","
+"Total time for 'Accepted + Wait' in incidents involving 'Org line A2',The sum of the duration between activity Accepted + Wait and the end of the case,""5231 days, 6:58:59"","
+Minimum time between 'Accepted + Wait' and 'Queued + Awaiting Assignment',The minimum of the duration between activity 'Accepted + Wait' and activity 'Queued + Awaiting Assignment',0:00:06,
+Average time it takes from 'Accepted + Wait' to 'Completed + In Call' in the context of the VINST system,The average of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',,
+"Total time for 'Accepted + Wait' in incidents with 'Medium' impact,The sum of the duration between activity Accepted + Wait and the end of the case,""12481 days, 5:53:51"","
+Average time for 'Accepted + Wait' in incidents involving product 'PROD582',The average of the duration between activity Accepted + Wait and the end of the case,,
+Minimum resolution time of 'Accepted + Wait' in incidents resolved with 'Completed + In Call',The minimum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',0:00:12,
+"Average time from 'Accepted + Wait' to 'Accepted + Assigned',The average of the duration between activity 'Accepted + Wait' and activity 'Accepted + Assigned',""10 days, 6:26:02.452991"","
+"Total time it takes 'Accepted + Wait' after 'Queued + Awaiting Assignment' execution,The sum of the duration between activity 'Accepted + Wait' and the end of case where activity 'Queued + Awaiting Assignment occurs,""18929 days, 14:44:25"","
+"Average time for 'Accepted + Wait' in incidents leading to 'Completed + Resolved' without entering 'Queued + Awaiting Assignment',The average of the duration between activity 'Accepted + Wait' and activity 'Completed + Resolved',""15 days, 16:26:40.938910"","
+"Total time for 'Accepted + Wait' in variants leading directly to 'Completed + In Call' without intermediate 'Accepted + In Progress' states,The sum of the duration between activity 'Accepted + Wait' and activity 'Completed + In Call',""364 days, 23:28:36"","

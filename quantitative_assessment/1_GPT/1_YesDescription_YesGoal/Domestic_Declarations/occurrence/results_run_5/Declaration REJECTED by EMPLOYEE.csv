@@ -1,0 +1,17 @@
+Name;Metric;Value;Agrupation;Column77
+;ERROR: computing metric {};;;
+Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.12;;A
+Number of 'Declaration REJECTED by EMPLOYEE' that are preceded by 'Declaration APPROVED by ADMINISTRATION';Number of 'Declaration REJECTED by EMPLOYEE' activities for cases where activity 'Declaration APPROVED by ADMINISTRATION' occurs;1009.0;;B
+Frequency of 'Declaration REJECTED by EMPLOYEE' followed by 'Declaration SUBMITTED by EMPLOYEE';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration SUBMITTED by EMPLOYEE';0.12;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' from all rejections;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity LIKE 'Declaration REJECTED by %'""}";;;C
+Number of 'Declaration REJECTED by EMPLOYEE' with amounts above 100 euros;Number of 'Declaration REJECTED by EMPLOYEE' activities > 100 where ma is the last value of case:Amount;433.0;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' by 'STAFF MEMBER';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases;;;D
+Number of 'Declaration REJECTED by EMPLOYEE' made per year;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'aggregation': 'total', 'group_by': 'year'}";;;C
+Percentage of 'Declaration REJECTED by EMPLOYEE' that are not dismissed;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'metric_condition': '> 0', 'aggregation': 'percentage', 'filter': ""activity != 'Declaration DISMISSED by %'""}";;;C
+Frequency of 'Declaration REJECTED by EMPLOYEE' in relation to 'Declaration APPROVED by PRE_APPROVER';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration APPROVED by PRE_APPROVER';0.12;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' followed by 'Declaration APPROVED by ADMINISTRATION';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration APPROVED by ADMINISTRATION';0.11;;B
+Number of 'Declaration REJECTED by EMPLOYEE' in the process variant ending with 'Payment Handled';Number of 'Declaration REJECTED by EMPLOYEE' activities for cases where activity 'Payment Handled' occurs;1047.0;;B
+Percentage of 'Declaration REJECTED by EMPLOYEE' in cases where the budget owner and supervisor are the same person;Percentage of 'Declaration REJECTED by EMPLOYEE' out of all cases;;;D
+Frequency of 'Declaration REJECTED by EMPLOYEE' in cases leading to 'Request Payment';Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Request Payment';0.09;;B
+Number of 'Declaration REJECTED by EMPLOYEE' in relation to total declarations for domestic trips;"ERROR: computing metric {'count': ""activity == 'Declaration REJECTED by EMPLOYEE'"", 'aggregation': 'total', 'filter': ""activity LIKE '%domestic trips%'""}";;;C
+Percentage of 'Declaration REJECTED by EMPLOYEE' in cases where a director's approval is needed;Percentage of 'Declaration REJECTED by EMPLOYEE' out of all 'Declaration APPROVED by DIRECTOR';;;D

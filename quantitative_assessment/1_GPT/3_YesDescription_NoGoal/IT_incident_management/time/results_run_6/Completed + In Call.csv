@@ -1,0 +1,21 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Average resolution time for 'Completed + In Call',The average of the duration between activity Completed + In Call and the end of the case,19:54:30.675917,
+Average time difference between 'Accepted + In Progress' and 'Completed + In Call',The average of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',8:38:49.233515,
+Total time spent in 'Completed + In Call' across all cases,The sum of the duration between activity Completed + In Call and the end of the case,"1673 days, 23:23:44",
+Minimum time to reach 'Completed + In Call' from 'Accepted + In Progress',The minimum of the duration between activity 'Accepted + In Progress' and activity 'Completed + In Call',0:00:04,
+Average time from 'Completed + In Call' to 'Completed + Resolved',The average of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',"9 days, 1:33:40.911111",
+Total resolution time of 'Completed + In Call' compared to 'Completed + Resolved',The sum of the duration between activity 'Completed + In Call' and activity 'Completed + Resolved',"1223 days, 18:47:03",
+Average duration of 'Completed + In Call' in incidents with High impact vs Medium impact,The average of the duration between activity 'Completed + In Call' and the end of case grouped by the last value of impact filtered by the function ma == 'High' where ma is the last value of impact,High:0 days 00:52:51.500000,"{""High"":3171500}"
+Total duration of 'Completed + In Call' for incidents related to PROD582,The sum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Minimum resolution time of 'Completed + In Call' in incidents originating from France,The minimum of the duration between activity Completed + In Call and the end of the case,,
+Average time from 'Accepted + Wait - User' to 'Completed + In Call',The average of the duration between activity 'Accepted + Wait - User' and activity 'Completed + In Call',"8 days, 3:34:57.158730",
+Total time from 'Queued + Awaiting Assignment' to 'Completed + In Call',The sum of the duration between activity 'Queued + Awaiting Assignment' and activity 'Completed + In Call',,
+Average time it takes to complete 'Completed + In Call' after 'Accepted + Assigned',The average of the duration between activity 'Accepted + Assigned' and activity 'Completed + In Call',0:00:30,
+Minimum time difference between 'Completed + In Call' and the next activity in the most frequent variant,The minimum of the duration between activity Completed + In Call and the end of the case,0:00:00,
+Total time for 'Completed + In Call' in incidents resolved within the same day,The sum of the duration between activity Completed + In Call and the end of the case,"1673 days, 23:23:44",
+Average duration of 'Completed + In Call' in incidents with Low impact vs incidents with Medium impact,The average of the duration between activity 'Completed + In Call' and the end of case grouped by the last value of impact filtered by the function ma == 'Low' where ma is the last value of impact,Low:1 days 05:10:51.123165,"{""Low"":105051123}"
+Average time from 'Completed + In Call' to 'Completed + Closed' in the variant with the highest performance,The average of the duration between activity 'Completed + In Call' and activity 'Completed + Closed',"12 days, 10:53:36.649254",
+Minimum time to reach 'Completed + In Call' from any activity for incidents related to PROD321,The minimum of the duration between the start of the case and activity 'Completed + In Call',0:01:00,
+Average duration of 'Completed + In Call' for incidents handled by the top 5 most frequent resources,"ERROR: computing metric {'begin': ""activity == 'Completed + In Call'"", 'end': '', 'aggregation': 'average', 'filter': 'org:resource in (top 5 resources)'}",,
+Total duration of 'Completed + In Call' for incidents occurring in the first quarter of the year vs the last quarter,The sum of the duration between activity Completed + In Call and the end of the case,"1673 days, 23:23:44",

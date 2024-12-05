@@ -1,0 +1,18 @@
+Name,Metric,Value,Agrupation
+,ERROR: computing metric {},,
+Frequency of 'Accepted + Assigned' leading to 'Completed + In Call',Frequency of activity 'Accepted + Assigned' for cases where activity 'Completed + In Call' occurs,35,
+Percentage of incidents resolved after 'Accepted + Assigned' without further 'Queued + Awaiting Assignment',Percentage of 'Accepted + Assigned' out of all cases where 'Queued + Awaiting Assignment' does not happen,0.24,
+Number of 'Accepted + Assigned' activities followed by 'Completed + Resolved',Number of 'Accepted + Assigned' activities for cases where activity 'Completed + Resolved' occurs,3116,
+Percentage of 'Accepted + Assigned' out of all 'Accepted + In Progress' activities,Percentage of 'Accepted + Assigned' out of all 'Accepted + In Progress',0.24,
+Frequency of 'Accepted + Assigned' preceding 'Completed + Closed',Frequency of activity 'Accepted + Assigned' for cases where activity 'Completed + Closed' occurs,1807,
+Percentage of 'Accepted + Assigned' activities that lead to a 'Completed + Resolved' without entering 'Accepted + Wait - User',Percentage of 'Accepted + Assigned' out of all cases where 'Accepted + Wait - User' does not happen,0.24,
+Number of 'Accepted + Assigned' activities that are followed by 'Accepted + Wait - Implementation',Number of 'Accepted + Assigned' activities for cases where activity 'Accepted + Wait - Implementation' occurs,424,
+Frequency of 'Accepted + Assigned' in cases with high impact as defined in the event log description,Frequency of activity 'Accepted + Assigned',64,
+Percentage of 'Accepted + Assigned' activities that precede 'Completed + In Call', focusing on the goal to understand its impact,Percentage of 'Accepted + Assigned' out of all 'Completed + In Call',0.02,
+"Frequency of 'Accepted + Assigned' leading directly to a 'Completed' status without intermediate activities,""ERROR: computing metric {'count': """"activity == 'Accepted + Assigned'"""", 'metric_condition': '> 0', 'aggregation': 'total', 'filter': """"activity LIKE 'Completed%'""""}"",,"
+Percentage of 'Accepted + Assigned' activities that result in an escalation ('Accepted + Wait - Vendor' or 'Accepted + Wait - Customer'),Percentage of 'Accepted + Assigned' out of all 'Accepted + Wait - Vendor',0.33,
+Frequency of 'Accepted + Assigned' in the most common process variants,Frequency of activity 'Accepted + Assigned',1829,
+Percentage of 'Accepted + Assigned' activities that are part of incidents resolved within the target resolution time,Percentage of 'Accepted + Assigned' out of all cases,0.24,
+Number of 'Accepted + Assigned' activities that lead to a 'Completed + Cancelled' status, indicating cancellations or changes in incident handling,Number of 'Accepted + Assigned' activities for cases where activity 'Completed + Cancelled' occurs,0,
+Percentage of 'Accepted + Assigned' followed by 'Accepted + Wait' to understand delays in the process,Percentage of 'Accepted + Assigned' out of all 'Accepted + Wait',0.51,
+Frequency of 'Accepted + Assigned' in incidents with 'Low', 'Medium', and 'High' impact categories to analyze its distribution across different severity levels,Frequency of activity 'Accepted + Assigned',850,
