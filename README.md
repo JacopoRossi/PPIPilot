@@ -36,19 +36,9 @@ conda info --envs.
 
 ## Folder description
 
-- **1_prompt_general** contains the files with the general prompt to discover PPIs related to time, frequency and percentage
+- **1_prompt_goal** contains the files with the prompt to discover PPIs related to time, frequency and percentage. In this prompt it is required a description of the event log and a goal to make a more specific action.
 
-- **1_prompt_goal** contains the files with the goal prompt to discover PPIs related to time, frequency and percentage. In this prompts it is required a description of the event log and a goal to make a more specific action
-
-- **2_prompt** contains the files with the prompt to translate PPIs from natural language to a JSON format
-
-- **results_1_prompt_general** contains the PPIs in natural language discovered by using the general prompt
-
-- **results_1_prompt_goal** contains the PPIs in natural language discovered by using the goal prompt
-
-- **results_2_prompt** contains the PPIs translated in a JSON format
-
-- **xes** contains the log that are used
+- **2_prompt** contains the files with the prompt to translate PPIs from natural language to a JSON format.
 
 ## To use the code
 
@@ -59,7 +49,7 @@ conda info --envs.
 
 ## Link
 
-At this link https://drive.google.com/drive/folders/1qQvkhg44CzdXh9jvItAeLPuONVoL5aJP?usp=sharing, you can find the DomesticDeclarations.xes and the IncidentManagement.xes with a relative description and goal
+At this link https://drive.google.com/drive/folders/14mjxtRH7dEKFVSoSQx0eGaPAlQiYJw37?usp=sharing, you can find the DomesticDeclarations.xes, the IT_incident_management.xes and the Manuscript_review_management.xes with a relative example of description and goal
 
 
 
