@@ -43,7 +43,7 @@ def findPPI(dataframe, my_activity, list_variants, activities, type, description
 
 
         if(1):
-            prompt_path = '1_prompt_goal/prompt_' + type + '.txt'
+            prompt_path = '1_prompt_description_goal/prompt_' + type + '.txt'
 
             try:
                 with open(prompt_path, 'r') as file:
