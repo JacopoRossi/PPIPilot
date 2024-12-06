@@ -36,19 +36,9 @@ conda info --envs.
 
 ## Folder description
 
-- **1_prompt_general** contains the files with the general prompt to discover PPIs related to time, frequency and percentage
+- **1_prompt_goal** contains the files with the prompt to discover PPIs related to time, frequency and percentage. In this prompt it is required a description of the event log and a goal to make a more specific action.
 
-- **1_prompt_goal** contains the files with the goal prompt to discover PPIs related to time, frequency and percentage. In this prompts it is required a description of the event log and a goal to make a more specific action
-
-- **2_prompt** contains the files with the prompt to translate PPIs from natural language to a JSON format
-
-- **results_1_prompt_general** contains the PPIs in natural language discovered by using the general prompt
-
-- **results_1_prompt_goal** contains the PPIs in natural language discovered by using the goal prompt
-
-- **results_2_prompt** contains the PPIs translated in a JSON format
-
-- **xes** contains the log that are used
+- **2_prompt** contains the files with the prompt to translate PPIs from natural language to a JSON format.
 
 ## To use the code
 
