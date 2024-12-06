@@ -1,10 +1,10 @@
 ## Requirements
+
 The code has been tested using **Python 3.8.12**.
 
 ## Set Up before using the code
 
 It is possible to use the already defined conda environment.
-
 
 After having installed **Conda** or **Miniconda**, download the Github project, open the terminal or an Anaconda Prompt, change directory to go to the location where the file "env.yml" is located and do the following steps:
 
@@ -37,7 +37,6 @@ conda info --envs.
 ## Folder description
 
 - **1_prompt_goal** contains the files with the prompt to discover PPIs related to time, frequency and percentage. In this prompt it is required a description of the event log and a goal to make a more specific action.
-
 - **2_prompt** contains the files with the prompt to translate PPIs from natural language to a JSON format.
 
 ## To use the code
@@ -50,8 +49,3 @@ conda info --envs.
 ## Link
 
 At this link https://drive.google.com/drive/folders/14mjxtRH7dEKFVSoSQx0eGaPAlQiYJw37?usp=sharing, you can find the DomesticDeclarations.xes, the IT_incident_management.xes and the Manuscript_review_management.xes with a relative example of description and goal
-
-
-
-
-
