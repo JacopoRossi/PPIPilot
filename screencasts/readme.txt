@@ -1,1 +1,1 @@
-Screencasts of the tool are available in this directory.
+Screencasts of the tool are available at the following links: [Video 1](https://youtu.be/ncBsr7IbaYo) and [Video 2](https://youtu.be/55b5Vtt6jXA), and are also available for download in this directory.
