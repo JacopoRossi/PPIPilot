@@ -150,6 +150,20 @@ if st.session_state.file_uploaded:
         boton = st.button("Send options selected")
     
     if boton:
+        # Clear previous results when new options are selected
+        st.session_state.ejecutado_final = False
+        st.session_state.time_grouper = False
+        st.session_state.file_path = None
+        st.session_state.file_path_time = None
+        st.session_state.file_path_occurrency = None
+        st.session_state.df = None
+        st.session_state.df_sin_error = None
+        st.session_state.df_gt = None
+        st.session_state.df_sin_error_gt = None
+        st.session_state.batch_size = 25
+        st.session_state.batch_size_sin_error = 25
+        st.session_state.batch_size_gt = 25
+        st.session_state.batch_size_sin_error_gt = 25
         
         if ppis == "both":
             ls_cat = ["time","occurrency"]
