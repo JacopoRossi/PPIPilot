@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 
 
 
-def get_completion(client,prompt, model="gpt-4-0125-preview"):  # Here we can change model name
+def get_completion(client,prompt, model="gpt-5"):  # Here we can change model name
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
