@@ -3,3 +3,4 @@ datetime==5.3
 pm4py==2.7.8
 streamlit==1.34.0
 ppinot4py==1.2.1
+colorama
