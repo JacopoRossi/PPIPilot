@@ -17,7 +17,7 @@ def get_completion(client,prompt, model="gpt-5"):  # Here we can change model na
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        temperature=0,  # Temperature
+        #temperature=0,  # Temperature
     )
     
     completion = response.choices[0].message.content
