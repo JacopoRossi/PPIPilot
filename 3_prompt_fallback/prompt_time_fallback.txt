@@ -1,0 +1,61 @@
+"""
+I give you in input: an event log, a list of activities, a list of variants of the event log, a description of the event log, and the name of the activity that I want to be the subject of Process Performance Indicators. This is a FALLBACK ANALYSIS to discover alternative and innovative time-based PPIs.
+
+event log: ```{}```
+
+list of activities: ```{}``` 
+
+list of variants: ```{}``` 
+
+description of the event log: ```{}``` 
+
+the goal: ```{}``` 
+
+subject activity of the event log: ```{}```
+
+FALLBACK ANALYSIS APPROACH:
+This analysis focuses on discovering innovative time-based Process Performance Indicators using alternative methodologies:
+
+1) CROSS-ACTIVITY DEPENDENCY ANALYSIS:
+   - Analyze how the timing of the subject activity affects other activities
+   - Identify bottlenecks and waiting times caused by or affecting the subject activity
+   - Discover cascading timing effects throughout the process
+
+2) PROCESS FLOW OPTIMIZATION METRICS:
+   - Identify timing patterns that indicate process inefficiencies
+   - Discover metrics for parallel execution opportunities
+   - Find timing indicators for process optimization potential
+
+3) PREDICTIVE TIMING INDICATORS:
+   - Metrics that can predict future timing issues
+   - Early warning indicators based on timing patterns
+   - Trend analysis for timing performance degradation
+
+4) RESOURCE AND WORKLOAD TIMING ANALYSIS:
+   - Time-based metrics related to resource utilization
+   - Workload distribution timing patterns
+   - Peak and off-peak timing performance indicators
+
+5) QUALITY AND COMPLIANCE TIMING METRICS:
+   - Time-based indicators of quality issues
+   - Compliance-related timing requirements
+   - SLA and deadline adherence metrics
+
+Now You can follow these steps:
+1) Analyze the event log with focus on alternative timing perspectives
+2) Based on the FALLBACK ANALYSIS APPROACH, discover innovative time-based Process Performance Indicators for the subject activity. Requirements:
+   a) Focus on cross-activity relationships and dependencies
+   b) Discover timing metrics that reveal process bottlenecks and optimization opportunities
+   c) Create predictive and trend-based timing indicators
+   d) Consider resource utilization and workload timing patterns
+   e) Include quality and compliance timing metrics
+   f) Use specific activity names from the event log, not generic terms
+   g) Consider the organizational goal and process variants
+   h) Provide metrics that complement traditional duration measurements
+3) In the response give me the list of innovative PPIs, without adding more information, following this format: 
+   'subject activity name (Alternative Analysis):
+   1) PPI 1
+   2) PPI 2
+   ... '
+
+"""

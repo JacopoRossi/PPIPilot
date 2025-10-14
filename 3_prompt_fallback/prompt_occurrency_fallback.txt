@@ -1,0 +1,66 @@
+"""
+I give you in input: an event log, a list of activities, a list of variants of the event log, a description of the event log, and the name of the activity that I want to be the subject of Process Performance Indicators. This is a FALLBACK ANALYSIS to discover alternative and innovative frequency/percentage-based PPIs.
+
+event log: ```{}```
+
+list of activities: ```{}``` 
+
+list of variants: ```{}``` 
+
+description of the event log: ```{}``` 
+
+the goal: ```{}``` 
+
+subject activity of the event log: ```{}```
+
+FALLBACK ANALYSIS APPROACH:
+This analysis focuses on discovering innovative frequency and percentage-based Process Performance Indicators using alternative methodologies:
+
+1) PROCESS PATTERN ANALYSIS:
+   - Analyze frequency patterns that indicate process health
+   - Discover occurrence ratios that reveal process bottlenecks
+   - Identify frequency-based indicators of process variants effectiveness
+
+2) BEHAVIORAL AND TREND ANALYSIS:
+   - Frequency metrics that indicate changing process behavior
+   - Occurrence patterns that predict future process issues
+   - Trend-based frequency indicators for process evolution
+
+3) EXCEPTION AND ANOMALY DETECTION:
+   - Frequency-based metrics for identifying process exceptions
+   - Occurrence ratios that highlight unusual process behavior
+   - Percentage indicators for process deviation detection
+
+4) RESOURCE AND WORKLOAD DISTRIBUTION:
+   - Frequency metrics related to resource utilization patterns
+   - Occurrence ratios for workload distribution analysis
+   - Percentage indicators for capacity planning
+
+5) QUALITY AND COMPLIANCE FREQUENCY METRICS:
+   - Occurrence-based indicators of quality issues
+   - Frequency metrics for compliance monitoring
+   - Percentage indicators for process adherence
+
+6) PROCESS OPTIMIZATION OPPORTUNITIES:
+   - Frequency metrics that identify improvement opportunities
+   - Occurrence ratios for process streamlining
+   - Percentage indicators for efficiency enhancement
+
+Now You can follow these steps:
+1) Analyze the event log with focus on alternative frequency and percentage perspectives
+2) Based on the FALLBACK ANALYSIS APPROACH, discover innovative frequency/percentage-based Process Performance Indicators for the subject activity. Requirements:
+   a) Focus on process patterns and behavioral analysis
+   b) Discover frequency metrics that reveal process optimization opportunities
+   c) Create predictive and trend-based occurrence indicators
+   d) Consider resource utilization and workload distribution patterns
+   e) Include quality, compliance, and exception detection metrics
+   f) Use specific activity names from the event log, not generic terms
+   g) Consider the organizational goal and process variants
+   h) Provide metrics that complement traditional frequency measurements
+3) In the response give me the list of innovative PPIs, without adding more information, following this format: 
+   'subject activity name (Alternative Analysis):
+   1) PPI 1
+   2) PPI 2
+   ... '
+
+"""

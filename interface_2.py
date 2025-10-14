@@ -3,7 +3,7 @@ import pandas as pd
 import pm4py
 import openai
 from openai import OpenAI
-from fromLogtoPPI_prompt_pipeline_goal import exec
+from fromLogtoPPI_prompt_pipeline_goal import exec, exec_with_fallback
 import json
 import os
 from io import BytesIO
@@ -129,6 +129,21 @@ if "fecha_min" not in st.session_state:
 if "fecha_max" not in st.session_state:
     st.session_state['fecha_max'] = None
 
+if "fallback_executed" not in st.session_state:
+    st.session_state["fallback_executed"] = False
+
+if "fallback_file_path" not in st.session_state:
+    st.session_state["fallback_file_path"] = None
+
+if "fallback_file_path_time" not in st.session_state:
+    st.session_state["fallback_file_path_time"] = None
+
+if "fallback_file_path_occurrency" not in st.session_state:
+    st.session_state["fallback_file_path_occurrency"] = None
+
+if "custom_direction" not in st.session_state:
+    st.session_state["custom_direction"] = ""
+
 with st.expander("Click to complete the form"):
     col0, col1 = st.columns(2)
     with col0:
@@ -145,6 +160,7 @@ if st.session_state.file_uploaded:
     with col11:
         act = st.selectbox("Choose an activity:", st.session_state.activities)
     goal = st.text_area("Organizational goal")
+    
     col01, col02, col03 = st.columns(3)
     with col02:
         boton = st.button("Send options selected")
@@ -328,6 +344,185 @@ if st.session_state.file_path is not None or st.session_state.file_path_time is 
             height= int(35.2*(st.session_state.batch_size_sin_error+1))
 
         )
+
+    # Enhanced Analysis Options - Only show after main results are available
+    if st.session_state.ejecutado_final:
+        st.markdown("---")
+        st.markdown("### 🔄 Enhanced Analysis")
+        
+        # Enhanced Analysis Options
+        with st.expander("🔄 Enhanced Analysis Options", expanded=False):
+            st.markdown("**Custom Direction for Enhanced Analysis:**")
+            custom_direction = st.text_area(
+                "Write your personalized instructions for the enhanced PPI discovery:",
+                placeholder="e.g., Focus on identifying bottlenecks in approval processes, or analyze resource allocation patterns, or discover compliance-related timing issues...",
+                help="These custom instructions will be added to the enhanced analysis prompt to guide the LLM in discovering specific types of PPIs you're interested in.",
+                key="enhanced_custom_direction"
+            )
+            st.session_state.custom_direction = custom_direction
+        
+        col_enh1, col_enh2, col_enh3 = st.columns(3)
+        with col_enh2:
+            boton_fallback = st.button("🔄 Run Enhanced Analysis", help="Run additional PPI discovery with alternative approaches and custom directions")
+        
+        if boton_fallback:
+            # Clear previous fallback results
+            st.session_state.fallback_executed = False
+            st.session_state.fallback_file_path = None
+            st.session_state.fallback_file_path_time = None
+            st.session_state.fallback_file_path_occurrency = None
+            
+            with st.spinner("Running enhanced PPI analysis with alternative approaches..."):
+                if ppis == "both":
+                    ls_cat = ["time","occurrency"]
+                    for el in ls_cat:
+                        cod_json_fallback = exec_with_fallback(st.session_state.dataframe, act, st.session_state.varianti, 
+                            st.session_state.activities, el, desc, goal, st.session_state.attribute_array,
+                            xes_file.name, st.session_state.client, st.session_state.custom_direction)
+                        current_directory = os.path.dirname(__file__)
+                        current_directory_con_slashes = current_directory.replace("\\", "/")
+                        if el=="time":
+                            st.session_state.fallback_file_path_time = os.path.join(current_directory_con_slashes, cod_json_fallback).replace("\\","/")
+                        else: 
+                            st.session_state.fallback_file_path_occurrency = os.path.join(current_directory_con_slashes, cod_json_fallback).replace("\\","/")
+                else:
+                    cod_json_fallback = exec_with_fallback(st.session_state.dataframe, act, st.session_state.varianti, 
+                        st.session_state.activities, ppis, desc, goal, st.session_state.attribute_array,
+                        xes_file.name, st.session_state.client, st.session_state.custom_direction)
+                    
+                    current_directory = os.path.dirname(__file__)
+                    current_directory_con_slashes = current_directory.replace("\\", "/")
+                    st.session_state.fallback_file_path = os.path.join(current_directory_con_slashes, cod_json_fallback).replace("\\","/")
+            
+            st.session_state.fallback_executed = True
+            st.success("✅ Enhanced analysis completed! Additional PPIs have been discovered using alternative approaches.")
+
+# Display fallback results if available
+if st.session_state.fallback_executed and (st.session_state.fallback_file_path is not None or 
+    (st.session_state.fallback_file_path_time is not None and st.session_state.fallback_file_path_occurrency is not None)):
+    
+    st.markdown("---")
+    st.markdown("### 🔄 Enhanced Analysis Results")
+    if st.session_state.custom_direction.strip():
+        st.markdown("*Additional PPIs discovered using alternative approaches with **custom directions***")
+        with st.expander("📝 Custom Direction Used", expanded=False):
+            st.markdown(f"**Your custom instruction:** {st.session_state.custom_direction}")
+    else:
+        st.markdown("*Additional PPIs discovered using alternative approaches*")
+    
+    # Process fallback results similar to main results
+    fallback_batch_size = 25
+    fallback_df_sin_error = None
+    fallback_df = None
+    fallback_batch_size_sin_error = 25
+    fallback_batch_size_gt = 25
+    fallback_df_sin_error_gt = None
+    fallback_df_gt = None
+    fallback_batch_size_sin_error_gt = 25
+    
+    try:
+        if ppis == "occurrency" and st.session_state.fallback_file_path:
+            fallback_batch_size, fallback_df_sin_error, fallback_df, fallback_batch_size_sin_error = pp.exec_final_perc(xes_file, st.session_state.fallback_file_path)
+        elif ppis == "time" and st.session_state.fallback_file_path:
+            fallback_batch_size, fallback_df_sin_error, fallback_df, fallback_batch_size_sin_error = pp.exec_final_time(xes_file, st.session_state.fallback_file_path)
+        elif ppis == "both" and st.session_state.fallback_file_path_time and st.session_state.fallback_file_path_occurrency:
+            fallback_batch_size, fallback_df_sin_error, fallback_df, fallback_batch_size_sin_error = pp.exec_final_both(xes_file, st.session_state.fallback_file_path_time, st.session_state.fallback_file_path_occurrency)
+        
+        if fallback_df is not None and fallback_df_sin_error is not None:
+            col_fallback1, col_fallback2 = st.columns(2)
+            with col_fallback1:
+                fallback_selector = st.toggle("Enhanced Debug ON", key="fallback_debug")
+                fallback_timegroup = st.toggle("Enhanced Time Group", key="fallback_timegroup")
+            
+            if fallback_timegroup:
+                with col_fallback2:
+                    period_aliases = {
+                        'Week':'W',  # Weekly frequency
+                        'Month':'M',  # Month end frequency
+                        'Year': 'Y',  # Year end frequency
+                        'Hourly': 'H',  # Hourly frequency
+                        'Minutely': 'T',  # Minutely frequency
+                        'Secondly':'S',  # Secondly frequency
+                    }
+
+                    # Crear el selector de period aliases con Streamlit
+                    selected_alias_key_fallback = st.selectbox("Select Period Alias for Enhanced:", list(period_aliases.keys()), key="fallback_period_alias")
+
+                    # Obtener el valor seleccionado del diccionario
+                    selected_alias_fallback = period_aliases[selected_alias_key_fallback]
+
+                    # Permitir al usuario ingresar un número
+                    number_fallback = st.number_input("Enter a number for Enhanced:", value=1, min_value=1, step=1, key="fallback_number")
+
+                    # Mostrar el period alias y el número seleccionado
+                    st.write("Enhanced - You selected:", number_fallback, selected_alias_key_fallback)
+                    boton_tiempo_fallback = st.button("OK Enhanced Time Group", key="fallback_time_ok")
+                
+                if boton_tiempo_fallback:
+                    if ppis == "both" and st.session_state.fallback_file_path_time and st.session_state.fallback_file_path_occurrency:
+                        fallback_batch_size_gt, fallback_df_sin_error_gt, fallback_df_gt, fallback_batch_size_sin_error_gt = pp.exec_final_both(xes_file, st.session_state.fallback_file_path_time, st.session_state.fallback_file_path_occurrency, time_group=str(number_fallback)+selected_alias_fallback)
+                    elif ppis=="time" and st.session_state.fallback_file_path:
+                        fallback_batch_size_gt, fallback_df_sin_error_gt, fallback_df_gt, fallback_batch_size_sin_error_gt = pp.exec_final_time(xes_file, st.session_state.fallback_file_path, time_group=str(number_fallback)+selected_alias_fallback)
+                    elif ppis == "occurrency" and st.session_state.fallback_file_path:
+                        fallback_batch_size_gt, fallback_df_sin_error_gt, fallback_df_gt, fallback_batch_size_sin_error_gt = pp.exec_final_perc(xes_file, st.session_state.fallback_file_path, time_group=str(number_fallback)+selected_alias_fallback)
+            
+            # Display logic for enhanced analysis results
+            if fallback_selector and not fallback_timegroup:
+                st.markdown("**Enhanced Analysis - Detailed View:**")
+                fallback_edited_df = st.data_editor(
+                    fallback_df[["Name", 'Metric','Value']],
+                    column_config={},
+                    disabled=["Name", 'Metric','Value'],
+                    hide_index=True,
+                    use_container_width=True,
+                    height=int(35.2*(fallback_batch_size+1)),
+                    key="fallback_detailed"
+                )
+            elif fallback_selector and fallback_timegroup and fallback_df_gt is not None:
+                st.markdown("**Enhanced Analysis - Detailed Time Grouped View:**")
+                fallback_edited_df = st.data_editor(
+                    fallback_df_gt[['Name','Metric', 'Last Interval Value','Group By','agrupation']],
+                    column_config={
+                        "agrupation": st.column_config.LineChartColumn("Enhanced Trend [{} - {}]".format(st.session_state.fecha_min, st.session_state.fecha_max),
+                        width = "medium",
+                        y_min = 0,
+                        y_max = 3)
+                    },
+                    disabled=["Name", 'Metric','Last Interval Value','Group By', 'Agrupation'],
+                    hide_index=True,
+                    use_container_width=True,
+                    height=int(35.2*(fallback_batch_size_gt+1)),
+                    key="fallback_detailed_timegroup"
+                )
+            elif not fallback_selector and fallback_timegroup and fallback_df_sin_error_gt is not None:
+                st.markdown("**Enhanced Analysis - Clean Time Grouped View:**")
+                fallback_edited_df = st.data_editor(
+                    fallback_df_sin_error_gt[['Metric', 'Last Interval Value','Group By','agrupation']],
+                    column_config={
+                        "agrupation": st.column_config.LineChartColumn("Enhanced Trend [{} - {}]".format(st.session_state.fecha_min, st.session_state.fecha_max),
+                        width = "medium",
+                        y_min = 0,
+                        y_max = 3)
+                    },
+                    disabled=["Name", 'Metric','Last Interval Value','Group By', 'Agrupation'],
+                    hide_index=True,
+                    use_container_width=True,
+                    height=int(35.2*(fallback_batch_size_sin_error_gt+1)),
+                    key="fallback_clean_timegroup"
+                )
+            else:
+                st.markdown("**Enhanced Analysis - Clean View:**")
+                fallback_edited_df = st.data_editor(
+                    fallback_df_sin_error[['Metric', 'Value']],
+                    column_config={},
+                    disabled=['Metric','Value'],
+                    hide_index=True,
+                    use_container_width=True,
+                    height=int(35.2*(fallback_batch_size_sin_error+1)),
+                    key="fallback_clean"
+                )
+    except Exception as e:
+        st.error(f"Error processing enhanced analysis results: {str(e)}")
             
             
 

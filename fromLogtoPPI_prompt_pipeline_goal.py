@@ -198,6 +198,122 @@ def modify_file(file_path):
         file.truncate()
 
 
+def findPPI_fallback(dataframe, my_activity, list_variants, activities, type, description, goal, nome_file, client, custom_direction=""):
+    """
+    Fallback mechanism to discover PPIs using alternative approaches.
+    This function uses different prompting strategies to find PPIs when the main approach needs enhancement.
+    """
+    if my_activity in activities:
+        # Use alternative prompt approach for fallback
+        prompt_path = '3_prompt_fallback/prompt_' + type + '_fallback.txt'
+        
+        try:
+            with open(prompt_path, 'r') as file:
+                prompt = file.read()
+                # Add custom direction if provided
+                if custom_direction.strip():
+                    if type == "time":
+                        prompt = prompt.replace(
+                            "h) Provide metrics that complement traditional duration measurements",
+                            f"h) Provide metrics that complement traditional duration measurements\n   i) {custom_direction}"
+                        )
+                    elif type == "occurrency":
+                        prompt = prompt.replace(
+                            "h) Provide metrics that complement traditional frequency measurements",
+                            f"h) Provide metrics that complement traditional frequency measurements\n   i) {custom_direction}"
+                        )
+                response = get_completion(client, prompt.format(dataframe, activities, list_variants, description, goal, my_activity))
+                
+                with tempfile.NamedTemporaryFile(delete=False, suffix=f"_{nome_file}_{type}_fallback.txt", mode='w+', dir=tempfile.gettempdir()) as temp_file:
+                    temp_file.write(my_activity + " (Fallback Analysis)\n")
+                    temp_file.write(response + "\n\n")
+                    temp_file_path = temp_file.name
+                    
+        except FileNotFoundError:
+            # If fallback prompts don't exist, use a generic alternative approach
+            custom_requirement = f"\n            6. {custom_direction}" if custom_direction.strip() else ""
+            
+            generic_prompt = f"""
+            Analyze the event log and discover alternative Process Performance Indicators for the activity '{my_activity}'.
+            
+            Event Log Data: {dataframe}
+            Activities: {activities}
+            Variants: {list_variants}
+            Description: {description}
+            Goal: {goal}
+            
+            Focus on discovering PPIs using these alternative approaches:
+            1. Cross-activity relationships and dependencies
+            2. Process bottleneck identification
+            3. Resource utilization patterns
+            4. Quality and compliance metrics
+            5. Predictive indicators for process optimization{custom_requirement}
+            
+            Provide a list of innovative PPIs that complement traditional {'time-based' if type == 'time' else 'frequency/percentage-based'} metrics.
+            
+            Format your response as:
+            {my_activity} (Alternative Analysis):
+            1) PPI 1
+            2) PPI 2
+            ...
+            """
+            
+            response = get_completion(client, generic_prompt)
+            
+            with tempfile.NamedTemporaryFile(delete=False, suffix=f"_{nome_file}_{type}_fallback.txt", mode='w+', dir=tempfile.gettempdir()) as temp_file:
+                temp_file.write(my_activity + " (Fallback Analysis)\n")
+                temp_file.write(response + "\n\n")
+                temp_file_path = temp_file.name
+    else:
+        response = "The activity is not in the log."
+        temp_file_path = None
+        
+    return response, temp_file_path
+
+
+def exec_with_fallback(dataframe, acti, varianti, activities, category, description, goal, attribute_array, nome_file, client, custom_direction=""):
+    """
+    Execute PPI discovery with fallback mechanism.
+    First runs the standard approach, then adds fallback analysis for enhanced insights.
+    """
+    # Run standard PPI discovery
+    listaKPI, temp_file_path = findPPI(dataframe, acti, varianti, activities, category, description, goal, nome_file, client)
+    _, file_path_input = translatePPI(listaKPI, activities, attribute_array, nome_file, category, client)
+    extracted_data = extract_ppi_json(file_path_input, category)
+    modify_file(extracted_data)
+    clean_data(extracted_data)
+    
+    # Run fallback analysis
+    fallback_response, fallback_temp_path = findPPI_fallback(dataframe, acti, varianti, activities, category, description, goal, nome_file, client, custom_direction)
+    
+    if fallback_temp_path:
+        # Translate fallback PPIs
+        _, fallback_file_path_input = translatePPI(fallback_response, activities, attribute_array, nome_file + "_fallback", category, client)
+        if fallback_file_path_input:
+            fallback_extracted_data = extract_ppi_json(fallback_file_path_input, category)
+            modify_file(fallback_extracted_data)
+            clean_data(fallback_extracted_data)
+            
+            # Merge results - combine both standard and fallback PPIs
+            with open(extracted_data, 'r') as f:
+                standard_data = json.load(f)
+            
+            with open(fallback_extracted_data, 'r') as f:
+                fallback_data = json.load(f)
+            
+            # Combine the data
+            combined_data = standard_data + fallback_data
+            
+            # Save combined results
+            with tempfile.NamedTemporaryFile(delete=False, suffix=f"_{nome_file}_{category}_combined.json", mode='w+', dir=tempfile.gettempdir()) as temp_file:
+                json.dump(combined_data, temp_file, indent=4)
+                combined_file_path = temp_file.name
+            
+            return combined_file_path
+    
+    return extracted_data
+
+
 def exec(dataframe, acti, varianti, activities, category, description, goal, attribute_array, nome_file, client):
     listaKPI,temp_file_path =findPPI(dataframe,acti,varianti,activities,category,description,goal,nome_file, client)
     _, file_path_input = translatePPI(listaKPI,activities,attribute_array,nome_file,category,client)
