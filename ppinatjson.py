@@ -173,6 +173,14 @@ class PPINatJson:
 
     def _transform_condition(self, cond): 
         #st.write("Ha entrado en transform_condition")
+        
+        # Handle complex conditions with OR operators
+        if " or " in cond.lower():
+            # Replace 'activity' with the actual column name in the entire expression
+            transformed_cond = cond.replace("activity", f"`{self.activity_column}`")
+            return transformed_cond
+        
+        # Handle simple conditions
         left, op, right = self._separate_logical_expression(cond)
         #st.write("Left", left)
         #st.write("op", op)
@@ -224,15 +232,26 @@ class PPINatJson:
 
 def process_json(ppi, ppinat, verbose=False, time=None):
     result={}
+    error_info = None
+    
     if verbose:
         st.write(f"\n{ppi}")
 
     try:
         metric = ppinat.resolve(ppi["PPIjson"])
-
         result['metric'] = metric
-    except:
-        logger.exception(f"ERROR: processing metric {ppi['PPIjson']} ")
+    except Exception as e:
+        error_msg = f"ERROR: processing metric {ppi['PPIjson']} - {str(e)}"
+        logger.exception(error_msg)
+        error_info = {
+            'ppi_name': ppi.get('PPIname', 'Unknown'),
+            'ppi_json': ppi['PPIjson'],
+            'error_type': 'metric_resolution',
+            'error_message': str(e),
+            'full_error': error_msg
+        }
+        result['error'] = error_info
+        return result
 
     if verbose:        
         st.write(f"{metric}")
@@ -240,14 +259,19 @@ def process_json(ppi, ppinat, verbose=False, time=None):
             st.write(f"Time group: {time}")
 
     try:
-
-        compute_result =ppinat.compute(metric, time_grouper=time)
-
+        compute_result = ppinat.compute(metric, time_grouper=time)
         result['compute_result'] = compute_result
-
     except Exception as e:
-        logger.exception(f"ERROR: computing metric {ppi['PPIjson']}")
-        result = f"ERROR: computing metric {ppi['PPIjson']}"
+        error_msg = f"ERROR: computing metric {ppi['PPIjson']} - {str(e)}"
+        logger.exception(error_msg)
+        error_info = {
+            'ppi_name': ppi.get('PPIname', 'Unknown'),
+            'ppi_json': ppi['PPIjson'],
+            'error_type': 'metric_computation',
+            'error_message': str(e),
+            'full_error': error_msg
+        }
+        result['error'] = error_info
     
     return result
 
@@ -318,6 +342,7 @@ def exec_final_time(event_log, json_path, time_group=None):
 
     data=[]
     data_sin_error = []
+    errors_captured = []
 
     with open(json_path, "r") as ppis_file:
         ppis = json.load(ppis_file)
@@ -325,6 +350,12 @@ def exec_final_time(event_log, json_path, time_group=None):
     for ppi in ppis:
 
         metric_result = process_json(ppi, ppinat,time = time_group)
+        
+        # Check for errors first
+        if isinstance(metric_result, dict) and 'error' in metric_result:
+            errors_captured.append(metric_result['error'])
+            continue
+            
         if metric_result is not None:  # Verificar si se obtuvo un resultado
             row_added = False
             if  isinstance(metric_result, dict) and 'metric' in metric_result:
@@ -380,7 +411,7 @@ def exec_final_time(event_log, json_path, time_group=None):
     num_filas = df.shape[0]
     num_filas_sin_error =df_sin_error.shape[0]
 
-    return num_filas, df_sin_error, df, num_filas_sin_error
+    return num_filas, df_sin_error, df, num_filas_sin_error, errors_captured
 
 def exec_final_perc(event_log, json_path, time_group=None):
 
@@ -389,15 +420,20 @@ def exec_final_perc(event_log, json_path, time_group=None):
 
     data=[]
     data_sin_error = []
+    errors_captured = []
 
     with open(json_path, "r") as ppis_file:
         ppis = json.load(ppis_file)
 
     for ppi in ppis:
 
-
-
         metric_result = process_json(ppi, ppinat,time = time_group)
+        
+        # Check for errors first
+        if isinstance(metric_result, dict) and 'error' in metric_result:
+            errors_captured.append(metric_result['error'])
+            continue
+            
         #st.write("Metric_result", metric_result)
         if metric_result is not None:  # Verificar si se obtuvo un resultado
             row_added = False
@@ -486,16 +522,20 @@ def exec_final_perc(event_log, json_path, time_group=None):
     num_filas = df.shape[0]
     num_filas_sin_error =df_sin_error.shape[0]
 
-    return num_filas, df_sin_error, df, num_filas_sin_error
+    return num_filas, df_sin_error, df, num_filas_sin_error, errors_captured
 
 def exec_final_both(event_log, json_path_time, json_path_occurrency, time_group=None):
-    num_filas, df_sin_error, df, num_filas_sin_error = exec_final_perc(event_log, json_path_occurrency, time_group)
-    num_filas2, df_sin_error2, df2, num_filas_sin_error2 = exec_final_time(event_log, json_path_time, time_group)
+    num_filas, df_sin_error, df, num_filas_sin_error, errors_perc = exec_final_perc(event_log, json_path_occurrency, time_group)
+    num_filas2, df_sin_error2, df2, num_filas_sin_error2, errors_time = exec_final_time(event_log, json_path_time, time_group)
+    
+    # Combine errors from both executions
+    errors_combined = errors_perc + errors_time
+    
     num_filas_total = num_filas + num_filas2
     num_filas_sin_error_total = num_filas_sin_error+ num_filas_sin_error2
     df_sin_error_def = pd.concat([df_sin_error, df_sin_error2], axis=0)
     df_def = pd.concat([df,df2], axis=0)
-    return num_filas_total, df_sin_error_def, df_def, num_filas_sin_error_total
+    return num_filas_total, df_sin_error_def, df_def, num_filas_sin_error_total, errors_combined
 
 def obtener_ultimo_no_none(lista):
     res = None
