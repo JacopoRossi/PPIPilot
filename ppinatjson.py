@@ -18,6 +18,20 @@ from datetime import timedelta
 import tempfile
 import os
 
+def format_time_duration(seconds):
+    """Convert seconds to human-readable time format"""
+    if seconds < 60:
+        return f"{seconds:.2f} seconds"
+    elif seconds < 3600:  # Less than 1 hour
+        minutes = seconds / 60
+        return f"{minutes:.2f} minutes"
+    elif seconds < 86400:  # Less than 1 day
+        hours = seconds / 3600
+        return f"{hours:.2f} hours"
+    else:  # 1 day or more
+        days = seconds / 86400
+        return f"{days:.2f} days"
+
 logger = logging.getLogger(__name__)
 
 
@@ -325,13 +339,25 @@ def calc_agrupation_time(dicc,agrupation,el=None):
                 aux.append(col_value)
                 if pd.isna(col_value):
                     col_value=timedelta(days=0)
-                agrupation.append(col_value.total_seconds())
+                    agrupation.append(col_value.total_seconds())
+                # Check if col_value is a large numeric value (likely nanoseconds)
+                elif isinstance(col_value, (int, float)) and col_value > 1e6:
+                    # Convert from nanoseconds to seconds
+                    agrupation.append(col_value / 1e9)
+                else:
+                    agrupation.append(col_value.total_seconds())
     else:
         for col_name, col_value in dicc.items():
             aux.append(col_value)
             if pd.isna(col_value):
                 col_value = timedelta(days=0)
-            agrupation.append(col_value.total_seconds())
+                agrupation.append(col_value.total_seconds())
+            # Check if col_value is a large numeric value (likely nanoseconds)
+            elif isinstance(col_value, (int, float)) and col_value > 1e6:
+                # Convert from nanoseconds to seconds
+                agrupation.append(col_value / 1e9)
+            else:
+                agrupation.append(col_value.total_seconds())
 
     return agrupation,aux
 
@@ -381,17 +407,25 @@ def exec_final_time(event_log, json_path, time_group=None):
                                 data, data_sin_error=actualizacion_segun_last_valid_value(data,data_sin_error, ppi['PPIname'], metric, el, ls_def, agrupation,aux )
                                 
                         else:
-                            
                             agrupation,aux_2 = calc_agrupation_time(metric_result['compute_result'], agrupation)
                             agrupation = list(agrupation)
                             data, data_sin_error=actualizacion_segun_last_valid_value(data,data_sin_error, ppi['PPIname'], metric, '', '', agrupation,aux_2 )
 
                     else:
-
                         agrupation = metric_result['compute_result'].to_json()
                         for col_name, col_value in metric_result['compute_result'].items():
-                                data = add_row_df_no_time(data, ppi['PPIname'], metric, f"{col_name}:{col_value}",agrupation)
-                                data_sin_error = add_row_df_no_time(data_sin_error, ppi['PPIname'], metric, f"{col_name}:{col_value}",agrupation)
+                                # Handle different types of values for proper time formatting
+                                if isinstance(col_value, timedelta):
+                                    seconds = col_value.total_seconds()
+                                    display_value = format_time_duration(seconds)
+                                elif isinstance(col_value, (int, float)) and col_value > 1e6:
+                                    # Large numeric value, likely nanoseconds - convert to seconds then format
+                                    seconds = col_value / 1e9
+                                    display_value = format_time_duration(seconds)
+                                else:
+                                    display_value = col_value
+                                data = add_row_df_no_time(data, ppi['PPIname'], metric, f"{col_name}:{display_value}",agrupation)
+                                data_sin_error = add_row_df_no_time(data_sin_error, ppi['PPIname'], metric, f"{col_name}:{display_value}",agrupation)
                                   
                             
                 else:
@@ -401,8 +435,31 @@ def exec_final_time(event_log, json_path, time_group=None):
                 agrupation =''
             if row_added==False: 
                 if not pd.isna(compute_result_value):
-                    data = add_row_df_no_time(data, ppi['PPIname'], metric, compute_result_value,agrupation)
-                    data_sin_error = add_row_df_no_time(data_sin_error, ppi['PPIname'], metric, compute_result_value,agrupation)
+                    # Handle timedelta objects - convert to human-readable time format
+                    if isinstance(compute_result_value, timedelta):
+                        seconds = compute_result_value.total_seconds()
+                        display_value = format_time_duration(seconds)
+                    # Handle other types of compute_result_value
+                    elif hasattr(compute_result_value, 'iloc') or hasattr(compute_result_value, '__iter__'):
+                        # If it's a pandas Series or iterable, get the first value
+                        try:
+                            if hasattr(compute_result_value, 'iloc'):
+                                actual_value = compute_result_value.iloc[0] if len(compute_result_value) > 0 else compute_result_value
+                            else:
+                                actual_value = next(iter(compute_result_value)) if compute_result_value else compute_result_value
+                            # If extracted value is also a timedelta, convert to human-readable format
+                            if isinstance(actual_value, timedelta):
+                                seconds = actual_value.total_seconds()
+                                display_value = format_time_duration(seconds)
+                            else:
+                                display_value = actual_value
+                        except:
+                            display_value = compute_result_value
+                    else:
+                        display_value = compute_result_value
+                    
+                    data = add_row_df_no_time(data, ppi['PPIname'], metric, display_value,agrupation)
+                    data_sin_error = add_row_df_no_time(data_sin_error, ppi['PPIname'], metric, display_value,agrupation)
                     
                 else:
                     data = add_row_df_no_time(data, ppi['PPIname'], metric, compute_result_value,agrupation)

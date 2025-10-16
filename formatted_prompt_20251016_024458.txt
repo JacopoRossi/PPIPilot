@@ -1,10 +1,32 @@
 You are an expert in Process Performance Indicators (PPIs) and JSON correction. Your task is to analyze and correct JSON translations that have caused errors during PPI execution.
 
 ## Context:
-- Original JSON: {0}
-- Execution Errors: {1}
-- Log Activities: {2}
-- Log Attributes: {3}
+- Original JSON: [
+  {
+    "PPIname": "Average time from 'Declaration SAVED by EMPLOYEE' to the next activity in the process, excluding rejections",
+    "PPIjson": {
+      "begin": "activity == 'Declaration SAVED by EMPLOYEE'",
+      "end": "",
+      "aggregation": "average",
+      "filter": "activity != 'Declaration REJECTED by EMPLOYEE' and activity != 'Declaration REJECTED by ADMINISTRATION' and activity != 'Declaration REJECTED by SUPERVISOR' and activity != 'Declaration REJECTED by MISSING' and activity != 'Declaration REJECTED by PRE_APPROVER' and activity != 'Declaration REJECTED by BUDGET OWNER'"
+    }
+  }
+]
+- Execution Errors: [
+  {
+    "ppi_name": "Average time from 'Declaration SAVED by EMPLOYEE' to the next activity in the process, excluding rejections",
+    "error_type": "metric_computation",
+    "error_message": "name 'activity' is not defined",
+    "ppi_json": {
+      "begin": "activity == 'Declaration SAVED by EMPLOYEE'",
+      "end": "",
+      "aggregation": "average",
+      "filter": "activity != 'Declaration REJECTED by EMPLOYEE' and activity != 'Declaration REJECTED by ADMINISTRATION' and activity != 'Declaration REJECTED by SUPERVISOR' and activity != 'Declaration REJECTED by MISSING' and activity != 'Declaration REJECTED by PRE_APPROVER' and activity != 'Declaration REJECTED by BUDGET OWNER'"
+    }
+  }
+]
+- Log Activities: Declaration SUBMITTED by EMPLOYEE, Declaration FINAL_APPROVED by SUPERVISOR, Payment Handled, Request Payment, Declaration APPROVED by ADMINISTRATION, Declaration APPROVED by BUDGET OWNER, Declaration REJECTED by EMPLOYEE, Declaration REJECTED by ADMINISTRATION, Declaration APPROVED by PRE_APPROVER, Declaration REJECTED by SUPERVISOR, Declaration SAVED by EMPLOYEE, Declaration REJECTED by MISSING, Declaration REJECTED by PRE_APPROVER, Declaration REJECTED by BUDGET OWNER, Declaration FOR_APPROVAL by SUPERVISOR, Declaration FOR_APPROVAL by PRE_APPROVER, Declaration FOR_APPROVAL by ADMINISTRATION
+- Log Attributes: No attributes provided
 
 ## Your Task:
 Fix the JSON by solving the problems identified in the error messages

@@ -13,6 +13,45 @@ warnings.filterwarnings("ignore")
 
 
 
+def remove_invalid_parameters(json_data, valid_attributes):
+    """Remove parameters that reference non-existent columns"""
+    print(f"Valid attributes: {valid_attributes}")
+    
+    for ppi in json_data:
+        if 'PPIjson' in ppi:
+            ppi_json = ppi['PPIjson']
+            
+            # Check group_by parameter
+            if 'group_by' in ppi_json:
+                group_by_value = ppi_json['group_by']
+                if group_by_value not in valid_attributes:
+                    print(f"Removing invalid group_by parameter: {group_by_value}")
+                    del ppi_json['group_by']
+            
+            # Check filter parameter for complex conditions and invalid references
+            if 'filter' in ppi_json:
+                filter_value = ppi_json['filter']
+                should_remove = False
+                
+                # Check for complex logical operators (AND/OR) that cause errors
+                if ' and ' in filter_value.lower() or ' or ' in filter_value.lower():
+                    print(f"Removing complex filter with AND/OR operators: {filter_value[:100]}...")
+                    should_remove = True
+                
+                # Check for common invalid patterns
+                invalid_patterns = ['case:resource', 'case:amount', 'variant', 'performance', 'context']
+                for pattern in invalid_patterns:
+                    if pattern in filter_value and pattern not in valid_attributes:
+                        print(f"Removing invalid filter parameter containing: {pattern}")
+                        should_remove = True
+                        break
+                
+                if should_remove:
+                    del ppi_json['filter']
+    
+    return json_data
+
+
 def get_completion(client,prompt, model="gpt-4-0125-preview"):  # Here we can change model name
     response = client.chat.completions.create(
         model=model,
@@ -234,8 +273,6 @@ def exec(dataframe, acti, varianti, activities, category, description, goal, att
     modify_file(extracted_data)
     clean_data(extracted_data)
     return extracted_data
-    #probando_json = "results_2_prompt/resultIncidentManagement.xes_time_2_prompt.json"
-    #return probando_json
 
 def correct_json_errors(original_json, errors_list, activities, attributes, client):
     """
@@ -289,16 +326,44 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
     
     # Use the cleaned JSON data
     original_json = cleaned_json
-    print(original_json)
-    # Format errors for the prompt
+    print(f"Original JSON has {len(original_json)} PPIs")
+    
+    # Format errors for the prompt - deduplicate errors
     error_summary = []
+    seen_errors = set()
+    problematic_ppi_names = set()
+    
     for error in errors_list:
-        error_summary.append({
-            'ppi_name': error['ppi_name'],
-            'error_type': error['error_type'],
-            'error_message': error['error_message'],
-            'ppi_json': error['ppi_json']
-        })
+        # Create a unique key for deduplication
+        error_key = f"{error['ppi_name']}_{error['error_message']}"
+        if error_key not in seen_errors:
+            seen_errors.add(error_key)
+            problematic_ppi_names.add(error['ppi_name'])
+            error_summary.append({
+                'ppi_name': error['ppi_name'],
+                'error_type': error['error_type'],
+                'error_message': error['error_message'],
+                'ppi_json': error['ppi_json']
+            })
+    
+    print(f"Deduplicated errors: {len(error_summary)} unique errors from {len(errors_list)} total")
+    print(f"Problematic PPIs: {problematic_ppi_names}")
+    
+    # Extract only the problematic PPIs for correction
+    problematic_ppis = []
+    working_ppis = []
+    
+    for ppi in original_json:
+        if ppi['PPIname'] in problematic_ppi_names:
+            problematic_ppis.append(ppi)
+        else:
+            working_ppis.append(ppi)
+    
+    print(f"Sending {len(problematic_ppis)} problematic PPIs to OpenAI for correction")
+    print(f"Keeping {len(working_ppis)} working PPIs unchanged")
+    
+    # Use only problematic PPIs for the correction prompt
+    json_to_correct = problematic_ppis
     
     # Read the error correction prompt
     print("Reading prompt template...")
@@ -310,8 +375,8 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
         print("gino2") 
         # Format the prompt with the data
         try:
-            # Safely serialize JSON with proper escaping
-            original_json_str = json.dumps(original_json, indent=2, ensure_ascii=False)
+            # Safely serialize JSON with proper escaping - use only problematic PPIs
+            original_json_str = json.dumps(json_to_correct, indent=2, ensure_ascii=False)
             error_summary_str = json.dumps(error_summary, indent=2, ensure_ascii=False)
             activities_str = ', '.join(activities) if activities else 'No activities provided'
             attributes_str = ', '.join(attributes) if attributes else 'No attributes provided'
@@ -337,11 +402,60 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
         print("Prompt formatted successfully")
         print(f"Formatted prompt length: {len(formatted_prompt)}")
         print(f"Formatted prompt preview: {formatted_prompt[:500]}...")
-        # Get correction from OpenAI
+        
+        # Save the formatted prompt to a file
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        prompt_filename = f"formatted_prompt_{timestamp}.txt"
+        try:
+            with open(prompt_filename, 'w', encoding='utf-8') as prompt_file:
+                prompt_file.write(formatted_prompt)
+            print(f"Formatted prompt saved to: {prompt_filename}")
+        except Exception as save_error:
+            print(f"Error saving formatted prompt: {save_error}")
+        
+        # Get correction from OpenAI with retry logic
         print("Sending prompt to OpenAI for JSON correction...")
-        corrected_json_str = get_completion(client, formatted_prompt)
-        print(f"OpenAI raw response (first 200 chars): {repr(corrected_json_str[:200])}")
-        print(f"OpenAI raw response (full): {repr(corrected_json_str)}")
+        max_retries = 2
+        corrected_json_str = None
+        
+        for attempt in range(max_retries):
+            try:
+                corrected_json_str = get_completion(client, formatted_prompt)
+                print(f"OpenAI attempt {attempt + 1} - raw response length: {len(corrected_json_str)}")
+                print(f"OpenAI attempt {attempt + 1} - raw response (first 500 chars): {repr(corrected_json_str[:500])}")
+                print(f"OpenAI attempt {attempt + 1} - raw response (last 200 chars): {repr(corrected_json_str[-200:])}")
+                
+                # Save the raw OpenAI response to a file
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                openai_response_filename = f"openai_response_{timestamp}_attempt_{attempt + 1}.txt"
+                try:
+                    with open(openai_response_filename, 'w', encoding='utf-8') as response_file:
+                        response_file.write(f"OpenAI Attempt {attempt + 1}\n")
+                        response_file.write(f"Timestamp: {timestamp}\n")
+                        response_file.write(f"Response Length: {len(corrected_json_str)}\n")
+                        response_file.write("="*50 + "\n")
+                        response_file.write("RAW OPENAI RESPONSE:\n")
+                        response_file.write("="*50 + "\n")
+                        response_file.write(corrected_json_str)
+                    print(f"OpenAI raw response saved to: {openai_response_filename}")
+                except Exception as save_error:
+                    print(f"Error saving OpenAI response: {save_error}")
+                
+                # Quick validation - check if response looks like valid JSON
+                if corrected_json_str.strip().startswith('[') and corrected_json_str.strip().endswith(']'):
+                    print(f"Attempt {attempt + 1} returned valid-looking JSON structure")
+                    break
+                elif attempt < max_retries - 1:
+                    print(f"Attempt {attempt + 1} returned malformed JSON, retrying...")
+                    # Add more explicit instructions for retry
+                    retry_prompt = formatted_prompt + "\n\nIMPORTANT: Your previous response was malformed. Please return ONLY a valid JSON array starting with '[' and ending with ']'. Do not include any explanations or markdown formatting."
+                    formatted_prompt = retry_prompt
+                else:
+                    print(f"All {max_retries} attempts failed, proceeding with fallback parsing")
+            except Exception as api_error:
+                print(f"OpenAI API error on attempt {attempt + 1}: {api_error}")
+                if attempt == max_retries - 1:
+                    return None
         
         # Parse the corrected JSON
         try:
@@ -406,20 +520,29 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
                 if ppi_names:
                     print(f"Found {len(ppi_names)} PPI names: {ppi_names[:3]}...")  # Show first 3
                     
-                    # Create a simple fallback JSON structure
+                    # Try to preserve original JSON structures instead of using identical fallback
                     reconstructed_json = []
-                    for i, name in enumerate(ppi_names[:5]):  # Limit to 5 to avoid complexity
-                        simple_ppi = {
-                            "PPIname": name,
-                            "PPIjson": {
+                    for i, name in enumerate(ppi_names[:len(json_to_correct)]):  # Match problematic PPIs count
+                        # Try to use the original PPI JSON structure if available
+                        if i < len(json_to_correct) and 'PPIjson' in json_to_correct[i]:
+                            original_ppi_json = json_to_correct[i]['PPIjson']
+                            print(f"Using original JSON structure for PPI {i}: {original_ppi_json}")
+                        else:
+                            # Only use fallback if no original structure available
+                            original_ppi_json = {
                                 "count": "activity == 'Declaration SUBMITTED by EMPLOYEE'",
                                 "aggregation": "average"
                             }
+                            print(f"Using fallback JSON structure for PPI {i}")
+                        
+                        reconstructed_ppi = {
+                            "PPIname": name,
+                            "PPIjson": original_ppi_json
                         }
-                        reconstructed_json.append(simple_ppi)
+                        reconstructed_json.append(reconstructed_ppi)
                     
                     cleaned_response = json.dumps(reconstructed_json, indent=2)
-                    print(f"Reconstructed JSON with {len(reconstructed_json)} items")
+                    print(f"Reconstructed JSON with {len(reconstructed_json)} items, preserving original structures")
                 else:
                     # If no PPInames found, create minimal fallback
                     print("No PPInames found, creating minimal fallback")
@@ -447,6 +570,12 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
                 cleaned_response += ']' * (open_brackets - close_brackets)
             
             corrected_json = json.loads(cleaned_response)
+            print(f"Successfully parsed corrected JSON with {len(corrected_json)} items")
+            
+            # Post-process to remove any remaining invalid parameters
+            print("Post-processing to remove invalid parameters...")
+            corrected_json = remove_invalid_parameters(corrected_json, attributes)
+            print("Post-processing completed")
             
         except json.JSONDecodeError as e:
             print(f"Error parsing corrected JSON: {e}")
@@ -466,7 +595,12 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
                 
                 # Try parsing again
                 corrected_json = json.loads(fixed_response)
-                print("Successfully parsed JSON after fixing common issues")
+                print(f"Successfully parsed corrected JSON with {len(corrected_json)} items")
+                
+                # Post-process to remove any remaining invalid parameters
+                print("Post-processing to remove invalid parameters...")
+                corrected_json = remove_invalid_parameters(corrected_json, attributes)
+                print("Post-processing completed")
                 
             except json.JSONDecodeError as e2:
                 print(f"Still failed to parse JSON after fixes: {e2}")
@@ -477,7 +611,7 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
                 try:
                     # Create a very simple corrected JSON based on the original structure
                     fallback_json = []
-                    for i, item in enumerate(original_json[:3]):  # Only take first 3 items to avoid complexity
+                    for i, item in enumerate(json_to_correct[:3]):  # Only take first 3 problematic items to avoid complexity
                         if 'PPIname' in item:
                             simple_item = {
                                 "PPIname": f"Corrected PPI {i+1}",
@@ -497,6 +631,26 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
                 except Exception as e3:
                     print(f"Fallback creation failed: {e3}")
                     return None
+        
+        # Merge corrected PPIs with working PPIs, avoiding duplicates
+        print(f"Merging {len(corrected_json)} corrected PPIs with {len(working_ppis)} working PPIs")
+        
+        # Create final merged JSON with deduplication
+        final_json = working_ppis.copy()  # Start with working PPIs
+        
+        # Add corrected PPIs, but avoid duplicates based on PPIname
+        working_ppi_names = {ppi['PPIname'] for ppi in working_ppis}
+        
+        for corrected_ppi in corrected_json:
+            if corrected_ppi['PPIname'] not in working_ppi_names:
+                final_json.append(corrected_ppi)
+            else:
+                print(f"Skipping duplicate PPI: {corrected_ppi['PPIname']}")
+        
+        print(f"Final merged JSON contains {len(final_json)} PPIs total (after deduplication)")
+        
+        # Use the merged JSON as the final result
+        corrected_json = final_json
         
         # Save the corrected JSON to a temporary file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

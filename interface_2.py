@@ -159,66 +159,87 @@ if st.session_state.file_uploaded:
         boton = st.button("Send options selected")
     
     if boton:
-        # Clear previous results when new options are selected
-        st.session_state.ejecutado_final = False
-        st.session_state.time_grouper = False
-        st.session_state.file_path = None
-        st.session_state.file_path_time = None
-        st.session_state.file_path_occurrency = None
-        st.session_state.df = None
-        st.session_state.df_sin_error = None
-        st.session_state.df_gt = None
-        st.session_state.df_sin_error_gt = None
-        st.session_state.batch_size = 25
-        st.session_state.batch_size_sin_error = 25
-        st.session_state.batch_size_gt = 25
-        st.session_state.batch_size_sin_error_gt = 25
-        st.session_state.errors_captured = []
-        st.session_state.show_error_correction = False
-        st.session_state.corrected_json_path = None
+        max_retries = 2  # Maximum number of retry attempts
+        retry_count = 0
+        successful_generation = False
         
-        if ppis == "both":
-            ls_cat = ["time","occurrency"]
-            for el in ls_cat:
-                cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
-                st.session_state.activities, el, desc, goal, st.session_state.attribute_array,
-                    xes_file.name, st.session_state.client)
-                current_directory = os.path.dirname(__file__)
-                current_directory_con_slashes = current_directory.replace("\\", "/")
-                if el=="time":
-                    st.session_state.file_path_time = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
-                else: 
-                    st.session_state.file_path_occurrency = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
+        while retry_count <= max_retries and not successful_generation:
+            # Show progress indicator
+            retry_message = f"Generating PPIs... (Attempt {retry_count + 1}/{max_retries + 1})" if retry_count > 0 else "Generating PPIs..."
+            with st.spinner(retry_message):
+                # Clear previous results when new options are selected
+                st.session_state.ejecutado_final = False
+                st.session_state.time_grouper = False
+                st.session_state.file_path = None
+                st.session_state.file_path_time = None
+                st.session_state.file_path_occurrency = None
+                st.session_state.df = None
+                st.session_state.df_sin_error = None
+                st.session_state.df_gt = None
+                st.session_state.df_sin_error_gt = None
+                st.session_state.batch_size = 25
+                st.session_state.batch_size_sin_error = 25
+                st.session_state.batch_size_gt = 25
+                st.session_state.batch_size_sin_error_gt = 25
+                st.session_state.errors_captured = []
+                st.session_state.show_error_correction = False
+                st.session_state.corrected_json_path = None
+                
+                # Generate PPIs
+                if ppis == "both":
+                    ls_cat = ["time","occurrency"]
+                    for el in ls_cat:
+                        cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
+                        st.session_state.activities, el, desc, goal, st.session_state.attribute_array,
+                            xes_file.name, st.session_state.client)
+                        current_directory = os.path.dirname(__file__)
+                        current_directory_con_slashes = current_directory.replace("\\", "/")
+                        if el=="time":
+                            st.session_state.file_path_time = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
+                        else: 
+                            st.session_state.file_path_occurrency = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
+                else:
+                    cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
+                        st.session_state.activities, ppis, desc, goal, st.session_state.attribute_array,
+                            xes_file.name, st.session_state.client)
+                    
+                    current_directory = os.path.dirname(__file__)
+                    current_directory_con_slashes = current_directory.replace("\\", "/")
+                
+                    # Construir la ruta completa al archivo JSON
+                    st.session_state.file_path = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
+                
+                # Execute PPIs and check results
+                if ppis == "occurrency":
+                    st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_perc(xes_file,st.session_state.file_path)
+                elif ppis == "time":
+                    st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_time(xes_file,st.session_state.file_path)
+                else:  # both
+                    st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_both(xes_file,st.session_state.file_path_time, st.session_state.file_path_occurrency)
+                
+                st.session_state.ejecutado_final = True
+                
+                # Check if we have valid PPIs in the results table
+                valid_ppi_count = len(st.session_state.df_sin_error) if st.session_state.df_sin_error is not None else 0
+                
+                if valid_ppi_count > 0:
+                    successful_generation = True
+                    print(f"✅ Success! Generated {valid_ppi_count} valid PPIs on attempt {retry_count + 1}")
+                else:
+                    if retry_count < max_retries:
+                        print(f"⚠️ No valid PPIs in results table on attempt {retry_count + 1}. Retrying...")
+                        retry_count += 1
+                    else:
+                        print(f"❌ Failed to generate valid PPIs after {max_retries + 1} attempts.")
+                        successful_generation = True  # Exit loop even if unsuccessful
         
+        # Show appropriate message after completion
+        if st.session_state.df_sin_error is not None and len(st.session_state.df_sin_error) > 0:
+            st.success(f"✅ PPI generation completed! Generated {len(st.session_state.df_sin_error)} valid PPIs.")
         else:
-            cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
-                st.session_state.activities, ppis, desc, goal, st.session_state.attribute_array,
-                    xes_file.name, st.session_state.client)
-            
-            
-            current_directory = os.path.dirname(__file__)
-            current_directory_con_slashes = current_directory.replace("\\", "/")
-        
-            # Construir la ruta completa al archivo JSON
-            st.session_state.file_path = os.path.join(current_directory_con_slashes, cod_json).replace("\\","/")
-            #st.write("File_path", st.session_state.file_path)
+            st.warning(f"⚠️ PPI generation completed but no valid PPIs were generated after {max_retries + 1} attempts.")
 
 if st.session_state.file_path is not None or st.session_state.file_path_time is not None and st.session_state.file_path_occurrency is not None:
-    if not st.session_state.ejecutado_final:
-        if ppis == "occurrency":
-
-            st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_perc(xes_file,st.session_state.file_path)
-        
-        elif ppis == "time":
-
-            st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_time(xes_file,st.session_state.file_path)
-        
-        else:
-            
-            st.session_state.batch_size,st.session_state.df_sin_error, st.session_state.df, st.session_state.batch_size_sin_error, st.session_state.errors_captured = pp.exec_final_both(xes_file,st.session_state.file_path_time, st.session_state.file_path_occurrency)
-        
-
-        st.session_state.ejecutado_final = True
         
 
     columna1, columna2 = st.columns(2)
@@ -401,9 +422,9 @@ if st.session_state.file_path is not None or st.session_state.file_path_time is 
                                 
                                 if len(errors_new) == 0:
                                     st.success(f"🎉 All errors fixed! Generated {len(df_new)} successful PPIs.")
-                                    # Update session state with corrected results
-                                    st.session_state.df = pd.concat([st.session_state.df, df_new], ignore_index=True) if st.session_state.df is not None else df_new
-                                    st.session_state.df_sin_error = pd.concat([st.session_state.df_sin_error, df_sin_error_new], ignore_index=True) if st.session_state.df_sin_error is not None else df_sin_error_new
+                                    # Replace session state with corrected results (don't concatenate to avoid duplicates)
+                                    st.session_state.df = df_new
+                                    st.session_state.df_sin_error = df_sin_error_new
                                     st.session_state.errors_captured = errors_new
                                     st.rerun()
                                 else:
