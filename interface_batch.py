@@ -238,11 +238,13 @@ with st.expander("📋 Configuration", expanded=True):
 if st.session_state.file_uploaded:
     st.success(f"✅ File loaded successfully! Found {len(st.session_state.activities)} activities.")
     
-    col00, col11 = st.columns(2)
+    col00, col11, col22 = st.columns(3)
     with col00:
         ppis = st.selectbox('Choose a category', ["time", "occurrency"])
     with col11:
         output_folder = st.text_input("Output folder for results", value="quantitative_assessment/batch_results")
+    with col22:
+        num_runs = st.number_input("Number of runs per activity", min_value=1, max_value=100, value=10, step=1)
     
     # Activity selection
     st.markdown("---")
@@ -265,7 +267,7 @@ if st.session_state.file_uploaded:
             st.warning("⚠️ Please select at least one activity")
     
     st.markdown("---")
-    st.markdown(f"### 🚀 Ready to execute {NUM_RUNS_PER_ACTIVITY} runs for each of the {len(selected_activities)} selected activities")
+    st.markdown(f"### 🚀 Ready to execute {num_runs} runs for each of the {len(selected_activities)} selected activities")
     
     boton = st.button("▶️ Start Batch Execution", type="primary", disabled=(len(selected_activities) == 0))
     
@@ -278,7 +280,7 @@ if st.session_state.file_uploaded:
         st.markdown("## 📊 Execution Progress")
         
         # Progress tracking
-        total_executions = len(selected_activities) * NUM_RUNS_PER_ACTIVITY
+        total_executions = len(selected_activities) * num_runs
         progress_bar = st.progress(0)
         status_text = st.empty()
         execution_counter = 0
@@ -292,12 +294,12 @@ if st.session_state.file_uploaded:
             
             activity_results = []
             
-            # Execute NUM_RUNS_PER_ACTIVITY times for this activity
-            for run_num in range(1, NUM_RUNS_PER_ACTIVITY + 1):
+            # Execute num_runs times for this activity
+            for run_num in range(1, num_runs + 1):
                 execution_counter += 1
                 progress = execution_counter / total_executions
                 progress_bar.progress(progress)
-                status_text.text(f"Processing: {act} - Run {run_num}/{NUM_RUNS_PER_ACTIVITY} ({execution_counter}/{total_executions})")
+                status_text.text(f"Processing: {act} - Run {run_num}/{num_runs} ({execution_counter}/{total_executions})")
                 
                 try:
                     # Generate PPIs
@@ -363,7 +365,7 @@ if st.session_state.file_uploaded:
             activity_df = pd.DataFrame(activity_results)
             total_ppis = activity_df['ppis'].sum()
             total_errors = activity_df['errors'].sum()
-            success_rate = (activity_df['ppis'] > 0).sum() / NUM_RUNS_PER_ACTIVITY * 100
+            success_rate = (activity_df['ppis'] > 0).sum() / num_runs * 100
             
             col1, col2, col3, col4 = st.columns(4)
             with col1:
@@ -373,7 +375,7 @@ if st.session_state.file_uploaded:
             with col3:
                 st.metric("Success Rate", f"{success_rate:.1f}%")
             with col4:
-                st.metric("Avg PPIs/Run", f"{total_ppis/NUM_RUNS_PER_ACTIVITY:.1f}")
+                st.metric("Avg PPIs/Run", f"{total_ppis/num_runs:.1f}")
             
             # Add to summary
             summary_data.append({
@@ -381,7 +383,7 @@ if st.session_state.file_uploaded:
                 'Total PPIs': total_ppis,
                 'Total Errors': total_errors,
                 'Success Rate': f"{success_rate:.1f}%",
-                'Avg PPIs/Run': f"{total_ppis/NUM_RUNS_PER_ACTIVITY:.1f}"
+                'Avg PPIs/Run': f"{total_ppis/num_runs:.1f}"
             })
             
             st.markdown("---")
