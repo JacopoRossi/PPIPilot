@@ -31,3 +31,11 @@ Thumbs.db
 # Debug/Testing folders
 debug_prompts_log/
 quantitative_assessment/batch_results
+
+# Batch CLI configuration files (may contain API keys)
+config_batch.json
+config_*.json
+!config_batch_template.json
+!config_batch_example.json
+
+xes/

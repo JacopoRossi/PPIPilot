@@ -1,0 +1,43 @@
+{
+  "_comment": "PPIPilot Batch Execution Configuration File",
+  "_comment_usage": "Copy this file to config_batch.json and modify the values",
+  
+  "llm_provider": "openai",
+  "_comment_llm_provider": "Available: openai (or OpenAI), qwen, deepseek. Case-insensitive.",
+  
+  "llm_model": "gpt-4-0125-preview",
+  "_comment_llm_model": "Model name depends on provider. Examples: gpt-4-0125-preview, claude-3-5-sonnet-20241022, llama3.1:8b",
+  
+  "api_key": "YOUR_API_KEY_HERE",
+  "_comment_api_key": "Your LLM provider API key. Keep this secure!",
+  
+  "xes_file_path": "path/to/your/eventlog.xes",
+  "_comment_xes_file_path": "Absolute or relative path to the XES event log file",
+  
+  "description": "This is a process for handling employee declarations",
+  "_comment_description": "Description of the process being analyzed",
+  
+  "goal": "Optimize process efficiency and reduce processing time",
+  "_comment_goal": "Organizational goal for the analysis",
+  
+  "ppi_category": "time",
+  "_comment_ppi_category": "Type of PPIs to generate: 'time', 'occurrency', or 'both'",
+  
+  "output_folder": "quantitative_assessment/batch_results",
+  "_comment_output_folder": "Folder where results will be saved",
+  
+  "num_runs_per_activity": 10,
+  "_comment_num_runs_per_activity": "Number of times to run PPI generation for each activity",
+  
+  "activities": ["all"],
+  "_comment_activities": "List of activities to analyze. Use ['all'] for all activities, or specify: ['Activity 1', 'Activity 2']",
+  
+  "max_level1_iterations": 2,
+  "_comment_max_level1_iterations": "Maximum iterations for Level 1 error correction (re-translation)",
+  
+  "max_level2_iterations": 2,
+  "_comment_max_level2_iterations": "Maximum iterations for Level 2 error correction (JSON fixing)",
+  
+  "save_debug_logs": false,
+  "_comment_save_debug_logs": "Set to true to save all OpenAI prompts and responses for debugging"
+}

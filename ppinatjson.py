@@ -93,6 +93,28 @@ class Log:
 def load_log(uploaded_file, id_case='case:concept:name', time_column='time:timestamp', activity_column='concept:name'):
     logger.info("Loading log...")
     
+    # Check if it's already a pm4py EventLog object
+    if hasattr(uploaded_file, '__iter__') and not isinstance(uploaded_file, str):
+        # It's already a log object (from pm4py.read_xes)
+        try:
+            log = Log(uploaded_file, id_case=id_case, time_column=time_column, activity_column=activity_column)
+            logger.info("Log successfully loaded from EventLog object")
+            return log
+        except:
+            pass  # Fall through to other methods
+    
+    # Check if it's a file path (string)
+    if isinstance(uploaded_file, str):
+        if uploaded_file.endswith('.csv'):
+            dataframe = pm4py.read_csv(uploaded_file)
+            log = Log(dataframe, id_case=id_case, time_column=time_column, activity_column=activity_column)
+        else:
+            log_xes = pm4py.read_xes(uploaded_file)
+            log = Log(log_xes, id_case=id_case, time_column=time_column, activity_column=activity_column)
+        logger.info("Log successfully loaded from file path")
+        return log
+    
+    # Otherwise, it's a Streamlit uploaded file with getvalue()
     # Create a temporal file
     with tempfile.NamedTemporaryFile(delete=False, suffix=".xes") as tmp:
         tmp.write(uploaded_file.getvalue())
@@ -108,7 +130,7 @@ def load_log(uploaded_file, id_case='case:concept:name', time_column='time:times
     finally:
         os.remove(tmp_path)  # Delete temporal file
     
-    logger.info("Log successfully loaded")
+    logger.info("Log successfully loaded from uploaded file")
     return log
 
 class PPINatJson:

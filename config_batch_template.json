@@ -1,0 +1,15 @@
+{
+  "llm_provider": "openai",
+  "llm_model": "gpt-4-0125-preview",
+  "api_key": "YOUR_API_KEY_HERE",
+  "xes_file_path": "path/to/your/eventlog.xes",
+  "description": "Process description",
+  "goal": "Organizational goal",
+  "ppi_category": "time",
+  "output_folder": "quantitative_assessment/batch_results",
+  "num_runs_per_activity": 10,
+  "activities": ["all"],
+  "max_level1_iterations": 2,
+  "max_level2_iterations": 2,
+  "save_debug_logs": false
+}
