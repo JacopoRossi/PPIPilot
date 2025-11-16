@@ -151,7 +151,7 @@ def check_activity_applicable(dataframe, my_activity, type):
         return applicable
     
 
-def findPPI(dataframe, my_activity, list_variants, activities, type, description, goal,nome_file,client):
+def findPPI(dataframe, my_activity, list_variants, activities, type, description, goal,nome_file,client, model="gpt-4-0125-preview"):
     if my_activity in activities:
 
 
@@ -161,7 +161,7 @@ def findPPI(dataframe, my_activity, list_variants, activities, type, description
             try:
                 with open(prompt_path, 'r') as file:
                     prompt = file.read()
-                    response = get_completion(client, prompt.format(dataframe,activities,list_variants,description,goal,my_activity))
+                    response = get_completion(client, prompt.format(dataframe,activities,list_variants,description,goal,my_activity), model=model)
 
                     with tempfile.NamedTemporaryFile(delete=False, suffix=f"_{nome_file}_{type}_goal.txt", mode='w+', dir=tempfile.gettempdir()) as temp_file:
                         temp_file.write(my_activity + "\n")
@@ -182,13 +182,13 @@ def findPPI(dataframe, my_activity, list_variants, activities, type, description
     return response, temp_file_path
 
 
-def translatePPI(listPPI,activities,attributes, nome_file, type,client):
+def translatePPI(listPPI,activities,attributes, nome_file, type,client, model="gpt-4-0125-preview"):
 
     prompt_path = '2_prompt/prompt_' + type + '.txt'
     try:
         with open(prompt_path, 'r') as file:
             prompt = file.read()
-            response = get_completion(client, prompt.format(listPPI,activities,attributes))
+            response = get_completion(client, prompt.format(listPPI,activities,attributes), model=model)
             print(response)
             with tempfile.NamedTemporaryFile(delete=False, suffix=f"_{nome_file}_{type}_2_prompt.txt", mode='w+', dir=tempfile.gettempdir()) as temp_file:
                 temp_file.write(response + "\n\n")
@@ -402,9 +402,9 @@ def clear_all_ppis(json_file_path):
     print(f"\n🧪 RETRY TEST MODE: Cleared all PPIs from {json_file_path} to test retry mechanism")
     print(f"   This will trigger the retry mechanism (max 2 retries)\n")
 
-def exec(dataframe, acti, varianti, activities, category, description, goal, attribute_array, nome_file, client, inject_test_errors=False, test_retry_mechanism=False):
-    listaKPI,temp_file_path =findPPI(dataframe,acti,varianti,activities,category,description,goal,nome_file, client)
-    _, file_path_input = translatePPI(listaKPI,activities,attribute_array,nome_file,category,client)
+def exec(dataframe, acti, varianti, activities, category, description, goal, attribute_array, nome_file, client, inject_test_errors=False, test_retry_mechanism=False, model="gpt-4-0125-preview"):
+    listaKPI,temp_file_path =findPPI(dataframe,acti,varianti,activities,category,description,goal,nome_file, client, model=model)
+    _, file_path_input = translatePPI(listaKPI,activities,attribute_array,nome_file,category,client, model=model)
     extracted_data = extract_ppi_json(file_path_input,category)
     modify_file(extracted_data)
     clean_data(extracted_data)
@@ -420,7 +420,7 @@ def exec(dataframe, acti, varianti, activities, category, description, goal, att
 
 def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, attributes, client, 
                                    json_path_time=None, json_path_occurrency=None, 
-                                   max_level1_iterations=2, max_level2_iterations=2):
+                                   max_level1_iterations=2, max_level2_iterations=2, model="gpt-4-0125-preview"):
     """
     Automatically corrects JSON errors with separate iteration limits for Level 1 and Level 2.
     
@@ -435,6 +435,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
         json_path_occurrency: Path to occurrency JSON file (for 'both' type)
         max_level1_iterations: Maximum number of Level 1 (re-translation) iterations (default: 2)
         max_level2_iterations: Maximum number of Level 2 (error correction) iterations (default: 2)
+        model: Model name to use for completion (default: gpt-4-0125-preview)
     
     Returns:
         Tuple: (batch_size, df_sin_error, df, batch_size_sin_error, errors_captured, total_iterations)
@@ -526,7 +527,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_time, 'r', encoding='utf-8') as file:
                         time_json_data = json.load(file)
                     
-                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=True)
+                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=True, model=model)
                     
                     if corrected_time_path:
                         current_json_path_time = corrected_time_path
@@ -541,7 +542,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_occurrency, 'r', encoding='utf-8') as file:
                         occurrency_json_data = json.load(file)
                     
-                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=True)
+                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=True, model=model)
                     
                     if corrected_occurrency_path:
                         current_json_path_occurrency = corrected_occurrency_path
@@ -564,7 +565,8 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                 activities,
                 attributes,
                 client,
-                use_retranslation=True
+                use_retranslation=True,
+                model=model
             )
             
             if corrected_path:
@@ -649,7 +651,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_time, 'r', encoding='utf-8') as file:
                         time_json_data = json.load(file)
                     
-                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=False)
+                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=False, model=model)
                     
                     if corrected_time_path:
                         current_json_path_time = corrected_time_path
@@ -664,7 +666,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_occurrency, 'r', encoding='utf-8') as file:
                         occurrency_json_data = json.load(file)
                     
-                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=False)
+                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=False, model=model)
                     
                     if corrected_occurrency_path:
                         current_json_path_occurrency = corrected_occurrency_path
@@ -687,7 +689,8 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                 activities,
                 attributes,
                 client,
-                use_retranslation=False
+                use_retranslation=False,
+                model=model
             )
             
             if corrected_path:
@@ -727,7 +730,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
     
     return batch_size, accumulated_df_sin_error, accumulated_df, batch_size_sin_error, errors_captured, total_iterations
 
-def retranslate_ppis_batch(ppi_names_with_errors, activities, attributes, ppi_category, client):
+def retranslate_ppis_batch(ppi_names_with_errors, activities, attributes, ppi_category, client, model="gpt-4-0125-preview"):
     """
     Re-translates multiple PPIs in a single batch request using a specialized prompt
     
@@ -737,6 +740,7 @@ def retranslate_ppis_batch(ppi_names_with_errors, activities, attributes, ppi_ca
         attributes: List of available attributes in the log
         ppi_category: Category of the PPIs ('time' or 'occurrency')
         client: OpenAI client instance
+        model: Model name to use for completion
     
     Returns:
         List of re-translated PPIs as dictionaries, or None if failed
@@ -838,7 +842,7 @@ You must translate ALL {len(ppi_names_with_errors)} PPIs listed above.
         max_retries = 2
         for attempt in range(max_retries):
             try:
-                response = get_completion(client, formatted_prompt)
+                response = get_completion(client, formatted_prompt, model=model)
                 print(f"Batch re-translation attempt {attempt + 1} - response length: {len(response)}")
                 
                 # Save prompt and response for debugging
@@ -904,7 +908,7 @@ You must translate ALL {len(ppi_names_with_errors)} PPIs listed above.
         return None
 
 
-def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, client):
+def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, client, model="gpt-4-0125-preview"):
     """
     Re-translates a single PPI that caused errors using a specialized prompt
     
@@ -915,6 +919,7 @@ def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, 
         attributes: List of available attributes in the log
         ppi_category: Category of the PPI ('time' or 'occurrency')
         client: OpenAI client instance
+        model: Model name to use for completion
     
     Returns:
         Re-translated PPI as a dictionary, or None if failed
@@ -947,7 +952,7 @@ def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, 
         max_retries = 2
         for attempt in range(max_retries):
             try:
-                response = get_completion(client, formatted_prompt)
+                response = get_completion(client, formatted_prompt, model=model)
                 print(f"Re-translation attempt {attempt + 1} - response length: {len(response)}")
                 
                 # Save prompt and response for debugging
@@ -1001,7 +1006,7 @@ def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, 
         return None
 
 
-def correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False):
+def correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False, model="gpt-4-0125-preview"):
     """
     Corrects JSON errors using OpenAI API
     
@@ -1012,6 +1017,7 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
         attributes: List of available attributes in the log
         client: OpenAI client instance
         use_retranslation: If True, uses re-translation prompt (Level 1), otherwise uses correction prompt (Level 2)
+        model: Model name to use for completion
     
     Returns:
         Path to the corrected JSON file
@@ -1035,7 +1041,7 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
         
         if not ppi_category:
             print("❌ Could not determine PPI category, falling back to Level 2")
-            return correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False)
+            return correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False, model=model)
         
         # Clean the JSON data
         cleaned_json = []
@@ -1095,7 +1101,7 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
             ppi_names_with_errors.append((ppi_name, error_info))
         
         # Re-translate all problematic PPIs in a single batch
-        retranslated_ppis = retranslate_ppis_batch(ppi_names_with_errors, activities, attributes, ppi_category, client)
+        retranslated_ppis = retranslate_ppis_batch(ppi_names_with_errors, activities, attributes, ppi_category, client, model=model)
         
         if retranslated_ppis is None or len(retranslated_ppis) == 0:
             print(f"\n❌ Batch re-translation failed, will trigger Level 2 fallback")

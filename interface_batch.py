@@ -13,6 +13,7 @@ import sys
 import tempfile
 from datetime import datetime
 import ppinatjson as pp
+import llm_config
 
 # ============================================================================
 # BATCH EXECUTION CONFIGURATION
@@ -44,7 +45,7 @@ def read_xes_from_uploaded_file(uploaded_file):
 # Wrapper function to execute PPIs and save intermediate results
 def execute_and_save_iterations(xes_file, file_path, ppis, activities, attributes, client,
                                 activity_name, run_num, output_folder,
-                                max_level1_iterations=2, max_level2_iterations=2):
+                                max_level1_iterations=2, max_level2_iterations=2, model="gpt-4-0125-preview"):
     """
     Execute PPIs with error correction and save results after each iteration
     """
@@ -77,7 +78,8 @@ def execute_and_save_iterations(xes_file, file_path, ppis, activities, attribute
         batch_size, df_sin_error, df, batch_size_sin_error, errors_captured, total_iterations = auto_correct_errors_with_retry(
             xes_file, file_path, ppis, activities, attributes, client,
             max_level1_iterations=max_level1_iterations,
-            max_level2_iterations=max_level2_iterations
+            max_level2_iterations=max_level2_iterations,
+            model=model
         )
         
         # Save final corrected result
@@ -178,7 +180,18 @@ def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_nu
 
 # Function to process data
 def send_data():
-    st.session_state.client = OpenAI(api_key=key)
+    # Create LLM provider based on user selection
+    try:
+        provider = llm_config.LLMConfig.create_provider(
+            provider_name=llm_provider,
+            api_key=key,
+            model_name=llm_model
+        )
+        st.session_state.client = provider.get_client()
+        st.session_state.model = provider.get_model_name()
+    except Exception as e:
+        st.error(f"Error initializing LLM provider: {str(e)}")
+        return
     
     log = read_xes_from_uploaded_file(xes_file)
     if log is not None:
@@ -208,6 +221,8 @@ if "activities" not in st.session_state:
     st.session_state["activities"] = []
 if "client" not in st.session_state:
     st.session_state["client"] = []
+if "model" not in st.session_state:
+    st.session_state["model"] = "gpt-4-0125-preview"
 if "varianti" not in st.session_state:
     st.session_state["varianti"] = []
 if "dataframe" not in st.session_state:
@@ -228,8 +243,25 @@ st.markdown("---")
 with st.expander("📋 Configuration", expanded=True):
     col0, col1 = st.columns(2)
     with col0:
-        key = st.text_input("Set OpenAI key", type="password")
+        # LLM Provider selection
+        llm_provider = st.selectbox(
+            "Select LLM Provider",
+            llm_config.LLMConfig.get_available_providers(),
+            index=0
+        )
     with col1:
+        # Model selection based on provider
+        available_models = llm_config.LLMConfig.get_models_for_provider(llm_provider)
+        llm_model = st.selectbox(
+            "Select Model",
+            available_models,
+            index=0 if available_models else None
+        )
+    
+    col2, col3 = st.columns(2)
+    with col2:
+        key = st.text_input("Set API key", type="password")
+    with col3:
         xes_file = st.file_uploader('Select a file to upload the event log', type=['xes'])
     desc = st.text_area("Write the description:")
     goal = st.text_area("Organizational goal:")
@@ -308,7 +340,8 @@ if st.session_state.file_uploaded:
                         st.session_state.dataframe, act, st.session_state.varianti,
                         st.session_state.activities, ppis, desc, goal,
                         st.session_state.attribute_array, xes_file.name,
-                        st.session_state.client, inject_test_errors=False, test_retry_mechanism=False
+                        st.session_state.client, inject_test_errors=False, test_retry_mechanism=False,
+                        model=st.session_state.model
                     )
                     
                     print(f"   📄 Generated JSON file: {cod_json}")
@@ -323,7 +356,8 @@ if st.session_state.file_uploaded:
                         st.session_state.activities, st.session_state.attribute_array, st.session_state.client,
                         act, run_num, batch_output_folder,
                         max_level1_iterations=MAX_LEVEL1_ITERATIONS,
-                        max_level2_iterations=MAX_LEVEL2_ITERATIONS
+                        max_level2_iterations=MAX_LEVEL2_ITERATIONS,
+                        model=st.session_state.model
                     )
                     
                     # Get final results

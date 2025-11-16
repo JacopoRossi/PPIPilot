@@ -17,6 +17,7 @@ from colorama import Fore
 import tempfile
 
 import ppinatjson as pp
+import llm_config
 
 # ============================================================================
 # ERROR CORRECTION CONFIGURATION - Easily modifiable parameters
@@ -53,10 +54,18 @@ def read_xes_from_uploaded_file(uploaded_file):
 
 
 def send_data():
-
-    st.session_state.client = OpenAI(
-        api_key=key,
-            )
+    # Create LLM provider based on user selection
+    try:
+        provider = llm_config.LLMConfig.create_provider(
+            provider_name=llm_provider,
+            api_key=key,
+            model_name=llm_model
+        )
+        st.session_state.client = provider.get_client()
+        st.session_state.model = provider.get_model_name()
+    except Exception as e:
+        st.error(f"Error initializing LLM provider: {str(e)}")
+        return
     
     log = read_xes_from_uploaded_file(xes_file)
     if log is not None:
@@ -87,6 +96,9 @@ if "activities" not in st.session_state:
 
 if "client" not in st.session_state:
     st.session_state["client"] = []
+
+if "model" not in st.session_state:
+    st.session_state["model"] = "gpt-4-0125-preview"
 
 if "varianti" not in st.session_state:
     st.session_state["varianti"] = []
@@ -150,8 +162,25 @@ if "errors_captured" not in st.session_state:
 with st.expander("Click to complete the form"):
     col0, col1 = st.columns(2)
     with col0:
-        key = st.text_input("Set OpenAI key", type="password")
+        # LLM Provider selection
+        llm_provider = st.selectbox(
+            "Select LLM Provider",
+            llm_config.LLMConfig.get_available_providers(),
+            index=0
+        )
     with col1:
+        # Model selection based on provider
+        available_models = llm_config.LLMConfig.get_models_for_provider(llm_provider)
+        llm_model = st.selectbox(
+            "Select Model",
+            available_models,
+            index=0 if available_models else None
+        )
+    
+    col2, col3 = st.columns(2)
+    with col2:
+        key = st.text_input("Set API key", type="password")
+    with col3:
         xes_file = st.file_uploader('Select a file to upload the event log', type=['xes'])
     desc = st.text_area("Write the description:")
     confirm = st.button("OK", on_click=send_data)
@@ -215,7 +244,7 @@ if st.session_state.file_uploaded:
                     for el in ls_cat:
                         cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
                         st.session_state.activities, el, desc, goal, st.session_state.attribute_array,
-                            xes_file.name, st.session_state.client, inject_test_errors=test_mode, test_retry_mechanism=apply_retry_test)
+                            xes_file.name, st.session_state.client, inject_test_errors=test_mode, test_retry_mechanism=apply_retry_test, model=st.session_state.model)
                         current_directory = os.path.dirname(__file__)
                         current_directory_con_slashes = current_directory.replace("\\", "/")
                         if el=="time":
@@ -225,7 +254,7 @@ if st.session_state.file_uploaded:
                 else:
                     cod_json = exec(st.session_state.dataframe,act,st.session_state.varianti, 
                         st.session_state.activities, ppis, desc, goal, st.session_state.attribute_array,
-                            xes_file.name, st.session_state.client, inject_test_errors=test_mode, test_retry_mechanism=apply_retry_test)
+                            xes_file.name, st.session_state.client, inject_test_errors=test_mode, test_retry_mechanism=apply_retry_test, model=st.session_state.model)
                     
                     current_directory = os.path.dirname(__file__)
                     current_directory_con_slashes = current_directory.replace("\\", "/")
@@ -239,7 +268,8 @@ if st.session_state.file_uploaded:
                         xes_file, st.session_state.file_path, ppis, 
                         st.session_state.activities, st.session_state.attribute_array, st.session_state.client,
                         max_level1_iterations=MAX_LEVEL1_ITERATIONS,
-                        max_level2_iterations=MAX_LEVEL2_ITERATIONS
+                        max_level2_iterations=MAX_LEVEL2_ITERATIONS,
+                        model=st.session_state.model
                     )
                     print(f"Completed after {iteration_count} iteration(s)")
                 elif ppis == "time":
@@ -247,7 +277,8 @@ if st.session_state.file_uploaded:
                         xes_file, st.session_state.file_path, ppis,
                         st.session_state.activities, st.session_state.attribute_array, st.session_state.client,
                         max_level1_iterations=MAX_LEVEL1_ITERATIONS,
-                        max_level2_iterations=MAX_LEVEL2_ITERATIONS
+                        max_level2_iterations=MAX_LEVEL2_ITERATIONS,
+                        model=st.session_state.model
                     )
                     print(f"Completed after {iteration_count} iteration(s)")
                 else:  # both
@@ -257,7 +288,8 @@ if st.session_state.file_uploaded:
                         json_path_time=st.session_state.file_path_time,
                         json_path_occurrency=st.session_state.file_path_occurrency,
                         max_level1_iterations=MAX_LEVEL1_ITERATIONS,
-                        max_level2_iterations=MAX_LEVEL2_ITERATIONS
+                        max_level2_iterations=MAX_LEVEL2_ITERATIONS,
+                        model=st.session_state.model
                     )
                     print(f"Completed after {iteration_count} iteration(s)")
                 
