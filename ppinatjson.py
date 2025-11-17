@@ -488,9 +488,9 @@ def exec_final_time(event_log, json_path, time_group=None):
     df = pd.DataFrame(data)
     df_sin_error = pd.DataFrame(data_sin_error)
     
-    # Remove duplicates based on 'Metric' column, keeping the first occurrence
-    df = df.drop_duplicates(subset=['Metric'], keep='first')
-    df_sin_error = df_sin_error.drop_duplicates(subset=['Metric'], keep='first')
+    # Remove duplicates based on both 'Name' AND 'Metric' columns
+    df = df.drop_duplicates(subset=['Name', 'Metric'], keep='first')
+    df_sin_error = df_sin_error.drop_duplicates(subset=['Name', 'Metric'], keep='first')
     
     num_filas = df.shape[0]
     num_filas_sin_error =df_sin_error.shape[0]
@@ -603,9 +603,9 @@ def exec_final_perc(event_log, json_path, time_group=None):
     df = pd.DataFrame(data)
     df_sin_error = pd.DataFrame(data_sin_error)
     
-    # Remove duplicates based on 'Metric' column, keeping the first occurrence
-    df = df.drop_duplicates(subset=['Metric'], keep='first')
-    df_sin_error = df_sin_error.drop_duplicates(subset=['Metric'], keep='first')
+    # Remove duplicates based on both 'Name' AND 'Metric' columns
+    df = df.drop_duplicates(subset=['Name', 'Metric'], keep='first')
+    df_sin_error = df_sin_error.drop_duplicates(subset=['Name', 'Metric'], keep='first')
     
     num_filas = df.shape[0]
     num_filas_sin_error =df_sin_error.shape[0]
@@ -622,9 +622,9 @@ def exec_final_both(event_log, json_path_time, json_path_occurrency, time_group=
     df_sin_error_def = pd.concat([df_sin_error, df_sin_error2], axis=0)
     df_def = pd.concat([df,df2], axis=0)
     
-    # Remove duplicates based on 'Metric' column after concatenation
-    df_sin_error_def = df_sin_error_def.drop_duplicates(subset=['Metric'], keep='first')
-    df_def = df_def.drop_duplicates(subset=['Metric'], keep='first')
+    # Remove duplicates based on both 'Name' AND 'Metric' columns after concatenation
+    df_sin_error_def = df_sin_error_def.drop_duplicates(subset=['Name', 'Metric'], keep='first')
+    df_def = df_def.drop_duplicates(subset=['Name', 'Metric'], keep='first')
     
     num_filas_total = df_def.shape[0]
     num_filas_sin_error_total = df_sin_error_def.shape[0]

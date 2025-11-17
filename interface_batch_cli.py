@@ -61,14 +61,17 @@ def read_xes_file(file_path):
     return log
 
 
-def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_number, category, output_folder, num_errors=0, iteration=1):
+def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_number, category, output_folder, num_errors=0, iteration=1, errors_captured=None):
     """
     Save results to CSV in the specified format:
     Name;Metric;Value;Agrupation;Colonna77
     
     Saves TWO files:
     1. _withoutErrors.csv - Only valid PPIs (df_without_errors)
-    2. _withErrors.csv - All PPIs including errors (df_with_errors)
+    2. _withErrors.csv - All PPIs including errors (df_with_errors) + error lines
+    
+    Args:
+        errors_captured: List of error dictionaries with 'ppi_name', 'ppi_json', 'error_message'
     """
     
     # Clean activity name for folder
@@ -89,7 +92,6 @@ def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_nu
         
         # Always add header
         rows_to_write.append("Name;Metric;Value;Agrupation;Colonna77")
-        rows_to_write.append(";ERROR: computing metric {};;;")
         
         # Add data rows if dataframe has data
         if df is not None and len(df) > 0:
@@ -116,8 +118,18 @@ def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_nu
                 # Format the row
                 row_str = f"{name};{metric};{value};{agrupation};{colonna77}"
                 rows_to_write.append(row_str)
-        else:
-            # If no valid PPIs, add a comment line
+        
+        # For error version, add error lines
+        if is_error_version and errors_captured and len(errors_captured) > 0:
+            for error in errors_captured:
+                ppi_name = error.get('ppi_name', 'Unknown PPI')
+                ppi_json = error.get('ppi_json', {})
+                # Format: Name;"ERROR: computing metric {JSON}";;;A
+                error_line = f"{ppi_name};\"ERROR: computing metric {ppi_json}\";;;A"
+                rows_to_write.append(error_line)
+        
+        # If no data at all, add a comment
+        if (df is None or len(df) == 0) and (not is_error_version or not errors_captured or len(errors_captured) == 0):
             rows_to_write.append(f";No valid PPIs in this iteration ({num_errors} errors);;;")
         
         # Write to file
@@ -128,11 +140,11 @@ def save_results_to_csv(df_without_errors, df_with_errors, activity_name, run_nu
         return filepath
     
     # Save file WITHOUT errors (only valid PPIs)
-    filepath_without = write_csv_file(df_without_errors, "withoutErrors")
+    filepath_without = write_csv_file(df_without_errors, "withoutErrors", is_error_version=False)
     saved_files.append(filepath_without)
     
-    # Save file WITH errors (all PPIs including errors)
-    filepath_with = write_csv_file(df_with_errors, "withErrors")
+    # Save file WITH errors (all PPIs including errors + error lines)
+    filepath_with = write_csv_file(df_with_errors, "withErrors", is_error_version=True)
     saved_files.append(filepath_with)
     
     return saved_files
@@ -168,27 +180,31 @@ def execute_and_save_iterations(xes_file_path, log, file_path, ppis, activities,
     num_ppis = len(df_sin_error) if df_sin_error is not None else 0
     num_errors = len(errors_captured) if errors_captured else 0
     logger.info(f"   📝 Saving results for activity: '{activity_name}'")
-    csv_paths = save_results_to_csv(df_sin_error, df, activity_name, run_num, ppis, output_folder, num_errors, iteration=iteration_num)
+    csv_paths = save_results_to_csv(df_sin_error, df, activity_name, run_num, ppis, output_folder, num_errors, iteration=iteration_num, errors_captured=errors_captured)
     all_saved_files.extend(csv_paths)
-    logger.info(f"   💾 Saved 2 files: withoutErrors and withErrors")
+    logger.info(f"   💾 Saved 2 files for iteration {iteration_num}: withoutErrors and withErrors")
     logger.info(f"   📊 {num_ppis} PPIs, {num_errors} errors")
     
     # If there are errors, run full correction with auto_correct_errors_with_retry
     if num_errors > 0:
+        # Create a callback to save results at each iteration
+        def save_iteration_callback(iter_num, df_sin_err, df_all, errs_captured):
+            nonlocal iteration_num, all_saved_files
+            iteration_num = iter_num
+            num_ppis_iter = len(df_sin_err) if df_sin_err is not None else 0
+            num_errors_iter = len(errs_captured) if errs_captured else 0
+            logger.info(f"   📝 Saving results for iteration {iteration_num}")
+            csv_paths = save_results_to_csv(df_sin_err, df_all, activity_name, run_num, ppis, output_folder, num_errors_iter, iteration=iteration_num, errors_captured=errs_captured)
+            all_saved_files.extend(csv_paths)
+            logger.info(f"   💾 Saved 2 files for iteration {iteration_num}: {num_ppis_iter} PPIs, {num_errors_iter} errors")
+        
         batch_size, df_sin_error, df, batch_size_sin_error, errors_captured, total_iterations = auto_correct_errors_with_retry(
             log_for_exec, file_path, ppis, activities, attributes, client,
             max_level1_iterations=max_level1_iterations,
             max_level2_iterations=max_level2_iterations,
-            model=model
+            model=model,
+            iteration_callback=save_iteration_callback
         )
-        
-        # Save final corrected result
-        if total_iterations > 1:
-            num_ppis = len(df_sin_error) if df_sin_error is not None else 0
-            num_errors = len(errors_captured) if errors_captured else 0
-            csv_paths = save_results_to_csv(df_sin_error, df, activity_name, run_num, ppis, output_folder, num_errors, iteration=total_iterations)
-            all_saved_files.extend(csv_paths)
-            logger.info(f"   💾 Saved 2 files for final iteration {total_iterations}: {num_ppis} PPIs, {num_errors} errors")
         
         return batch_size, df_sin_error, df, batch_size_sin_error, errors_captured, total_iterations, all_saved_files
     else:

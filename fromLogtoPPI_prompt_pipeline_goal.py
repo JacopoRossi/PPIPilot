@@ -420,7 +420,8 @@ def exec(dataframe, acti, varianti, activities, category, description, goal, att
 
 def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, attributes, client, 
                                    json_path_time=None, json_path_occurrency=None, 
-                                   max_level1_iterations=2, max_level2_iterations=2, model="gpt-4-0125-preview"):
+                                   max_level1_iterations=2, max_level2_iterations=2, model="gpt-4-0125-preview",
+                                   iteration_callback=None):
     """
     Automatically corrects JSON errors with separate iteration limits for Level 1 and Level 2.
     
@@ -436,6 +437,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
         max_level1_iterations: Maximum number of Level 1 (re-translation) iterations (default: 2)
         max_level2_iterations: Maximum number of Level 2 (error correction) iterations (default: 2)
         model: Model name to use for completion (default: gpt-4-0125-preview)
+        iteration_callback: Optional callback function(iteration_num, df_sin_error, df, errors_captured) called after each iteration
     
     Returns:
         Tuple: (batch_size, df_sin_error, df, batch_size_sin_error, errors_captured, total_iterations)
@@ -502,6 +504,10 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
         accumulated_df_sin_error, accumulated_df = accumulate_valid_ppis(df_sin_error, df, accumulated_df_sin_error, accumulated_df)
         valid_count = len(accumulated_df_sin_error) if accumulated_df_sin_error is not None else 0
         print(f"📊 Accumulated {valid_count} valid PPIs so far")
+        
+        # Call iteration callback if provided
+        if iteration_callback:
+            iteration_callback(total_iterations, accumulated_df_sin_error, accumulated_df, errors_captured)
         
         # Check if there are errors
         if len(errors_captured) == 0:
@@ -600,6 +606,10 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
     valid_count = len(accumulated_df_sin_error) if accumulated_df_sin_error is not None else 0
     print(f"📊 Accumulated {valid_count} valid PPIs after Level 1")
     
+    # Call iteration callback if provided (for Level 1 completion check)
+    if iteration_callback:
+        iteration_callback(total_iterations, accumulated_df_sin_error, accumulated_df, errors_captured)
+    
     if len(errors_captured) == 0:
         print(f"✅ All errors resolved after Level 1. Returning accumulated results.")
         return batch_size, accumulated_df_sin_error, accumulated_df, batch_size_sin_error, errors_captured, total_iterations
@@ -626,6 +636,10 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
         accumulated_df_sin_error, accumulated_df = accumulate_valid_ppis(df_sin_error, df, accumulated_df_sin_error, accumulated_df)
         valid_count = len(accumulated_df_sin_error) if accumulated_df_sin_error is not None else 0
         print(f"📊 Accumulated {valid_count} valid PPIs so far")
+        
+        # Call iteration callback if provided
+        if iteration_callback:
+            iteration_callback(total_iterations, accumulated_df_sin_error, accumulated_df, errors_captured)
         
         # Check if there are errors
         if len(errors_captured) == 0:
