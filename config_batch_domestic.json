@@ -1,0 +1,15 @@
+{
+  "llm_provider": "Qwen (Alibaba Cloud)",
+  "llm_model": "qwen-max",
+  "api_key": "sk-ff5b448d93b14b0aa8b1ec9d04cd5af5",
+  "xes_file_path": "xes/DomesticDeclarations.xes",
+  "description": "The dataset contains events pertaining to two years of travel expense claims. In 2017, events were collected for two departments, in 2018 for the entire university. The various permits and declaration documents (domestic declarations, pre-paid travel costs and requests for payment) all follow a similar process flow. After submission by the employee, the request is sent for approval to the travel administration. If approved, the request is then forwarded to the budget owner and after that to the supervisor. If the budget owner and supervisor are the same person, then only one of these steps is taken. In some cases, the director also needs to approve the request.The process finished with either the trip taking place or a payment being requested and payed. For domestic trips, no prior permission is needed, i.e. an employee can undertake these trips and ask for reimbursement of the costs afterwards. To get the costs for a travel reimbursed, a claim is filed. This can be done as soon as costs are actually payed (for example for flights or conference registration fees), or within two months after the trip (for example hotel and food costs which are usually payed on the spot).",
+  "goal": "I want reduce the number of cases when there is a 'Declaration REJECTED by PRE_APPROVER'",
+  "ppi_category": "occurrency",
+  "output_folder": "quantitative_assessment/batch_results",
+  "num_runs_per_activity": 5,
+  "activities": ["all"],
+  "max_level1_iterations": 2,
+  "max_level2_iterations": 2,
+  "save_debug_logs": false
+}

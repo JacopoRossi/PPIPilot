@@ -1,0 +1,15 @@
+{
+  "llm_provider": "Qwen (Alibaba Cloud)",
+  "llm_model": "qwen3-max",
+  "api_key": "sk-ff5b448d93b14b0aa8b1ec9d04cd5af5",
+  "xes_file_path": "xes/IT_incident_management.xes",
+  "description": "The log provides a detailed record of events captured from an advanced incident and problem management system called VINST. It serves as a resource, offering comprehensive insights into the entire process",
+  "goal": "I want understand the impact of 'Completed + In Call' activity",
+  "ppi_category": "time",
+  "output_folder": "quantitative_assessment/batch_results",
+  "num_runs_per_activity": 10,
+  "activities": ["all"],
+  "max_level1_iterations": 2,
+  "max_level2_iterations": 2,
+  "save_debug_logs": false
+}

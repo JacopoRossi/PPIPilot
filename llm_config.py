@@ -48,10 +48,11 @@ class QwenProvider(LLMProvider):
         "Qwen Plus": "qwen-plus",
         "Qwen Turbo": "qwen-turbo",
         "Qwen Max": "qwen-max",
+        "Qwen 3 Max": "qwen3-max",
     }
     
-    def __init__(self, api_key: str, model_name: str = "Qwen Plus"):
-        model = self.MODELS.get(model_name, "qwen-plus")
+    def __init__(self, api_key: str, model_name: str = "Qwen 3 Max"):
+        model = self.MODELS.get(model_name, "qwen3-max")
         super().__init__(api_key, model)
         self.client = OpenAI(
             api_key=api_key,

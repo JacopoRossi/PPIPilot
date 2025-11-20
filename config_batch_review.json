@@ -1,0 +1,15 @@
+{
+  "llm_provider": "Qwen (Alibaba Cloud)",
+  "llm_model": "qwen-max",
+  "api_key": "sk-ff5b448d93b14b0aa8b1ec9d04cd5af5",
+  "xes_file_path": "xes/Manuscript_review_management.xes",
+  "description": "This is a log detailing the review process employed by an ACM journal for evaluating scientific papers. It outlines the systematic procedures, criteria, and methodologies used to ensure the rigorous assessment and quality assurance of submitted manuscripts.",
+  "goal": "I want to gain a deeper understanding of the significance and implications of the 'SW-Reviewer Agreed' activity, exploring its impact on the review process.",
+  "ppi_category": "occurrency",
+  "output_folder": "quantitative_assessment/batch_results",
+  "num_runs_per_activity": 5,
+  "activities": ["Awaiting Assignment to Batch", "Co-Author Account Created During Manuscript Submission", "First Look Manuscript Submission Confirmation", "Manuscript Export Succeeded", "Original Manuscript Submission Confirmation", "Plagiarism Originality Report Completed", "Reviewer Invitation Reminder 1", "Reviewer Invitation Reminder 2", "SW-AE Assign Reviewers", "SW-Awaiting AE Assignment", "SW-Awaiting AE Recommendation", "SW-Awaiting Checklist Completion", "SW-Awaiting EIC Decision", "SW-Checklist Completed", "SW-Checklist Completion is due in three days", "SW-EIC Reject", "SW-Initial Reviewer Selection", "SW-Reviewer Agreed", "SW-Reviewer Declined", "SW-Reviewer Selection is due in 1 week"],
+  "max_level1_iterations": 2,
+  "max_level2_iterations": 2,
+  "save_debug_logs": false
+}
