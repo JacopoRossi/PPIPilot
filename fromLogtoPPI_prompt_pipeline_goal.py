@@ -533,7 +533,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_time, 'r', encoding='utf-8') as file:
                         time_json_data = json.load(file)
                     
-                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=True, model=model)
+                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, 'time', use_retranslation=True, model=model)
                     
                     if corrected_time_path:
                         current_json_path_time = corrected_time_path
@@ -548,7 +548,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_occurrency, 'r', encoding='utf-8') as file:
                         occurrency_json_data = json.load(file)
                     
-                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=True, model=model)
+                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, 'occurrency', use_retranslation=True, model=model)
                     
                     if corrected_occurrency_path:
                         current_json_path_occurrency = corrected_occurrency_path
@@ -571,6 +571,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                 activities,
                 attributes,
                 client,
+                ppis_type,  # Use ppis_type as category ('time' or 'occurrency')
                 use_retranslation=True,
                 model=model
             )
@@ -665,7 +666,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_time, 'r', encoding='utf-8') as file:
                         time_json_data = json.load(file)
                     
-                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, use_retranslation=False, model=model)
+                    corrected_time_path = correct_json_errors(time_json_data, time_errors, activities, attributes, client, 'time', use_retranslation=False, model=model)
                     
                     if corrected_time_path:
                         current_json_path_time = corrected_time_path
@@ -680,7 +681,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                     with open(current_json_path_occurrency, 'r', encoding='utf-8') as file:
                         occurrency_json_data = json.load(file)
                     
-                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, use_retranslation=False, model=model)
+                    corrected_occurrency_path = correct_json_errors(occurrency_json_data, occurrency_errors, activities, attributes, client, 'occurrency', use_retranslation=False, model=model)
                     
                     if corrected_occurrency_path:
                         current_json_path_occurrency = corrected_occurrency_path
@@ -703,6 +704,7 @@ def auto_correct_errors_with_retry(xes_file, json_path, ppis_type, activities, a
                 activities,
                 attributes,
                 client,
+                ppis_type,  # Use ppis_type as category ('time' or 'occurrency')
                 use_retranslation=False,
                 model=model
             )
@@ -1020,7 +1022,7 @@ def retranslate_ppi(ppi_name, error_info, activities, attributes, ppi_category, 
         return None
 
 
-def correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False, model="gpt-4-0125-preview"):
+def correct_json_errors(original_json, errors_list, activities, attributes, client, ppi_category, use_retranslation=False, model="gpt-4-0125-preview"):
     """
     Corrects JSON errors using OpenAI API
     
@@ -1030,6 +1032,7 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
         activities: List of available activities in the log
         attributes: List of available attributes in the log
         client: OpenAI client instance
+        ppi_category: Category of PPIs ('time' or 'occurrency')
         use_retranslation: If True, uses re-translation prompt (Level 1), otherwise uses correction prompt (Level 2)
         model: Model name to use for completion
     
@@ -1040,22 +1043,8 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
     # If using re-translation (Level 1 fallback)
     if use_retranslation:
         print("\n" + "="*60)
-        print("LEVEL 1 FALLBACK: Re-translating problematic PPIs")
+        print(f"LEVEL 1 FALLBACK: Re-translating problematic PPIs (category: {ppi_category})")
         print("="*60 + "\n")
-        
-        # Determine category from the JSON structure
-        ppi_category = None
-        if original_json and len(original_json) > 0:
-            first_ppi = original_json[0]
-            if 'PPIjson' in first_ppi:
-                if 'begin' in first_ppi['PPIjson'] or 'end' in first_ppi['PPIjson']:
-                    ppi_category = 'time'
-                elif 'count' in first_ppi['PPIjson']:
-                    ppi_category = 'occurrency'
-        
-        if not ppi_category:
-            print("❌ Could not determine PPI category, falling back to Level 2")
-            return correct_json_errors(original_json, errors_list, activities, attributes, client, use_retranslation=False, model=model)
         
         # Clean the JSON data
         cleaned_json = []
@@ -1229,14 +1218,13 @@ def correct_json_errors(original_json, errors_list, activities, attributes, clie
     # Use only problematic PPIs for the correction prompt
     json_to_correct = problematic_ppis
     
-    # Read the error correction prompt
-    print("Reading prompt template...")
-    prompt_path = '3_prompt_json_correction/prompt_error_correction.txt'
+    # Read the error correction prompt based on category
+    print(f"Reading prompt template for category: {ppi_category}...")
+    prompt_path = f'3_prompt_json_correction/prompt_error_correction_{ppi_category}.txt'
     try:
         with open(prompt_path, 'r', encoding='utf-8') as file:
             prompt_template = file.read()
-        print(f"Prompt template loaded, length: {len(prompt_template)}")
-        print("gino2") 
+        print(f"Prompt template loaded ({ppi_category}), length: {len(prompt_template)}") 
         # Format the prompt with the data
         try:
             # Safely serialize JSON with proper escaping - use only problematic PPIs
